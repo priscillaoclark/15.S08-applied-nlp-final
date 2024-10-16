@@ -1,0 +1,791 @@
+<html>
+<head>
+<title>Federal Register, Volume 89 Issue 192 (Thursday, October 3, 2024)</title>
+</head>
+<body><pre>
+[Federal Register Volume 89, Number 192 (Thursday, October 3, 2024)]
+[Notices]
+[Pages 80614-80620]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2024-22736]
+
+
+=======================================================================
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-101212; File No. SR-CboeBZX-2024-088]
+
+
+Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of 
+Filing and Immediate Effectiveness of a Proposed Rule Change To Adopt 
+Fees for New Logical Ports in Connection With a New Connectivity 
+Offering on Its Equity Options Platform
+
+September 27, 2024.
+    Pursuant to Section 19(b)(1) of the Securities Exchange Act of 1934 
+(the ``Act''),\1\ and Rule 19b-4 thereunder,\2\ notice is hereby given 
+that on
+
+[[Page 80615]]
+
+September 13, 2024, Cboe BZX Exchange, Inc. (the ``Exchange'' or 
+``BZX'') filed with the Securities and Exchange Commission (the 
+``Commission'') the proposed rule change as described in Items I, II 
+and III below, which Items have been prepared by the Exchange. The 
+Commission is publishing this notice to solicit comments on the 
+proposed rule change from interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+I. Self-Regulatory Organization's Statement of the Terms of Substance 
+of the Proposed Rule Change
+
+    Cboe BZX Exchange, Inc. (the ``Exchange'' or ``BZX'') proposes to 
+adopt fees for new logical ports in connection with a new connectivity 
+offering on its equity options platform. The text of the proposed rule 
+change is provided in Exhibit 5.
+    The text of the proposed rule change is also available on the 
+Exchange's website (<a href="http://markets.cboe.com/us/equities/regulation/rule_filings/BZX/">http://markets.cboe.com/us/equities/regulation/rule_filings/BZX/</a>), at the Exchange's Office of the Secretary, and at 
+the Commission's Public Reference Room.
+
+II. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+    In its filing with the Commission, the Exchange included statements 
+concerning the purpose of and basis for the proposed rule change and 
+discussed any comments it received on the proposed rule change. The 
+text of these statements may be examined at the places specified in 
+Item IV below. The Exchange has prepared summaries, set forth in 
+sections A, B, and C below, of the most significant aspects of such 
+statements.
+
+A. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+1. Purpose
+    The Exchange proposes to amend its fee schedule to adopt fees for 
+Unitized Logical Ports, a new connectivity offering for its equity 
+options platform (``BZX Options'') and adopt new Average Daily Quote 
+and Average Daily Order fees.\3\
+---------------------------------------------------------------------------
+
+    \3\ The Exchange initially submitted the proposed rule change on 
+August 30, 2024 and was effective September 3, 2024 (SR-CboeBZX-
+2024-082). On September 13, 2024, the Exchange withdrew that filing 
+and submitted this filing.
+---------------------------------------------------------------------------
+
+Unitized Port Fees
+    By way of background, Exchange Members may interface with the 
+Exchange's Trading System by utilizing either the Financial Information 
+Exchange (``FIX'') protocol or the Binary Order Entry (``BOE'') 
+protocol. The Exchange further offers a variety of logical ports,\4\ 
+which provide users of these ports with the ability within the 
+Exchange's System to accomplish a specific function through a 
+connection, such as order entry, data receipt or access to information. 
+For example, such ports include Logical Ports,\5\ Purge Ports,\6\ and 
+Ports with Bulk Quoting Capabilities \7\ (``Bulk Ports''). By way of 
+further background, each of these ports corresponds to a single running 
+order handler. Each order handler processes the messages it receives 
+from these ports from the connected Members. This processing includes 
+determining whether the message contains the required information to 
+enter the System, whether the message parameters satisfy port-level 
+(i.e., pre-trade) risk controls, and where to send that message within 
+the System (i.e., to which matching engine \8\). Once an order handler 
+completes the processing of a message, it sends that message to the 
+appropriate matching engine.
+---------------------------------------------------------------------------
+
+    \4\ See Exchange Rule 21.1 (l)(2), definition of ``logical 
+port.'' Logical ports include FIX and BOE ports (used for order 
+entry), drop logical port (which grants users the ability to receive 
+and/or send drop copies) and ports that are used for receipt of 
+certain market data feeds.
+    \5\ The term ``Logical Ports'' used herein shall refer to FIX 
+and BOE ports (used for order entry). See Cboe BZX Options Fee 
+Schedule, Options Logical Port Fees, ``Logical Ports'' (which 
+exclude Purge Port, Multicast PITCH Spin Server Port or GRP Port).
+    \6\ Purge Ports provide users the ability to cancel a subset (or 
+all) of open orders across Executing Firm ID(s) (``EFID(s)''), 
+Underlying symbol(s), or CustomGroupID(s), across multiple logical 
+ports/sessions. See Securities Exchange Act Release 79956 (February 
+3, 2017), 82 FR 10102 (February 9, 2017) (SR-BatsBZX-2017-05). See 
+also <a href="https://cdn.cboe.com/resources/membership/US_Options_BOE_Specification.pdf">https://cdn.cboe.com/resources/membership/US_Options_BOE_Specification.pdf</a> and <a href="https://cdn.cboe.com/resources/membership/US_Options_FIX_Specification.pdf">https://cdn.cboe.com/resources/membership/US_Options_FIX_Specification.pdf</a>.
+    \7\ See Exchange Rule 21.1 (l)(3), definition of ``bulk port.'' 
+Bulk Ports provide users with the ability to submit and update 
+multiple quote bids and offers in one message through logical ports 
+enabled for bulk-quoting.
+    \8\ A matching engine is a part of the Exchange's System that 
+processes options quotes and trades on a symbol-by-symbol basis. 
+Some matching engines will process option classes with multiple root 
+symbols, and other matching engines will be dedicated to one single 
+option root symbol (for example, options on SPY will be processed by 
+one single matching engine that is dedicated only to SPY). A 
+particular root symbol may only be assigned to a single designated 
+matching engine. A particular root symbol may not be assigned to 
+multiple matching engines.
+---------------------------------------------------------------------------
+
+    Historically, all order handlers connect to all matching engines. 
+That is, under the BOEv2 and FIX protocols, Members were able to access 
+all symbols from a single logical port since each port corresponds to a 
+single order handler that conveniently connects to all matching engines 
+(``convenience layer''). Although the Exchange configures the software 
+and hardware for its order handlers in the same manner, there can be a 
+natural variance in the amount of time it takes individual order 
+handlers to process messages of the same type under this architecture. 
+Factors that contribute to this differentiation in processing times 
+include the availability of shared resources (such as memory), which is 
+impacted by (among other things) then-current message rates, the number 
+of active symbols (i.e., classes), and recent messages for a symbol. 
+This natural differentiation in processing times inherently may cause 
+some messages to be sent from an order handler to a matching engine 
+ahead of other messages that the Exchange's System may have received 
+earlier on a different order handler.
+    The Exchange recently implemented a new architecture and protocol 
+which includes, among other things, a single gateway per matching 
+engine (``unitized layer''), which renders the above-described natural 
+variance of order handler processing irrelevant for Members that 
+connect to the unitized order handler.\9\ More specifically, effective 
+August 19, 2024, the Exchange implemented this new unitized access 
+architecture and a new version of its Binary Order Entry (BOE) protocol 
+\10\ (``BOEv3''), which also resulted in the adoption of new logical 
+port types (``Unitized Logical Ports''), for which the Exchange is now 
+seeking to establish fees.\11\ Under the new unitized BOEv3 
+architecture, a single BOEv3 order handler corresponds to a single 
+matching engine and all message traffic (including FIX and current 
+BOEv2 \12\ port traffic) pass through this unitized BOEv3 order handler 
+before reaching that order handler's corresponding matching engine. If 
+a Member desires to access this optional unitized layer of the BOEv3 
+architecture (which it is not required to do), the Member would need to 
+obtain a Unitized Logical Port for each unitized BOEv3 order handler 
+and corresponding matching engine(s) that process the symbol(s) that 
+Member
+
+[[Page 80616]]
+
+desires to trade.\13\ The three new port types that have been adopted 
+are: (1) BOE Unitized Logical Ports,\14\ (2) Bulk Unitized Logical 
+Ports,\15\ and (3) Purge Unitized Logical Ports.\16\ As noted above, 
+use of Unitized Logical Ports is completely voluntary, and no Member is 
+required, or under any regulatory obligation, to utilize them.
+---------------------------------------------------------------------------
+
+    \9\ See Securities Exchange Act Release 100582 (July 23, 2024), 
+89 FR 60958 (July 29, 2024) (SR-CboeBZX-2024-071).
+    \10\ The BOE protocol is a proprietary order entry protocol used 
+by Members to connect to the Exchange. The current version is BOEv2.
+    \11\ See Securities Exchange Act Release No. 100582 (July 23, 
+2024) 89 FR 60958 (July 29, 2024) (SR-CboeBZX-2024-071).
+    \12\ The Exchange anticipates decommissioning BOEv2 in February 
+2025.
+    \13\ Members will be able to purchase Unitized Logical Ports 
+individually or may purchase a ``set,'' which will provide the total 
+number of ports needed to connect to each available matching engine.
+    \14\ Similar to the Exchange's preexisting Logical Ports, the 
+new Unitized Logical Ports allow Members to submit orders and 
+quotes.
+    \15\ Similar to the Exchange's preexisting Bulk Ports, the new 
+Bulk Unitized Logical Ports allow Members to submit and update 
+multiple quote bids and offers in one message and are particularly 
+useful for Members that provide quotations in many different 
+options.
+    \16\ Similar to the Exchange's preexisting Purge Ports, the new 
+Purge Unitized Logical Ports are dedicated logical ports that 
+provide the ability to cancel/purge all open orders, or a subset 
+thereof, across multiple logical ports through a single cancel/purge 
+message. They also solely process purge messages and are designed to 
+assist Members, including Market Makers, in the management of, and 
+risk control over, their orders and quotes, particularly if the 
+Member is dealing with a large number of options.
+---------------------------------------------------------------------------
+
+    The Exchange proposes to establish fees for the new Unitized 
+Logical Ports, which can be purchased on an individual basis (i.e., 
+capable of accessing a specified matching engine (``Matching Unit'')) 
+and/or as a set (``Unitized Logical Port Set'') (i.e., will include the 
+total number of ports needed to connect to each available Matching 
+Unit). The proposed fees for Unitized Logical Ports purchased 
+individually and as sets are as follows:
+
+------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------
+BOE Unitized Logical Port..............  $350/port/month.
+Bulk Unitized Logical Port.............  $550/port/month.
+Purge Unitized Logical Port............  $400/port/month.
+BOE Unitized Logical Port (Set)........  $2,500/month for 1st and 2nd
+                                          port set.
+                                         $3,000/month for 3rd-14th port
+                                          set.
+                                         $3,500/month for 15th-20th port
+                                          set.
+Bulk Unitized Logical Port (Set).......  $5,500/month for 1st and 2nd
+                                          port set.
+                                         $6,000/month for 3rd-14th port
+                                          set.
+                                         $6,500/month for 15th-20th port
+                                          set.
+Purge Unitized Logical Port (Set)......  $2,500/month for 1st and 2nd
+                                          port set.
+                                         $3,000/month for 3rd-14th port
+                                          set.
+                                         $3,500/month for 15th-20th port
+                                          set.
+------------------------------------------------------------------------
+
+    The proposed fees for Unitized Logical Port Sets are progressive. 
+For example, if a User were to purchase 11 BOE Unitized Logical Port 
+Sets, it will be charged a total of $32,000 per month ($2,500 * 2 + 
+$3,000 * 9). As is the case today for existing logical ports, the 
+monthly fees are assessed and applied in their entirety and are not 
+prorated. The Exchange notes the current standard fees assessed for 
+existing logical ports will remain applicable and unchanged.\17\ The 
+proposed fees for Unitized Logical Port Sets will be assessed per set, 
+per Port Type. As an example, if a Member requests three BOE Unitized 
+Logical Port Sets, one Bulk Unitized Logical Port Set, and one Purge 
+Unitized Logical Port Set, the firm would be charged $8,000 ($2,500 + 
+$2,500 + $3,000) for the three BOE Unitized Logical Port Sets, $5,500 
+for the one Bulk Unitized Logical Port Set, and $2,500 for the one 
+Purge Unitized Logical Port Set.\18\
+---------------------------------------------------------------------------
+
+    \17\ For example, the Exchange currently assesses a monthly per 
+port fee of $750 for Logical Ports and Purge Ports. It also assesses 
+$1,500 per port month for the 1st and 2nd Bulk Ports and $2,500 for 
+the 3rd or more Bulk Ports. See Cboe BZX Options Fee Schedule, 
+Options Logical Port Fees.
+    \18\ The Exchange proposes to include this example in the Fee 
+Schedule to provide further clarity as to the application of the 
+proposed fees.
+---------------------------------------------------------------------------
+
+    Since the Exchange has a finite amount of capacity, it also 
+proposes to prescribe a maximum limit on the number of Unitized Logical 
+Ports that may be purchased and used on a per firm, per Matching Unit 
+basis. The purpose of establishing these limits is to manage the 
+allotment of Unitized Logical Ports in a fair and reasonable manner 
+while preventing the Exchange from being required to expend large 
+amounts of resources in order to provide an unlimited capacity to its 
+matching engines. Particularly, the Exchange proposes to provide that 
+the two structures (i.e., individual unitized ports or unitized port 
+sets) can be combined for up to a maximum of 20 Unitized Logical Ports 
+per Member, per Matching Unit, per port type. As an example, a Member 
+may request 2 BOE Unitized Logical Port Sets and 18 individual BOE 
+Unitized Logical Ports for Matching Unit 1, providing a total max of 20 
+BOE Unitized Logical Ports on Matching Unit 1 specifically. This would 
+result in having 20 BOE Unitized Logical Ports on Matching Unit 1 and 2 
+BOE Unitized Ports on all additional Matching Units as part of the 2 
+BOE Unitized Logical Port Sets requested. Additionally, a firm may 
+request 20 Bulk Unitized Logical Port Sets and 20 Purge Unitized 
+Logical Port Sets as those would constitute different port types.\19\ 
+The Exchange believes the proposed cap will be sufficient for the vast 
+majority of Members.\20\ The Exchange notes that it will monitor 
+interest in Unitized Logical Ports and system capacity availability 
+with the goal of increasing these limits to meet Members needs if and 
+when the demand is there, and the Exchange is able to accommodate it. 
+Additionally, Members will still be able to utilize the existing 
+logical port connectivity offerings with no maximum limit in addition 
+to their Unitized Logical Port allocation.
+---------------------------------------------------------------------------
+
+    \19\ The Exchange proposes to include this example in its Fee 
+Schedule to provide clarity as to how Unitized Logical Port fees 
+will be assessed.
+    \20\ The Exchange notes that one Member has indicated that it 
+may desire more than the current maximum in the future.
+---------------------------------------------------------------------------
+
+Average Daily Quotes and Average Daily Order Fees
+    The Exchange also proposes to adopt Average Daily Order (``ADO'') 
+and Average Daily Quote (``ADQ'') fees. ``ADO'' represents the total 
+number of orders for the month, divided by the number of trading days. 
+``ADQ'' represents the total number of quotes for the month, divided by 
+the number of trading days. When measuring a Member's ADO and ADQ, 
+orders, quotes, cancel/replace modify orders, and quote updates which 
+submit a bid or offer and do not include cancels, are included. Further 
+ADO and ADQ will include orders and quotes submitted by a Member from 
+all logical port types (i.e., non-unitized logical ports and Unitized 
+Logical Ports). Each Member may submit up to 2,000,000 average daily 
+orders or up to 250,000,000 average daily quotes per calendar month 
+without incurring any ADO or ADQ fees. In the event that the average 
+number of quotes per trading day during a calendar month submitted 
+exceeds 250,000,000, each incremental usage of up to 20,000 average 
+daily quotes will incur an additional fee as set forth in the
+
+[[Page 80617]]
+
+table below. Similarly, in the event that the average number of orders 
+per trading day during a calendar month submitted exceeds 2,000,000, 
+each incremental usage of up to 1,000 average daily orders will incur 
+an additional ADO fee as set forth in the table below.\21\ A Member's 
+ADO and ADQ will be aggregated together with any affiliated Member 
+sharing at least 75% common ownership.
+---------------------------------------------------------------------------
+
+    \21\ The term ``quote'' refers to bids and offers submitted in 
+bulk messages. A bulk message means a single electronic message a 
+user submits with an M (Market-Maker) capacity to the Exchange in 
+which the User may enter, modify, or cancel up to an Exchange-
+specified number of bids and offers. A User may submit a bulk 
+message through a bulk port as set forth in Exchange Rule 
+21.1(j)(3). See Rule 16.1 (definition of bulk message).
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                             Fee
+                                                                   -------------------------------------------------------------------------------------
+                                                                        Tier 1          Tier 2          Tier 3            Tier 4             Tier 5
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ADQ Fee Rate per 20,000 ADQ.......................................   <=250,000,000    >250,000,000    >500,000,000     >1,000,000,000     >3,500,000,000
+                                                                             $0.00           $0.05          $0.075              $0.10              $0.20
+ADO Fee Rate per 1,000 ADO........................................     <=2,000,000      >2,000,000      >2,500,000         >3,000,000         >3,500,000
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                             $0.00           $1.00           $1.50              $2.00              $2.50
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    As an example, a Member that has 510,000,000 ADQ would subsequently 
+have 25,500 ``ADQ increments'' (510,000,000 ADQ/20,000 ADQ increments). 
+While 12,500 of the 25,500 ADQ increments are free within Tier 1, 
+12,500 of the ADQ increments would be fee liable at $0.050 within Tier 
+2, while the remaining 500 ADQ increments would be fee liable at $.075 
+within Tier 3, resulting in a total ADQ fee of $662.50 for that 
+month.\22\
+---------------------------------------------------------------------------
+
+    \22\ The Exchange proposes to include this example in the Fees 
+Schedule to provide further clarity as to the application of the 
+proposed fees.
+---------------------------------------------------------------------------
+
+    The Exchange notes that market participants with incrementally 
+higher ADO or ADQ have the potential residual effect of exhausting 
+system resources, bandwidth, and capacity. Higher ADO or ADQ may 
+therefore, in turn, create latency and impact other Members' ability to 
+receive timely executions. The proposed fee structure has multiple 
+thresholds, and the proposed fees are incrementally greater at higher 
+ADO and ADQ rates because the potential impact on exchange systems, 
+bandwidth and capacity becomes greater with increased ADO and ADQ 
+rates. As noted above, the proposal contemplates that a Member would 
+have to exceed the high ADO rate of 2,000,000 and a Market Maker would 
+have to exceed the high ADQ rate of 250,000,00 before that market 
+participant would be charged a fee under the proposed respective tiers. 
+The Exchange believes that it is in the interests of all Members and 
+market participants who access the Exchange to not allow other market 
+participants to exhaust System resources, but to encourage efficient 
+usage of network capacity. The Exchange also believes this proposal 
+(and in particular the proposed fee amounts associated with higher ADO 
+and ADQ) will reduce the incentive for market participants to engage in 
+excessive order/quote and trade activity that may require the Exchange 
+to otherwise increase its storage capacity and will encourage such 
+activity to be submitted in good faith for legitimate purposes.
+    The Exchange also represents that the proposed fees are not 
+intended to raise revenue; rather, as noted above, it is intended to 
+encourage efficient behavior so that market participants do not exhaust 
+System resources. Moreover, the Exchange intends to provide Members 
+with daily reports, free of charge, which will detail their order and 
+trade activity in order for those firms to be fully aware of all order 
+and trade activity they (and their affiliates) are sending to the 
+Exchange. This will allow Members to monitor their behavior and 
+determine whether it is approaching any of the ADO or ADQ thresholds 
+that trigger the proposed fees.
+    The Exchange lastly notes that other exchanges have adopted various 
+fee programs that assess incrementally higher fees to Members that have 
+incrementally higher order and/or quoting trading activity for similar 
+reasons.\23\
+---------------------------------------------------------------------------
+
+    \23\ See, e.g., Securities Exchange Act Release No. 60102 (June 
+11, 2009), 74 FR 29251 (June 19, 2009) (SR-NYSEArca-2009-50) 
+(adopting fees applicable to Members based on the number of orders 
+entered compared to the number of executions received in a calendar 
+month). It appears that Nasdaq similarly assesses a penalty charge 
+to its members that exceed certain ``weighted order-to-trade 
+ratios''. See Price List--Trading Connectivity, NASDAQ, available at 
+<a href="https://www.nasdaqtrader.com/trader.aspx?id=pricelisttrading2">https://www.nasdaqtrader.com/trader.aspx?id=pricelisttrading2</a>. See 
+also Securities Exchange Act Release No. 91406 (March 25, 2021), 86 
+FR 16795 (March 31, 2023) (SR-EMERALD-2021-10) (adopting an 
+``Excessive Quoting Fee'' to ensure that Market Makers do not over 
+utilize the exchange's System by sending messages to the MIAX 
+Emerald, to the detriment of all other Members of the exchange).
+---------------------------------------------------------------------------
+
+2. Statutory Basis
+    The Exchange believes the proposed rule change is consistent with 
+the Securities Exchange Act of 1934 (the ``Act'') and the rules and 
+regulations thereunder applicable to the Exchange and, in particular, 
+the requirements of Section 6(b) of the Act.\24\ Specifically, the 
+Exchange believes the proposed rule change is consistent with the 
+Section 6(b)(5) \25\ requirements that the rules of an exchange be 
+designed to prevent fraudulent and manipulative acts and practices, to 
+promote just and equitable principles of trade, to foster cooperation 
+and coordination with persons engaged in regulating, clearing, 
+settling, processing information with respect to, and facilitating 
+transactions in securities, to remove impediments to and perfect the 
+mechanism of a free and open market and a national market system, and, 
+in general, to protect investors and the public interest. Additionally, 
+the Exchange believes the proposed rule change is consistent with the 
+Section 6(b)(5) \26\ requirement that the rules of an exchange not be 
+designed to permit unfair discrimination between customers, issuers, 
+brokers, or dealers. The Exchange also believes the proposed rule 
+change is consistent with Section 6(b)(4) \27\ of the Act, which 
+requires that Exchange rules provide for the equitable allocation of 
+reasonable dues, fees, and other charges among its Members and other 
+persons using its facilities.
+---------------------------------------------------------------------------
+
+    \24\ 15 U.S.C. 78f(b).
+    \25\ 15 U.S.C. 78f(b)(5).
+    \26\ Id.
+    \27\ 15 U.S.C. 78f(b)(4).
+---------------------------------------------------------------------------
+
+    The Exchange believes the proposed fees are reasonable because 
+Unitized Logical Ports provide an optional, valuable service in that 
+the ports are intended to create a more consistent, deterministic 
+experience for messages once received within the Exchange's System 
+under the recently adopted unitized BOEv3 architecture. As discussed 
+above, the new architecture (and thereby the new Unitized Logical 
+Ports) was designed to create a more consistent, deterministic 
+experience for messages once received within the
+
+[[Page 80618]]
+
+Exchange's System, which the Exchange believes improves the overall 
+access experience on the Exchange and will enable future system 
+enhancements. As noted, the BOEv3 protocol and architecture, along with 
+the three new corresponding Unitized Logical Ports, are intended to 
+reduce the natural variance of order handler processing times for 
+messages, and as a result reduce the potential resulting ``reordering'' 
+of messages when they are sent from order handlers to matching engines. 
+The adoption of the unitized BOEv3 structure (including the 
+corresponding new Unitized Ports) was a technical solution that is 
+intended to reduce the potential of this reordering and increase 
+determinism.\28\ The Exchange believes the proposed fees are also 
+reasonable to offset costs incurred in order to build out an entirely 
+new unitized architecture.
+---------------------------------------------------------------------------
+
+    \28\ See Securities Exchange Act Release 100582 (July 23, 2024), 
+89 FR 60958 (July 29, 2024) (SR-CboeBZX-2024-071).
+---------------------------------------------------------------------------
+
+    The Exchange also emphasizes that the use of the Unitized Logical 
+Ports is not necessary for trading on the Exchange and, as noted above, 
+is entirely optional. Users can also continue to access the Exchange 
+through existing logical port offerings at existing rates. It is a 
+Member's specific business needs that will drive its decision whether 
+to use Unitized Logical Ports in lieu of, or in addition to, existing 
+logical ports (or, as emphasized, not use them at all). If a User finds 
+little benefit in having these ports based on its business model and 
+trading strategies, or determines the Unitized Logical ports are not 
+cost-efficient for its needs, or does not provide sufficient value to 
+the firm, such User may continue connecting to the Exchange in the 
+manner it does today, unchanged. Indeed, the Exchange notes that since 
+the adoption of Unitized Logical Ports on August 19, only approximately 
+27% of logical ports, bulk ports and purge ports being used are 
+Unitized Logical Ports and approximately 73% are the preexisting 
+Logical Ports, Bulk Ports and Purge Ports. Moreover, the Exchange 
+believes that providing Members the option of purchasing Unitized 
+Logical Ports individually or in sets provides Members further 
+flexibility and an opportunity for cost savings for those Members that 
+wish to only trade a subset of classes.
+    The Exchange also believes that the proposed Unitized Logical Port 
+fees are equitable and not unfairly discriminatory because they 
+continue to be assessed uniformly to similarly situated users in that 
+all Users who choose to purchase Unitized Logical Ports will be subject 
+to the same proposed tiered fee schedule. Moreover, Members purchasing 
+Unitized Logical Ports will only do so if they find a benefit and 
+sufficient value in such ports as, all Members can otherwise continue 
+to use the preexisting logical connectivity options. As such, Members 
+can choose whether or not to purchase Unitized Logical Ports based on 
+their respective business needs.
+    The proposed ascending tier structure for Unitized Logical Port 
+Sets is reasonable, equitable and not unfairly discriminatory as it's 
+designed to encourage market participants to be efficient with their 
+respective Unitized Logical Port usage. It also is designed so that 
+Members that use a higher allotment of the Exchange's system resources 
+pay higher rates, rather than placing that burden on market 
+participants that have more modest needs. The Exchange believes the 
+proposed ascending fee structure is therefore another appropriate 
+means, in conjunction with an established Unitized Logical Port limit, 
+to manage this finite resource (system capacity) and ensure its 
+apportioned fairly. The proposed limit on Unitized Logical Ports is 
+also reasonable, equitable and not unfairly discriminatory as the 
+Exchange believes that it is in the interests of all Members and market 
+participants who access the Exchange to not allow Members to exhaust 
+System resources, but to encourage efficient usage of network capacity. 
+Furthermore, the Exchange already assesses higher fees to those that 
+consume more Exchange resources for the existing non-Unitized Bulk 
+Ports.\29\
+---------------------------------------------------------------------------
+
+    \29\ See Cboe U.S. Options Fees Schedule, BZX Options, Options 
+Logical Port Fees, Ports with Bulk Quoting Capabilities.
+---------------------------------------------------------------------------
+
+    The Exchange believes the proposed ADO and ADQ fees are reasonable 
+as Members that do not exceed the high thresholds of 2,000,000 ADO and 
+250,000,000 ADQ will not be charged any fee under the proposed tiers. 
+The Exchange believes it's reasonable, equitable and not unfairly 
+discriminatory to assess higher fees for greater [sic] higher ADO and 
+ADQ rates because the potential impact on exchange systems, bandwidth 
+and capacity becomes greater with increased ADO and ADQ rates. The 
+Exchange believes the proposed fee amounts are reasonable as the 
+Exchange believes them to commensurate with the proposed thresholds. 
+Particularly, the proposed fee amounts that correspond to higher ADO 
+and ADQ rates are designed to incentivize Members to reduce excessive 
+order and quoting trade activity that the Exchange believes can be 
+detrimental to all market participants at those levels and encourage 
+such activity to be made in good faith and for legitimate purposes. As 
+noted above, the Exchange believes that it is in the interests of all 
+Members and market participants who access the Exchange to not allow 
+Members to exhaust System resources, but to encourage efficient usage 
+of network capacity. The Exchange therefore also believes that the 
+proposed fees appropriately reflect the benefits to different firms of 
+being able to send orders and quotes into the Exchange's System and 
+also believes the proposed fees are one method of facilitating the 
+Commission's goal of ensuring that critical market infrastructure has 
+``levels of capacity, integrity, resiliency, availability, and security 
+adequate to maintain their operational capability and promote the 
+maintenance of fair and orderly markets.'' \30\
+---------------------------------------------------------------------------
+
+    \30\ See Securities Exchange Act Release No. 73639 (November 19, 
+2014), 79 FR 72251 (December 5, 2014) (File No. S7-01-13) 
+(Regulation SCI Adopting Release).
+---------------------------------------------------------------------------
+
+    The Exchange believes adopting the proposed ADO and ADQ fees are 
+reasonable as unfettered usage of System capacity and network resource 
+consumption can have a detrimental effect on all market participants 
+who access and use the Exchange. As discussed above, high ADO and ADQ 
+rates may adversely impact system resources, bandwidth, and capacity 
+which may, in turn, create latency and impact other Members' ability to 
+receive timely executions. The Exchange believes the proposed fees are 
+therefore reasonable as they are designed to focus on activity that is 
+truly disproportionate while fairly allocating costs.
+    Further, the Exchange believes that the proposed ADO and ADQ fees 
+are equitable and not unfairly discriminatory because [sic] will be 
+assessed uniformly to similarly situated users in that all Members that 
+exceed the thresholds in connection with ADO and ADQ will be assessed 
+the proposed ADO and ADQ rates. Regarding ADO an ADQ, no market 
+participant is assessed any fees unless it exceeds the proposed 
+thresholds. As noted above, the Exchange believes the proposed ADO and 
+ADQ thresholds (i.e., 2,000,000 ADO and 250,000,000 ADQ) are 
+appropriately high rates respectively, such that the Exchange expects 
+the vast majority of Members to not exceed them. While the Exchange has 
+no way of predicting with certainty how the proposed changes will 
+impact Member
+
+[[Page 80619]]
+
+activity, based on trading activity from the prior months the Exchange 
+would expect that, absent any changes to Member behavior, all Members 
+would fall within proposed ADO Tier 1 (and thus not be subject to any 
+new fees) and approximately 74% of Members would fall within proposed 
+ADQ Tier 1 (and thus also not be subject to any new fees). With respect 
+to the remaining Members (approximately 26%) that would exceed the ADQ 
+Tier 1 threshold based on current activity, the Exchange would 
+anticipate, absent any change in behavior, approximately 3 Members to 
+fall within Tier 2, approximately 6 Members to fall within Tier 3, 
+approximately 3 Members to fall within Tier and no Members to fall 
+within Tier 5.
+    The Exchange believes it's equitable and not unfairly 
+discriminatory to assess incrementally higher fees to Members that have 
+higher ADO and ADQ rates because the potential impact on exchange 
+systems, bandwidth and capacity becomes greater with increased ADO and 
+ADQ. The Exchange also believes it's equitable and not unfairly 
+discriminatory to aggregate Members trading activity with any 
+affiliated Member sharing at least 75% common ownership in order to 
+prevent members from shifting their order flow or quoting activity to 
+other affiliates in order to circumvent the proposed fees.
+    The Exchange lastly believes that its proposal is reasonable, 
+equitably allocated and not unfairly discriminatory because it is not 
+intended to raise revenue for the Exchange; rather, it is intended to 
+encourage efficient behavior so that Members do not exhaust System 
+resources. Moreover, as noted above, competing options exchanges 
+similarly assess fees to deter Members from over utilizing the 
+exchange's System by having excessive order and/or quoting trading 
+activity.\31\
+---------------------------------------------------------------------------
+
+    \31\ See supra note 20.
+---------------------------------------------------------------------------
+
+    The Exchange finally notes that it operates in a highly competitive 
+market in which market participants can readily direct order flow to 
+competing venues if they deem fee levels at a particular venue to be 
+excessive or incentives to be insufficient. The Exchange is only one of 
+18 options exchanges which market participants may direct their order 
+flow and/or participate on, and it represents a small percentage of the 
+overall market.\32\
+---------------------------------------------------------------------------
+
+    \32\ See Cboe Global Markets, U.S. Options Market Volume 
+Summary, Month-to-Date (August 27, 2024), available at <a href="https://www.cboe.com/us/options/market_statistics/">https://www.cboe.com/us/options/market_statistics/</a> which reflects the 
+Exchange representing only 3.3% of total market share.
+---------------------------------------------------------------------------
+
+B. Self-Regulatory Organization's Statement on Burden on Competition
+
+    The Exchange does not believe that the proposed rule change to 
+adopt fees for Unitized Logical Ports will impose any burden on 
+intramarket competition that is not necessary in furtherance of the 
+purposes of the Act because the proposed fees for will apply equally to 
+all similarly situated Members. As discussed above, Unitized Logical 
+Ports are optional and Members may choose to utilize Unitized Logical 
+Ports, or not, based on their views of the additional benefits and 
+added value provided by these ports. The Exchange believes the proposed 
+fees will be assessed proportionately to the potential value or benefit 
+received by Members with a greater number of Unitized Logical Ports and 
+notes that Members may determine to cease using Unitized Logical Ports. 
+As discussed, Members can also continue to access the Exchange through 
+existing Logical Ports, which fees are not changing.
+    Similarly, the Exchange does not believe that the proposed rule 
+change to adopt ADO and ADQ fees will impose any burden on intramarket 
+competition that is not necessary in furtherance of the purposes of the 
+Act because such fees will apply equally to all similarly situated 
+Members. Particularly, the proposed fees apply uniformly to all 
+Members, in that any Member who exceeds the ADO and/or ADQ Tier 1 
+thresholds will be subject to a fee under the proposed corresponding 
+tiers. The Exchange believes that the proposed change neither favors 
+nor penalizes one or more categories of market participants in a manner 
+that would impose an undue burden on competition. Rather, the proposal 
+seeks to benefit all market participants by encouraging the efficient 
+utilization of the Exchange's network while taking into account the 
+important liquidity provided by its Members. As discussed above 
+potential impact on exchange systems, bandwidth and capacity becomes 
+greater with increased ADO and ADQ rates. The Exchange also anticipates 
+that the vast majority of Members on the Exchange will not be subject 
+to any fees under the proposed tiers. Accordingly, the Exchange 
+believes that the proposed ADO and ADQ fees do not favor certain 
+categories of market participants in a manner that would impose a 
+burden on competition.
+    Next, the Exchange believes the proposed rule change does not 
+impose any burden on intermarket competition that is not necessary or 
+appropriate in furtherance of the purposes of the Act. As previously 
+discussed, the Exchange operates in a highly competitive market, 
+including competition for exchange memberships. Market Participants 
+have numerous alternative venues that they may participate on, 
+including 17 other options exchanges (including 3 other non-Cboe 
+options exchanges), as well as off-exchange venues, where competitive 
+products are available for trading. Indeed, participants can readily 
+choose to submit their order flow to other exchange and off-exchange 
+venues if they deem fee levels at those other venues to be more 
+favorable. Moreover, the Commission has repeatedly expressed its 
+preference for competition over regulatory intervention in determining 
+prices, products, and services in the securities markets. Specifically, 
+in Regulation NMS, the Commission highlighted the importance of market 
+forces in determining prices and SRO revenues and, also, recognized 
+that current regulation of the market system ``has been remarkably 
+successful in promoting market competition in its broader forms that 
+are most important to investors and listed companies.'' \33\ The fact 
+that this market is competitive has also long been recognized by the 
+courts. In NetCoalition v. Securities and Exchange Commission, the D.C. 
+Circuit stated as follows: ``[n]o one disputes that competition for 
+order flow is `fierce.' . . . As the SEC explained, `[i]n the U.S. 
+national market system, buyers and sellers of securities, and the 
+broker-dealers that act as their order-routing agents, have a wide 
+range of choices of where to route orders for execution'; [and] `no 
+exchange can afford to take its market share percentages for granted' 
+because `no exchange possesses a monopoly, regulatory or otherwise, in 
+the execution of order flow from broker dealers'. . . .'' \34\ 
+Accordingly, the Exchange does not believe its proposed change imposes 
+any burden on competition that is not necessary or appropriate in 
+furtherance of the purposes of the Act.
+---------------------------------------------------------------------------
+
+    \33\ See Securities Exchange Act Release No. 51808 (June 9, 
+2005), 70 FR 37496, 37499 (June 29, 2005).
+    \34\ NetCoalition v. SEC, 615 F.3d 525, 539 (D.C. Cir. 2010) 
+(quoting Securities Exchange Act Release No. 59039 (December 2, 
+2008), 73 FR 74770, 74782-83 (December 9, 2008) (SR-NYSEArca-2006-
+21)).
+---------------------------------------------------------------------------
+
+C. Self-Regulatory Organization's Statement on Comments on the Proposed 
+Rule Change Received From Members, Participants, or Others
+
+    The Exchange neither solicited nor received comments on the 
+proposed rule change.
+
+[[Page 80620]]
+
+III. Date of Effectiveness of the Proposed Rule Change and Timing for 
+Commission Action
+
+    The foregoing rule change has become effective pursuant to Section 
+19(b)(3)(A) of the Act \35\ and paragraph (f) of Rule 19b-4 \36\ 
+thereunder. At any time within 60 days of the filing of the proposed 
+rule change, the Commission summarily may temporarily suspend such rule 
+change if it appears to the Commission that such action is necessary or 
+appropriate in the public interest, for the protection of investors, or 
+otherwise in furtherance of the purposes of the Act. If the Commission 
+takes such action, the Commission will institute proceedings to 
+determine whether the proposed rule change should be approved or 
+disapproved.
+---------------------------------------------------------------------------
+
+    \35\ 15 U.S.C. 78s(b)(3)(A).
+    \36\ 17 CFR 240.19b-4(f).
+---------------------------------------------------------------------------
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's internet comment form (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>); or
+    <bullet> Send an email to <a href="/cdn-cgi/l/email-protection#90e2e5fcf5bdf3fffdfdf5fee4e3d0e3f5f3bef7ffe6"><span class="__cf_email__" data-cfemail="6e1c1b020b430d0103030b001a1d2e1d0b0d40090118">[email&#160;protected]</span></a>. Please include 
+file number SR-CboeBZX-2024-088 on the subject line.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Secretary, Securities 
+and Exchange Commission, 100 F Street NE, Washington, DC 20549-1090.
+
+All submissions should refer to file number SR-CboeBZX-2024-088. This 
+file number should be included on the subject line if email is used. To 
+help the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's internet website (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>). Copies of the submission, all subsequent amendments, all 
+written statements with respect to the proposed rule change that are 
+filed with the Commission, and all written communications relating to 
+the proposed rule change between the Commission and any person, other 
+than those that may be withheld from the public in accordance with the 
+provisions of 5 U.S.C. 552, will be available for website viewing and 
+printing in the Commission's Public Reference Room, 100 F Street NE, 
+Washington, DC 20549, on official business days between the hours of 10 
+a.m. and 3 p.m. Copies of the filing also will be available for 
+inspection and copying at the principal office of the Exchange. Do not 
+include personal identifiable information in submissions; you should 
+submit only information that you wish to make available publicly. We 
+may redact in part or withhold entirely from publication submitted 
+material that is obscene or subject to copyright protection. All 
+submissions should refer to file number SR-CboeBZX-2024-088 and should 
+be submitted on or before October 24, 2024.
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\37\
+---------------------------------------------------------------------------
+
+    \37\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+Vanessa A. Countryman,
+Secretary.
+[FR Doc. 2024-22736 Filed 10-2-24; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

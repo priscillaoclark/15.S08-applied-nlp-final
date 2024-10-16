@@ -1,0 +1,307 @@
+<html>
+<head>
+<title>Federal Register, Volume 89 Issue 191 (Wednesday, October 2, 2024)</title>
+</head>
+<body><pre>
+[Federal Register Volume 89, Number 191 (Wednesday, October 2, 2024)]
+[Notices]
+[Pages 80285-80287]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2024-22563]
+
+
+=======================================================================
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-34-101196; File No. SR-ICC-2024-008]
+
+
+Self-Regulatory Organizations; ICE Clear Credit LLC; Order 
+Approving Proposed Rule Change Relating to the ICC Back-Testing 
+Framework
+
+September 26, 2024.
+
+I. Introduction
+
+    On July 30, 2024, ICE Clear Credit LLC (``ICC'') filed with the 
+Securities and Exchange Commission (``Commission''), pursuant to 
+Section 19(b)(2) of the Securities Exchange Act of 1934 (the ``Act'') 
+\1\ and Rule 19b-4 thereunder,\2\ a proposed rule change to amend its 
+Back-Testing Framework (``BTF'').\3\ The proposed rule change was 
+published for comment in the Federal Register on August 23, 2024.\4\ 
+The Commission did not receive comments regarding the proposed rule 
+change. For the reasons discussed below, the Commission is approving 
+the proposed rule change.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 17 CFR 240.19b-4.
+    \3\ ICC's Back-Testing Framework summarizes its formal 
+statistical approach to determining whether its Value-at-Risk (VaR) 
+model can reliably forecast risk.
+    \4\ Securities Exchange Act Release No. 100679 (Aug. 8, 2024), 
+89 FR 66154 (Aug. 14, 2024) (File No. SR-ICC-2024-008) (``Notice of 
+Filing'').
+---------------------------------------------------------------------------
+
+II. Description of the Proposed Rule Change
+
+A. Background
+
+    ICC is registered with the Commission as a clearing agency for the 
+purpose of clearing Credit Default Swap (``CDS'') contracts.\5\ In 
+addition to clearing CDS contracts, ICC also clears options to purchase 
+index CDS contracts, which are also known as ``Index Swaptions.''
+---------------------------------------------------------------------------
+
+    \5\ Capitalized terms not otherwise defined herein have the 
+meanings assigned to them in ICC's BTF or Clearing Rules, as 
+applicable.
+---------------------------------------------------------------------------
+
+    As noted above, the proposed rule change would amend ICC's BTF. The 
+BTF describes how ICC conducts back-testing and how ICC remediates poor 
+back-testing results. The proposed rule change would amend ICC's BTF to 
+(1) better describe how ICC treats its back-testing Index Swaption 
+positions that expire in-the-money and within the margin period of risk 
+(``MPOR''),\6\ and (2) make other updates and clarifications.
+---------------------------------------------------------------------------
+
+    \6\ ``Margin-period-of-risk or `MPOR' is a maturity factor that 
+is applied to reflect the length of exposure period over which the 
+defaulted portfolio is exposed to changes in value.'' Securities 
+Exchange Act Release No. 100008 (Apr. 22, 2024), 89 FR 32496 (Apr. 
+26, 2024) (File No. SR-ICC-2024-003) (``Notice of Filing'').
+---------------------------------------------------------------------------
+
+B. Index Swaption Positions
+
+    ICC's proposed rule change would revise Subsection 2.4 (``Detailed 
+Daily-Portfolio Back-Testing Results'') of the BTF to (1) add a 
+description of ICC's treatment of expiring in-the-money and within-the-
+MPOR Index Swaption positions, and (2) add an illustrative example in 
+the form of a new Table 5.
+1. Subsection 2.4: Description of Expiring In-the-Money Index Swaption 
+Positions
+    The proposed rule change would revise Subsection 2.4 to explain how 
+ICC treats its back-testing Index Swaption positions that expire in-
+the-money and within the MPOR. ICC proposes that when a particular 
+portfolio contains Index Swaption positions that expire within the 
+MPOR, ICC would replace the Mark-to-Market (``MTM'') values of the 
+expired option positions with the corresponding Intrinsic Values 
+(``IV''). In doing so, ICC would use the end-of-day (``EOD'') prices as 
+of the given day that ICC is back-testing.
+    In carrying out this process, ICC would use the following 
+assumptions, as noted in the revised Subsection 2.4: \7\
+---------------------------------------------------------------------------
+
+    \7\ Currently, the BTF assigns a standardized P/L value of $0.00 
+to such positions.
+
+    i. The IV is positive for a bought option position and negative 
+for a sold option position that is in-the-money.
+    ii. The option position with positive IV results in an option 
+exercise on the expiration date and reflects the positive value to 
+the option holder buying/selling the underling index position at the 
+fixed strike price and selling/buying the underlying index position 
+at the EOD-price for a profit.
+    iii. The sold option position, with negative IV, results in the 
+assignment of an underlying index position to the seller of the 
+option on the expiration date.
+    iv. The assigned underlying index position could be bought or 
+sold protection depending on the type of sold option instrument.
+    v. The unrealized P/L for the exercised/assigned option 
+positions are computed against the underlying MTM value for all days 
+after the CDS index option's expiration date.
+2. Addition of Table 5 to Subsection 2.4
+    The proposed rule change also would add to Subsection 2.4 a new 
+Table 5, entitled ``Minimum 5-Day P/L Detail for Expiring Options 
+Positions.'' Table 5 would provide an illustrative example of the back-
+testing computation described in the BTF and the unrealized profit/loss 
+(``P/L'') for an in-the-money Index Swaption position that expires 
+within the MPOR.
+
+[[Page 80286]]
+
+C. Other Additions and Revisions to Table 3, Table 4, and Section 6
+
+    In addition to the changes related to Index Swaption positions, the 
+proposed rule change also would make updates and clarifications to 
+other sections of the BTF. The proposed rule change would change 
+references from ``P&L'' in Table 3 and Table 4 to ``P/L'' to 
+consistently refer to ``profit or loss'' throughout the BTF. Moreover, 
+the proposed rule change would update Section 6, ``Revision History,'' 
+to reflect the revisions proposed herein. Finally, the proposed rule 
+change would add a new footnote 1 in Subsection 1.1. This footnote 
+would explain that the term ``Net Asset Value'' is also referred to and 
+is equivalent to ``Mark-to-Market,'' as used in the BTF.
+
+III. Discussion and Commission Findings
+
+    Section 19(b)(2)(C) of the Act directs the Commission to approve a 
+proposed rule change of a self-regulatory organization if it finds that 
+such proposed rule change is consistent with the requirements of the 
+Act and the rules and regulations thereunder applicable to such 
+organization.\8\ Under the Commission's Rules of Practice, the ``burden 
+to demonstrate that a proposed rule change is consistent with the 
+Exchange Act and the rules and regulations issued thereunder . . . is 
+on the self-regulatory organization [(``SRO'')] that proposed the rule 
+change.'' \9\
+---------------------------------------------------------------------------
+
+    \8\ 15 U.S.C. 78s(b)(2)(C).
+    \9\ Rule 700(b)(3), Commission Rules of Practice, 17 CFR 
+201.700(b)(3).
+---------------------------------------------------------------------------
+
+    The description of a proposed rule change, its purpose and 
+operation, its effect, and a legal analysis of its consistency with 
+applicable requirements, must all be sufficiently detailed and specific 
+to support an affirmative Commission finding,\10\ and any failure of an 
+SRO to provide this information may result in the Commission not having 
+a sufficient basis to make an affirmative finding that a proposed rule 
+change is consistent with the Exchange Act and the applicable rules and 
+regulations.\11\ Moreover, ``unquestioning reliance'' on an SRO's 
+representations in a proposed rule change is not sufficient to justify 
+Commission approval of a proposed rule change.\12\
+---------------------------------------------------------------------------
+
+    \10\ Id.
+    \11\ Id.
+    \12\ Susquehanna Int'l Group, LLP v. Securities and Exchange 
+Commission, 866 F.3d 442, 447 (D.C. Cir. 2017) (``Susquehanna'').
+---------------------------------------------------------------------------
+
+    After carefully considering the proposed rule change, the 
+Commission finds that the proposed rule change is consistent with the 
+requirements of the Exchange Act and the rules and regulations 
+thereunder applicable to ICC. For the reasons given below, the 
+Commission finds that the proposed rule change is consistent with 
+Section 17A(b)(3)(F) of the Act \13\ and Rule 17Ad-22(e)(6)(vi)(A).\14\
+---------------------------------------------------------------------------
+
+    \13\ 15 U.S.C. 78q-1(b)(3)(F).
+    \14\ 17 CFR 240.17Ad-22(e)(6)(vi)(A).
+---------------------------------------------------------------------------
+
+A. Consistency With Section 17A(b)(3)(F) of the Act
+
+    Section 17A(b)(3)(F) of the Act requires, among other things, that 
+the rules of ICC be designed, to promote the prompt and accurate 
+clearance and settlement of securities transactions.\15\
+---------------------------------------------------------------------------
+
+    \15\ 15 U.S.C. 78q-1(b)(3)(F).
+---------------------------------------------------------------------------
+
+    As noted above, the proposed rule change primarily would add to the 
+BTF description of how ICC back-tests Index Swaptions positions that 
+expire in-the-money within the MPOR. The proposed rule change also 
+would ensure the consistent use of the term ``P/L'' and explain the 
+equivalence of the terms ``Net Asset Value'' and ``Mark-to-Market.''
+    The enhanced description of ICC's approach to back-testing Index 
+Swaptions positions that expire in-the-money within the MPOR would 
+strengthen ICC's back-testing by making the results a more accurate 
+representation of potential P/L for such positions. Under the BTF as 
+revised, ICC would calculate P/L for such positions, using the 
+assumptions and process described above, rather than just assuming zero 
+value for all as per the current practice.
+    Consistent use of the term ``P/L'' and establishing the equivalence 
+of the terms ``Net Asset Value'' and ``Mark-to-Market'' would also 
+strengthen ICC's back-testing. The changes would help ensure the 
+consistent and clear operation of the BTF by eliminating any potential 
+confusion among the use of these terms. This should, in turn, help 
+support the accuracy and reliability of ICC's back-testing.
+    Thus, the proposed rule change would help ensure that ICC continues 
+to reliably forecast risk and that its back-testing accurately verifies 
+that the number of actual, observed losses is consistent with the 
+number of projected losses. Because ICC uses back-testing to forecast 
+and manage the risk associated with clearing Index Swaption 
+transactions, these improvements to the BTF should help ICC avoid 
+losses that could result from the mismanagement of such risk. Because 
+such losses could disrupt ICC's ability to operate and thus clear and 
+settle transactions, the Commission finds the proposed rule change 
+would promote the prompt and accurate clearance and settlement of 
+securities and derivative transactions.
+    Therefore, the Commission finds that the proposed rule change is 
+consistent with Section 17A(b)(3)(F) of the Act.\16\
+---------------------------------------------------------------------------
+
+    \16\ 15 U.S.C. 78q-1(b)(3)(F).
+---------------------------------------------------------------------------
+
+B. Consistency With Rule 17Ad-22(e)(6)(vi)(A) of the Act
+
+    Rule 17Ad-22(e)(6)(vi)(A) requires ICC to establish, implement, 
+maintain, and enforce written policies and procedures reasonably 
+designed to cover its credit exposures to its participants by 
+establishing a risk-based margin system that, at a minimum is monitored 
+by management on an ongoing basis and is regularly reviewed, tested, 
+and verified by conducting backtests of its margin model at least once 
+each day using standard predetermined parameters and assumptions.\17\
+---------------------------------------------------------------------------
+
+    \17\ 17 CFR 240.17Ad-22(e)(6)(vi)(A).
+---------------------------------------------------------------------------
+
+    The proposed changes described above will enhance ICC's risk-based 
+margin system by enhancing ICC's ability to calculate P/L more 
+precisely for back-testing by factoring in accurate P/L values of ITM 
+Index Swaption positions. This enhancement, along with the other 
+changes detailed herein, will ensure that the predetermined parameters 
+and assumptions (here, the BTF) that ICC management relies upon to 
+regularly review, test, and verify its margin requirements are more 
+accurate than the previous iteration of ICC's risk-based margin system.
+    Therefore, the Commission finds that the proposed rule change is 
+consistent with Rule 17Ad-22(e)(6)(vi)(A).\18\
+---------------------------------------------------------------------------
+
+    \18\ 17 CFR 240.17Ad-22(e)(6)(vi)(A).
+---------------------------------------------------------------------------
+
+IV. Conclusion
+
+    Based on the foregoing, the Commission finds that the proposed rule 
+change is consistent with the requirements of the Act and with the 
+requirements of Section 17A(b)(3)(F) of the Act \19\ and Rule 17Ad-
+22(e)(6)(vi)(A).\20\
+---------------------------------------------------------------------------
+
+    \19\ 15 U.S.C. 78q-1(b)(3)(F).
+    \20\ 17 CFR 240.17Ad-22(e)(6)(vi)(A).
+---------------------------------------------------------------------------
+
+    It is therefore ordered pursuant to Section 19(b)(2) of the Act 
+\21\ that the proposed rule change (SR-ICC-2024-008), be, and hereby 
+is, approved.\22\
+---------------------------------------------------------------------------
+
+    \21\ 15 U.S.C. 78s(b)(2).
+    \22\ In approving the proposed rule change, the Commission 
+considered the proposal's impact on efficiency, competition, and 
+capital formation. 15 U.S.C. 78c(f).
+
+
+[[Page 80287]]
+
+
+---------------------------------------------------------------------------
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\23\
+---------------------------------------------------------------------------
+
+    \23\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+Vanessa A. Countryman,
+Secretary.
+[FR Doc. 2024-22563 Filed 10-1-24; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre></body>
+</html>

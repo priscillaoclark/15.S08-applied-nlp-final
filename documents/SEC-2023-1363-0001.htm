@@ -1,0 +1,553 @@
+<html>
+<head>
+<title>Federal Register, Volume 88 Issue 226 (Monday, November 27, 2023)</title>
+</head>
+<body><pre>
+[Federal Register Volume 88, Number 226 (Monday, November 27, 2023)]
+[Notices]
+[Pages 82926-82929]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2023-26006]
+
+
+
+[[Page 82926]]
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-98988; File No. SR-IEX-2023-13]
+
+
+Self-Regulatory Organizations; Investors Exchange LLC; Notice of 
+Filing and Immediate Effectiveness of Proposed Rule Change To Introduce 
+a New Post Only Order Parameter Instruction
+
+November 20, 2023.
+    Pursuant to Section 19(b)(1) \1\ of the Securities Exchange Act of 
+1934 (the ``Act''),\2\ and Rule 19b-4 thereunder,\3\ notice is hereby 
+given that on November 15, 2023, the Investors Exchange LLC (``IEX'' or 
+the ``Exchange'') filed with the Securities and Exchange Commission 
+(the ``Commission'') the proposed rule change as described in Items I, 
+II and III below, which Items have been prepared by the Exchange. The 
+Commission is publishing this notice to solicit comments on the 
+proposed rule change from interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 15 U.S.C. 78a.
+    \3\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+I. Self-Regulatory Organization's Statement of the Terms of the 
+Substance of the Proposed Rule Change
+
+    Pursuant to the provisions of Section 19(b)(1) under the Act,\4\ 
+and Rule 19b-4 thereunder,\5\ the Exchange is filing with the 
+Commission a proposed rule change to introduce a new Post Only order 
+parameter instruction. The Exchange has designated this proposed rule 
+change as ``non-controversial'' under Section 19(b)(3)(A) of the Act 
+\6\ and provided the Commission with the notice required by Rule 19b-
+4(f)(6) thereunder.\7\
+---------------------------------------------------------------------------
+
+    \4\ 15 U.S.C. 78s(b)(1).
+    \5\ 17 CFR 240.19b-4.
+    \6\ 15 U.S.C. 78s(b)(3)(A).
+    \7\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+    The text of the proposed rule change is available at the Exchange's 
+website at <a href="http://www.iextrading.com">www.iextrading.com</a>, at the principal office of the Exchange, 
+and at the Commission's Public Reference Room.
+
+II. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+    In its filing with the Commission, the self-regulatory organization 
+included statements concerning the purpose of and basis for the 
+proposed rule change and discussed any comments it received on the 
+proposed rule change. The text of these statements may be examined at 
+the places specified in Item IV below. The self-regulatory organization 
+has prepared summaries, set forth in Sections A, B, and C below, of the 
+most significant aspects of such statements.
+
+A. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+1. Purpose
+    The purpose of this proposed rule filing is to amend IEX Rule 
+11.190 to introduce a new Post Only order parameter instruction.\8\ As 
+proposed, a Post Only parameter instruction would be available for a 
+displayable, non-routable order priced at or above $1.00 per share (a 
+``Post Only order''). A Post Only order would not remove liquidity from 
+the IEX Order Book \9\ except in specific circumstances as described 
+below. The Post Only order is designed to incentivize the posting of 
+displayed liquidity on the Exchange and to offer IEX Members \10\ 
+greater determinism and flexibility in posting liquidity on the 
+Exchange. IEX also proposes to introduce a new Trade Now \11\ order 
+instruction, which would allow certain resting non-displayed orders 
+(described below) to convert into an executable order that removes 
+liquidity against an incoming Post Only order that would otherwise lock 
+the resting order (a transaction in which the Post Only order would be 
+the maker of liquidity and the Trade Now order would be the taker of 
+liquidity). The Trade Now instruction, when paired with Post Only 
+orders, is designed to encourage more executions of marketable orders 
+at IEX. In addition, IEX proposes to make conforming edits to several 
+order type definitions contained in IEX Rule 11.190 to specify which 
+order types may be submitted as a Post Only order, and which order 
+types will include the Trade Now instruction, either by default or 
+optionally.
+---------------------------------------------------------------------------
+
+    \8\ See Proposed IEX Rule 11.190(b)(20).
+    \9\ See IEX Rule 1.160(p).
+    \10\ See IEX Rule 1.160(s).
+    \11\ See Proposed IEX Rule 11.190(b)(21).
+---------------------------------------------------------------------------
+
+    IEX notes that every other national securities exchange that trades 
+equities offers nearly identical post only order types \12\ and most 
+also offer trade now functionality \13\ to their members. As proposed, 
+IEX's Post Only order type is structured in a substantially similar 
+manner, with minor differences (described below) limited to the orders 
+for which the functionality is available rather than the manner in 
+which is applied.\14\
+---------------------------------------------------------------------------
+
+    \12\ See, e.g., Cboe BZX Exchange, Inc. (``BZX'') Rule 
+11.9(c)(6); MEMX Rule 11.6(l)(2); NASDAQ Stock Market LLC 
+(``Nasdaq'') Rule 4702(b)(4); MIAX Pearl Rule 2614(c); New York 
+Stock Exchange (``NYSE'') Rule 7.31(e)(2).
+    \13\ See, e.g., BZX Rule 11.9(c)(12); NYSE Rule 7.31(d)(2)(B); 
+Nasdaq Rule 4703(m).
+    \14\ See infra notes 20, 22.
+---------------------------------------------------------------------------
+
+Post Only Orders
+    As described in Proposed IEX Rule 11.190(b)(20), a Post Only order 
+would be a displayed, non-routable limit \15\ or Discretionary Limit 
+\16\ order that would not remove liquidity from the IEX Order Book 
+other than in the following circumstances:
+---------------------------------------------------------------------------
+
+    \15\ See IEX Rule 11.190(a)(1).
+    \16\ See IEX Rule 11.190(b)(7).
+---------------------------------------------------------------------------
+
+    First, a Post Only order will remove contra-side liquidity from the 
+IEX Order Book if the value of such execution when removing liquidity 
+equals or exceeds the value of such execution if the order instead 
+posted to the IEX Order Book and subsequently provided liquidity, 
+including the applicable fees charged or rebates provided (the ``Sum of 
+Fees''). To determine at the time of a potential execution whether the 
+Sum of Fees when removing liquidity equals or exceeds the value of such 
+execution if the order instead posted to the IEX Order Book and 
+subsequently provided liquidity, the Exchange will compare the price 
+improvement (i.e., available execution price to trade on entry versus 
+the limit price of the order) to the difference between the sum of the 
+fees charged for such execution and the rebate that would be provided 
+if the order posted to the IEX Order Book and subsequently provided 
+liquidity.
+    Post Only orders by default would be subject to display-price 
+sliding as set forth in IEX Rule 11.190(h)(1), but the Member may 
+provide an optional instruction to cancel any untraded quantity of a 
+Post Only order that would otherwise be subject to display-price 
+sliding. Thus, during Regular Market Hours, if the limit price of the 
+Post Only order locked or crossed an order on the IEX Order Book, 
+depending upon the Member's instructions, the Post Only order would 
+either slide to a price one Minimum Price Variant (``MPV'') \17\ less 
+aggressive than the current Protected Quotation,\18\ or be canceled 
+back to the Member. This functionality is identical to that of several 
+other equities exchanges.\19\
+---------------------------------------------------------------------------
+
+    \17\ See IEX Rule 11.210.
+    \18\ See IEX Rule 1.160(bb).
+    \19\ See, e.g., BZX Rule 11.9(c)(6); MIAX Pearl Rule 
+2614(c)(2)(A)(ii).
+---------------------------------------------------------------------------
+
+    IEX is also proposing that Post Only orders must be at least a 
+round or mixed lot sized order on entry and must be displayed. Because 
+this proposal is designed to incentivize displayed liquidity in general 
+and price discovery in particular, IEX believes that it is
+
+[[Page 82927]]
+
+appropriate to limit Post Only orders to those that could become 
+Protected Quotations. IEX notes that although other exchanges allow 
+Post Only orders to be non-displayed or to be displayed odd lot sized 
+orders, until 2022, NYSE also did not allow non-displayed or displayed 
+odd lot sized orders to use its post only functionality.\20\ 
+Additionally, IEX is proposing to not allow reserve \21\ orders be Post 
+Only orders. IEX notes that although other exchanges allow Post Only 
+orders to be reserve orders, until recently, NYSE also did not allow 
+reserve orders to use its post only functionality.\22\ IEX believes its 
+proposal to not allow reserve orders to be Post Only orders is 
+consistent with its proposal to not allow non-displayed orders to be 
+Post Only orders, because reserve orders have both a displayed and non-
+displayed portion. IEX also notes that because it charges the same 
+amount for adding or removing non-displayed liquidity, the economic 
+benefits of a Post Only order would not apply to a non-displayed order 
+submitted to IEX.
+---------------------------------------------------------------------------
+
+    \20\ See Securities Exchange Act Release No. 95209 (July 7, 
+2022), 87 FR 41832, 41835 (July 13, 2022) (SR-NYSE-2022-25).
+    \21\ See IEX Rule 11.190(b)(2).
+    \22\ See Securities Exchange Act Release No. 98891 (November 8, 
+2023), 88 FR 78407, 78408 (November 15, 2023) (SR-NYSE-2023-40).
+---------------------------------------------------------------------------
+
+    Further, Proposed IEX Rule 11.190(b)(20) specifies that Post Only 
+orders must have a time-in-force (``TIF'') of DAY, GTX, SYS, or GTT 
+because they will only trade during Regular Market Hours, and that they 
+may not be an Intermarket Sweep Order, both because they are non-
+routable orders and because ISOs are meant to take liquidity resting on 
+the Exchange and away markets while Post Only orders are designed to 
+add displayed liquidity to IEX's Order Book.
+    Finally, the Post Only order parameter instruction would not be 
+operative for orders to buy or sell a security priced below $1.00 per 
+share. Thus, such orders that include the Post Only order parameter 
+instruction would function in the same manner as regular displayed 
+limit orders or D-Limit orders; they would remove contra-side liquidity 
+from the IEX Order Book on entry without consideration of whether the 
+Sum of Fees equals or exceeds the price improvement per share, and 
+otherwise post to the IEX Order Book. IEX believes that this approach 
+is appropriate in that IEX does not offer rebates for orders that add 
+displayed liquidity priced below $1.00 so the economics for a Post Only 
+order are less meaningful. IEX notes that this approach is similar to 
+that of other exchanges with respect to securities priced below $1.00 
+per share.\23\
+---------------------------------------------------------------------------
+
+    \23\ See, e.g., BZX Rule 11.9(c)(6); MIAX Pearl Rule 
+2614(c)(2)(i)(A).
+---------------------------------------------------------------------------
+
+Trade Now Instruction
+    IEX also proposes to add IEX Rule 11.190(b)(21), to introduce the 
+``Trade Now'' order instruction. As proposed, Trade Now would be an 
+instruction on an order resting on the IEX Order Book that, when locked 
+by an incoming Post Only order that does not remove liquidity pursuant 
+to Proposed IEX Rule 11.190(b)(20), causes such order to be converted 
+to an executable order that removes liquidity against such incoming 
+order. As proposed, non-displayed limit orders (including non-displayed 
+portions of reserve \24\ orders and non-displayed Discretionary Limit 
+orders) would always include a Trade Now order instruction, while for 
+Midpoint Peg,\25\ Fixed Midpoint Peg,\26\ Offset Peg,\27\ and Market 
+Peg \28\ orders the Trade Now instruction would be optional. IEX makes 
+this proposal because the above four pegged order types are all able to 
+book at prices between the NBB and the NBO, which means they all could 
+match with (or be locked by) an incoming Post Only order. As proposed, 
+a resting pegged order with the optional Trade Now instruction would be 
+the taker of liquidity and the Post Only order would be the maker of 
+liquidity (unless the Sum of Fees calculation caused the Post Only 
+order to take liquidity on entry). IEX also has pegged order types that 
+book one MPV less aggressive than the Primary Quotation, and it is not 
+proposing to allow these orders to have a Trade Now instruction because 
+they will not be able to match with (or be locked by) an incoming Post 
+Only order.\29\ Similarly, IEX is not proposing to allow resting Retail 
+Liquidity Provider orders to have a Trade Now feature, because they are 
+not eligible to trade with a Post Only order.\30\
+---------------------------------------------------------------------------
+
+    \24\ See IEX Rule 11.190(b)(2).
+    \25\ See IEX Rule 11.190(b)(9).
+    \26\ See IEX Rule 11.190(b)(19).
+    \27\ See IEX Rule 11.190(b)(13).
+    \28\ See IEX Rule 11.190(b)(18).
+    \29\ See IEX Rules 11.190(b)(8) (Primary Peg order), 
+11.190(b)(10) (Discretionary Peg order), and 11.190(b)(16) 
+(Corporate Discretionary Peg order).
+    \30\ See IEX Rule 11.190(b)(14).
+---------------------------------------------------------------------------
+
+    The Trade Now instruction would provide non-displayed orders 
+resting on the IEX Order Book with a greater ability to receive an 
+execution when that resting order is locked by an incoming Post Only 
+order, rather than creating the possibility of the incoming Post Only 
+order locking the resting non-displayed order. Thus, the proposed Trade 
+Now instruction assists in the avoidance of an internally locked IEX 
+Order Book (notwithstanding that such lock would not be displayed by 
+the Exchange) by facilitating the execution of orders that would 
+otherwise lock each other.
+    If an incoming Post Only order matches with a resting non-displayed 
+order on entry with the Trade Now instruction, the Post Only order 
+would be treated as a displayed order and would receive a rebate of 
+$0.0004 per share. The order with the Trade Now instruction, having 
+become an executable taking order, would be charged $0.0010 per share, 
+which is the same fee IEX charges for both non-displayed liquidity-
+adding and taking orders. Thus, the order with the Trade Now 
+instruction is able to get an execution with no change to the fees it 
+would be charged, while the Post Only order would also get an execution 
+with the rebate the Member expects to receive when submitting a 
+displayed order.
+Conforming Changes
+    As described above, only certain order types are eligible to be 
+Post Only orders. Therefore, IEX proposes to amend IEX Rules 
+11.190(b)(1) (``Displayed Order'') and 11.190(b)(7) (``Discretionary 
+Limit Order''), to specify that a displayed, non-routable, round or 
+mixed lot limit or Discretionary Limit order may include a Post Only 
+instruction, as defined in Proposed IEX Rule 11.190(b)(20).
+    Similarly, as described above, only certain order types are 
+eligible to have a Take Now instruction. Therefore, IEX proposes to 
+amend IEX Rules 11.190(a)(1), 11.190(b)(2), and 11.190(b)(7), to 
+specify that non-displayed limit orders, non-displayed portions of 
+reserve orders, and non-displayed Discretionary Limit orders will 
+include a Trade Now instruction as defined in Proposed IEX Rule 
+11.190(b)(21). Because IEX proposes to allow Members to include a Trade 
+Now instruction on pegged orders that could interact with a Post Only 
+order, IEX is proposing to amend IEX Rules 11.190(b)(9), 11.190(b)(19), 
+11.190(b)(13), and 11.190(b)(18) to specify that a Member may include a 
+Trade Now instruction with Midpoint Peg, Fixed Midpoint Peg, Offset 
+Peg, and Market Peg orders, respectively.
+2. Statutory Basis
+    The Exchange believes that the proposed rule change is consistent 
+with
+
+[[Page 82928]]
+
+Section 6(b) of the Act,\31\ in general, and furthers the objectives of 
+Section 6(b)(5),\32\ in particular, in that it is designed to prevent 
+fraudulent and manipulative acts and practices, to promote just and 
+equitable principles of trade, to foster cooperation and coordination 
+with persons engaged in facilitating transactions in securities, and to 
+remove impediments to and perfect the mechanism of a free and open 
+market and a national market system, and, in general, to protect 
+investors and the public interest. Specifically, the Exchange believes 
+that the proposed rule change is consistent with the protection of 
+investors and the public interest because it is designed to provide 
+more flexibility and opportunities for Members to add displayed 
+liquidity to the Exchange. As noted in the Purpose section, Post Only 
+orders, particularly when coupled with Trade Now functionality for some 
+non-displayed orders, would provide fee determinism for Members seeking 
+to add liquidity to the Exchange. This in turn is designed to encourage 
+the posting of more displayed liquidity on the Exchange, and to the 
+extent that such incentive is successful in increasing the overall 
+liquidity pool available at IEX, all market participants, including 
+takers of liquidity, will benefit. Thus, IEX believes this proposal 
+supports the purposes of the Act to remove impediments to and perfect 
+the mechanism of a free and open market and a national market system, 
+and in general, to protect investors and the public interest.
+---------------------------------------------------------------------------
+
+    \31\ 15 U.S.C. 78f(b).
+    \32\ 15 U.S.C. 78f(b)(5).
+---------------------------------------------------------------------------
+
+    IEX also believes it is consistent with the Act to adjust the price 
+of Post Only orders as needed to post to the Order Book in compliance 
+with Rule 610(d) of Regulation NMS by avoiding the display of 
+quotations that lock or cross any Protected Quotation, or to execute 
+against locking or crossing quotations in circumstances where 
+economically beneficial to the Member entering the Post Only order. 
+Post Only orders are thus designed to allow Members to achieve fee 
+determinism, while also providing displayed liquidity to the market and 
+thereby contribute to public price discovery in a manner that is 
+consistent with the Act.
+    IEX also believes that the proposal to give Members the option of 
+having Post Only orders be subject to display price sliding or cancel 
+promotes price discovery and provision of greater liquidity by 
+facilitating the display of an order at its chosen limit price. Because 
+this flexibility will further encourage Members to submit Post Only 
+orders to IEX, which will in turn increase the displayed liquidity on 
+the Exchange, IEX believes that this proposal supports the purposes of 
+the Act to remove impediments to and perfect the mechanism of a free 
+and open market and a national market system, and in general, to 
+protect investors and the public interest.
+    Additionally, IEX believes that its proposed approach to inclusion 
+of the Trade Now instruction (as described in the Purpose section) is 
+consistent with the purposes of the Act because it is designed to avoid 
+internally locking the IEX Order Book by facilitating the execution of 
+orders that would otherwise post, or remain posted, to the IEX Order 
+Book at prices that would otherwise lock. Additionally, the Trade Now 
+instruction would result in more executions of otherwise marketable 
+orders, which benefits both parties to the transaction as well as the 
+market as a whole by providing relevant price discovery. Thus, IEX 
+believes this proposal supports the purposes of the Act to remove 
+impediments to and perfect the mechanism of a free and open market and 
+a national market system, and in general, to protect investors and the 
+public interest.
+    In addition, as noted in the Purpose section, every aspect of IEX's 
+proposal is already available on at least one other equities exchange, 
+with the exception that IEX will not allow a non-displayed, reserve, or 
+displayed odd lot order to be a Post Only order.\33\ As discussed in 
+the Purpose section, that functionality is identical to functionality 
+that was offered by the New York Stock Exchange until 2022. IEX notes 
+that these minor differences are limited to the orders for which the 
+functionality is available rather than the manner in which is applied. 
+Because these minor differences from other exchanges' functionality are 
+not based on competitive considerations but rather simply to provide 
+for reasonably predictable outcomes in a manner consistent with IEX's 
+system design, IEX believes that this proposal supports the purposes of 
+the Act to remove impediments to and perfect the mechanism of a free 
+and open market and a national market system, and in general, to 
+protect investors and the public interest.
+---------------------------------------------------------------------------
+
+    \33\ See supra notes 20, 22.
+---------------------------------------------------------------------------
+
+    And IEX believes that the proposed conforming changes further the 
+purposes of the Act because they provide greater clarity and 
+consistency to the IEX Rule Book thereby reducing the potential for 
+confusion by market participants.
+    Finally, IEX does not believe that the proposed changes raise any 
+new or novel material issues that have not already been considered by 
+the Commission in connection with existing order types offered by other 
+national securities exchanges, which supports the purposes of the Act 
+to remove impediments to and perfect the mechanism of a free and open 
+market and a national market system, and in general, to protect 
+investors and the public interest.
+
+B. Self-Regulatory Organization's Statement on Burden on Competition
+
+    The Exchange does not believe that the proposed rule change will 
+impose any burden on competition that is not necessary or appropriate 
+in furtherance of the purposes of the Act.
+    The Exchange does not believe that the proposed rule change will 
+impose any burden on intermarket competition that is not necessary or 
+appropriate in furtherance of the purposes of the Act. To the contrary, 
+the proposal is designed to enhance IEX's competitiveness with other 
+markets by further incentivizing the posting of displayed liquidity on 
+the Exchange. As noted above, the Exchange believes the proposed rule 
+changes would generally align order handling on IEX with trading 
+functionality on other equity exchanges and thus would promote 
+competition among exchanges by offering member organizations similar 
+functionality and order handling options available on other exchanges. 
+The Exchange also believes that, to the extent the proposed changes 
+would increase opportunities for order execution, the proposed change 
+would promote competition by making the Exchange a more attractive 
+venue for order flow and enhance market quality for all market 
+participants. Moreover, competing exchanges have and can continue to 
+adopt the same functionality contained in this proposal, subject to the 
+SEC rule change process, as discussed in the Purpose and section.
+    The Exchange also does not believe that the proposed rule change 
+will impose any burden on intramarket competition that is not necessary 
+or appropriate in furtherance of the purposes of the Act. All Members 
+would be eligible to submit Post Only orders and to include Trade Now 
+instructions on eligible pegged orders in the same manner. Moreover, 
+the proposal would provide potential benefits to all Members, as 
+discussed in the Statutory Basis section, to the extent that allowing 
+Post Only orders incentivizes the
+
+[[Page 82929]]
+
+provision of more displayed liquidity on IEX.
+
+C. Self-Regulatory Organization's Statement on Comments on the Proposed 
+Rule Change Received From Members, Participants, or Others
+
+    Written comments were neither solicited nor received.
+
+III. Date of Effectiveness of the Proposed Rule Change and Timing for 
+Commission Action
+
+    The Exchange has designated this rule filing as non-controversial 
+under Section 19(b)(3)(A) \34\ of the Act and Rule 19b-4(f)(6) \35\ 
+thereunder. Because the proposed rule change does not: (i) 
+significantly affect the protection of investors or the public 
+interest; (ii) impose any significant burden on competition; and (iii) 
+become operative for 30 days from the date on which it was filed, or 
+such shorter time as the Commission may designate, it has become 
+effective pursuant to Section 19(b)(3)(A) of the Act and Rule 19b-
+4(f)(6) thereunder. In addition, the Exchange provided the Commission 
+with written notice of its intent to file the proposed rule change, 
+along with a brief description and text of the proposed rule change, at 
+least five business days prior to the date of filing.\36\
+---------------------------------------------------------------------------
+
+    \34\ 15 U.S.C. 78s(b)(3)(A).
+    \35\ 17 CFR 240.19b-4(f)(6).
+    \36\ 17 CFR 240.19b-4(f)(6)(iii).
+---------------------------------------------------------------------------
+
+    The Exchange believes that the proposed rule change meets the 
+criteria of subparagraph (f)(6) of Rule 19b-4 \37\ because it would not 
+significantly affect the protection of investors or the public 
+interest. Rather, the proposed rule change neither significantly 
+affects the protection of investors or the public interest, nor does it 
+impose any burden on competition because it would merely combine the 
+attributes of functionality currently offered by many other equities 
+exchanges, as discussed in the Purpose section, and does not raise any 
+new or novel material issues that have not already been considered by 
+the Commission. Accordingly, IEX has designated this rule filing as 
+non-controversial under Section 19(b)(3)(A) of the Act \38\ and 
+paragraph (f)(6) of Rule 19b-4 thereunder.\39\
+---------------------------------------------------------------------------
+
+    \37\ 17 CFR 240.19b-4(f)(6).
+    \38\ 15 U.S.C. 78s(b)(3)(A).
+    \39\ 17 CFR 240.19b-4(f)(6).
+---------------------------------------------------------------------------
+
+    At any time within 60 days of the filing of the proposed rule 
+change, the Commission summarily may temporarily suspend such rule 
+change if it appears to the Commission that such action is necessary or 
+appropriate in the public interest, for the protection of investors, or 
+otherwise in furtherance of the purposes of the Act. If the Commission 
+takes such action, the Commission shall institute proceedings under 
+Section 19(b)(2)(B) \40\ of the Act to determine whether the proposed 
+rule change should be approved or disapproved.
+---------------------------------------------------------------------------
+
+    \40\ 15 U.S.C. 78s(b)(2)(B).
+---------------------------------------------------------------------------
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's internet comment form (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>); or
+    <bullet> Send an email to <a href="/cdn-cgi/l/email-protection#196b6c757c347a7674747c776d6a596a7c7a377e766f"><span class="__cf_email__" data-cfemail="552720393078363a3838303b2126152630367b323a23">[email&#160;protected]</span></a>. Please include 
+file number SR-IEX-2023-13 on the subject line.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Secretary, Securities 
+and Exchange Commission, 100 F Street NE, Washington, DC 20549-1090.
+
+All submissions should refer to file number SR-IEX-2023-13. This file 
+number should be included on the subject line if email is used. To help 
+the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's internet website (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>). Copies of the submission, all subsequent amendments, all 
+written statements with respect to the proposed rule change that are 
+filed with the Commission, and all written communications relating to 
+the proposed rule change between the Commission and any person, other 
+than those that may be withheld from the public in accordance with the 
+provisions of 5 U.S.C. 552, will be available for website viewing and 
+printing in the Commission's Public Reference Room, 100 F Street NE, 
+Washington, DC 20549, on official business days between the hours of 10 
+a.m. and 3 p.m. Copies of the filing also will be available for 
+inspection and copying at the principal office of the Exchange. Do not 
+include personal identifiable information in submissions; you should 
+submit only information that you wish to make available publicly. We 
+may redact in part or withhold entirely from publication submitted 
+material that is obscene or subject to copyright protection. All 
+submissions should refer to file number SR-IEX-2023-13 and should be 
+submitted on or before December 18, 2023.
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\41\
+---------------------------------------------------------------------------
+
+    \41\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+Sherry R. Haywood,
+Assistant Secretary.
+[FR Doc. 2023-26006 Filed 11-24-23; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

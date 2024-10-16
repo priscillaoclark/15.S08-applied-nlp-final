@@ -1,0 +1,1448 @@
+<html>
+<head>
+<title>Federal Register, Volume 89 Issue 135 (Monday, July 15, 2024)</title>
+</head>
+<body><pre>
+[Federal Register Volume 89, Number 135 (Monday, July 15, 2024)]
+[Notices]
+[Pages 57467-57479]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2024-15401]
+
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-100470; File No. SR-LCH SA-2023-007]
+
+
+Self-Regulatory Organizations; LCH SA; Order Approving Proposed 
+Rule Change Relating to Liquidity Risk Modelling Framework
+
+July 9, 2024.
+
+I. Introduction
+
+    On December 22, 2023, Banque Centrale de Compensation, which 
+conducts business under the name LCH SA (``LCH SA''), filed with the 
+Securities and Exchange Commission (``Commission''), pursuant to 
+Section 19(b)(1) of the Securities Exchange Act
+
+[[Page 57468]]
+
+of 1934 (``Act'') \1\ and Rule 19b-4 thereunder,\2\ a proposed rule 
+change (``Proposed Rule Change'') to amend its Liquidity Risk Modelling 
+Framework (the ``Framework''). The Proposed Rule Change was published 
+for comment in the Federal Register on January 11, 2024.\3\ On February 
+21, 2024, pursuant to Section 19(b)(2) of the Act,\4\ the Commission 
+designated a longer period within which to approve, disapprove, or 
+institute proceedings to determine whether to approve or disapprove the 
+Proposed Rule Change, from February 25, 2024 to April 10, 2024.\5\ On 
+April 8, 2024, the Commission instituted proceedings, pursuant to 
+Section 19(b)(2)(B) of the Act,\6\ to determine whether to approve or 
+disapprove the Proposed Rule Change.\7\ The Commission has not received 
+any comments on the Proposed Rule Change. For the reasons discussed 
+below, the Commission is approving the Proposed Rule Change.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 17 CFR 240.19b-4.
+    \3\ Exchange Act Release No. 99277 (Jan. 5, 2024), 89 FR 1952 
+(Jan. 11, 2024) (File No. SR-LCH SA-2023-007) (``Notice'').
+    \4\ 15 U.S.C. 78s(b)(2).
+    \5\ Self-Regulatory Organizations; LCH SA; Notice of Designation 
+of Longer Period for Commission Action on Proposed Rule Change 
+Relating to the Liquidity Risk Modelling Framework, Exchange Act 
+Release No. 99569 (Feb. 21, 2024), 89 FR 14538 (Feb. 27, 2024) (File 
+No. SR-LCH SA-2023-007).
+    \6\ 15 U.S.C. 78s(b)(2)(B).
+    \7\ Self-Regulatory Organizations; LCH SA; Order Instituting 
+Proceedings to Determine Whether to Approve or Disapprove a Proposed 
+Rule Change Relating to Liquidity Risk Modeling Framework, Exchange 
+Act Release No. 99922 (Apr. 8, 2024), 89 FR 25906 (Apr. 12, 2024) 
+(File No. SR-LCH SA-2023-007).
+---------------------------------------------------------------------------
+
+II. Description of the Proposed Rule Change
+
+(i) Background
+
+    LCH SA is a clearing agency that offers clearing of, among other 
+things, credit-default swaps (``CDS'').\8\ LCH SA is registered with 
+the Commission for clearing CDS that are security-based swaps and with 
+the Commodity Futures Trading Commission for clearing CDS that are 
+swaps. As part of its clearing business, LCH SA maintains cash and 
+other liquid financial resources to meet its financial obligations. The 
+Framework and other procedures describe how LCH SA maintains these 
+resources and manages its liquidity risk, meaning the risk that LCH SA 
+will not have enough liquid financial resources to meet its financial 
+obligations.\9\ The Framework specifically describes how LCH SA's 
+Collateral and Liquidity Risk Management department (``CaLRM'') assures 
+that LCH SA has enough cash available to meet any financial 
+obligations, both expected and unexpected, that may arise over the 
+liquidation period for each of LCH SA's clearing services.
+---------------------------------------------------------------------------
+
+    \8\ Capitalized terms used but not defined herein have the 
+meanings specified in the LCH SA Rule Book or Framework as 
+applicable.
+    \9\ LCH SA, a subsidiary of LCH Group and an indirect subsidiary 
+of the London Stock Exchange Group plc (``LSEG''), manages its 
+liquidity risk pursuant to, among other policies and procedures, the 
+Group Liquidity Risk Policy and the Group Liquidity Plan applicable 
+to each entity within LCH Group. In addition to its CDSClear 
+service, LCH SA provides clearing services in connection with cash 
+equities and derivatives listed for trading on Euronext 
+(EquityClear), commodity derivatives listed for trading on Euronext 
+(CommodityClear), and tri-party Repo transactions (RepoClear).
+---------------------------------------------------------------------------
+
+    The Framework describes LCH SA's liquidity in terms of sources and 
+needs. The Framework lists various sources of liquidity for LCH SA, 
+such as cash and non-cash collateral provided by Clearing Members to 
+meet their margin and default fund requirements. With respect to needs 
+for liquidity, the Framework places these into three broad categories: 
+(i) those arising from LCH SA's business-as-usual operations; (ii) 
+those arising from Clearing Members' defaults; and (iii) those arising 
+from the default of LCH SA's interoperating central counterparty 
+(``CCP'').
+    Section 1 of the Framework describes the scope, purpose, and use of 
+the Framework. Sections 2 and 3 describe certain limitations to, and 
+justifications for, how LCH SA models its liquidity sources and needs. 
+Section 4 details how LCH SA models its liquidity sources and needs. 
+Section 5 describes how LCH SA tests and monitors the performance of 
+these models. Finally, Section 6 contains certain additional 
+information relevant to the Framework, presented as appendices to the 
+Framework.
+    The purpose of the Proposed Rule Change is to make a variety of 
+updates to the Framework. These updates are described below according 
+to the section of the Framework where they appear. In general, these 
+changes will: (a) revise the manner in which settlement obligation 
+liquidity requirements are calculated; (b) revise the way LCH SA 
+determines the potential value of liquidity obtained from pledging 
+securities to the Banque de France (``BdF''); (c) extend the length of 
+time for which LCH SA must maintain liquidity resources sufficient to 
+meet its liquidity requirements; (d) include the liquidity needs 
+generated by the expiration of physically settled stock futures in 
+determining overall liquidity needs; and (e) require LCH SA, in 
+calculating its required liquidity resources, to consider that Clearing 
+Members may switch from depositing non-cash collateral in a Full Title 
+Transfer Account (``FTTA'') to depositing non-cash collateral instead 
+in a Single Pledged Account (``SPA'').
+
+(ii) Section 1 Changes to the Framework
+
+    Section 1 of the Framework details the scope, purpose, and use of 
+the Framework. The Proposed Rule Change would make various updates to 
+this section, as described below.
+    Currently, Section 1.1, titled Model Objective, Business Scope and 
+Intended Use, states that the Framework is owned by CaLRM and is 
+reviewed on at least a quarterly basis. Currently, Section 1.1 provides 
+that the Framework is reviewed at least on a quarterly basis. LCH SA is 
+proposing to change the frequency the Framework is reviewed from 
+quarterly to annually. LCH SA is making this change to align the review 
+of the Framework with the frequency of the review of the Group 
+Liquidity Risk Policy.
+    Section 1.1.1, titled Reminder of SA's activities, contains an 
+overall description of LCH SA's activities as a clearing agency. Among 
+other things, Section 1.1.1 currently explains that LCH SA maintains 
+default funds which aim to cover the two largest losses that may exceed 
+the losses covered by initial margins. LCH SA is proposing to revise 
+this description slightly by deleting the phrase ``two largest,'' and 
+noting instead that default funds are calibrated on the assumption of 
+default of the two most exposed groups of affiliated Clearing Members 
+(``Clearing Member Groups'').
+    The Proposed Rule Change would next amended Section 1.1.2, titled 
+Investment Activities. To ensure that the Framework provides an 
+accurate description of the Collateral and Liquidity Management 
+(``CaLM'') Front Office team, LCH SA is clarifying the description of 
+this team in this section. LCH SA's CaLM team manages LCH SA's 
+investment activities, among other responsibilities, and the current 
+Framework describes CaLM's tasks related to investment activities as 
+liquidity management, non-cash collateral settlement in case of a 
+Clearing Member's default, and investment management of cash margins, 
+default funds, and other financial resources. The Proposed Rule Change 
+would revise this description to state that CaLM's task is non-cash 
+collateral liquidation, rather than settlement, in addition to 
+liquidity and investment management.
+    Section 1.1.3, titled Interoperability of CC&G, describes the 
+interoperability link that LCH SA maintains with another CCP, Cassa di 
+Compensazione e
+
+[[Page 57469]]
+
+Garanzia, or ``CC&G,'' which has been renamed ``Euronext Clearing.'' 
+The proposed rule change would reflect the renaming by replacing 
+references to CC&G with references to Euronext Clearing, including in 
+the title to this section.
+    LCH SA is also making changes to reflect the other policies and 
+procedures, in addition to the Framework, that it employs to manage its 
+liquidity risk. As noted above, LCH SA is a subsidiary of LCH Group and 
+an indirect subsidiary of LSEG. As such, LCH SA manages its liquidity 
+risk using the Group Liquidity Risk Policy and the Group Liquidity Plan 
+(which are applicable to each entity within LCH Group). LCH SA uses 
+these other policies in addition to the Framework. The Proposed Rule 
+Change would update Section 1.3, titled Model dependency and 
+interconnectivity, to include summaries of these other policies, 
+including the LCH SA Liquidity Plan, Group Liquidity Risk Policy, Group 
+Financial Resource Adequacy Policy, Group Collateral Risk Policy, Group 
+Investment Risk Policy, LCH SA Collateral Control Framework, and Group 
+Risk Policy: Default Management.
+    The Proposed Rule Change would next amend Section 1.4, titled Model 
+Governance. Here the Proposed Rule Change would add a footnote to 
+clarify that the core liquidity reserve stress tests are performed 
+monthly according to the Liquidity Risk Policy. LCH is making this 
+change to align the Framework with LCH SA's Liquidity Risk Policy.
+    Section 1.6.1, titled Liquidity Sources, describes LCH SA's sources 
+of liquidity. These sources include, among others, cash posted by 
+Clearing Members to meet margin and default fund requirements and non-
+cash collateral posted by Clearing Members. Section 1.6.1 also 
+describes the tools that CaLM would use to meet LCH SA's non-Euro 
+liquidity requirements in case of a Clearing Member's default. Section 
+1.6.1 currently describes these tools as committed liquidity lines 
+pledged with assets from margin collateral or investments and a rule 
+book arrangement that allows LCH SA to pay its obligations in Euros. 
+The Proposed Rule Change would add further explanation of the tools 
+available to CaLM to meet LCH SA's non-Euro liquidity requirements in 
+the event of a default. At a broad level, these tools include non-Euro 
+cash deposited as collateral at creditworthy commercial banks; the sale 
+of non-Euro securities of the defaulting member; repo transactions; the 
+use of LCH SA's multicurrency overdraft facility; the use of FX spot 
+market transactions; ECB weekly tender in U.S. dollars; and the 
+replacement of LCH SA's liabilities in non-Euro by Euro. This 
+description would be the same as what is currently found in Appendix 5 
+of the Framework.\10\
+---------------------------------------------------------------------------
+
+    \10\ The Proposed Rule Change would not amend this description 
+as currently found in Appendix 5.
+---------------------------------------------------------------------------
+
+    The Proposed Rule Change next would make two changes in Section 
+1.6.1.1, titled Collateral transfer to the 3G pool, which is related to 
+non-cash collateral posted by Clearing Members. LCH SA permits Clearing 
+Members to deposit non-cash collateral either through a FTTA or through 
+a SPA. LCH SA maintains FTTAs at various central securities 
+depositories and maintains SPAs at Euroclear Bank and Bank of New York 
+Mellon (for U.S. Treasuries). As currently described in Section 
+1.6.1.1, LCH SA can pledge certain of this non-cash collateral--mostly 
+Euro-denominated securities, referred to herein as ``Eligible 
+Collateral''--at BdF to obtain a liquidity line on an intraday basis 
+and overnight if needed. Securities denominated in other, non-Euro 
+currencies are generally not considered Eligible Collateral under the 
+Framework,\11\ and LCH SA can only pledge Eligible Collateral that is 
+deposited through a FTTA. LCH SA cannot pledge securities that a 
+Clearing Member deposits via a SPA, regardless of whether they are 
+Eligible Collateral. Section 1.6.1.1 currently states that all non-cash 
+collateral received is deposited via FTTA by LCH SA in various CSDs, 
+except where collateral is deposited via SPA. The Proposed Rule Change 
+would revise this description to clarify that Clearing Members can 
+deposit either via FTTA or SPA, thus better reflecting Clearing 
+Members' ability to choose between the two accounts. Second, the 
+Proposed Rule Change would add a note to explain that there are limits 
+to the amount of pledge collateral that can be deposited for LCH SA's 
+RepoClear, EGC Plus, and EquityClear business lines, and a note to 
+explain that Clearing Members deposit most of their collateral via 
+FTTAs.
+---------------------------------------------------------------------------
+
+    \11\ For example, the Framework notes that Gilts, US Treasuries, 
+and securities denominated in Danish Krone, Norwegian Krone, Swedish 
+Krona, Japanese Yen, Swiss Franc, Canadian Dollar, and Australian 
+Dollar are not eligible for pledge at BdF.
+---------------------------------------------------------------------------
+
+    Section 1.6.1.2, titled Assessment of Assets Liquidity, describes 
+how LCH SA categorizes its collateral in terms of how liquid that 
+collateral is. LCH SA assigns collateral to a liquidity tiering scale, 
+ranging from 1 to 3. Tier 1 assets are the most liquid and Tier 3 are 
+the least liquid. Currently, Section 1.6.1.2 contains a table that 
+lists out collateral by tier. This table includes, as Tier 1 assets, 
+all Eligible Collateral, UK Gilts and US Treasury Bills, and Dutch and 
+Belgian central bank guarantees (only for the defaulting member that 
+posted the guarantee). The Proposed Rule Change would add to this 
+table, as Tier 3 assets, non-cash collateral denominated in Danish 
+Krone, Norwegian Krone, Swedish Krona, Japanese Yen, Swiss Franc, 
+Canadian Dollar, and Australian Dollar. As noted, such collateral is 
+not Eligible Collateral. The Proposed Rule Change also would note, 
+elsewhere in Section 1.6.1.2, that Tier 1 Assets include Gilt US 
+securities and the central bank guarantee of the defaulter if the 
+member is based in the same country as the central bank providing the 
+guarantee. This additional language would be consistent with what is 
+currently found in the table regarding Tier 1 assets.
+    Section 1.6.1.3, titled Synthesis, contains a table that 
+synthesizes information about LCH SA's various liquidity sources. This 
+table categorizes each source as cash, non-cash collateral from 
+Clearing Members, collateral from investment activities, and other. In 
+this table the Proposed Rule Change would replace references to CC&G 
+with references to Euronext Clearing, to reflect the name change noted 
+above. Currently, this table also explains that LCH SA retains the 
+right of collateral re-hypothecation for all Eligible Collateral, but 
+not for collateral deposited under the pledge regime and CDS. The 
+Proposed Rule Change would remove the reference specific to CDS. 
+Because pledge is now available at LCH SA's CDS service, the disclaimer 
+for pledge also applies to CDS, and therefore the CDS business line 
+does not need to be mentioned separately.
+    In addition, the table currently notes that LCH SA has demonstrated 
+an ability to raise Euro cash using non-Euro, non-cash collateral, 
+based on exercises performed in 2017. The Proposed Rule Change would 
+clarify that CaLM demonstrated in 2021 and 2022 the ability to raise 
+Euro liquidity from non-Euro non-cash collateral in USD and GBP. The 
+table currently notes that when valuing non-Euro non-cash collateral as 
+a liquidity source, LCH SA applies an arbitrary buffer of ten percent 
+as a haircut. The Proposed Rule Change also would revise the 
+description of this buffer from ``arbitrary'' to ``conservative'' and 
+would note it is applied to absorb market stress that may occur beyond 
+the volatility already captured by the all-in haircut.
+    Finally, the table currently identifies as a source of liquidity 
+guarantee letters
+
+[[Page 57470]]
+
+from central banks, but only for Belgian and Dutch clearing members. 
+The Proposed Rule Change would confirm that these guarantees can be 
+considered for liquidity purposes only if the relevant Clearing Member 
+posting them is in default, because only in this specific situation 
+would LCH SA acquire full ownership of the guarantee provided by the 
+central bank.
+    Section 1.6.2, titled Liquidity Needs, describes LCH SA's liquidity 
+needs. As noted, the Framework identifies three broad categories of 
+liquidity needs: (i) those arising from LCH SA's business-as-usual 
+operations; (ii) those arising from Clearing Members' defaults; and 
+(iii) those arising from the default of LCH SA's interoperating CCP.
+    Section 1.6.2.1, titled Liquidity needs arising from members' 
+defaults, further identifies liquidity needs arising from Clearing 
+Member defaults. These needs include, among others, settlement cash 
+outflows and the value of Eligible Collateral pledged at BdF. With 
+respect to settlement cash outflows, Section 1.6.2.1 provides that cash 
+outflows are generated when LCH SA must step in on behalf of the 
+defaulted member to post cash to non-defaulting member(s) and take in 
+the underlying collateral. The Proposed Rule Change would revise this 
+description, from ``underlying collateral'' to ``underlying 
+securities.'' Section 1.6.2.1 specifies that LCH SA obtains liquidity 
+based on the value of the Eligible Collateral that it pledges. Given 
+that a Clearing Member's default likely would result in (or result 
+from) stress market conditions, and given that such conditions could 
+lower the value of Eligible Collateral, the Proposed Rule Change would 
+specify that LCH SA would consider stress market conditions in 
+determining the value of Eligible Collateral pledged.
+    Finally, Section 1.6.2.2, titled Liquidity needs arising from 
+interoperating CCPs' defaults, identifies the liquidity needs arising 
+from the default of LCH SA's interoperating CCP. In Section 1.6.2.2, 
+the Proposed Rule Change would replace references to CC&G with 
+references to Euronext Clearing, consistent with the name change noted 
+above.
+
+(iii) Section 2 and Section 3
+
+    Section 2, titled Limitations and Compensating Controls, and 
+Section 3, titled Justification of Modelling Approach, describe certain 
+limitations to, and justifications for, how LCH SA models its liquidity 
+sources and needs. The Proposed Rule Change would not make any 
+amendments to Sections 2 and 3.
+
+(iv) Section 4 Changes to the Framework
+
+    Section 4, titled Model Specification, explains how LCH SA models 
+its liquidity sources and needs. Section 4 is organized according to 
+LCH SA's three broad categories of liquidity needs: (i) those arising 
+from LCH SA's business-as-usual operations; (ii) those arising from 
+Clearing Members' defaults; and (iii) those arising from the default of 
+LCH SA's interoperating CCP.
+Operational Liquidity Needs
+    Section 4.1, titled Operational Target, describes how LCH SA 
+determines its liquidity needs arising from business-as-usual 
+operations. LCH SA values its operational liquidity needs by 
+determining the amount of its sources of liquidity from its operations 
+and the amount of its requirements for liquidity from its operations. 
+LCH SA then subtracts the total of its requirements from the total of 
+its sources, to determine whether it has sufficient resources to meet 
+its requirements. As described in Section 4.1.3, titled Model Outputs, 
+LCH SA's CaLRM team generates reports daily to check that operational 
+liquidity sources are sufficient to cover operational liquidity 
+requirements.
+    The Proposed Rule Change would first amend Section 4.1.2, titled 
+Model Inputs and Variable Selection, to clarify that the repayment of 
+excess cash as well as excess ECB eligible securities deposited to 
+cover margin requirements are considered in the liquidity requirements 
+of the Operational Target. Operational liquidity requirements currently 
+include, among other items, repayment of excess cash collateral, which 
+is cash that Clearing Members provided to meet their margin and default 
+fund requirements, but that is no longer needed to meet such 
+requirements. This could occur, for example, when a Clearing Member's 
+margin and default fund requirements decrease due to a change in the 
+Clearing Member's positions or risk associated with those positions, 
+and Clearing Members request the return of such excess cash collateral. 
+Like excess cash, Clearing Members may request the return of Eligible 
+Collateral that is no longer needed to meet margin and default fund 
+requirements. Because LCH SA considers Eligible Collateral as a 
+potential source of liquidity, the return of Eligible Collateral 
+represents a potential liquidity requirement for LCH SA. Accordingly, 
+the Proposed Rule Change would note that the return of excess Eligible 
+Collateral represents a potential liquidity requirement.
+    The Proposed Rule Change also would update a related footnote, 
+which explains that LCH SA excludes certain securities from its 
+liquidity assets, and therefore, LCH SA does not consider these 
+securities as potential excess Eligible Collateral. These include 
+securities denominated in Danish Krone, Norwegian Krone, Swedish Krona, 
+Japanese Yen, Swiss Franc, Canadian Dollar, and Australian Dollar. 
+These securities are not Eligible Collateral because LCH SA is not able 
+to pledge them for a liquidity line. Here the Proposed Rule Change 
+would specify that Portuguese and Finnish government bonds posted via 
+the triparty solution are excluded from the liquid assets because LCH 
+SA cannot pledge these securities at BdF due to operational 
+constraints.
+    The Proposed Rule Change would next amend Section, 4.1.4, titled 
+Mathematical Formula, Derivation and Algorithm, and Numerical 
+Approximation. This section explains the mathematical formula LCH SA 
+uses to confirm that its sources of operational liquidity are 
+sufficient to meet its needs. As noted, LCH SA determines the total of 
+its sources and the total of its operational liquidity requirements and 
+then subtracts the total of its requirements from the total of its 
+sources. LCH SA refers to the resulting figure as its ``Operational 
+Target.'' The Proposed Rule Change would not alter this formula, but it 
+would add language to note that, after subtracting operational 
+liquidity requirements from liquidity resources, the remaining amount 
+must always be greater than zero.
+    The Proposed Rule Change would next amend Section 4.1.5, titled 
+Model Assumptions, 4.1.5, which details how LCH SA determines the 
+amounts of its operational liquidity resources and needs, and the 
+period for which LCH SA seeks to maintain sufficient liquidity 
+resources. Currently, LCH SA seeks to maintain sufficient liquidity 
+sources for five days in stressed situations. The Proposed Rule Change 
+would revise this time horizon to provide that liquidity resources must 
+be sufficient to meet LCH SA's liquidity requirements for seven days in 
+stressed situations. Additionally, details related to the management of 
+the former horizon have been removed to state that the horizon is seven 
+days and results will be displayed without any aggregation. LCH SA is 
+making this change to ensure that the time horizon is the same for all 
+business lines. Specifically, this change would make the time horizon 
+for LCH SA's business lines consistent with the time horizon for its 
+RepoClear business
+
+[[Page 57471]]
+
+line, which uses a seven-day period for considering the sufficiency of 
+its liquidity sources.
+    Section 4 contains descriptions of the various components of LCH 
+SA's operational liquidity requirements, which the Framework calls 
+``liquidity requirements drivers.'' One of these drivers is the 
+potential requirement to repay excess collateral. As noted, excess cash 
+collateral is a potential liquidity need because Clearing Members may 
+request the return of such excess cash collateral. The Proposed Rule 
+Change would add a description of the return of excess Eligible 
+Collateral as a related liquidity need.\12\ The Proposed Rule Change 
+also would update a reference to the period for which LCH SA seeks to 
+maintain sufficient liquidity sources. As with the change described 
+above, the Proposed Rule Change would extend this period from five to 
+seven days. Specifically, the assumptions that the two largest 
+individual Clearing Members will withdraw their excess on day one (T) 
+and that the third and fourth largest Clearing Members will withdraw 
+their excess on day two (T+1) will be revised to clarify that (a) the 
+two Clearing Member Groups that have the largest amount of excess 
+collateral will withdraw their excess on T, and (b) the third and 
+fourth Clearing Member Groups that have the next largest amount of 
+excess collateral will withdraw their excess on T+1. In each case, LCH 
+SA would assume the remaining Clearing Members will withdraw their 
+excess on the third day (T+2).
+---------------------------------------------------------------------------
+
+    \12\ Similar to the change described above, the Proposed Rule 
+Change also would specify that Portuguese and Finnish government 
+bonds posted via the triparty solution are excluded from the liquid 
+assets because LCH SA cannot pledge these securities at BdF due to 
+operational constraints.
+---------------------------------------------------------------------------
+
+    Another liquidity driver is the operational liquidity need created 
+when Clearing Members switch cash collateral with non-cash collateral, 
+or switch Eligible Collateral with other non-cash collateral. LCH SA 
+currently considers the impact of such switches over five days. Under 
+the Proposed Rule Change, LCH SA would consider the switches over seven 
+days rather than five, consistent with the changes described above. To 
+facilitate this change, the Proposed Rule Change would add two 
+additional definitions for the amounts of such switches, corresponding 
+to T+5 and T+6.
+    This section also currently explains that with respect to switches 
+from cash to Eligible Collateral, LCH SA assumes that it can pledge the 
+Eligible Collateral within the same day. The Proposed Rule Change would 
+clarify that, to confirm this assumption, in quarter 3 of 2022, the 
+CaLM demonstrated the ability to transfer Eligible Collateral to BdF 
+within 30 minutes. The Framework currently lists the countries for 
+whose securities CaLM demonstrated this ability, in other words, the 
+countries whose sovereign securities are Eligible Collateral. The 
+Proposed Rule Change would remove this list from the Framework because 
+it is subject to change and depends on the collateral that LCH SA 
+itself accepts from Clearing Members. This section also notes that, 
+with respect to the amount of equity lodged, LCH SA takes the maximum 
+amount of switch observed (currently 100 million Euro) and that this 
+assumption is very conservative because the amount of equities lodged 
+over the past 3 years did not exceed 400,000 Euro. The Proposed Rule 
+Change would keep this sentence but delete the reference to the actual 
+amounts (100 million and 400,000 Euro) because, as LCH SA takes the 
+maximum amount of switched observed, both figures are subject to 
+change.
+    Another liquidity driver is the need created when LCH SA must 
+provide liquidity to facilitate settlement, including fails resulting 
+from delays in posting securities by Clearing Members. Currently, LCH 
+SA determines the amount of this liquidity need based on the historical 
+amount of EOD securities carried overnight, using a two-year lookback 
+period. LCH SA is also making changes that will clarify the specific 
+amount that is calibrated will be determined using the maximum EOD 
+securities carried overnight over the whole time series available, 
+rather than just a two-year lookback period. The Proposed Rule Change 
+would delete the reference to the two-year lookback period and instead 
+note that the estimate is based on the entire time series that is 
+available to LCH SA.
+    Another liquidity driver is the need created when Clearing Members' 
+stressed margin requirements decrease. If a Clearing Member's margin 
+requirement goes down, then the Clearing Member may request the return 
+of collateral that it provided to cover that requirement, and therefore 
+a reduction in margin could generate a liquidity need for LCH SA. The 
+Proposed Rule Change would modify the targeted estimated margin 
+reduction of non-defaulting Clearing Members to be consistent with the 
+changes described above. Specifically, the estimated margin reduction 
+will be calculated over seven consecutive days rather than the current 
+three days. To reflect this change, a detailed table and related 
+clarifying footnotes that describe the margin reduction rate per day of 
+the horizon period would be added to the Framework.
+    The liquidity need generated by LCH SA paying variation margin to 
+its interoperable CCP is also a driver of operational liquidity. As 
+with the changes discussed above, the Proposed Rule Change would 
+replace references to CC&G in this section with references to Euronext 
+Clearing. The Proposed Rule Change also would clarify that LCH SA 
+estimates the variation margin payment based on the Initial Margin 
+posted at LCH SA to cover a 5-day holding period to be spread out over 
+a 5-day period according to a simulated market stress based on 
+historical yield shifts.
+    Finally, the Proposed Rule Change would make a minor amendment to 
+Section 4.1.5.i, titled Model assumptions, Planned Default Fund (DF) 
+reductions, which discusses how a decrease in the default fund would 
+affect LCH SA's operational liquidity needs. The Proposed Rule Change 
+would clarify that default fund is abbreviated as ``DF'' in the 
+discussion accompanying Section 4.1.5.i.
+Default Liquidity Needs
+    Section 4.2 of the Framework, titled LCR, describes how LCH SA 
+determines its liquidity needs arising from the default of a Clearing 
+Member. As described, LCH SA must ensure that it has enough liquidity 
+to satisfy a ``Cover 2'' requirement, meaning default of the two 
+largest Clearing Member Groups at the same time.
+    This section details the sources of liquidity and needs for 
+liquidity that would arise in the event of a Clearing Member's default. 
+The Framework refers to these liquidity sources as ``Total Available 
+Assets'' and liquidity needs as ``Total Default Liabilities.'' To 
+determine how well it is covering its liquidity needs arising from the 
+potential default of a Clearing Member, LCH SA divides its Total 
+Available Assets by its Total Default Liabilities. LCH SA refers to the 
+resulting figure as its ``Liquidity Coverage Ratio'' or ``LCR.'' LCH SA 
+calculates, monitors, and reviews the LCR daily.
+    The Proposed Rule Change would revise this section to provide that 
+the purpose of the LCR Cover 2 scenario is to allow LCH SA to ensure 
+that it has enough liquidity in the case of default of the two largest 
+Clearing Member Groups during the seven days following the default, 
+rather than five days, as is currently provided. This change would be 
+consistent with the other changes noted above, extending the time 
+horizon for maintaining liquidity resources from five to seven days.
+
+[[Page 57472]]
+
+Model Inputs and Variable Selection
+    With respect to the components that make up the LCR, Section 4.2.2, 
+titled Model Inputs and Variable Selection, identifies four categories 
+of Total Available Assets: (i) margin collateral; (ii) cash in the 
+default fund; (iii) Eligible Collateral that LCH SA has pledged; and 
+(iv) liquidity raised from investment activities. With respect to Total 
+Default Liabilities, Section 4.2.2 identifies four categories: (i) the 
+operational liquidity needs discussed above, which will continue during 
+the default of a Clearing Member; (ii) contractual settlements related 
+to LCH SA's RepoClear, EGCPlus, and EquityClear business lines; (iii) 
+the cost of financing those contractual settlements; and (iv) variation 
+margin paid to non-defaulting Clearing Members.
+    The Proposed Rule Change would add to Section 4.2.2 language 
+regarding the treatment of assets belonging to clients of FCM/BD 
+Clearing Members. As reflected currently in the Framework, LCH SA 
+segregates margin provided by FCM/BD Clearing Members on behalf of 
+their clients. This means that LCH SA can only use a particular 
+Clearing Member's client's margin to cover a shortfall arising from 
+that particular client's default, and not to cover a shortfall arising 
+from a Clearing Member's default or another client's default. The 
+Proposed Rule Change would add language to further clarify LCH SA's 
+treatment of margin provided by FCM/BD Clearing Members on behalf of 
+their clients. This new language would specify that, in the context of 
+default and monitoring of the LCR, LCH SA treats a specific FCM/BD 
+Clearing Member's client's collateral as an available liquidity 
+resource only if the specific client defaults and generates a liquidity 
+need. Otherwise, LCH SA does not treat a specific FCM/BD client's 
+resources as available liquidity assets for any other FCM/BD client, 
+the client's FCM/BD Clearing Member, or any other Clearing Member.
+    The Proposed Rule Change also would make an amendment regarding LCH 
+SA's Total Available Assets. As noted above, the Framework identifies 
+four categories of Total Available Assets. The Proposed Rule Change 
+would amend the description of the third category, Eligible Collateral 
+pledged at BdF. Currently, Section 4.2.2 describes this as the amount 
+of liquidity that can be provided by BdF when pledging securities and 
+including the haircut effect on the resulting figures. The Proposed 
+Rule Change would revise this description to explain that LCH SA would 
+be pledging the securities at stressed market prices.\13\ As noted 
+above, LCH SA may pledge Eligible Collateral to obtain a liquidity 
+line. LCH SA therefore treats this Eligible Collateral as a source of 
+liquidity, the amount of which is based on the value of the collateral 
+at the time of the pledge, minus an applicable haircut. The Proposed 
+Rule Change would therefore amend the Framework to ensure that LCH SA 
+considers the potential stress market conditions (which could decrease 
+the value of the collateral), as well as the applicable haircut, when 
+valuing Eligible Collateral as part of its liquidity resources.
+---------------------------------------------------------------------------
+
+    \13\ The proposed rule change would make the same change to 
+Section 4.2.4, which describes the mathematical formula that LCH SA 
+uses to calculate its total available assets. The proposed rule 
+change also would make a similar change to Appendix 4, which 
+presents a synthesis of LCH SA's liquidity reports. Here the 
+proposed rule change would note that LCH SA would consider stressed 
+market prices and the haircut when pledging securities.
+---------------------------------------------------------------------------
+
+    The Proposed Rule Change would make an amendment regarding LCH SA's 
+Total Default Liabilities. As noted above, the Framework identifies 
+four categories of Total Default Liabilities. The Proposed Rule Change 
+would amend the description of the fourth category, the cost of paying 
+variation margin to non-defaulting Clearing Members. The Framework 
+currently describes this liability as the stressed variation margin 
+impact for cash, derivatives, and CDS markets, on top of which is added 
+the market stress risk impact on the contractual settlements for 
+RepoClear. The Proposed Rule Change would describe this instead as the 
+stressed variation margin impact for cash, derivatives, RepoClear, EGC, 
+and CDS markets and would delete the phrase ``on top of which is added 
+the market stress risk impact on the contractual settlements for 
+RepoClear.'' Thus, under the Proposed Rule Change, LCH SA would 
+consider as a liability the general stressed variation margin impact 
+for RepoClear but not include the specific market stress risk impact on 
+the contractual settlements for RepoClear. LCH SA is excluding this 
+component because it will instead treat the market stress risk impact 
+as a decrease in the value of liquidity obtained from pledging Eligible 
+Collateral at BdF. As noted above, under the Proposed Rule Change, LCH 
+SA would use stressed market prices to determine the amount of 
+liquidity that it could obtain from pledging Eligible Collateral at BdF
+Mathematical Formula Derivation and Algorithm and Numerical 
+Approximation
+    The Proposed Rule Change next would amend Section 4.2.4, titled 
+Mathematical Formula Derivation and Algorithm and Numerical 
+Approximation, which describes the mathematical formula that LCH SA 
+uses to calculate its LCR. The Proposed Rule Change would make 
+conforming revisions to the description of the mathematical formula in 
+Section 4.2.4 to carry through the changes from elsewhere in the 
+Framework described herein. For example, the description of the 
+mathematical formula would be revised to clarify that securities 
+pledged at the BdF and included among Total Available Assets will be 
+valued at stressed market prices and will include the ECB haircut 
+effect on the resulting figures, to incorporate the revisions discussed 
+above in Section 4.2.2. Similarly, the Proposed Rule Change would 
+revise the description of the mathematical formula in Section 4.2.4 to 
+incorporate the clarification of LCH SA's treatment of margins provided 
+by FCM/BD Clearing Members on behalf of their clients discussed above. 
+Specifically, the description of the mathematical formula would be 
+revised to clarify that, in the event of default by a specific FCM/BD 
+Clearing Member's client (and for the purpose of LCR monitoring), LCH 
+SA would treat that FCM/BD Clearing Member's client's collateral as 
+available liquidity resources only if that specific FCM/BD client 
+defaults and generates a liquidity need. Consistent with the changes 
+discussed above, the description would also be revised to clarify that 
+LCH SA would not consider these resources as available liquidity assets 
+for any other FCM/BD clients, the FCM/BD Clearing Member, or any other 
+Clearing Member.
+Model Assumptions
+    Section 4.2.5, titled Model Assumptions, describes the various 
+risks and assumptions that LCH SA considers when calculating the LCR. 
+Section 4.2.5 describes these assumptions per LCH SA business line, 
+beginning with LCH SA's RepoClear business. To clarify that LCH SA must 
+consider certain risks for each business line in determining liquidity 
+requirements, the Proposed Rule Change would change the title of 
+section 4.2.5.1 to ``Description of risks per Business Line.''
+RepoClear
+    Section 4.2.5.1.1, titled RepoClear, describes the liquidity needs 
+associated
+
+[[Page 57473]]
+
+with RepoClear. Section 4.2.5.1.1 currently includes a table 
+summarizing the liquidity requirements according to the direction of 
+the repo transactions. The Proposed Rule Change would delete this 
+summary table and a related paragraph describing the specific treatment 
+of forward starting repo in the calculation of the settlement 
+obligation outflows. The Framework would replace the table with new 
+Sections 4.2.5.1.1.1 and 4.2.4.1.1.2 (discussed below).
+    Also in Section 4.2.5.1.1, the Proposed Rule Change would amend the 
+period for which LCH SA considers the cash needs associated with 
+purchasing securities on behalf of a defaulting RepoClear clearing 
+member. Currently, LCH SA calculates this liquidity need, which the 
+Framework calls ``settlement cash outflows,'' over a five-day time 
+horizon. The Proposed Rule Change would extend this to seven days, 
+consistent with the changes discussed above. This change also would 
+align this monitoring period to the RepoClear new maximum holding 
+period to manage a default (five days holding period of margin plus two 
+days of settlement convention).
+    The Proposed Rule Change also would amend Section 4.2.5.1.1 to 
+clarify that LCH SA will not offset the liquidity needs arising from 
+the defaults of related Clearing Members. As noted above, LCH SA's 
+Clearing Members may be part of an affiliated Clearing Member Group. As 
+described in Section 4.2.5.1.1, LCH SA calculates these settlement 
+outflows on a gross basis for each Clearing Member. For those Clearing 
+Members that are part of a Clearing Member Group, LCH SA aggregates the 
+gross outflows for each Clearing Member in that group. To facilitate 
+the prohibition of netting between entities of the same group, the 
+Proposed Rule Change would clarify that settlement cash outflows will 
+be calculated over a period of 7 days and on a gross basis, aggregated 
+by ISIN, settlement date, and Clearing Member level. LCH SA would then 
+aggregate the final settlement outflows at the Clearing Member Group 
+level without allowing any netting across members of the same Clearing 
+Member Group.
+    The Proposed Rule Change would add a new Section 4.2.5.1.1.1, 
+titled Liabilities Contractual Obligations on Physical Delivery. This 
+section would describe how LCH SA would estimate the liquidity needs 
+associated with the physical settlement of transactions on behalf of a 
+defaulting Clearing Member. In the case of default, LCH SA will assume 
+and honor the obligations of the defaulted Members. In the event of 
+securities with physical settlement, LCH SA might need to source 
+securities to complete a defaulting Clearing Member's transaction, 
+which could represent a substantial liquidity need for LCH SA. This 
+section would describe the way LCH SA would navigate this scenario, and 
+would describe how LCH SA's pledge of Eligible Collateral to obtain 
+liquidity would affect its ability to source securities to settle 
+transactions.
+    The Proposed Rule Change also would add a new Section 4.2.5.1.1.2, 
+titled Assets: Settlement Securities Pledged at Central Bank. This new 
+section would describe how LCH SA would estimate the value of liquidity 
+it could raise through pledging settlement securities withdrawn from 
+the settlement system on behalf of a defaulting Clearing Member. This 
+new section would describe in detail how LCH SA would determine the 
+value of the liquidity it could raise, including the relevant 
+mathematical formulas and assumptions. As would be described, LCH SA 
+would consider the potential reduction in market price of the 
+securities during unfavorable market conditions. In other words, LCH SA 
+would consider the stressed market prices of the securities, in line 
+with similar changes described above. LCH SA would also consider the 
+haircut that BdF would apply when lending cash to LCH SA in exchange 
+for the securities. Finally, to remain consistent with the calculation 
+of settlement obligations, as described in this section, after 
+calculating the Liquidity retrieved from the BdF for all dates in the 
+LCR period at Member level, the amounts are aggregated at the Clearing 
+Member Group level.
+    The Proposed Rule Change would revise Section 4.2.5.1.1.3 
+(renumbered from 4.2.5.1.1.1), titled Market Risk. This section 
+describes the liquidity need generated by the requirement that LCH SA 
+pay variation margin to non-defaulting Clearing Members on behalf of 
+the defaulting Clearing Member. The Proposed Rule Change would clarify 
+that, in addition to the liquidity flows driven by settlement 
+obligations, the position of the defaulter may generate a liquidity 
+drain for LCH SA in the form of negative mark-to-market to be paid to 
+non-defaulting members. The Proposed Rule Change also would revise the 
+formula that LCH SA uses to estimate the value of this liquidity need. 
+Under the Proposed Rule Change, LCH SA would consider the worst stress 
+loss of the defaulter position according to the relevant RepoClear 
+stress test scenario and add additional margin to model any 
+concentration or market liquidity issues. The Proposed Rule Change 
+further would add a footnote to explain that Appendix 6.7 to the 
+Framework contains a list of stress scenarios.
+EGCPlus
+    Dection 4.2.5.1.2, titled EGCPlus, describes the liquidity needs 
+arising from EGCPlus. These liquidity needs could arise from the 
+securities purchased on behalf of a defaulting Clearing Member. LCH SA 
+aggregates these needs by ISIN of the securities and maturity of the 
+contracts. The Proposed Rule Change would revise this section to 
+clarify that, when calculating the settlement-driven cash outflows, the 
+aggregation is based on data provided by the triparty agent and that a 
+liquidity need is generated only by positions in which the defaulter is 
+a cash borrower in the first leg of the repo and the collateral taker 
+when the repo closes. The Proposed Rule Change would further add a 
+footnote that would explain which positions generate a liquidity upon a 
+default. Specifically, a liquidity need is generated by those positions 
+in which the defaulting Clearing Member is a cash borrower (collateral 
+giver) in the first leg of the repo and, therefore, the collateral 
+taker when the repo closes.
+    To incorporate a recommendation from LCH SA's Model Validation Team 
+to improve the liquidity needs estimation related to Market Risk in the 
+LCR, the Proposed Rule Change also would clarify that, for EGCPlus, the 
+additional liquidity needs generated by negative mark to market 
+payments to non-defaulting Clearing Members is estimated in line with 
+what is done for RepoClear. As noted above, this means LCH SA would 
+consider the worst stress loss of the defaulter position according to 
+the relevant stress test scenario and add any additional margin to 
+model any concentration or market liquidity issues.
+EquityClear
+    Section 4.2.5.1.3, titled EquityClear, describes the liquidity 
+needs arising from EquityClear. In this section, the Proposed Rule 
+Change would incorporate amendments made elsewhere to the Framework. 
+For example, the Proposed Rule Change would update Section 4.2.5.1.3 to 
+clarify that the settlement cash outflows will be calculated on a gross 
+basis at the Clearing Member level and then aggregated at the Clearing 
+Member Group level without allowing any netting across the Clearing 
+Members of the same Clearing Member Group. Doing so would help to 
+ensure that there is no netting across Clearing Members in the same 
+Group, the same as the amendments discussed above. Further,
+
+[[Page 57474]]
+
+when determining the liquidity need generated by the requirement that 
+LCH SA pay variation margin to non-defaulting Clearing Members on 
+behalf of the defaulting Clearing Member, under the Proposed Rule 
+Change LCH SA would consider the worst stress loss of the defaulter 
+position according to the relevant stress test scenario.
+    To address a recommendation from LCH SA's Model Validation Team, 
+the Proposed Rule Change would add the liquidity needs related to the 
+expiry of physically delivered single stock futures in the LCR. Where 
+the defaulting Clearing Member holds a long futures position which 
+expires during the LCR horizon, LCH SA will have to pay the future 
+price to the non-defaulting counterparty in order to settle the 
+physical underlying. Therefore, LCH SA would consider this as a 
+potential additional liquidity need.
+Listed Derivatives
+    Section 4.2.5.1.3.2, titled Listed Derivatives, describes the 
+liquidity needs arising from LCH SA's listed derivatives business line. 
+Here the Proposed Rule Change would clarify that futures on equity 
+index contracts are included among the listed derivatives instruments 
+considered in the calculation of the LCR and that derivatives 
+expirations occur on a monthly basis rather than the previously stated 
+quarterly basis. Moreover, when determining the liquidity need 
+generated by the requirement that LCH SA pay variation margin to non-
+defaulting Clearing Members on behalf of the defaulting Clearing 
+Member, under the Proposed Rule Change LCH SA would consider the worst 
+stress loss of the defaulter position according to the relevant stress 
+test scenario, consistent with changes elsewhere in the Framework.
+CDSClear
+    Section 4.2.5.1.4, titled Credit Default Swaps, describes the 
+liquidity needs arising from LCH SA's CDSClear business line. Here the 
+Proposed Rule Change would clarify that the calculation of the 
+liquidity needs generated by negative mark-to-market payments to be 
+made to non-defaulting members is charged in line with what is done for 
+the other LCH SA services. Specifically, LCH SA will calculate this 
+need as the worst stress loss of the defaulter position according to 
+the relevant stress test scenario. The Proposed Rule Change further 
+would add a footnote to explain that Appendix 6.7 to the Framework 
+contains a list of stress scenarios.
+Additional Components of LCR, Section 4.2.5.2
+    Section 4.2.5.2 of the Framework, titled Other Liquidity 
+Requirements, describes certain other components that LCH SA considers 
+as part of the LCR.
+    For example, LCH SA includes the liquidity requirement arising from 
+the operational target as a liquidity need in calculating the LCR. LCH 
+SA does so with two modifications. First, LCH SA removes the cost of 
+paying variation margin to its interoperable CCP. LCH SA makes this 
+modification because it assumes that where its two largest Clearing 
+Member Groups have defaulted, LCH SA would be collecting variation 
+margin from its interoperable CCP rather than paying out variation 
+margin. Second, LCH SA removes the impact of a margin reduction for 
+defaulting Clearing Members. As discussed above, LCH SA considers the 
+liquidity need created when Clearing Members' margin requirements 
+decrease. If a Clearing Member's margin requirement goes down, then the 
+Clearing Member may request the return of collateral that it provided 
+to cover that requirement, and therefore a reduction in margin 
+generates a liquidity need for LCH SA. The same is true when a Clearing 
+Member requests the return of excess cash collateral. For the sake of 
+accounting for the operational target in the LCR, LCH SA excludes this 
+component with respect to the two Clearing Member Groups that are 
+assumed to be in default. LCH SA does this because, where a Clearing 
+Member is in default, LCH SA has the right to use the collateral of the 
+defaulting Clearing Member, including any excess collateral. LCH SA is 
+already reducing the impact of these two components of the operational 
+target in the current version of the Framework, and the Proposed Rule 
+Change would make clarifying edits to the description of these 
+components.
+    LCH SA includes margin collateral in its available assets when 
+calculating the LCR. LCH SA does this because, as discussed, LCH SA can 
+obtain liquidity for margin collateral, by pledging Eligible Collateral 
+and otherwise engaging in investment transactions. In doing so, LCH SA 
+considers potential losses to the market value of non-cash collateral 
+because such losses could decrease the amount of liquidity that LCH SA 
+is able to obtain. The Proposed Rule Change would clarify that LCH SA 
+would consider these potential losses by applying the same set of 
+stress scenarios used by LCH SA in the calibration of the default fund 
+for its RepoClear service, and choosing the one that generates the 
+biggest liquidity exposure in terms of Cover 2.
+    As part of the LCR, LCH SA also considers potential losses related 
+to investment activities involving a defaulting Clearing Member's non-
+cash collateral. LCH SA does so because it may use the proceeds of its 
+investment activities as a liquidity resource when a Clearing Member 
+defaults, and losses would decrease the amount of these proceeds. The 
+Proposed Rule Change would clarify that LCH SA would consider these 
+potential losses by applying the same set of stress scenarios used by 
+LCH SA in the calibration of the default fund for its RepoClear 
+service, and choosing the one that generates the biggest liquidity 
+exposure in terms of Cover 2.
+    The Proposed Rule Change would add a new Section 4.2.5.2.4, titled 
+Collateral Pledge modelling. This new section would describe, in 
+detail, how pledged collateral is modelled when calculating the LCR. As 
+noted, LCH SA may pledge Eligible Collateral deposited via FTTA to 
+obtain a liquidity line, but not collateral deposited via SPA. If 
+Clearing Members switch from depositing Eligible Collateral via FTTA to 
+SPA, that could reduce the amount of liquidity that LCH SA is able to 
+obtain. To account for this, LCH SA would assume that Clearing Members 
+with an active SPA would pledge collateral near the maximum allowed on 
+each LCH SA business line. LCH SA would therefore subtract this amount 
+of Eligible Collateral from its liquidity resources. LCH SA will 
+calculate the expected additional pledge as the difference between the 
+maximum pledge allowed on the business line scaled by a parameter to 
+capture Clearing Member's expected use of pledge and the actual pledge 
+used by Clearing Members. Currently, LCH SA would assume that each 
+Clearing Member with an active SPA would pledge 100% of the securities 
+that it is allowed to pledge.
+    For Clearing Members without an active SPA, LCH SA would include 
+all Eligible Collateral deposited via FTTA in its liquidity resources. 
+As noted, certain securities, like those denominated in Danish Krone, 
+Norwegian Krone, Swedish Krona, Japanese Yen, Swiss Franc, Canadian 
+Dollar, and Australian Dollar are not considered Eligible Collateral. 
+LCH SA would therefore exclude these securities from its liquidity 
+resources. The Proposed Rule Change would add a notation to that effect 
+in Section 4.2.5.2.4.
+
+[[Page 57475]]
+
+Market Risk Stress Scenario Selection, Section 4.2.5.3
+    Section 4.2.5.3, titled Stress scenario selection, describes the 
+scenarios that LCH SA uses to factor the effect on market values that 
+could occur in a stressed environment, including a Cover 2 default. 
+Such a situation could, for example, lead to a decrease in the value of 
+the defaulting Clearing Members' non-cash collateral and/or require 
+that LCH SA pay variation margin on behalf of the defaulting Clearing 
+Members. Thus, such a scenario would impact LCH SA's liquidity, both in 
+terms of the amount of liquidity it is able to obtain from non-cash 
+collateral, and the amount of liquidity it may need to pay out in the 
+form of variation margin.
+    As described, LCH SA uses separate scenarios for each of its 
+clearing services, taken from the set of scenarios used to calibrate 
+the amount of Default Fund for the different services. The Proposed 
+Rule Change would clarify that the stress test scenarios selected for 
+each LCH SA service would be consistent with a market state resulting 
+from Cover 2 default as assumed by the LCR. Moreover, the Proposed Rule 
+Change would update the list of scenarios to include only those most 
+relevant given the LCR assumptions.
+    Section 4.2.5.3 also contains a table describing the haircuts that 
+would be applied when LCH SA pledges Eligible Collateral. These 
+haircuts reduce the value of collateral that LCH SA can pledge, and 
+therefore ultimately reduce the amount of liquidity that LCH SA is able 
+to obtain. The Proposed Rule Change would update this table to reflect 
+the current haircuts.
+Cover 2 Selection, Section 4.2.5.4
+    Section 4.2.5.4, titled Cover 2 selection, describes how LCH SA 
+calculates the liquidity requirements for each Clearing Member in a 
+stressed environment, which it then uses to determine its Cover 2 
+requirement by Clearing Member Group (i.e., the two largest liquidity 
+exposures).
+    The Proposed Rule Change will revise this section to specify that 
+LCH SA will determine its Cover 2 requirement in the following manner: 
+LCH SA will first calculate certain liquidity requirements for each 
+individual Clearing Member and then aggregate these amounts per each 
+Clearing Member Group, to arrive at a total requirement for each 
+Clearing Member Group. The Cover 2 requirement would be the two largest 
+amounts per Clearing Member Group.
+    As would be described in revised Section 4.2.5.4, LCH SA first 
+would calculate the following requirements for each Clearing Member, 
+before determining the aggregate liquidity requirement per Clearing 
+Member Group:
+    <bullet> Stress Variation Margin--for all the services, these 
+variation margins would be modelled by applying the most punitive 
+scenario among the chosen sets and consistent with the LCR assumptions;
+    <bullet> Settlement liquidity requirements due to RepoClear and 
+Cash equity settlement obligations--LCH SA would value securities 
+pledged according to the scenario that would generate the highest loss;
+    <bullet> Non-cash Collateral stress losses--LCH SA would estimate 
+these losses by stressing the Eligible Collateral with the set of 
+scenarios consistent with the LCR assumptions;
+    <bullet> Investment stress losses over haircut--LCH SA would 
+estimate these losses by applying the stress scenarios to the 
+collateral received from the reverse repo activity with each specific 
+counterparty; and
+    <bullet> ECB Haircut--LCH SA would determine the impact by applying 
+the relevant haircut to all the Eligible Collateral received from a 
+specific clearing member.
+    LCH SA would use the scenarios relevant to each of its clearing 
+services to determine these requirements and then select the scenario 
+that generates the maximum loss of the sum of all of the above elements 
+for the two most exposed Clearing Member Groups. As noted, this sum 
+would determine LCH SA's Cover 2 requirement for purposes of 
+determining its LCR.
+LCR for Euronext
+    Section 4.3 of the Framework, titled LCR Euronext Clearing, 
+describes how LCH SA calculates the liquidity impact resulting from the 
+potential default of its interoperable CCP. Throughout this section, 
+the Proposed Rule Change would change the name of the interoperable CCP 
+from CC&G to Euronext Clearing, including in the titke. The Proposed 
+Rule Change also would update the time horizon for which LCH SA would 
+consider this potential liquidity impact from five to seven days. These 
+changes would be consistent with the changes made in other sections of 
+the Framework, as described above.
+
+(v) Section 5 Changes to the Framework
+
+    Section 5 of the Framework, titled Model Performance Testing and 
+Ongoing Monitoring, describes how LCH SA monitors and tests its 
+liquidity sources and requirements. Section 5.1, titled Ongoing 
+Monitoring, describes the metrics that LCH SA calculates each day, 
+notes the formula used to determine each metric, how LCH SA reports 
+that metric, the limit associated with the metric, and what action LCH 
+SA would take if the limit is breached. For example, Section 5.1 
+describes how LCH SA calculates its LCR, how LCH SA reports the LCR 
+daily, and the amount of LCR that would trigger an alert and further 
+actions. Throughout Section 5.1, the Proposed Rule Change would update 
+references to the length of time for which LCH SA must maintain 
+liquidity resources from five to seven days and change the name of LCH 
+SA's interoperable CCP to Euronext Clearing, consistent with changes 
+elsewhere in the Framework.
+    Section 5.1 also describes how LCH SA monitors the allocation 
+between cash and non-cash collateral and specifies that cash collateral 
+should represent at least 25% of LCH SA's available liquid resources 
+after the default of its most significant Clearing Member. The Proposed 
+Rule Change would revise this to state that cash collateral and non-
+cash collateral that is eligible to be pledged at BdF (meaning Eligible 
+Collateral) should represent at least 25% of LCH SA's available liquid 
+resources after the default of its most significant Clearing Member. 
+LCH SA is making this change in recognition that it can pledge Eligible 
+Collateral for liquidity and further to conform the Framework with LCH 
+SA's Liquidity Policy.
+    The Proposed Rule Change next would amend Section 5.3, titled 
+Reverse Stress Test, which describes the reverse stress tests that LCH 
+SA performs. LCH SA performs these reverse stress tests using extreme 
+market conditions that go beyond what are considered plausible. As 
+described in the introduction to Section 5.3, LCH SA uses these extreme 
+market conditions to satisfy certain requirements of applicable law. 
+The Proposed Rule Change would add to the discussion of applicable law 
+a summary of Commission Rules 17Ad-22(e)(7)(vi)(B) and (C).\14\ 
+Throughout Section 5.3 the Proposed Rule Change also would update 
+references to the length of time for which LCH SA must maintain 
+liquidity resources from five to seven days and change the name of LCH 
+SA's interoperable CCP to Euronext clearing, consistent with changes 
+elsewhere in the Framework.
+---------------------------------------------------------------------------
+
+    \14\ 17 CFR 240.17Ad-22(e)(7)(vi)(B) and (C).
+---------------------------------------------------------------------------
+
+    As described in Section 5.3, LCH SA conducts its reverse stress 
+tests using two approaches. First, LCH SA conducts reverse stress tests 
+using seven separate risk factors, with one single factor
+
+[[Page 57476]]
+
+stressed at a time. The Framework refers to these tests as ``single 
+factor reverse stress tests'' or ``core reverse stress tests.'' Second, 
+LCH SA tests the same risk factors together, under two different 
+overall combinations of risk factors, which the Framework refers to as 
+``combined scenarios.'' One combined scenario aims to stress the 
+structure of LCH SA's liquidity resources while the other combined 
+scenario aims to simulate the effect of a macro-economic shock on LCH 
+SA's liquidity resources.
+    Section 5.3.1, titled Independent stress of various risk factors, 
+describes each of the seven risk factors, and the Proposed Rule Change 
+would make various updates to this description. For example, the first 
+risk factor considers the effect on LCH SA's liquid resources arising 
+from a reduction in margin requirements. The description of this risk 
+factor currently notes that a primary source of liquidity is from 
+investment management by LCH SA's CaLM team. The Proposed Rule Change 
+would revise this to note that a primary source of liquidity is from 
+investment management performed by LCH SA's CaLM team. The Proposed 
+Rule Change also would add an explanation that another primary source 
+of liquidity for LCH SA is non-cash collateral that LCH SA can pledge 
+to obtain liquidity.
+    The second risk factor considers the effect on LCH SA's liquidity 
+resources arising from Clearing Members replacing Eligible Collateral 
+that LCH SA can pledge for liquidity at BdF with collateral that LCH SA 
+cannot pledge. The current Framework describes the collateral that LCH 
+SA cannot pledge as, among others, U.K. or U.S. bonds, equities, and 
+other non-Euro non-cash collateral. The Proposed Rule Change would add 
+to this list pledge collateral, meaning collateral deposited in a SPA. 
+As discussed above, LCH SA cannot use collateral deposited via SPA to 
+obtain liquidity at BdF, even if that collateral is Eligible 
+Collateral.
+    The third risk factor considers the impact from a downgrade in the 
+rating of countries in the Eurozone. Such a downgrade could increase 
+the haircut applied to Eligible Collateral when LCH SA pledges it at 
+BdF to obtain liquidity. Currently, the Framework describes this risk 
+factor as a reverse stress test that aims at modelling the downgrade of 
+the relevant countries and estimating the theoretical ECB haircuts 
+generating a liquidity shortfall. The Proposed Rule Change would revise 
+this description to modelling the downgrade of the relevant countries 
+and estimating the theoretical ECB haircuts needed to generate a 
+liquidity shortfall.
+    The Proposed Rule Change would not make any amendments to the 
+description of the fourth and fifth risk factors, which consider the 
+effects of the increase of the maturity of the securities from the 
+settlement of repo transactions and the effects of the market-to-market 
+drop of tier 1 assets.
+    For the sixth risk factor, the Proposed Rule Change would revise 
+the phrase ``the direction of the position'' to ``the direction of the 
+positions.''
+    The seventh risk factor considers how many defaults LCH SA can 
+sustain before experiencing a shortfall in liquidity. Here the 
+Framework currently includes the following question: given that 
+liquidity requirements are sized to a Cover 2 standard, is it plausible 
+that there are more than 2 members who could lead to a liquidity 
+deficit? The Proposed Rule Change would revise the phrasing of this 
+question to ``2 member Groups defaults'' instead of ``2 members.'' 
+Further, the current Framework specifies that, to answer this question, 
+LCH SA rank orders Clearing Member Groups based on their internal 
+credit scores (``ICS''), starting from the ones with the worst ICS. The 
+Proposed Rule Change would revise the wording of this sentence to state 
+instead that to answer this question, LCH SA ranks Clearing Member 
+Groups on their ICS and starts with the one with the worst ICS. 
+Finally, the current Framework notes that, starting from the top of the 
+list, LCH SA assesses how many defaults have to take place to generate 
+a liquidity shortage. The Proposed Rule Change would revise this 
+slightly to state that, starting from the top of the list and 
+considering all member Group with ICS 6 or bigger, LCH SA assesses how 
+many defaults have to take place to generate a liquidity shortage.
+    Section 5.3.2, titled Combined reverse stress test scenarios, 
+describes the combined reverse stress test scenarios. Section 5.3.2.1 
+currently notes that LCH SA performs these additional combined reverse 
+stress tests quarterly. The Proposed Rule Change would revise this 
+language to at least quarterly.
+    Section 5.3.2.2, titled Behavioural scenario, describes the 
+combined scenario that stresses the structure of LCH SA's liquidity 
+resources, including the individual risk factors that LCH SA combines 
+to create this scenario. This section also describes the overall 
+question that LCH SA seeks to answer with this reverse stress test, 
+which is whether there is any combination of changes in the liquidity 
+resources that could lead to a liquidity shortfall without any stress 
+in the market. In addition to describing the risk factors tested and 
+the overall aim of the scenario, Section 5.3.2.2 also provides an 
+example of how LCH SA reports the results of the test. The Proposed 
+Rule Change would update this example to reflect a new layout for the 
+report.
+    Section 5.3.2.3, titled Macro-economic scenario, describes the 
+combined scenario that simulates the effect of a macro-economic shock 
+on LCH SA's liquidity resources. This section describes how LCH SA 
+combines the individual risk factors to create the overall scenario, as 
+well as the overall question that LCH SA seeks to answer with this 
+reverse stress test, which is how many multiple defaults LCH SA can 
+sustain until it experiences a liquidity shortfall in a shocked macro-
+economic environment. To simulate the shocked macro-economic 
+environment, the Framework currently uses two macro-economic scenarios, 
+which are described in Section 5.3.2.3. The Proposed Rule Change would 
+remove these two scenarios and replace them with the same scenarios 
+that it uses to determine its LCR.\15\ The Proposed Rule Change would 
+update this section and references to the scenarios accordingly. 
+Throughout this section, the Proposed Rule Change also would change 
+references to Clearing Members to Clearing Member Groups to clarify 
+that this scenario considers Clearing Member Groups, rather than 
+individual members, consistent with the overall Cover 2 requirement. 
+Finally, the Proposed Rule Change would update the examples of the 
+reports that LCH SA uses to present the results of this scenario. The 
+Proposed Rule Change would update the layout of these examples to match 
+the current versions used by LCH SA.
+---------------------------------------------------------------------------
+
+    \15\ As noted above, these scenarios are set out in Appendix 
+6.7.
+---------------------------------------------------------------------------
+
+    Section 5.3.3.3, titled Frequency and Reporting, would be a new 
+section to describe how often LCH SA conducts testing, reviews the 
+results, and reviews the underlying scenarios. As would be specified in 
+Section 5.3.3.3, LCH SA would perform the core reverse stress tests 
+monthly and the combined reverse stress test scenarios quarterly. 
+Through its monthly core reverse stress tests, LCH SA would conduct a 
+comprehensive analysis of the existing stress testing scenarios, 
+models, and underlying parameters and assumptions used in evaluating 
+liquidity needs and resources. In certain circumstances, LCH SA also 
+would perform an ad hoc analysis of the existing stress testing 
+scenarios, models, and underlying parameters and assumptions used in 
+evaluating liquidity needs and resources. LCH SA would do so when
+
+[[Page 57477]]
+
+the products it clears or markets it serves display high volatility or 
+become less liquid; when the size or concentration of its Clearing 
+Members' positions held increase significantly; or in any other 
+appropriate circumstances that would lead to a liquidity coverage ratio 
+falling below LCH SA's alert threshold. In this last circumstance, the 
+ad hoc analysis would be reported to the LCH SA CRO, the Head of the 
+LCH SA Collateral and Liquidity Management division, and to the LCH SA 
+Risk Committee. Finally, Section 5.3.3 would require that the results 
+and findings of the reverse stress tests exercise be reported monthly 
+to LCH SA CRO and quarterly to LCH SA Risk Committee.
+
+(vi) Section 6 Changes to the Framework
+
+    Section 6 of the Framework, titled Appendix, contains appendices to 
+the main document. There are currently six appendices to the Framework. 
+The Proposed Rule Change would revise Appendices two through five and 
+add new Appendices seven and eight.
+    Appendix two, titled Members behaviour analysis, describes how LCH 
+SA models the behavior of Clearing Members during a period of market 
+stress. This appendix considers behaviors that could affect LCH SA's 
+liquidity resources, such as replacing cash collateral with non-cash 
+collateral, withdrawing excess collateral, and reducing positions 
+(which in turn could reduce margin and guaranty fund requirements and 
+therefore the financial resources available to LCH SA). Throughout this 
+section the Proposed Rule Change would change relevant time horizons 
+from five to seven days, consistent with the changes to main body of 
+the Framework discussed above.
+    The Proposed Rule Change also would update the description of non-
+cash collateral that LCH SA cannot pledge at the BdF to obtain a 
+liquidity line of credit. Appendix two currently describes this 
+collateral as mainly Gilts and Central Bank Guarantees. The Proposed 
+Rule Change would expand this list to include U.S. Treasuries, as well 
+as securities denominated in Danish Krone, Norwegian Krone, Swedish 
+Krona, Japanese Yen, Swiss Franc, Canadian Dollar, and Australian 
+Dollar, because LCH SA cannot pledge such securities at BdF. Appendix 
+two also currently notes that, although LCH SA cannot pledge this 
+collateral at BdF, the use of this collateral by Clearing Members would 
+not be material to LCH SA's liquidity resources. This is because, as 
+currently described in Appendix two, this collateral represents a small 
+percentage of total collateral, and LCH SA expects to limit use of this 
+collateral. The Proposed Rule Change would revise this description to 
+note that LCH SA has imposed concentration limits on collateral that it 
+cannot pledge at BdF, rather than LCH SA expecting to limit the use of 
+such collateral.
+    Appendix three, titled Reminder of SA's sources of liquidity and 
+related risk drivers, is a table that describes, in summary form, LCH 
+SA's sources of liquidity. For each source of liquidity, the table also 
+describes risks that could affect the amount of liquidity that LCH SA 
+can obtain for the source, as well as how LCH SA mitigates those risks. 
+Here the Proposed Rule Change would change the name of LCH SA's 
+interoperable CCP to Euronext. The Proposed Rule Change also would add 
+an additional risk to one of LCH SA's liquidity sources. Currently the 
+table lists non-cash collateral from Clearing Members as a source of 
+liquidity because LCH SA may obtain liquidity with such collateral 
+through investment transactions or by pledging Eligible Collateral at 
+BdF. The Proposed Rule Change would note that a Clearing Member's 
+ability to pledge non-cash collateral using a SPA is a risk to this 
+liquidity source. This is a risk because LCH SA cannot use collateral 
+deposited via a SPA to obtain liquidity, even if that collateral is 
+Eligible Collateral.
+    Appendix four, titled Liquidity risk drivers synthesis by reports, 
+is a table that describes, in summary form, LCH SA's liquidity needs. 
+This table presents the liquidity needs according to three broad 
+categories: (i) operational target (needs arising from LCH SA's 
+business-as-usual operations); (ii) LCR (needs arising from Clearing 
+Members' defaults); and (iii) Euronext LCR (needs arising from 
+interoperating CCP's defaults). Here the Proposed Rule Change would 
+change the name of LCH SA's interoperable CCP to Euronext and change 
+the time horizon from five to seven days.
+    Appendix five, titled Liquidity risk monitoring reports, shows 
+examples of the reports that LCH SA uses to monitor its liquidity. The 
+Proposed Rule Change would update the layout of these examples to match 
+the current versions used by LCH SA.
+    As noted, the Proposed Rule Change would add a new Appendix seven, 
+which would be titled Stress scenarios list. It would contain a list of 
+stress scenarios that LCH SA uses for each of its clearing services.
+    The Proposed Rule Change also would add a new Appendix eight, which 
+would be titled Pseudo-code of settlement and market risk calculation. 
+Appendix eight would explain the algorithm that LCH SA uses to 
+calculate the settlement obligation driven liquidity requirements in 
+the monitoring of the LCR and the resulting BdF liquidity raised by 
+pledging the securities withdrawn from the settlement systems. This 
+appendix would present the algorithm in pseudo-code format, meaning the 
+appendix would show how the algorithm would look when programmed into a 
+computer for calculation. This same algorithm would also be described 
+in Section 4.2.5.1.1.1 and Section 4.2.5.1.1.2 of the Framework.
+
+III. Discussion and Commission Findings
+
+    Section 19(b)(2)(C) of the Act requires the Commission to approve a 
+proposed rule change of a self-regulatory organization if it finds that 
+the proposed rule change is consistent with the requirements of the Act 
+and the rules and regulations thereunder applicable to the 
+organization.\16\ For the reasons given below, the Commission finds 
+that the Proposed Rule Change is consistent with Section 17A(b)(3)(F) 
+of the Act,\17\ Rule 17Ad-22(e)(7) thereunder,\18\ and Rules 17Ad-
+22(e)(7)(vi)(B) and (C) \19\ thereunder.
+---------------------------------------------------------------------------
+
+    \16\ 15 U.S.C. 78s(b)(2)(C).
+    \17\ 15 U.S.C. 78q-1(b)(3)(F).
+    \18\ 17 CFR 240.17Ad-22(e)(7).
+    \19\ 17 CFR 240.17Ad-22(e)(7)(vi)(B) and (C).
+---------------------------------------------------------------------------
+
+A. Consistency With Section 17A(b)(3)(F) of the Act
+
+    Under Section 17A(b)(3)(F) of the Act, LCH SA's rules, among other 
+things, must be ``designed to promote the prompt and accurate clearance 
+and settlement of . . . derivative agreements, contracts, and 
+transactions . . . .'' \20\ Based on its review of the record, and for 
+the reasons discussed below, the Commission believes that the Proposed 
+Rule Change is consistent with Section 17A(b)(3)(F) of the Act because 
+it improves LCH SA's management of its liquidity risk.\21\
+---------------------------------------------------------------------------
+
+    \20\ 15 U.S.C. 78q-1(b)(3)(F).
+    \21\ 15 U.S.C. 78q-1(b)(3)(F).
+---------------------------------------------------------------------------
+
+    LCH SA relies on the Framework to support its management of 
+liquidity risk arising from a potential Clearing Member default, 
+default of Euronext Clearing, and operational liquidity requirements. 
+Managing such risks, such as through the maintenance of liquid 
+resources sufficient to meet payment obligations, reduces the 
+likelihood that LCH SA would fail to make payments when due, thereby 
+avoiding disruptions to the settlement of transactions for which such 
+payments are due. Thus, the Framework, as a rule of LCH SA, supports 
+the prompt and
+
+[[Page 57478]]
+
+accurate clearance and settlement of the derivatives transactions LCH 
+SA clears, including security-based swaps.
+    Certain of the changes would update and clarify existing aspects of 
+the Framework. These include the updates to overall scope, purpose, and 
+use of the Framework in Section 1. Throughout the Framework, the 
+Proposed Rule Change also would update the name of LCH SA's 
+interoperable CCP to Euronext Clearing. These updates and 
+clarifications contribute to the effectiveness of the Framework as a 
+tool supporting LCH SA's management of liquidity risk arising from a 
+potential member default, default of Euronext Clearing, and operational 
+liquidity requirements, which facilitates prompt and accurate clearance 
+and settlement.
+    In addition to updating and clarifying the Framework, the Proposed 
+Rule Change also would revise how LCH SA determines its liquidity 
+sources and needs under the Framework. With respect to sources of 
+liquidity, the Proposed Rule Change would require LCH SA to consider 
+Clearing Members' ability to switch from depositing collateral using 
+FTTAs to SPAs. Such switches could reduce the amount of liquidity that 
+LCH SA is able to obtain when pledging Eligible Collateral at BdF 
+because LCH SA cannot pledge any collateral deposited via SPAs. 
+Similarly, the Proposed Rule Change would require LCH SA to consider 
+stressed market prices when determining the amount of liquidity that it 
+could obtain by pledging Eligible Collateral at BdF. The amount of 
+liquidity that LCH SA could obtain is based on the value of the 
+collateral at the time of the pledge, minus an applicable haircut, and 
+potential stress market conditions could decrease the value of the 
+collateral or increase the haircut.
+    With respect to LCH SA's liquidity needs, the Proposed Rule Change 
+would prevent netting between Clearing Members of the same group. 
+Eliminating netting potentially could increase the liquidity needs 
+generated among a group of related Clearing Members. The Proposed Rule 
+Change also would extend to seven days (from five days) the time 
+horizon for which LCH SA must maintain liquidity resources sufficient 
+to meet its liquidity requirements. Doing so could potentially increase 
+the amount of LCH SA's liquidity requirements. Finally, the Proposed 
+Rule Change would require that LCH SA consider the liquidity 
+requirements generated by the expiration of physically settled stock 
+futures, adding another potential liquidity need to LCH SA's existing 
+liquidity needs.
+    These changes, taken together, would improve LCH SA's ability to 
+determine the amount of its liquidity needs and the amount of its 
+resources to satisfy those liquidity needs. More accurately determining 
+the amount of LCH SA's liquidity needs and resources would thereby 
+improve LCH SA's ability to control and quantify its liquidity risk. 
+Control over and accurate measurement of liquidity risk is necessary to 
+ensure that LCH SA's liquidity needs do not exceed its resources so 
+that LCH SA can meet its payment obligations on time without disrupting 
+settlement. Thus, the proposed changes to the Framework promote prompt 
+and accurate clearance and settlement.
+    The Commission finds, therefore, that the Proposed Rule Change is 
+consistent with the requirements of Section 17A(b)(3)(F) of the 
+Act.\22\
+---------------------------------------------------------------------------
+
+    \22\ 15 U.S.C. 78q-1(b)(3)(F).
+---------------------------------------------------------------------------
+
+B. Consistency With Rule 17Ad-22(e)(7) Under the Act
+
+    Rule 17Ad-22(e)(7) requires LCH SA to establish, implement, 
+maintain, and enforce written policies and procedures reasonably 
+designed to effectively measure, monitor, and manage the liquidity risk 
+that arises in or is borne by LCH SA, including measuring, monitoring, 
+and managing its settlement and funding flows on an ongoing and timely 
+basis, and its use of intraday liquidity.\23\ As noted above, LCH SA 
+uses the Framework to measure, monitor, and manage its liquidity risk. 
+The Proposed Rule Change would improve the Framework by more accurately 
+determining the amount of LCH SA's liquidity needs and resources. In 
+doing so, the Proposed Rule Change would help ensure that the Framework 
+is designed to effectively measure, monitor, and manage the liquidity 
+risk that arises in or is borne by LCH SA. The Commission therefore 
+finds that the Proposed Rule Change is consistent with rule 17Ad-
+22(e)(7).\24\
+---------------------------------------------------------------------------
+
+    \23\ 17 CFR 240.17Ad-22(e)(7).
+    \24\ 17 CFR 240.17Ad-22(e)(7).
+---------------------------------------------------------------------------
+
+C. Consistency With Rules 17Ad-22(e)(7)(vi)(B) and (C) Under the Act
+
+    Rules 17Ad-22(e)(7)(vi)(B) and (C) \25\ require LCH SA to 
+establish, implement, maintain, and enforce written policies and 
+procedures reasonably designed to determine the amount and regularly 
+testing the sufficiency of the liquid resources held for purposes of 
+meeting the minimum liquid resource requirement under Rule 17Ad-
+22(e)(7)(i) by, at a minimum: (i) conducting a comprehensive analysis 
+on at least a monthly basis of the existing stress testing scenarios, 
+models, and underlying parameters and assumptions used in evaluating 
+liquidity needs and resources, and considering modifications to ensure 
+they are appropriate for determining its identified liquidity needs and 
+resources in light of current and evolving market conditions and (ii) 
+conducting a comprehensive analysis of the scenarios, models, and 
+underlying parameters and assumptions used in evaluating its liquidity 
+needs and resources more frequently than monthly when the products 
+cleared or markets served display high volatility or become less 
+liquid, when the size or concentration of positions held by its 
+participants increases significantly, or in other appropriate 
+circumstances described in such policies and procedures. The Proposed 
+Rule Change would add to the Framework a new Section 5.3.3.3, which 
+would require that LCH SA perform its core reverse stress tests 
+monthly, through which LCH SA would conduct a comprehensive analysis of 
+the existing stress testing scenarios, models, and underlying 
+parameters and assumptions used in evaluating liquidity needs and 
+resources. Section 5.3.3 also would require that an ad-hoc analysis of 
+the existing stress testing scenarios, models, and underlying 
+parameters and assumptions used in evaluating liquidity needs and 
+resources in certain circumstances. LCH SA would do so when the 
+products it clears or markets it serves display high volatility or 
+become less liquid; when the size or concentration of its clearing 
+members' positions held increase significantly; or in any other 
+appropriate circumstances that would lead to a liquidity coverage ratio 
+falling below LCH SA's alert threshold. These changes would be 
+consistent with the requirements of Rules 17Ad-22(e)(7)(vi)(B) and 
+(C).\26\ The Commission therefore finds that the Proposed Rule Change 
+is consistent with Rules 17Ad-22(e)(7)(vi)(B) and (C).\27\
+---------------------------------------------------------------------------
+
+    \25\ 17 CFR 240.17Ad-22(e)(7)(vi)(B) and (C).
+    \26\ 17 CFR 240.17Ad-22(e)(7)(vi)(B) and (C).
+    \27\ 17 CFR 240.17Ad-22(e)(7)(vi)(B) and (C).
+---------------------------------------------------------------------------
+
+IV. Conclusion
+
+    On the basis of the foregoing, the Commission finds that the 
+Proposed Rule Change is consistent with the requirements of the Act, 
+and in particular, Section 17A(b)(3)(F) of the Act,\28\ Rule 17Ad-
+22(e)(7) thereunder,\29\
+
+[[Page 57479]]
+
+and Rules 17Ad-22(e)(7)(vi)(B) and (C) \30\ thereunder.
+---------------------------------------------------------------------------
+
+    \28\ 15 U.S.C. 78q-1(b)(3)(F).
+    \29\ 17 CFR 240.17Ad-22(e)(7)
+    \30\ 17 CFR 240.17Ad-22(e)(7)(vi)(B) and (C).
+---------------------------------------------------------------------------
+
+    It is therefore ordered pursuant to Section 19(b)(2) of the Act 
+that the Proposed Rule Change (SR-LCH SA-2023-004) be, and hereby is, 
+approved.\31\
+---------------------------------------------------------------------------
+
+    \31\ In approving the Proposed Rule Change, the Commission 
+considered the proposal's impacts on efficiency, competition, and 
+capital formation. 15 U.S.C. 78c(f).
+
+    For the Commission by the Division of Trading and Markets, 
+pursuant to delegated authority.\32\
+---------------------------------------------------------------------------
+
+    \32\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+J. Matthew DeLesDernier,
+Deputy Secretary.
+[FR Doc. 2024-15401 Filed 7-12-24; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre></body>
+</html>

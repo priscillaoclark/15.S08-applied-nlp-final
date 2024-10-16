@@ -1,0 +1,414 @@
+<html>
+<head>
+<title>Federal Register, Volume 89 Issue 28 (Friday, February 9, 2024)</title>
+</head>
+<body><pre>
+[Federal Register Volume 89, Number 28 (Friday, February 9, 2024)]
+[Notices]
+[Pages 9192-9194]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2024-02643]
+
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-99471; File No. SR-IEX-2024-04]
+
+
+Self-Regulatory Organizations; Investors Exchange LLC; Notice of 
+Filing and Immediate Effectiveness of Proposed Rule Change Pursuant to 
+IEX Rule 15.110 To Amend IEX's Fee Schedule
+
+February 5, 2024.
+    Pursuant to Section 19(b)(1) \1\ of the Securities Exchange Act of 
+1934 (the ``Act'') \2\ and Rule 19b-4 thereunder,\3\ notice is hereby 
+given that, on January 24, 2024, the Investors Exchange LLC (``IEX'' or 
+the ``Exchange'') filed with the Securities and Exchange Commission 
+(the ``Commission'') the proposed rule change as described in Items I, 
+II and III below, which Items have been prepared by the self-regulatory 
+organization. The Commission is publishing this notice to solicit 
+comments on the proposed rule change from interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 15 U.S.C. 78a.
+    \3\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+I. Self-Regulatory Organization's Statement of the Terms of Substance 
+of the Proposed Rule Change
+
+    Pursuant to the provisions of Section 19(b)(1) under the Act,\4\ 
+and Rule 19b-4 thereunder,\5\ the Exchange is filing with the 
+Commission a proposed rule change to amend its Fee Schedule, \6\ 
+pursuant to IEX Rule 15.110(a) and (c) (the ``Fee Schedule''), to 
+revise the Fee Codes \7\ applicable to transactions that involve a Post 
+Only order that executes on entry. Changes to the Fee Schedule pursuant 
+to this proposal are effective upon filing,\8\ and the Exchange plans 
+to implement the changes on February 15, 2024.
+---------------------------------------------------------------------------
+
+    \4\ 15 U.S.C. 78s(b)(1).
+    \5\ 17 CFR 240.19b-4.
+    \6\ See Fee Schedule at <a href="https://www.iexexchange.io/resources/trading/fee-schedule">https://www.iexexchange.io/resources/trading/fee-schedule</a> for the complete list of fee code combinations 
+and their corresponding fees.
+    \7\ Fee Codes are identified on each execution report message 
+from the Exchange in the Trade Liquidity Indicator (FIX tag 9730) 
+field. See ``Transaction Fees/Definitions'' on the Fee Schedule.
+    \8\ 15 U.S.C. 78s(b)(3)(A)(ii).
+---------------------------------------------------------------------------
+
+    The text of the proposed rule change is available at the Exchange's 
+website at <a href="http://www.iextrading.com">www.iextrading.com</a>, at the principal office of the Exchange, 
+and at the Commission's Public Reference Room.
+
+II. Self-Regulatory Organization's Statement of the Purpose of, and the 
+Statutory Basis for, the Proposed Rule Change
+
+    In its filing with the Commission, the self-regulatory organization 
+included statements concerning the purpose of and basis for the 
+proposed rule change and discussed any comments it received on the 
+proposed rule change. The text of these statements may be examined at 
+the places specified in Item IV below. The self-regulatory organization 
+has prepared summaries, set forth in Sections A, B, and C below, of the 
+most significant aspects of such statements.
+
+A. Self-Regulatory Organization's Statement of the Purpose of, and the 
+Statutory Basis for, the Proposed Rule Change
+
+1. Purpose
+    The Exchange proposes to amend its Fee Schedule, pursuant to IEX 
+Rule 15.110(a) and (c), to revise the Fee Codes applicable to 
+transactions that involve a Post Only order that executes on entry. IEX 
+recently filed a rule change to introduce a Post Only order parameter 
+instruction and a Trade Now instruction.\9\ The Post Only Filing was 
+effective on filing but will not be implemented until February 15, 
+2024.\10\
+---------------------------------------------------------------------------
+
+    \9\ See Securities Exchange Act Release No. 98988 (November 20, 
+2023), 88 FR 82926 (November 27, 2023) (SR-IEX-2023-13) (``Post Only 
+Filing'').
+    \10\ See IEX Trading Alert 2024-003, available at <a href="https://iextrading.com/alerts/#/239">https://iextrading.com/alerts/#/239</a>.
+---------------------------------------------------------------------------
+
+    As described in the Post Only Filing, Members \11\ may attach a 
+Post Only parameter instruction to any displayable, non-routable order 
+priced at or above $1.00 per share (i.e., a Post Only order).\12\ A 
+Post Only order will not remove contra-side liquidity from the IEX 
+Order Book \13\ on entry (and will rest on the Order Book as a 
+displayed liquidity adding order), except in two specific 
+circumstances: (i) if the value of such execution when removing 
+liquidity equals or exceeds the value of such execution if the order 
+instead posted to the IEX Order Book and subsequently provided 
+liquidity, including the applicable fees charged or rebates provided 
+(the ``Sum of Fees''), or (ii) if the contra-side resting order with 
+which the incoming order could match is a non-displayed order with a 
+``Trade Now'' instruction.\14\ When an incoming Post Only order matches 
+a resting order with a Trade Now instruction, the resting order 
+converts into an executable order that removes liquidity against the 
+incoming Post Only order, and the incoming Post Only order becomes the 
+liquidity adding order.
+---------------------------------------------------------------------------
+
+    \11\ See IEX Rule 1.160(s).
+    \12\ If a Member submits a Post Only order that is priced below 
+$1.00 per share, the Exchange will disregard the Post Only 
+instruction. See IEX Rule 11.190(b)(20)(A).
+    \13\ See IEX Rule 1.160(p).
+    \14\ See IEX Rule 11.190(b)(21).
+---------------------------------------------------------------------------
+
+Fee Schedule Changes
+    IEX proposes to introduce two new Fee Codes, to specify (1) when a 
+Post Only order executed on entry, and (2) when a resting non-displayed 
+order with a Trade Now instruction removed liquidity from a Post Only 
+order that executed on entry. Specifically, as proposed, Fee Code Y 
+will be included on any execution report for a Post Only order that 
+executes on entry, and Fee Code W will be included on any execution 
+report for a resting order with a Trade Now instruction that removes 
+liquidity against an incoming liquidity-adding Post Only order. IEX 
+proposes to add these Fee Codes to the Fee Code Modifiers table on the 
+IEX Fee Schedule as follows:
+
+------------------------------------------------------------------------
+  Additional Fee Codes         Description                  Fee
+------------------------------------------------------------------------
+Y......................  Post Only order          See Relevant Fee Code
+                          executes on entry.       Combinations Below.
+W......................  Resting order removes    See Relevant Fee Code
+                          against Post Only        Combinations Below.
+                          order.
+------------------------------------------------------------------------
+
+
+[[Page 9193]]
+
+    Additionally, IEX proposes to add four new Fee Code Combinations to 
+the Additional Fee Code Combinations and Associated Fees table that 
+reflect the fees IEX will assess for an execution involving a Post Only 
+order that executes on entry:
+    <bullet> Fee Code Combination TIY, would apply to a Post Only order 
+priced at $1.00 or more that removes non-displayed liquidity on entry. 
+The fees associated with Fee Code Combination TIY are the same as the 
+fees associated with Fee Code Combination TI, the fee code for an order 
+that removes non-displayed liquidity on entry (currently $0.0010 per 
+share). IEX would include Fee Code Combination TIY on execution reports 
+to specify that a Post Only order executed on entry because the Sum of 
+Fees was less than the value of the execution if the order had added 
+displayed liquidity on the Exchange. Because the Exchange will 
+disregard the Post Only instruction on orders priced less than $1.00 
+per share (``sub-dollar''),\15\ IEX proposes to have the ``Executions 
+below $1.00'' column of the Additional Fee Code Combinations and 
+Associated Fees table read ``N/A''.\16\
+---------------------------------------------------------------------------
+
+    \15\ See supra note 9.
+    \16\ An incoming sub-dollar order with a disregarded Post Only 
+instruction that executes on entry with a resting non-displayed 
+order will result in a Fee Code Combination of TI (``Removes non-
+displayed liquidity'') on the execution report and be charged the 
+normal sub-dollar dark taking fee of 0.10% of the Total Dollar Value 
+(``TDV'').
+---------------------------------------------------------------------------
+
+    <bullet> Fee Code Combination TLY, would apply to a Post Only order 
+priced at $1.00 or more per share that removes displayed liquidity on 
+entry. The fees associated with Fee Code Combination TLY are the same 
+as the fees associated with Fee Code Combination TL, the fee code for 
+an order that removes displayed liquidity on entry (currently $0.0010 
+per share). IEX would include Fee Code Combination TLY on execution 
+reports to specify that a Post Only order executed on entry because the 
+Sum of Fees was less than the value of the execution if the order had 
+added displayed liquidity on the Exchange. Because the Exchange will 
+disregard the Post Only instruction on sub-dollar orders,\17\ IEX 
+proposes to have the ``Executions below $1.00'' column of the 
+Additional Fee Code Combinations and Associated Fees table read ``N/
+A''.\18\
+---------------------------------------------------------------------------
+
+    \17\ See supra note 9.
+    \18\ An incoming sub-dollar order with a disregarded Post Only 
+instruction that executes on entry with a resting displayed order 
+will result in a Fee Code Combination of TL (``Removes displayed 
+liquidity'') on the execution report and be charged the normal sub-
+dollar lit taking fee of 0.09% of the TDV.
+---------------------------------------------------------------------------
+
+    <bullet> Fee Code Combination MLY, would apply to a Post Only order 
+priced at $1.00 or more per share that executes on entry with a contra-
+side order with the Trade Now instruction. The fees associated with Fee 
+Code Combination MLY are the same as the fees associated with Fee Code 
+Combination ML, the fee code for an order that adds displayed liquidity 
+(currently a rebate of $0.0004 per share). IEX would include Fee Code 
+Combination MLY on execution reports to specify that although the order 
+executed on entry, it executed as the adder of displayed liquidity 
+because of the contra-side order's Trade Now instruction. Because the 
+Exchange will disregard the Post Only instruction on sub-dollar 
+orders,\19\ IEX proposes to have the ``Executions below $1.00'' column 
+of the Additional Fee Code Combinations and Associated Fees table 
+column read ``N/A''.\20\
+---------------------------------------------------------------------------
+
+    \19\ See supra note 9.
+    \20\ An incoming sub-dollar order with a disregarded Post Only 
+instruction will not trigger a resting order with the ``Trade Now'' 
+instruction to become the taking order and will not be treated as 
+the making order. Thus, Fee Code Combination MLY would never apply. 
+If the incoming order matched with a resting non-displayed or 
+displayed order, it will result in a Fee Code Combination of TL or 
+TI, with fees of 0.09% or 0.10% of TDV, respectively.
+---------------------------------------------------------------------------
+
+    <bullet> Fee Code Combination TLW, would apply to a resting non-
+displayed order with the Trade Now instruction that executes against an 
+incoming Post Only order priced at $1.00 or more per share. The fees 
+associated with Fee Code Combination TLW are the same as the fees 
+associated with Fee Code Combination MI, the fee code for an execution 
+that adds non-displayed liquidity (currently $0.0010 per share for 
+executions at or above $1.00). IEX would include Fee Code Combination 
+TLW on execution reports that the order executed as the taker of 
+displayed liquidity. Because the Exchange will disregard the Post Only 
+instruction on an incoming sub-dollar Post Only order,\21\ that order 
+will not trigger a resting order with the ``Trade Now'' instruction to 
+become the taking order. Therefore, Fee Code Combination TLW would 
+never apply to a resting non-displayed order that matches with an 
+incoming sub-dollar order with a Post Only instruction, and IEX 
+proposes to have the ``Executions below $1.00'' column of the 
+Additional Fee Code Combinations and Associated Fees table column read 
+``N/A''.
+---------------------------------------------------------------------------
+
+    \21\ See supra note 9.
+---------------------------------------------------------------------------
+
+    IEX proposes to add these Fee Codes to the Additional Fee Code 
+Combinations and Associated Fees table on the IEX Fee Schedule as 
+follows:
+
+----------------------------------------------------------------------------------------------------------------
+                                                                                   Executions at    Executions
+               Fee Codes                               Description                or above $1.00    below $1.00
+----------------------------------------------------------------------------------------------------------------
+MLY....................................  Post Only order adds liquidity against        ($0.0004)             N/A
+                                          resting non-displayed order.
+TIY....................................  Post Only order removes non-displayed            0.0010             N/A
+                                          liquidity.
+TLY....................................  Post Only order removes displayed                0.0010             N/A
+                                          liquidity.
+TLW....................................  Resting non-displayed order removes              0.0010             N/A
+                                          liquidity against incoming Post Only
+                                          order.
+----------------------------------------------------------------------------------------------------------------
+
+2. Statutory Basis
+    The Exchange believes that the proposed rule change is consistent 
+with Section 6(b) of the Act,\22\ in general, and furthers the 
+objectives of Section 6(b)(4) \23\ of the Act, in particular, in that 
+it is designed to provide for the equitable allocation of reasonable 
+fees among IEX Members and persons using its facilities. As described 
+in the Purpose section, these proposed Fee Code changes will not change 
+the fees the Exchange charges for impacted orders but will simply 
+provide additional information with respect to such fees. Therefore, 
+the Exchange does not believe that adding this additional information 
+raises any new or novel issues not already considered by the 
+Commission. IEX also believes that the proposed rule change is 
+nondiscriminatory since all Members are eligible to enter orders with 
+Post Only and/or Trade Now instructions.
+---------------------------------------------------------------------------
+
+    \22\ 15 U.S.C. 78f(b).
+    \23\ 15 U.S.C. 78f(b)(4).
+---------------------------------------------------------------------------
+
+    Additionally, IEX believes that the proposed changes to the Fee 
+Schedule are consistent with the investor protection objectives of 
+Section 6(b)(5) \24\ of the Act, in particular, in that they are 
+designed to prevent fraudulent and manipulative acts and practices; to 
+promote just and equitable principles of trade; to foster cooperation 
+and
+
+[[Page 9194]]
+
+coordination with persons engaged in facilitating transactions in 
+securities; to remove impediments to and perfect the mechanism of a 
+free and open market and a national market system, and, in general, to 
+protect investors and the public interest; and are not designed to 
+permit unfair discrimination between customers, brokers, or dealers. 
+IEX believes that providing additional specificity to Members on 
+execution reports about the circumstances under which a Post Only order 
+executed on entry, as well as when an order with a Trade Now 
+instruction executed as a liquidity remover, will assist Members with 
+their order routing strategies, thereby facilitating transactions in 
+securities. Further, IEX believes that specifying that these new Fee 
+Code Combinations do not apply to sub-dollar executions because IEX 
+disregards the Post Only instruction on orders priced below $1.00 per 
+share will also assist Members with their order routing strategies, 
+thereby facilitating transactions in securities.
+---------------------------------------------------------------------------
+
+    \24\ 15 U.S.C. 78f(b)(5).
+---------------------------------------------------------------------------
+
+B. Self-Regulatory Organization's Statement on Burden on Competition
+
+    The Exchange does not believe that the proposed rule change will 
+impose any burden on competition that is not necessary or appropriate 
+in furtherance of the purposes of the Act. The Exchange does not 
+believe that the proposed Fee Code changes will impose any burden on 
+intermarket competition that is not necessary or appropriate in 
+furtherance of the purposes of the Act. As described in the Purpose and 
+Statutory Basis sections, the Exchange is not proposing to change any 
+fees but merely to provide additional information to Members regarding 
+certain executions.
+    The Exchange also does not believe that the proposed rule change 
+will impose any burden on intramarket competition that is not necessary 
+or appropriate in furtherance of the purposes of the Act. The proposed 
+fees will apply to all Members in the same manner, as discussed in the 
+Statutory Basis section. Accordingly, the Exchange does not believe 
+that these changes will have any impact on competition that is not 
+necessary or appropriate in furtherance of the purposes of the Act.
+
+C. Self-Regulatory Organization's Statement on Comments on the Proposed 
+Rule Change Received From Members, Participants, or Others
+
+    Written comments were neither solicited nor received.
+
+III. Date of Effectiveness of the Proposed Rule Change and Timing for 
+Commission Action
+
+    The foregoing rule change has become effective pursuant to Section 
+19(b)(3)(A)(ii) \25\ of the Act.
+---------------------------------------------------------------------------
+
+    \25\ 15 U.S.C. 78s(b)(3)(A)(ii).
+---------------------------------------------------------------------------
+
+    At any time within 60 days of the filing of the proposed rule 
+change, the Commission summarily may temporarily suspend such rule 
+change if it appears to the Commission that such action is necessary or 
+appropriate in the public interest, for the protection of investors, or 
+otherwise in furtherance of the purposes of the Act. If the Commission 
+takes such action, the Commission shall institute proceedings under 
+Section 19(b)(2)(B) \26\ of the Act to determine whether the proposed 
+rule change should be approved or disapproved.
+---------------------------------------------------------------------------
+
+    \26\ 15 U.S.C. 78s(b)(2)(B).
+---------------------------------------------------------------------------
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's internet comment form
+    (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>); or
+    <bullet> Send an email to <a href="/cdn-cgi/l/email-protection#384a4d545d155b5755555d564c4b784b5d5b165f574e"><span class="__cf_email__" data-cfemail="bac8cfd6df97d9d5d7d7dfd4cec9fac9dfd994ddd5cc">[email&#160;protected]</span></a>. Please include 
+file number SR-IEX-2024-04 on the subject line.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Secretary, Securities 
+and Exchange Commission, 100 F Street NE, Washington, DC 20549-1090.
+
+All submissions should refer to file number SR-IEX-2024-04. This file 
+number should be included on the subject line if email is used. To help 
+the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's internet website (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>). Copies of the submission, all subsequent amendments, all 
+written statements with respect to the proposed rule change that are 
+filed with the Commission, and all written communications relating to 
+the proposed rule change between the Commission and any person, other 
+than those that may be withheld from the public in accordance with the 
+provisions of 5 U.S.C. 552, will be available for website viewing and 
+printing in the Commission's Public Reference Room, 100 F Street NE, 
+Washington, DC 20549, on official business days between the hours of 10 
+a.m. and 3 p.m. Copies of the filing also will be available for 
+inspection and copying at the principal office of the Exchange. Do not 
+include personal identifiable information in submissions; you should 
+submit only information that you wish to make available publicly. We 
+may redact in part or withhold entirely from publication submitted 
+material that is obscene or subject to copyright protection. All 
+submissions should refer to file number SR-IEX-2024-04 and should be 
+submitted on or before March 1, 2024.
+---------------------------------------------------------------------------
+
+    \27\ 17 CFR 200.30-3(a)(12).
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\27\
+Sherry R. Haywood,
+Assistant Secretary.
+[FR Doc. 2024-02643 Filed 2-8-24; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

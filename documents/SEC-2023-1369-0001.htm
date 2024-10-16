@@ -1,0 +1,714 @@
+<html>
+<head>
+<title>Federal Register, Volume 88 Issue 227 (Tuesday, November 28, 2023)</title>
+</head>
+<body><pre>
+[Federal Register Volume 88, Number 227 (Tuesday, November 28, 2023)]
+[Notices]
+[Pages 83185-83189]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2023-26111]
+
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-99007; File No. SR-BOX-2023-28]
+
+
+Self-Regulatory Organizations; BOX Exchange LLC; Notice of Filing 
+and Immediate Effectiveness of a Proposed Rule Change To Establish IM-
+7600-8
+
+November 21, 2023.
+    Pursuant to Section 19(b)(1) of the Securities Exchange Act of 1934 
+(the ``Act''),\1\ and Rule 19b-4 thereunder,\2\ notice is hereby given 
+that on November 17, 2023, BOX Exchange LLC (``BOX'' or the 
+``Exchange'') filed with the Securities and Exchange Commission (the 
+``Commission'') the proposed rule change as described in Items I and II 
+below, which Items have been prepared by the Exchange. The Exchange 
+filed the proposed rule change pursuant to Section 19(b)(3)(A)(iii) of 
+the Act \3\ and Rule 19b-4(f)(6) thereunder.\4\ The Commission is 
+publishing this notice to solicit comments on the proposed rule change 
+from interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 17 CFR 240.19b-4.
+    \3\ 15 U.S.C. 78s(b)(3)(A)(iii).
+    \4\ 17 CFR 240.19b-4(f)(6).
+---------------------------------------------------------------------------
+
+I. Self-Regulatory Organization's Statement of the Terms of Substance 
+of the Proposed Rule Change
+
+    The Exchange proposes to proposes to establish IM-7600-8. The text 
+of the proposed rule change is available from the principal office of 
+the Exchange, at the Commission's Public Reference Room and also on the 
+Exchange's internet website at <a href="https://rules.boxexchange.com/rulefilings">https://rules.boxexchange.com/rulefilings</a>.
+
+II. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+    In its filing with the Commission, the self-regulatory organization 
+included statements concerning the purpose of, and basis for, the 
+proposed rule change and discussed any comments it received on the 
+proposed rule change. The text of these statements may be examined at 
+the places specified in Item IV below. The self-regulatory organization 
+has prepared summaries, set forth in Sections A, B, and C below, of the 
+most significant aspects of such statements.
+
+A. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+1. Purpose
+    The purpose of the proposed rule change is to establish IM-7600-8. 
+Proposed IM-7600-8 codifies current functionality and proposes an 
+additional enhancement. Specifically, the Exchange is proposing to 
+codify current functionality that, upon order entry, the system reduces 
+a Complex QOO Order or multi-leg QOO Order to its simplest form, which 
+also requires a corresponding quantity increase and a price decrease 
+(for example the system will reduce 6A+3B, 1 time to 2A+B, 3 times for 
+\1/3\ of the price).\5\ Additionally, the Exchange is proposing that, 
+if reducing the order to its simplest form results in a net price for 
+the order that exceeds three decimal places, the system will round the 
+net price of the Complex QOO Order or multi-leg QOO Order to the third 
+decimal place with the advantage to the initiating side. For purposes 
+of executing and determining the priority of the component legs of 
+Complex QOO or multi-leg QOO Orders, the system will calculate the 
+quantities and prices of the component legs in one cent ($0.01) 
+increments necessary to achieve the net price of the order. The 
+component legs of a Complex QOO Order or multi-leg QOO Order will 
+execute in one cent ($0.01) increments and the priority of each 
+component leg will be determined based on its execution price. A 
+Complex QOO Order or multi-leg QOO Order that is reduced to its 
+simplest form will be executed pursuant to the provisions in Rule 7600 
+(Qualified Open Outcry Orders--Floor Crossing), including Rule 7600(c) 
+(Submission of QOO Orders).
+---------------------------------------------------------------------------
+
+    \5\ The strategy 6A+3B, 1 time for X price is equal to the 
+strategy 2A+B, 3 times for X/3 of the price. See also infra note 5.
+---------------------------------------------------------------------------
+
+Background
+    Today, BOX Participants may submit a Complex QOO Order or multi-leg 
+QOO Order with leg ratios that have not been reduced by the highest 
+common denominator for the component legs of the order. Upon receipt of 
+such a Complex QOO Order or multi-leg QOO Order, the system will reduce 
+the order to its simplest form by dividing the leg quantities by their 
+highest common denominator.\6\ The system makes a corresponding 
+reduction to the price of the strategy and a corresponding increase to 
+the quantity of the strategy so that the net price of the order before 
+and after the reduction by the highest common denominator is 
+economically equivalent.\7\ The order is then accepted into the system 
+and processed according to Exchange rules. The Exchange reduces such 
+strategy orders to their simplest form to avoid populating the Complex 
+Order Book \8\ with multiple versions of economically equivalent 
+strategies which may cause confusion and result in unnecessary demands 
+on system resources. Currently, when this process of reducing an order 
+to its simplest form results in a net price with more than three 
+decimal places (i.e., 1.666...) (``non-conforming strategy price''), 
+the system rejects the Complex QOO Order or multi-leg QOO Order back to 
+the submitting Participant.\9\
+---------------------------------------------------------------------------
+
+    \6\ For example, a Complex QOO Order is submitted as 6A+3B. The 
+system will reduce the strategy to its simplest form by dividing 
+each leg by their highest common denominator (i.e., 3), resulting in 
+2A+B (6A/3 + 3B/3). This operation is performed so that the system 
+is not replete with multiple versions of economically equivalent 
+strategies which would populate the Complex Order Book and may cause 
+confusion and result in unnecessary demands on system resources.
+    \7\ For example, if the above Complex Order of 6A+3B was 
+submitted with a price of 3.30 for the strategy, in addition to 
+dividing each leg by 3, the system will divide the price by the same 
+value, resulting in a price of 1.10 (3.30/3) for the reduced 
+strategy of 2A+B. Additionally, the system would multiply the 
+quantity of the strategy by 3 so that the net result is a strategy 
+for 2A+B for 1.10, 3 times. In summary, the strategy 6A+3B, 1 time 
+for 3.30 is economically equivalent to 2A+B, 3 times for 1.10.
+    \8\ The term ``Complex Order Book'' means the electronic book of 
+Complex Orders maintained by the BOX Trading Host. See BOX Rule 
+7240(a)(8).
+    \9\ The Exchange notes that currently when reducing strategy 
+orders to their simplest form results in a net price with three or 
+fewer decimal places, the Complex QOO Order or multi-leg QOO Order 
+is executed pursuant to the provisions in Rule 7600.
+---------------------------------------------------------------------------
+
+Proposal
+    The Exchange now proposes a system enhancement to accept a Complex 
+QOO Order or multi-leg QOO Order with a non-conforming strategy price. 
+Under this proposal, when reducing the leg ratios of the Complex QOO 
+Order or multi-leg QOO Order, the system will now round a non-
+conforming strategy price to a net price with three decimals to the 
+advantage of the initiating side instead of rejecting such orders. The 
+order can then be accepted and processed pursuant to Exchange rules. 
+The Exchange notes that the current priority rules for Complex QOO 
+Orders and multi-leg QOO Orders will continue to apply. As discussed 
+above, if the
+
+[[Page 83186]]
+
+process of reducing a strategy order to its simplest form results in 
+the net price of the order that exceeds three decimal places the system 
+will round the net price of the Complex QOO Order or multi-leg QOO 
+Order to the third decimal place with advantage to the initiating side. 
+For purposes of executing and determining the priority of the component 
+legs of Complex QOO or multi-leg QOO Orders, the system will calculate 
+the quantities and prices of the component legs in one cent ($0.01) 
+increments necessary to achieve the net price of the order. The 
+component legs of a Complex QOO Order or multi-leg QOO Order will 
+execute in one cent ($0.01) increments and the priority of each 
+component leg will be determined based on its execution price. A 
+Complex QOO Order or multi-leg QOO Order that is reduced to its 
+simplest form will be executed pursuant to the provisions in Rule 7600 
+(Qualified Open Outcry Orders--Floor Crossing), including Rule 7600(c) 
+(Submission of QOO Orders).
+    The priority rules for Complex QOO and multi-leg QOO Orders will 
+apply to Complex QOO and multi-leg QOO Orders with prices rounded 
+pursuant to proposed IM-7600-8. The Exchange notes that order priority 
+rules for Complex QOO Orders include that Complex QOO Orders may not 
+trade through any equal or better priced Public Customer orders on the 
+Complex Order Book and may not trade through any non-Public Customer 
+Complex bids or offers on the Complex Order Book that are ranked ahead 
+of such equal or better priced Public Customer Complex bids or offers, 
+and may not trade through any non-Public Customer bids or offers on the 
+Complex Order Book that are priced better than the proposed execution 
+price. Additionally, the Complex QOO Order may be executed at a price 
+without giving priority to equivalent bids or offers in the individual 
+series legs on the initiating side, provided at least one options leg 
+betters the corresponding bid or offer on the BOX Book by at least one 
+minimum trading increment as set forth in Rule 7240(b)(1).\10\
+---------------------------------------------------------------------------
+
+    \10\ See BOX Rule 7600(c). The term ``BOX Book'' means the 
+electronic book of orders on each single option series maintained by 
+the BOX Trading Host. See BOX Rule 100(a)(10).
+---------------------------------------------------------------------------
+
+    Order priority rules for multi-leg QOO Orders include that each 
+component series of a multi-leg QOO Order may not trade through any 
+equal or better priced Public Customer bids or offers on the BOX Book 
+for that series or any non-Public Customer bids or offers on the BOX 
+Book for that series that are ranked ahead of or equal to better priced 
+Public Customer bids or offers, and may not trade through any non-
+Public Customer bids or offers for that series on the BOX Book that are 
+priced better than the proposed execution price. Specifically, the 
+initiating side component legs of a multi-leg QOO Order must execute 
+against the BOX Book as provided by Rules 7600(d) and (h) before 
+executing against the contra-side multi-leg QOO Order.\11\
+---------------------------------------------------------------------------
+
+    \11\ See BOX Rule 7600(c). The Exchange notes that the 
+initiating side of a QOO Order is allocated first against any better 
+priced bids or offers on the BOX Book, provided that an adequate 
+book sweep size was provided by the Floor Broker pursuant to 
+paragraph (h). Next, at the same price as the contra-side of the QOO 
+Order, if any contracts of the initiating side remain, the 
+initiating side of the QOO Order will match against Public Customer 
+Orders on the BOX Book, along with any bids or offers of non-Public 
+Customers ranked ahead of such Public Customer Orders on the BOX 
+Book, provided that an adequate book sweep size was provided by the 
+Floor Broker pursuant to paragraph (h). Multiple bids or offers at 
+the same price are matched based on time priority. See BOX Rules 
+7600(d)(1) and (2).
+---------------------------------------------------------------------------
+
+    The following examples illustrate these concepts:
+Example of the Proposed Rounding and Execution of a Complex QOO Order 
+With a Non-Conforming Price
+    A Complex QOO Order is submitted to transact the strategy of 6A+3B 
+for 12.50, 51 times, where the initiating side is buying (quoted in 
+terms of the price of buying 6A+3B one time). The system will then 
+reduce the order 6A+3B to its simplest form, dividing by its highest 
+common denominator of 3, resulting in an order of 2A+B for a net price 
+of 4.166... (12.50/3 = 4.166...) and a corresponding increase of the 
+quantity to 153 (51 * 3). The strategy 2A+B for 4.166..., 153 times, is 
+the equivalent of 6A+3B for 12.50, 51 times (6A/3+3B/3 = 2A+B). Under 
+this proposal, the system will round 4.166... in favor of the 
+initiating side, resulting in an order of 2A+B at a net price of 4.166, 
+153 times. Although the net price of the order is sub-penny, the 
+component legs must execute in one cent ($0.01) increments. 
+Accordingly, to execute at a net price of 4.166, the order will be 
+executed at split prices of 2A+B for 4.16, 62 times and 2A+B for 4.17, 
+91 times.\12\ The resulting average execution price per strategy is 
+4.1659 ((4.16 * 62/153) + (4.17 * 91/153) = 4.1659) with the advantage 
+to the initiating side of the order.\13\
+---------------------------------------------------------------------------
+
+    \12\ The Exchange notes that BOX currently utilizes rounding for 
+the execution of split price transactions on the BOX Trading Floor 
+when the quantity at each price level is not a natural number. Here, 
+the current split pricing algorithm rounds the quantity of 2A+B for 
+4.16 to 62 times and 2A+B for 4.17 to 91 times because the 
+calculation used to split 2A+B for 4.166, 153 times, results in a 
+quantity of 61.2 for 4.16 and 91.8 for 4.17. Rounding 61.2 to 62 and 
+91.8 to 91, in this case, is to the advantage of the initiating side 
+pursuant to BOX IM-7600-7.
+    \13\ Today, when a Floor Broker submits a QOO Order to the 
+system in sub-minimum increments, the system will split the QOO 
+Order into two transactions. The transactions are separated by one 
+tick that, when combined, will yield a net price equal to the 
+original price entered by the Floor Broker. See Securities Exchange 
+Act Release No. 82891 (March 16, 2018), 83 FR 12627 (March 22, 2018) 
+(Notice of Filing of Amendment No. 1 and Order Granting Accelerated 
+Approval of a Proposed Rule Change, as Modified by Amendment No. 1, 
+To Adopt Rule 7600(i) To Allow Split-Price Transactions on the BOX 
+Trading Floor). See also Securities Exchange Act Release No. 87613 
+(November 25, 2019), 84 FR 66049 (December 2, 2019) (Notice of 
+Filing of Amendment No. 1 and Order Granting Accelerated Approval of 
+a Proposed Rule Change, as Modified by Amendment No. 1, To Amend 
+Rule 7600).
+---------------------------------------------------------------------------
+
+Example of Complex QOO Order With Resting Public Customer Complex Order
+    The above Complex QOO Order (6A+3B for 12.50, 51 times, reduced and 
+rounded to 2A+B for 4.166, 153 times) would execute a quantity of 62 
+for 4.16 and a quantity of 91 for 4.17.\14\ However, assuming there is 
+a Public Customer Complex Order offered at 4.16 on the Complex Order 
+Book, the above Complex QOO Order for 2A+B will be rejected \15\ 
+because the Public Customer Complex Order at 4.16 on the Complex Order 
+Book has priority over the Complex QOO Order.
+---------------------------------------------------------------------------
+
+    \14\ See supra note 10. [sic]
+    \15\ The Exchange notes that a Floor Broker may, but is not 
+required to, provide a book sweep size. The book sweep size is the 
+number of contracts, if any, of the initiating side of the QOO Order 
+that the Floor Broker is willing to relinquish to orders and quotes 
+on the Complex Order Book and the BOX Book that have priority 
+pursuant to Rule 7240(b)(2) and (3) as well as Rule 7600(c). If the 
+number of contracts on the Complex Order Book or the BOX Book that 
+have priority over the contra-side order is greater than the book 
+sweep size, then the QOO Order will be rejected. If the number of 
+contracts on the Complex Order Book or BOX Book that have priority 
+over the contra-side order is less than or equal to the book sweep 
+size, then the QOO Order will execute. See BOX Rule 7600(h).
+---------------------------------------------------------------------------
+
+Example of Multi-Leg QOO Order With Ratio Reduction and No Price 
+Rounding
+    A multi-leg QOO Order to buy 12A+3B for 12.498, 51 times, will 
+first be reduced to its simplest form of 4A+B (12A/3+3B/3) for 4.166 
+(12.498/3) and a quantity of 153 (51*3) by the system. In order to 
+accomplish this execution, the system would create an order to buy 4A+B 
+for 4.16, 62 times, and an order to buy 4A+B for 4.17, 91 times.\16\ 
+Further, assume that the BOX Book for leg A is 0.50 bid and 0.52 
+offered and for leg B is 2.00 bid and 2.10 offered. The execution for 
+4.16 would be broken down into leg A for 0.52 and leg B for 2.08 
+(4*.52+2.08=4.16). If there were a Public Customer order on the BOX 
+Book at either 0.52 for leg A or 2.08 for leg
+
+[[Page 83187]]
+
+B, the multi-leg QOO Order would be rejected because the Public 
+Customer Order at either 0.52 for leg A or 2.08 for leg B on the BOX 
+Book has priority over the leg of the multi-leg QOO Order.\17\
+---------------------------------------------------------------------------
+
+    \16\ See supra note 10. [sic]
+    \17\ The Exchange notes that each component series of a multi-
+leg QOO Order may not trade through any equal or better priced 
+Public Customer bids or offers on the BOX Book for that series or 
+any non-Public Customer bids or offers on the BOX Book for that 
+series that are ranked ahead of or equal to better priced Public 
+Customer bids or offers, and may not trade through any non-Public 
+Customer bids or offers for that series on the BOX Book that are 
+priced better than the proposed execution price. See BOX Rule 
+7600(c). See also supra notes 9 and 13.
+---------------------------------------------------------------------------
+
+Example of the Proposed Rounding and Execution of a Multi-Leg QOO Order 
+With a Non-Conforming Price
+    A multi-leg QOO Order is submitted to transact the strategy of 
+12A+3B for 12.50, 51 times, where the initiating side is buying (quoted 
+in terms of the price of buying 12A+3B one time). The system will then 
+reduce the order 12A+3B to its simplest form, dividing by its highest 
+common denominator of 3, resulting in an order of 4A+B for a net price 
+of 4.166... (12.50/3 = 4.166...) and a corresponding increase of the 
+quantity to 153 (51*3). The strategy 4A+B for 4.166..., 153 times, is 
+the equivalent of 12A+3B for 12.50, 51 times (12A/3+3B/3 = 4A+B). Under 
+this proposal, the system will round 4.166... in favor of the 
+initiating side, resulting in an order of 4A+B at a net price of 4.166, 
+153 times. Next, because the net price is sub-penny, the order will be 
+executed at split prices of 4A+B for 4.16, 62 times and 4A+B for 4.17, 
+91 times.\18\ The resulting average execution price per strategy is 
+4.1659 ((4.16 * 62/153) + (4.17 * 91/153) = 4.1659) with the advantage 
+to the initiating side of the order.\19\
+---------------------------------------------------------------------------
+
+    \18\ See supra note 10. [sic]
+    \19\ See supra note 11. [sic]
+---------------------------------------------------------------------------
+
+    The Exchange notes that a similar concept exists at another 
+exchange today.\20\ Specifically, Phlx Options 8, Section 
+22(a)(2)(E)(i) states that ``rounding of prices may be used only where 
+necessary to execute the trade at the MPV, and only to the benefit of a 
+Public Customer order or, where multiple Public Customer orders are 
+involved, for the Public Customer order that is earliest in time. If no 
+Public Customer order is involved, rounding of prices is available to 
+the non-Public Customer order that is earliest in time.'' The Exchange 
+notes that its proposal differs from Phlx's rule in that the net prices 
+for Complex QOO Orders or multi-leg QOO Orders will be rounded to the 
+advantage of the initiating side, which is in line with how rounding 
+happens on BOX today. Specifically, BOX currently utilizes rounding for 
+the execution of split price transactions on the BOX Trading Floor when 
+the quantity at each price level is not a natural number. In its filing 
+where BOX established split price transactions, the Exchange provided 
+the following example which shows how rounding occurs in certain 
+situations where the allocation between two increment prices results in 
+a fractional amount of contracts.\21\ The example is as follows:
+---------------------------------------------------------------------------
+
+    \20\ See Nasdaq PHLX LLC (``Phlx'') Options 8, Section 
+22(a)(2)(E)(i).
+    \21\ See Securities Exchange Act Release No. 82315 (December 13, 
+2017), 83 FR 12627 (March 22, 2018) (Notice of Filing of Amendment 
+No. 1 and Order Granting Accelerated Approval of a Proposed Rule 
+Change, as Modified by Amendment No. 1, To Adopt Rule 7600(i) To 
+Allow Split-Price Transactions on the BOX Trading Floor).
+
+    A Split-Price QOO Order for 301 contracts at $1.025 is received 
+by the system where the initiating side is to sell. In order to 
+achieve a net price of $1.025, 150.5 contracts would need to be 
+executed at $1.00 and 150.5 would need to be executed at $1.05. 
+However, executions must occur in whole natural numbers. Therefore, 
+the system will instead round to the advantage of the initiating 
+side. Specifically, the system will split the order into 151 
+contracts at $1.05 and 150 at $1.00. The average execution price is 
+$1.0251 which is a better price for the initiating side (i.e., 
+selling 301 contracts for an average price of $1.0251 instead of 
+$1.025). Two trades would be reported to the tape; a purchase of 151 
+---------------------------------------------------------------------------
+contracts at $1.05 and a purchase of 150 contracts at $1.00.
+
+    The Exchange notes that, although Complex QOO Order and multi-leg 
+QOO Order net prices are allowed to be submitted in sub-minimum 
+increment prices, the order, including the legs, may only be executed 
+in the minimum increment, which is one cent ($0.01).\22\ Net order 
+prices are allowed in sub-minimum increments \23\ because net execution 
+prices can be achieved via split prices where transactions separated by 
+one tick are combined to yield a net price equal to or very nearly 
+equal to the order price, with any advantage going to the initiating 
+side.\24\
+---------------------------------------------------------------------------
+
+    \22\ See BOX Rules 7050(b) and 7240(b)(1).
+    \23\ The Exchange notes that the BOX system allows the net order 
+price to be entered up to three places after the decimal.
+    \24\ For example, a Floor Broker can execute a split price 
+Complex QOO Order at a price of 2.005 in strategy A+B, 100 times 
+(100 contracts of A and 100 contracts of B). The order would be 
+split into A+B for 2.01, 50 times and A+B for 2.00, 50 times for a 
+net price of 2.005 for the strategy. The following executions would 
+be reported: 50 Leg A at 1.00, 50 Leg A at 1.00, 50 Leg B at 1.00, 
+and 50 Leg B at 1.01.
+---------------------------------------------------------------------------
+
+2. Statutory Basis
+    The Exchange believes that the proposal is consistent with the 
+requirements of Section 6(b) of the Act,\25\ in general, and Section 
+6(b)(5) of the Act,\26\ in particular, in that it is designed to 
+promote just and equitable principles of trade, remove impediments to 
+and perfect the mechanism of a free and open market and a national 
+market system, and, in general to protect investors and the public 
+interest.
+---------------------------------------------------------------------------
+
+    \25\ 15 U.S.C. 78f(b).
+    \26\ 5 U.S.C. 78f(b)(5).
+---------------------------------------------------------------------------
+
+    The Exchange believes that codifying current functionality that, 
+upon order entry, the system reduces a Complex QOO Order or multi-leg 
+QOO Order to its simplest form removes impediments to and perfects the 
+mechanism of a free and open market and a national market system, and, 
+in general protects investors and the public interest by providing 
+clarity and transparency in the handling of certain strategy orders. 
+Additionally, if the process of reducing a strategy order to its 
+simplest form results in the net price of the order that exceeds three 
+decimal places the Exchange proposes to round the net price of the 
+Complex QOO Order or multi-leg QOO Order to the third decimal place 
+with advantage to the initiating side. For purposes of executing and 
+determining the priority of the component legs of Complex QOO or multi-
+leg QOO Orders, the system will calculate the quantities and prices in 
+one cent ($0.01) increments of the component legs necessary to achieve 
+the net price of the order. The component legs of a Complex QOO Order 
+or multi-leg QOO Order will execute in one cent ($0.01) increments and 
+the priority of each component leg will be determined based on its 
+execution price. A Complex QOO Order or multi-leg QOO Order that is 
+reduced to its simplest form will be executed pursuant to the 
+provisions in Rule 7600 (Qualified Open Outcry Orders--Floor Crossing), 
+including Rule 7600(c) (Submission of QOO Orders).
+    The Exchange believes that allowing investors to enter Complex QOO 
+Orders and multi-leg QOO Orders without first reducing such orders to 
+their simplest form allows investors the flexibility to express and 
+enter orders according to their preferences. In order to better 
+accommodate these investor preferences, the Exchange reduces such 
+strategy orders to their simplest form so that the system is not 
+replete with multiple versions of economically equivalent strategies 
+which would populate the Complex Order Book and may cause confusion and 
+result in unnecessary demands on system resources. Thus, the Exchange 
+believes that accepting and handling such strategy orders as proposed 
+removes
+
+[[Page 83188]]
+
+impediments to and perfects the mechanism of a free and open market and 
+a national market system, and, in general protects investors and the 
+public interest.
+    The Exchange believes that the proposed rule is consistent with 
+current rules on BOX. Specifically, as detailed above, BOX rounds to 
+the advantage of the initiating side for split-price transactions.\27\ 
+The Exchange believes that rounding to the advantage of the initiating 
+side in certain situations results in the fair and equitable pricing of 
+orders among BOX Participants, and provides clarity and transparency in 
+the Exchange's rules so that all BOX Participants will be informed as 
+to the net price the Participant is entitled to receive as a result of 
+rounding. The Exchange believes that rounding to the advantage of the 
+initiating side is reasonable and appropriate, as the initiating side 
+is providing liquidity to the Exchange and thus adding value to the 
+market.
+---------------------------------------------------------------------------
+
+    \27\ See supra note 11.
+---------------------------------------------------------------------------
+
+    The Exchange notes that order priority rules for Complex QOO Orders 
+include that Complex QOO Orders may not trade through any equal or 
+better priced Public Customer orders on the Complex Order Book and may 
+not trade through any non-Public Customer Complex bids or offers on the 
+Complex Order Book that are ranked ahead of such equal or better priced 
+Public Customer Complex bids or offers, and may not trade through any 
+non-Public Customer bids or offers on the Complex Order Book that are 
+priced better than the proposed execution price. Additionally, the 
+Complex QOO Order may be executed at a price without giving priority to 
+equivalent bids or offers in the individual series legs on the 
+initiating side, provided at least one options leg betters the 
+corresponding bid or offer on the BOX Book by at least one minimum 
+trading increment as set forth in Rule 7240(b)(1).\28\ Order priority 
+rules for multi-leg QOO Orders include that each component series of a 
+multi-leg QOO Order may not trade through any equal or better priced 
+Public Customer bids or offers on the BOX Book for that series or any 
+non-Public Customer bids or offers on the BOX Book for that series that 
+are ranked ahead of or equal to better priced Public Customer bids or 
+offers, and may not trade through any non-Public Customer bids or 
+offers for that series on the BOX Book that are priced better than the 
+proposed execution price. Specifically, the initiating side component 
+legs of a multi-leg QOO Order must execute against the Complex Order 
+Book and the BOX Book as provided by Rules 7600(d) and (h) before 
+executing against the contra-side multi-leg QOO Order.\29\ These 
+priority rules will continue to be applicable, which the Exchange 
+believes removes impediments to and perfects the mechanism of a free 
+and open market and a national market system, and, in general protects 
+investors and the public interest.
+---------------------------------------------------------------------------
+
+    \28\ See BOX Rule 7600(c).
+    \29\ See BOX Rule 7600(c). The Exchange notes that the 
+initiating side of a QOO Order is allocated first against any better 
+priced bids or offers on the BOX Book, provided that an adequate 
+book sweep size was provided by the Floor Broker pursuant to 
+paragraph (h). Next, at the same price as the contra-side of the QOO 
+Order, if any contracts of the initiating side remain, the 
+initiating side of the QOO Order will match against Public Customer 
+Orders on the BOX Book, along with any bids or offers of non-Public 
+Customers ranked ahead of such Public Customer Orders on the BOX 
+Book, provided that an adequate book sweep size was provided by the 
+Floor Broker pursuant to paragraph (h). Multiple bids or offers at 
+the same price are matched based on time priority. See BOX Rules 
+7600(d)(1) and (2). Further rule 7600(h) provides that a Floor 
+Broker may, but is not required to, provide a book sweep size for 
+Complex QOO Orders and multi-leg QOO orders.
+---------------------------------------------------------------------------
+
+    Lastly, the Exchange notes that the proposed change will result in 
+orders being accepted on BOX that BOX's system currently rejects which, 
+in turn, could result in increased liquidity on BOX to the benefit of 
+all Participants. As such, BOX believes the proposed rule change is in 
+the public interest, and therefore, consistent with the Act.
+
+B. Self-Regulatory Organization's Statement on Burden on Competition
+
+    The Exchange does not believe that the proposed rule change will 
+impose any burden on competition not necessary or appropriate in 
+furtherance of the purposes of the Act. As discussed above, the 
+proposed change is consistent with the rules on BOX \30\ and will allow 
+BOX to accept orders that it currently rejects, which may result in 
+increased liquidity to the benefit of all Participants. The Exchange 
+also believes that the proposed change will not impose any burden on 
+intramarket competition as the proposed change applies equally to all 
+Floor Participants who wish to execute Complex QOO Orders or multi-leg 
+QOO Orders on the BOX Trading Floor. Further, the Exchange believes 
+that the proposed change will not impose any burden on intermarket 
+competition as a similar concept currently exists on another exchange 
+and other exchanges could choose to adopt similar rules.\31\
+---------------------------------------------------------------------------
+
+    \30\ See BOX Rule 7600(i) and IM-7600-7. See also supra note 11.
+    \31\ See supra note 18.
+---------------------------------------------------------------------------
+
+    As such, the Exchange does not believe that the proposed rule 
+change will impose any burden on competition not necessary or 
+appropriate in furtherance of the purposes of the Act.
+
+C. Self-Regulatory Organization's Statement on Comments on the Proposed 
+Rule Change Received From Members, Participants, or Others
+
+    The Exchange has neither solicited nor received comments on the 
+proposed rule change.
+
+III. Date of Effectiveness of the Proposed Rule Change and Timing for 
+Commission Action
+
+    Because the foregoing proposed rule change does not (a) 
+significantly affect the protection of investors or the public 
+interest; (b) impose any significant burden on competition; and (c) 
+become operative for 30 days from the date on which it was filed, or 
+such shorter time as the Commission may designate, it has become 
+effective pursuant to Section 19(b)(3)(A) of the Act \32\ and Rule 19b-
+4(f)(6) thereunder.\33\
+---------------------------------------------------------------------------
+
+    \32\ 15 U.S.C. 78s(b)(3)(A).
+    \33\ 17 CFR 240.19b-4(f)(6). In addition, Rule 19b-4(f)(6)(iii) 
+requires a self-regulatory organization to give the Commission 
+written notice of its intent to file the proposed rule change, along 
+with a brief description and text of the proposed rule change, at 
+least five business days prior to the date of filing of the proposed 
+rule change, or such shorter time as designated by the Commission. 
+The Exchange has satisfied this requirement.
+---------------------------------------------------------------------------
+
+    A proposed rule change filed under Rule 19b-4(f)(6) normally does 
+not become operative prior to 30 days after the date of the filing. 
+However, pursuant to Rule 19b-4(f)(6)(iii),\34\ the Commission may 
+designate a shorter time if such action is consistent with the 
+protection of investors and the public interest. The Exchange has asked 
+the Commission to waive the 30-day operative delay. The Exchange states 
+that waiver of the delay will allow the Exchange to immediately begin 
+accepting orders that the Exchange's system currently rejects, which 
+will provide investors with the flexibility to express and enter orders 
+according to their preferences. Additionally, the Exchange states that 
+accepting and executing orders that would otherwise be rejected may 
+increase liquidity on the Exchange, which would benefit all Exchange 
+Participants. The Exchange notes that although orders may be submitted 
+in sub-minimum increments, priority is determined and orders are 
+executed in minimum increments of $0.01, and the proposal does not 
+change order priority and execution as governed by Exchange Rule 7600, 
+including Exchange Rule 7600(c).
+---------------------------------------------------------------------------
+
+    \34\ 17 CFR 240.19b-4(f)(6)(iii).
+---------------------------------------------------------------------------
+
+    The Commission finds that waiving the 30-day operative delay is 
+consistent
+
+[[Page 83189]]
+
+with the protection of investors and the public interest. As described 
+above, BOX's system reduces complex QOO and multi-leg QOO orders 
+submitted to the Exchange to their simplest form to avoid populating 
+the Exchange's Complex Order Book with multiple versions of 
+economically equivalent strategies. When this process results in a net 
+price for a Complex QOO Order or multi-leg QOO Order that exceeds three 
+decimal places, the Exchange's system currently rejects the Complex QOO 
+Order or multi-leg QOO Order back to the submitting Participant. Under 
+the proposal, the Exchange will round the net price of such an order to 
+the third decimal place with the advantage to the initiating side. This 
+process will allow the Exchange to accept Complex QOO and multi-leg QOO 
+Orders that the Exchange's system currently rejects, which will provide 
+investors with an additional venue for trading these orders. The system 
+will calculate the quantities and prices, in $0.01 increments, of the 
+component legs necessary to achieve the net price of a Complex QOO 
+Order or multi-leg QOO Order, and the component legs of the orders will 
+execute in $0.01 increments, with their priority based on their 
+execution prices.\35\ A Complex QOO Order or multi-leg QOO Order that 
+has been reduced to its simplest form will be executed pursuant to 
+Exchange Rule 7600, including Exchange Rule 7600(c).\36\ As described 
+above, the process for calculating the quantities and execution prices 
+of the component legs of a Complex QOO Order or multi-leg QOO Order is 
+consistent with the process that the Exchange currently uses for 
+executing split price transactions on the Exchange's trading floor.\37\ 
+For these reasons, the Commission designates the proposal operative 
+upon filing.\38\
+---------------------------------------------------------------------------
+
+    \35\ See proposed BOX IM-7600-8.
+    \36\ See id.
+    \37\ See supra note 21 and accompanying text.
+    \38\ For purposes only of accelerating the operative date of 
+this proposal, the Commission has considered the proposed rule's 
+impact on efficiency, competition, and capital formation. 15 U.S.C. 
+78c(f).
+---------------------------------------------------------------------------
+
+    At any time within 60 days of the filing of the proposed rule 
+change, the Commission summarily may temporarily suspend such rule 
+change if it appears to the Commission that such action is necessary or 
+appropriate in the public interest, for the protection of investors, or 
+otherwise in furtherance of the purposes of the Act. If the Commission 
+takes such action, the Commission shall institute proceedings to 
+determine whether the proposed rule should be approved or disapproved.
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views, and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's internet comment form (<a href="http://www.sec.gov/rules/sro.shtml">http://www.sec.gov/rules/sro.shtml</a>); or
+    <bullet> Send an email to <a href="/cdn-cgi/l/email-protection#b8cacdd4dd95dbd7d5d5ddd6cccbf8cbdddb96dfd7ce"><span class="__cf_email__" data-cfemail="6614130a034b05090b0b030812152615030548010910">[email&#160;protected]</span></a>. Please include 
+file number SR-BOX-2023-28.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Secretary, Securities 
+and Exchange Commission, 100 F Street NE, Washington, DC 20549-1090.
+
+All submissions should refer to file number SR-BOX-2023-22. This file 
+number should be included on the subject line if email is used. To help 
+the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's internet website (<a href="http://www.sec.gov/rules/sro.shtml">http://www.sec.gov/rules/sro.shtml</a>). 
+Copies of the submission, all subsequent amendments, all written 
+statements with respect to the proposed rule change that are filed with 
+the Commission, and all written communications relating to the proposed 
+rule change between the Commission and any person, other than those 
+that may be withheld from the public in accordance with the provisions 
+of 5 U.S.C. 552, will be available for website viewing and printing in 
+the Commission's Public Reference Room, 100 F Street NE, Washington, DC 
+20549, on official business days between the hours of 10 a.m. and 3 
+p.m. Copies of the filing also will be available for inspection and 
+copying at the principal office of the Exchange. Do not include 
+personal identifiable information in submissions; you should submit 
+only information that you wish to make available publicly. We may 
+redact in part or withhold entirely from publication submitted material 
+that is obscene or subject to copyright protection. All submissions 
+should refer to file number SR-BOX-2023-28 and should be submitted on 
+or before December 19, 2023.
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\39\
+---------------------------------------------------------------------------
+
+    \39\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+Christina Z. Milnor,
+Assistant Secretary.
+[FR Doc. 2023-26111 Filed 11-27-23; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

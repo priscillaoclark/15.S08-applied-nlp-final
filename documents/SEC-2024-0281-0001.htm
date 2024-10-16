@@ -1,0 +1,1026 @@
+<html>
+<head>
+<title>Federal Register, Volume 89 Issue 42 (Friday, March 1, 2024)</title>
+</head>
+<body><pre>
+[Federal Register Volume 89, Number 42 (Friday, March 1, 2024)]
+[Notices]
+[Pages 15242-15251]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2024-04295]
+
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-99598; File No. SR-BX-2024-006]
+
+
+Self-Regulatory Organizations; Nasdaq BX, Inc.; Notice of Filing 
+and Immediate Effectiveness of Proposed Rule Change To Adopt an OTTO 
+Protocol
+
+February 26, 2024
+    Pursuant to Section 19(b)(1) of the Securities Exchange Act of 1934 
+(``Act''),\1\ and Rule 19b-4 thereunder,\2\ notice is hereby given that 
+on February 15, 2024, Nasdaq BX, Inc. (``BX'' or ``Exchange'') filed 
+with the Securities and Exchange Commission (``SEC'' or ``Commission'') 
+the proposed rule change as described in Items I, II, and III, below, 
+which Items have been prepared by the Exchange. The Commission is 
+publishing this notice to solicit comments on the proposed rule change 
+from interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+I. Self-Regulatory Organization's Statement of the Terms of Substance 
+of the Proposed Rule Change
+
+    The Exchange proposes to adopt a new protocol, ``Ouch to Trade 
+Options'' or ``OTTO'' and establish pricing for this new protocol.
+    The text of the proposed rule change is available on the Exchange's 
+website at <a href="https://listingcenter.nasdaq.com/rulebook/nasdaq/rules">https://listingcenter.nasdaq.com/rulebook/nasdaq/rules</a>, at 
+the principal office of the Exchange, and at the Commission's Public 
+Reference Room.
+
+II. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+    In its filing with the Commission, the Exchange included statements 
+concerning the purpose of and basis for the proposed rule change and 
+discussed any comments it received on the proposed rule change. The 
+text of these statements may be examined at the places specified in 
+Item IV below. The Exchange has prepared summaries, set forth in 
+sections A, B, and C below, of the most significant aspects of such 
+statements.
+
+A. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+1. Purpose
+    BX proposes to offer a new order entry protocol called OTTO. Today, 
+BX Participants may enter orders into the Exchange through the 
+``Financial Information eXchange'' or ``FIX.'' \3\ The proposed new 
+OTTO protocol is identical to the OTTO protocol offered today on 3 
+Nasdaq affiliated exchanges, Nasdaq ISE, LLC (``ISE''), Nasdaq GEMX, 
+LLC (``GEMX'') and Nasdaq MRX, LLC (``MRX'').
+---------------------------------------------------------------------------
+
+    \3\ FIX is an interface that allows Participants and their 
+Sponsored Customers to connect, send, and receive messages related 
+to orders and auction orders and responses to and from the Exchange. 
+Features include the following: (1) execution messages; (2) order 
+messages; and (3) risk protection triggers and cancel notifications. 
+In addition, a BX Participant may elect to utilize FIX to send a 
+message and PRISM Order, as defined within Options 3, Section 13, to 
+all BX Participants that opt in to receive Requests for PRISM 
+requesting that it submit the sender's PRISM Order with responder's 
+Initiating Order, as defined within Options 3, Section 13, into the 
+Price Improvement Auction (``PRISM'') mechanism, pursuant to Options 
+3, Section 13 (``Request for PRISM''). See Options 3, Section 
+7(e)(1)(A).
+---------------------------------------------------------------------------
+
+    The OTTO protocol is a proprietary protocol of Nasdaq, Inc. The 
+Exchange continues to innovate and modernize technology so that it may 
+continue to compete among options markets. The ability to continue to 
+innovate with technology and offer new products to market participants 
+allows BX to remain competitive in the options space which currently 
+has seventeen options markets and potential new entrants.
+OTTO Protocol
+    As proposed, OTTO would allow Participants and their Sponsored 
+Customers \4\ to connect, send, and receive messages related to orders, 
+auction orders, and auction responses to the Exchange. OTTO features 
+would include the following: (1) options symbol directory messages 
+(e.g., underlying and complex instruments); (2) System \5\ event 
+messages (e.g., start of
+
+[[Page 15243]]
+
+trading hours messages and start of opening); (3) trading action 
+messages (e.g., halts and resumes); (4) execution messages; (5) order 
+messages; (6) risk protection triggers and cancel notifications; (7) 
+auction notifications; (8) auction responses; and (9) post trade 
+allocation messages. The Exchange notes that unlike FIX, which offers 
+routing capability, OTTO does not permit routing. The Exchange proposes 
+to include this description of OTTO in new Options 3, Section 
+7(e)(1)(B) and re-letter current ``B'' as ``C''.
+---------------------------------------------------------------------------
+
+    \4\ General 2, Section 22 describes Sponsored Access 
+arrangements.
+    \5\ The term ``System'' or ``Trading System'' means the 
+automated system for order execution and trade reporting owned and 
+operated by BX as the BX Options market. The BX Options market 
+comprises: (A) an order execution service that enables Participants 
+to automatically execute transactions in option series; and provides 
+Participants with sufficient monitoring and updating capability to 
+participate in an automated execution environment; (B) a trade 
+reporting service that submits ``locked-in'' trades for clearing to 
+a registered clearing agency for clearance and settlement; transmits 
+last-sale reports of transactions automatically to the Options Price 
+Reporting Authority for dissemination to the public and industry; 
+and provides participants with monitoring and risk management 
+capabilities to facilitate participation in a ``locked-in'' trading 
+environment; and (C) the data feeds described in Options 3, Section 
+23. See BX Options 1, Section 1(a)(59).
+---------------------------------------------------------------------------
+
+    Only one order protocol is required for a BX Participant to submit 
+orders into BX. Only BX Participants may utilize ports on BX. Any 
+market participant that sends orders to a BX Participant would not need 
+to utilize a port. The BX Participant may send all orders, proprietary 
+and agency, through one port to BX. Participants may elect to obtain 
+multiple ports to organize their business,\6\ however only one port is 
+necessary for a Participant to enter orders on BX.
+---------------------------------------------------------------------------
+
+    \6\ For example, a Participant may desire to utilize multiple 
+FIX or OTTO Ports for accounting purposes, to measure performance, 
+for regulatory reasons, segregating order flow among different 
+trading desks, or other determinations that are specific to that 
+Participant. A market participant may utilize multiple ports in some 
+cases to send multiple orders through different ports to avoid any 
+latency or queuing of orders. The Exchange notes that to the extent 
+that different OTTO Ports are used to send multiple orders as 
+compared to sending multiple orders through one OTTO Port the 
+difference from a latency standpoint would be in nanoseconds.
+---------------------------------------------------------------------------
+
+    Participants may elect to enter their orders through FIX, OTTO, or 
+both protocols, although both protocols are not necessary. Participants 
+may prefer one protocol as compared to another protocol, for example, 
+the ability to route may cause a Participant to utilize FIX and a 
+Participant that desires to execute an order locally may prefer OTTO. 
+Also, the OTTO Port offers lower latency as compared to the FIX Port, 
+which may be attractive to Participants depending on their trading 
+behavior. Nasdaq believes that the addition of OTTO will provide BX 
+Participants with additional choice when submitting orders to BX.
+    While the Exchange has no way of predicting with certainty the 
+amount or type of OTTO Ports market participants will in fact purchase, 
+the Exchange anticipates that some Participants will subscribe to 
+multiple OTTO Ports in combination with FIX Ports. The Exchange notes 
+that Options Participants may use varying number of OTTO ports based on 
+their business needs.
+Other Amendments
+    In connection with offering OTTO, the Exchange proposes to amend 
+other rules within Options 3. Each amendment is described below.
+Options 3, Section 7
+    BX proposes to amend Options 3, Section 7, Types of Orders and 
+Quote Protocols. Specifically, BX proposes to amend Options 3, Section 
+7 (b)(2) that describes the Immediate-or-Cancel'' or ``IOC'' order. 
+Today, Options 3, Section 7(b)(2)(B) notes that an IOC order may be 
+entered through FIX or SQF, provided that an IOC Order entered by a 
+Market Maker through SQF is not subject to the Order Price Protection, 
+the Market Order Spread Protection, or Size Limitation in Options 3, 
+Section 15(a)(1), (a)(2), and (b)(2), respectively. The Exchange 
+proposes to add ``OTTO'' to the list of protocols to note that an IOC 
+order may also be entered through OTTO.
+    BX also proposes to amend the ``DAY'' order in Options 3, Section 
+7(b)(3) that currently provides that a Day order may be entered through 
+FIX. With the addition of OTTO, a Day order may also be entered through 
+OTTO.
+    BX also proposes to amend the ``Good Til Cancelled'' or ``GTC'' 
+order which currently does not specify that a GTC order may be entered 
+through FIX. GTC orders would only be able to be entered through FIX 
+and not OTTO. The Exchange proposes to amend Options 3, Section 7(b)(4) 
+to add a sentence to note that GTC orders may be entered through FIX.
+Options 3, Section 8
+    BX proposes to amend Options 3, Section 8, Options Opening Process. 
+BX proposes to amend Options 3, Section 8(l) that describes the Opening 
+Process Cancel Timer. The Opening Process Cancel Timer represents a 
+period of time since the underlying market has opened. If an option 
+series has not opened before the conclusion of the Opening Process 
+Cancel Timer, a Participant may elect to have orders returned by 
+providing written notification to the Exchange. Today, these orders 
+include all non-Good Til Cancelled Orders received over the FIX 
+protocol. The Exchange proposes to add the OTTO protocol as well to the 
+rule text language in that paragraph.
+Options 3, Section 12
+    The Exchange proposes to amend the Options 3, Section 12, Crossing 
+Orders. Specifically, the Exchange proposes to amend Customer Crossing 
+Orders in Options 3, Section 12(a) that currently provides Public 
+Customer-to-Public Customer Cross Orders are automatically executed 
+upon entry provided that the execution is at or between the best bid 
+and offer on the Exchange and (i) is not at the same price as a Public 
+Customer Order on the Exchange's limit order book and (ii) will not 
+trade through the NBBO. Public Customer-to-Public Customer Cross Orders 
+must be entered through FIX. The Exchange proposes to remove the 
+sentence that provides that Public Customer-to-Public Customer Cross 
+Orders must be entered through FIX because they will be able to be 
+entered through both FIX and OTTO.
+Options 3, Section 17
+    The Exchange proposes to amend the Kill Switch at Options 3, 
+Section 17. The Kill Switch provides Participants with an optional risk 
+management tool to promptly cancel and restrict orders. With the 
+introduction of OTTO, the Exchange proposes to align its Kill Switch 
+rule text with MRX's Kill Switch.\7\ The Exchange proposes to note in 
+Options 3, Section 17(a) that BX Participants may initiate a message(s) 
+to the System to promptly cancel and restrict their order activity on 
+the Exchange, as is the case today, as described in section (a)(1). 
+This amendment simply rewords the rule text without a substantive 
+amendment to the rule text.
+---------------------------------------------------------------------------
+
+    \7\ See MRX Options 3, Section 17.
+---------------------------------------------------------------------------
+
+    The Exchange proposes to renumber Options 3, Section 17(a)(i) and 
+(ii) as (a)(1) and (2). Current Options 3, Section 17(a)(i) states, 
+``If orders are cancelled by the BX Participant utilizing the Kill 
+Switch, it will result in the cancellation of all orders requested for 
+the Identifier(s). The BX Participant will be unable to enter 
+additional orders for the affected Identifier(s) until re-entry has 
+been enabled pursuant to section (a)(ii).'' The Exchange proposes to 
+instead provide, ``A BX Participant may submit a request to the System 
+through FIX or OTTO to cancel all existing orders and restrict entry of 
+additional orders for the requested Identifier(s) on a user level on 
+the Exchange.'' With the addition of OTTO, the Exchange notes
+
+[[Page 15244]]
+
+that both FIX and OTTO orders may be cancelled. Further, today, BX 
+Participants utilize an interface to send a message to the Exchange to 
+initiate a Kill Switch.\8\ The Exchange notes that in lieu of the 
+interface, BX Participants will only be able to initiate a cancellation 
+of their orders by sending a mass purge request through FIX or OTTO. 
+This change will align the Kill Switch functionality to that of ISE, 
+GEMX and MRX Options 3, Section 17 and will enable BX Participants to 
+initiate the Kill Switch more seamlessly without the need to utilize a 
+separate interface. When initiating a cancellation of their orders by 
+sending a mass purge request through FIX or OTTO, Participants will be 
+able to submit a Kill Switch request on a user level only. This is a 
+change from the ability to cancel orders on either a user or group 
+level \9\ with the interface. The Exchange proposes to amend Options 3, 
+Section 17(a) to note this change by removing the words ``or group'' 
+and the following sentence that applies to a group.\10\
+---------------------------------------------------------------------------
+
+    \8\ See Securities Exchange Act Release No. 76116 (October 8, 
+2015), 80 FR 62147 (October 15, 2015) (SR-BX-2015-050) (Order 
+Approving Proposed Rule Change To Adopt a Kill Switch).
+    \9\ A permissible group could include all badges associated with 
+a Market Maker. Today, a Participant is able to set up these groups 
+in the interface to include all or some of the Identifiers 
+associated with the Participant firm so that a GUI Kill Switch 
+request could apply to this pre-defined group.
+    \10\ The Exchange proposes to remove this sentence, 
+``Permissible groups must reside within a single broker-dealer'' as 
+the group option would no longer exist.
+---------------------------------------------------------------------------
+
+    Finally, the Exchange proposes to amend proposed Options 3, Section 
+17(a)(2) to align to MRX's rule text by providing ``Once a BX 
+Participant initiates a Kill Switch pursuant to (a)(1) above . . .'' in 
+the first sentence. This amendment simply rewords the rule text without 
+a substantive amendment to the rule text.
+Options 3, Section 18
+    The Exchange proposes to amend Options 3, Section 18, Detection of 
+Loss of Communication. The Exchange proposes to add OTTO to Options 3, 
+Section 18 as OTTO would also be subject to this rule. Today, when the 
+SQF Port or the FIX Port detects the loss of communication with a 
+Participant's Client Application because the Exchange's server does not 
+receive a Heartbeat message for a certain time period, the Exchange 
+will automatically logoff the Participant's affected Client Application 
+and automatically cancel all of the Participant's open quotes through 
+SQF and open orders through FIX. Quotes and orders are cancelled across 
+all Client Applications that are associated with the same BX Options 
+Market Maker ID and underlying issues.
+    At this time, the Exchange proposes to permit orders entered 
+through OTTO to be cancelled similar to FIX orders when the Exchange's 
+server does not receive a Heartbeat message for a certain time period. 
+The Exchange is proposing to amend Options 3, Section 18 to also 
+rearrange the rule text to add the word ``Definitions'' next to ``a'' 
+and move the rule text in current ``a'' to ``b'' and re-letter the 
+other paragraphs accordingly. Also, the Exchange proposes to define 
+``Session of Connectivity'' for purposes of this rule to mean each time 
+the Participant connects to the Exchange's System. Further, each new 
+connection, intra-day or otherwise, is a new Session of Connectivity. 
+The Exchange proposes to use the new definition throughout Options 3, 
+Section 18.
+    Similar to FIX, when the OTTO Port detects the loss of 
+communication with a Participant's Client Application because the 
+Exchange's server does not receive a Heartbeat message for a certain 
+time period, the Exchange will automatically logoff the Participant's 
+affected Client Application and automatically cancel all of the 
+Participant's open orders through OTTO. Orders would be cancelled 
+across all Client Applications that are associated with the same BX 
+Options Market Maker ID and underlying issues. The Exchange proposes to 
+update Options 3, Section 18 to provide in proposed Options 3, Section 
+18(a)(3) that the OTTO Port is the Exchange's proprietary System 
+component through which Participants communicate their orders from the 
+Client Application. Further, the Exchange would note in proposed 
+Options 3, Section 18(c) that when the OTTO Port detects the loss of 
+communication with a Participant's Client Application because the 
+Exchange's server does not receive a Heartbeat message for a certain 
+time period (``nn'' seconds), the Exchange will automatically logoff 
+the Participant's affected Client Application and if the Participant 
+has elected to have its orders cancelled pursuant to proposed Section 
+18(f), automatically cancel all orders. Proposed Options 3, Section 
+18(f) would provide that the default period of ``nn'' seconds for OTTO 
+Ports would be fifteen (15) seconds for the disconnect and, if elected, 
+the removal of orders. A Participant may determine another time period 
+of ``nn'' seconds of no technical connectivity, as required in proposed 
+paragraph (c), to trigger the disconnect and, if so elected, the 
+removal of orders and communicate that time to the Exchange. The period 
+of ``nn'' seconds may be modified to a number between one hundred (100) 
+milliseconds and 99,999 milliseconds for OTTO Ports prior to each 
+Session of Connectivity to the Exchange. This feature may be disabled 
+for the removal of orders, however the Participant will be 
+disconnected.
+    Proposed Options 3, Section 18(f)(1) would provide that if the 
+Participant changes the default number of ``nn'' seconds, that new 
+setting shall be in effect throughout the current Session of 
+Connectivity and will then default back to fifteen seconds. The 
+Participant may change the default setting prior to each Session of 
+Connectivity. Finally, as proposed in Options 3, Section 18(f)(2), if 
+the time period is communicated to the Exchange by calling Exchange 
+operations, the number of ``nn'' seconds selected by the Participant 
+will persist for each subsequent Session of Connectivity until the 
+Participant either contacts Exchange operations by phone and changes 
+the setting or the Participant selects another time period through the 
+Client Application prior to the next Session of Connectivity. The 
+trigger for OTTO Ports is event and Client Application specific. The 
+automatic cancellation of the BX Options Market Maker's open orders for 
+OTTO Ports entered into the respective OTTO Ports via a particular 
+Client Application will neither impact nor determine the treatment of 
+orders of the same or other Participants entered into the OTTO Ports 
+via a separate and distinct Client Application. The proposed amendments 
+for OTTO mirror the manner in which FIX Ports are treated when the 
+Exchange's server does not receive a Heartbeat message for a certain 
+time period for a FIX Port.\11\
+---------------------------------------------------------------------------
+
+    \11\ The Exchange proposes to update internal cross-references 
+to accommodate relocated text.
+---------------------------------------------------------------------------
+
+Pricing
+    BX proposes to amend its Pricing Schedule at Options 7, Section 3, 
+BX Options Market--Ports and other Services, to add pricing for the new 
+OTTO protocol. Specifically, BX proposes to offer Participants the 
+first OTTO Port at no cost. The one OTTO Port would permit BX 
+Participants to submit orders into BX. Today, only one account number 
+\12\ is necessary to transact an options business on BX and account 
+numbers are available to Participants at no cost. The Exchange proposes 
+to note in the Pricing Schedule at Options 7, Section 3 that BX does 
+not
+
+[[Page 15245]]
+
+assess a fee for an account number to provide greater transparency to 
+Participants.
+---------------------------------------------------------------------------
+
+    \12\ An ``account number'' means a number assigned to a 
+Participant. Participants may have more than one account number. See 
+Options 1, Section 1(a)(2).
+---------------------------------------------------------------------------
+
+    The Exchange proposes to assess an OTTO Port Fee of $650 per port, 
+per month, per account number for each subsequent port beyond the first 
+port. This is the same fee assessed for OTTO Ports on MRX and GEMX.\13\ 
+Additional OTTO Ports beyond the first OTTO Port would be optional for 
+Participants to utilize as the Exchange is offering the first OTTO 
+order protocol, per Participant, at no cost and only one port is 
+necessary to enter orders into BX.\14\
+---------------------------------------------------------------------------
+
+    \13\ See MRX Options 7, Section 6 and GEMX Options 7, Section 6, 
+C. MRX and GEMX do not offer an OTTO Port at no cost. MRX offers the 
+first FIX Port at no cost.
+    \14\ The Exchange proposes to renumber the SQF Port Fee and SQF 
+Purge Port Fee in Options 7, Section 3(i).
+---------------------------------------------------------------------------
+
+Implementation
+    The Exchange will implement this rule change on or before December 
+20, 2025. The Exchange will announce the operative date to Participants 
+in an Options Trader Alert.
+2. Statutory Basis
+    The Exchange believes that its proposal is consistent with Section 
+6(b) of the Act,\15\ in general, and furthers the objectives of Section 
+6(b)(5) of the Act,\16\ in particular, in that it is designed to 
+promote just and equitable principles of trade, to remove impediments 
+to and perfect the mechanism of a free and open market and a national 
+market system, and, in general to protect investors and the public 
+interest. Additionally, the Exchange believes that its proposal 
+furthers the objectives of Sections 6(b)(4) and 6(b)(5) of the Act,\17\ 
+in particular, in that it provides for the equitable allocation of 
+reasonable dues, fees, and other charges among members and issuers and 
+other persons using any facility, and is not designed to permit unfair 
+discrimination between customers, issuers, brokers, or dealers.
+---------------------------------------------------------------------------
+
+    \15\ 15 U.S.C. 78f(b).
+    \16\ 15 U.S.C. 78f(b)(5).
+    \17\ See 15 U.S.C. 78f(b)(4) and (5).
+---------------------------------------------------------------------------
+
+OTTO Protocol
+    The Exchange's proposal to adopt OTTO is consistent with the Act 
+because OTTO would provide BX Participants with an alternative protocol 
+to submit orders to the Exchange. As proposed, BX would offer the first 
+OTTO Port at no cost to submit orders into BX, which would remove 
+impediments to and perfect the mechanism of a free and open market. 
+While BX Participants may elect to obtain multiple ports to organize 
+their business,\18\ only one order port is necessary for a Participant 
+to enter orders on BX. A BX Participant may send all orders, 
+proprietary and agency, through one port to BX without incurring any 
+cost with this proposal. In the alternative, BX Participants may elect 
+to obtain multiple ports to organize their business.\19\
+---------------------------------------------------------------------------
+
+    \18\ For example, a Participant may desire to utilize multiple 
+FIX or OTTO Ports for accounting purposes, to measure performance, 
+for regulatory reasons or other determinations that are specific to 
+that Participant.
+    \19\ For example, a Participant may desire to utilize multiple 
+FIX or OTTO Ports for accounting purposes, to measure performance, 
+for regulatory reasons or other determinations that are specific to 
+that Participant.
+---------------------------------------------------------------------------
+
+    With the addition of OTTO, a BX Participant may elect to enter 
+their orders through FIX, OTTO, or both protocols, although both 
+protocols are not necessary. Each BX Participant would receive one OTTO 
+Port at no cost, thereby promoting just and equitable principles of 
+trade. The Exchange notes that Participants may prefer one order 
+protocol as compared to another order protocol, for example, the 
+ability to route an order may cause a Participant to utilize FIX and a 
+Participant that desires to execute an order locally may utilize OTTO. 
+Also, the OTTO Port offers lower latency as compared to the FIX Port, 
+which may be attractive to Participants depending on their trading 
+behavior. With this proposal, BX Participant may organize their 
+business as they chose with the ability to send orders to BX at no 
+cost. The proposed new OTTO protocol is identical to the OTTO protocol 
+offered today on ISE, GEMX, MRX.
+Other Amendments
+    In connection with offering OTTO, the Exchange proposes to amend 
+other rules within Options 3 to make clear where the FIX and OTTO 
+protocols may be utilized. IOC Orders may be entered through FIX, OTTO 
+or SQF. A Day order may be entered through FIX or OTTO. A GTC order may 
+only be entered through FIX. A Public Customer-to-Public Customer Cross 
+Order may be entered through FIX or OTTO. Other processes such the 
+Opening Cancel Timer would impact FIX and OTTO equally.
+    The Exchange's proposal to amend the Kill Switch at Options 3, 
+Section 17 to align its rule text in proposed Options 3, Section 17(a) 
+and (a)(2) with MRX's Options 3, Section 17 is consistent with the Act 
+because it does not substantively amend the functionality beyond 
+removing the group level cancel capability. The Exchange's proposal to 
+amend proposed Options 3, Section 17(a)(2) to specify that FIX and OTTO 
+orders may be cancelled is consistent with the Act as it will make 
+clear that all orders entered on BX may be purged through the Kill 
+Switch. Finally, allowing BX Participants to send a mass purge request 
+through FIX or OTTO, in lieu of an interface, is consistent with Act 
+and the protection of investors and the general public because it will 
+enable BX Participants to initiate the Kill Switch more seamlessly 
+without the need to utilize a separate interface. Further, utilizing 
+the order protocols directly, in lieu of the interface, will align the 
+Kill Switch functionality to that of ISE, GEMX and MRX. When initiating 
+a cancellation of their orders by sending a mass purge request through 
+FIX or OTTO, Participants will be able to submit a Kill Switch request 
+on a user level only because the purge will be specific to a FIX or 
+OTTO user for these ports.
+    Finally, the Detection of Loss of Communication would apply equally 
+to FIX and OTTO. The Exchange believes that its proposal is consistent 
+with the Act and protects investors as the Exchange is making clear 
+what types of order types and other mechanisms may utilize OTTO. Today, 
+BX Participants utilize FIX to enter their orders. Despite the fact 
+that OTTO would not be available for the GTC Time-In-Force modifier, 
+the Exchange notes that one OTTO Port is being provided to Participants 
+at no cost. Today, FIX is the only manner in which to enter orders into 
+BX.
+Pricing
+    BX's proposal to amend its Pricing Schedule at Options 7, Section 3 
+will offer BX Participants the first OTTO Port at no cost to submit 
+orders into BX. Only BX Participants may utilize ports on BX. A 
+Participant can send all orders, proprietary and agency, through one 
+port to BX. Only one order entry protocol is required for BX 
+Participants to submit orders into BX to meet its regulatory 
+requirements.\20\ Additional ports beyond one port are not required for 
+a BX Participant to meet its regulatory obligations. Participants may 
+elect to obtain multiple account numbers to organize their business, 
+however only one account number is necessary to transact options 
+business on BX and account numbers are available to Participants at no 
+cost.
+---------------------------------------------------------------------------
+
+    \20\ BX Participants have trade-through requirements under 
+Regulation NMS as well as broker-dealers' best execution 
+obligations. See Rule 611 of Regulation NMS; 17 CFR 242.611 and 
+FINRA Rule 5310.
+---------------------------------------------------------------------------
+
+    The Exchange's proposal is reasonable, equitable and not unfairly
+
+[[Page 15246]]
+
+discriminatory as BX is providing Participants the first OTTO Port to 
+submit orders at no cost. One OTTO Port would allow a BX Participant to 
+meet its regulatory requirements. Additional OTTO Ports, beyond the 
+first port which is being offered at no cost, are not required for a BX 
+Participant to meet its regulatory obligations. For the foregoing 
+reasons, the Exchange believes that it is reasonable to assess no fee 
+for the first OTTO Port obtained by a BX Participant as a BX 
+Participant is able to meet its regulatory requirements with one OTTO 
+Port. Additionally, the OTTO protocol is a proprietary protocol of 
+Nasdaq, Inc. The Exchange continues to innovate and modernize 
+technology so that it may continue to compete among options markets. 
+The ability to continue to innovate with technology and offer new 
+products to market participants allows BX to remain competitive in the 
+options space which currently has seventeen options markets and 
+potential new entrants.
+    Today, a Member on ISE, GEMX, or MRX may utilize either a FIX or an 
+OTTO Port to submit orders to the respective exchange. In analyzing the 
+data provided below for ISE, GEMX and MRX, it is important to note that 
+30% of members on ISE subscribe to 1 OTTO Port and 24% of members 
+subscribe to 1 FIX Port. ISE had a market share of 5.90% in 2023. Below 
+are charts which display the number of members that subscribe to OTTO 
+and FIX Ports on MRX.
+BILLING CODE 8011-01-P
+[GRAPHIC] [TIFF OMITTED] TN01MR24.031
+
+[GRAPHIC] [TIFF OMITTED] TN01MR24.032
+
+    Below are charts which display the number of members that subscribe 
+to OTTO and FIX Ports on GEMX.
+
+[[Page 15247]]
+
+[GRAPHIC] [TIFF OMITTED] TN01MR24.033
+
+[GRAPHIC] [TIFF OMITTED] TN01MR24.034
+
+    Below are charts which display the number of members that subscribe 
+to OTTO and FIX Ports on ISE.
+
+[[Page 15248]]
+
+[GRAPHIC] [TIFF OMITTED] TN01MR24.035
+
+[GRAPHIC] [TIFF OMITTED] TN01MR24.036
+
+BILLING CODE 8011-01-C
+    Further it is equitable and not unfairly discriminatory to assess 
+no fee for the first OTTO Port to a BX Participant as all BX 
+Participants would be entitled to the first OTTO Port at no cost. With 
+this proposal, BX Participants may organize their business in such a 
+way as to submit orders to BX at no cost.
+    The Exchange's proposal to assess BX Participants $650 per port, 
+per month, per account number for OTTO Ports beyond the first port is 
+reasonable because these ports are not required for a member to meet 
+its regulatory requirements. BX Participants only require one order 
+entry port to submit orders to BX. The Exchange is offering 
+Participants one free OTTO Port. Participants that subscribe to FIX 
+could utilize their FIX Port to submit orders and would not need to 
+utilize an OTTO Port. Participants electing to subscribe to more than 
+one OTTO Port are choosing the additional ports to accommodate their 
+business model. For example, a Participant may purchase one or more 
+OTTO Ports for its market making business, and then purchase separate 
+OTTO Ports for proprietary trading or customer facing businesses, 
+allowing the firm to send multiple messages into the Exchange's System 
+in parallel rather than sequentially. Some Participants that provide 
+direct market access to their customers may also choose to purchase 
+separate ports for different clients. While a smaller Participant may 
+choose to subscribe to two OTTO Ports, a larger market participant with 
+a substantial and diversified U.S. options business may opt to purchase 
+multiple OTTO Ports to support both the volume and types of activity 
+that they conduct on the Exchange. While the Exchange has no way of 
+predicting with certainty the amount of OTTO Ports market participants 
+will in fact purchase, the Exchange anticipates that some Participants 
+will subscribe to multiple OTTO Ports. The Exchange believes that the 
+proposed OTTO Port fees beyond the first port are reasonable because 
+these ports are not required for a member to meet its regulatory 
+requirements. Additionally, the proposed OTTO Port fee of $650 per 
+port, per month, per account number is the same fee charged for OTTO 
+Ports on MRX and GEMX.\21\
+---------------------------------------------------------------------------
+
+    \21\ See MRX Options 7, Section 6 and GEMX Options 7, Section 6, 
+C. MRX and GEMX do not offer an OTTO Port at no cost. MRX offers the 
+first FIX Port at no cost.
+---------------------------------------------------------------------------
+
+    The Exchange's proposal to assess BX Participants $650 per port, 
+per month, per account number for OTTO Ports beyond the first port is 
+equitable and not unfairly discriminatory because any BX Participant 
+may elect to subscribe to
+
+[[Page 15249]]
+
+additional OTTO Ports, however BX Participants only require one order 
+entry port to submit orders to BX. The Exchange is offering 
+Participants one free OTTO Port. Participants that subscribe to FIX 
+could utilize their FIX Port to submit orders and would not need to 
+utilize an OTTO Port. As noted herein, all BX Participants would be 
+subject to the same fees for OTTO Ports. Also, as noted herein, account 
+numbers are available on BX at no cost.
+    Unlike ISE, GEMX and MRX, BX only offers its Participants a FIX 
+Port to submit orders to BX. As noted herein, the proposed OTTO Port 
+Fee for additional ports is comparable to GEMX and MRX, which markets 
+assess an OTTO Port Fee of $650 per port, per month, per account 
+number.\22\ GEMX and MRX do not offer the first OTTO Port at no cost, 
+however MRX offers the first FIX Port at no cost.\23\ Cboe offers more 
+than one order entry port. Cboe port fees \24\ are within the range of 
+the proposed fees. Cboe does not offer a free order entry port and 
+tiers its BOE and FIX Logical ports so that each subsequent port fee is 
+higher than BX's port fees. Additionally, Cboe limits usage on each 
+port and assesses fees for incremental usage \25\ thereby increasing 
+the expense for ports if the usage is exceeded and potentially 
+requiring market participants to acquire additional ports to avoid 
+additional costs. BOX port fees \26\ are within the range of the 
+proposed fees. While BOX does not offer an order entry port at no cost, 
+it tiers its FIX and SAIL port fees and each subsequent port fee is 
+lower. MIAX port fees \27\ are within the range of the proposed fees. 
+MIAX Port users are allocated two (2) Full Service MEI Ports and two 
+(2) Limited Service MEI Ports per matching engine to which they 
+connect.\28\ NYSE Arca port fees \29\ are within the range of the 
+proposed fees. For each order/quote entry port utilized, NYSE Arca 
+Market Makers may utilize, free of charge, one port dedicated to quote 
+cancellation or ``quote takedown,'' which port(s) will not be included 
+in the count of order/quote entry ports utilized.\30\
+---------------------------------------------------------------------------
+
+    \22\ See GEMX Options 7, Section 6.C and MRX Options 7, Section 
+6.
+    \23\ See GEMX Options 7, Section 6.C and MRX Options 7, Section 
+6.
+    \24\ Cboe assesses a fee of $750 per port up to 5 BOE/FIX 
+Logical Ports, and $800 per port for over 5 BOE/FIX Logical Ports. 
+See Cboe's Fees Schedule.
+    \25\ Each Cboe BOE or FIX Logical Port incur the logical port 
+fee indicated when used to enter up to 70,000 orders per trading day 
+per logical port as measured on average in a single month. For each 
+incremental usage of up to 70,000 per day per logical port will 
+incur an additional logical port fee of $800 per month. See Cboe's 
+Fees Schedule.
+    \26\ BOX assesses tiered FIX Port Fees as follows: $500 per port 
+per month for the first FIX Port, $250 per port per month for FIX 
+Ports 2-5 and $150 per port per month for over 5 FIX Ports. BOX 
+assesses $1,000 per month for all SAIL Ports for Market Making and 
+$500 per month per port up to 5 ports for order entry and $150 per 
+month for each additional port. See BOX's Fee Schedule.
+    \27\ MIAX tiers its FIX Port fees as follows: $550 per month for 
+the 1st FIX Port, $350 per month per port for the FIX Ports 2 
+through 5 and $150 per month for over 5 FIX Ports. MIAX tiers its 
+MEI Port Fees and assesses fees per number of classes and as a 
+percentage of National Average Daily Volume. MEI Port fees range 
+from $5,000 to $20,500 per month. The applicable fee rate is the 
+lesser of either the per class basis or percentage of total national 
+average daily volume measurement. However, if the Market Maker's 
+total monthly executed volume during the relevant month is less than 
+0.060% of the total monthly executed volume reported by The Options 
+Clearing Corporation in the market maker account type for MIAX-
+listed option classes for that month, then the fee will be $14,500 
+instead of the fee otherwise applicable. MIAX will assess monthly 
+MEI Port Fees on Market Makers in each month the Member has been 
+credentialed to use the MEI Port in the production environment and 
+has been assigned to quote in at least one class. See MIAX's Fee 
+Schedule.
+    \28\ MEI Port Fees include MEI Ports at the Primary, Secondary 
+and Disaster Recovery data centers. MIAX Market Makers may request 
+additional Limited Service MEI Ports for which MIAX will assess MIAX 
+Market Makers $100 per month per additional Limited Service MEI Port 
+for each engine. See MIAX's Fee Schedule.
+    \29\ NYSE Arca assesses a tiered order/quote entry port fee of 
+$450 for the first 40 ports and $150 per port per month for the 41 
+ports or greater. For purpose of calculating the number of order/
+quote entry ports and quote takedown ports, NYSE Arca aggregates the 
+ports of affiliates. See NYSE Arca Options Fees and Charges.
+    \30\ Any quote takedown port utilized by a NYSE Arca Market 
+Maker that is in excess of the number of order/quote entry ports 
+utilized will be counted and charged as an order/quote entry port. 
+See NYSE Arca Options Fees and Charges.
+---------------------------------------------------------------------------
+
+B. Self-Regulatory Organization's Statement on Burden on Competition
+
+    The Exchange does not believe that the proposed rule change will 
+impose any burden on competition not necessary or appropriate in 
+furtherance of the purposes of the Act.
+    The OTTO protocol is a proprietary protocol of Nasdaq, Inc. The 
+Exchange continues to innovate and modernize technology so that it may 
+continue to compete among options markets. The ability to continue to 
+innovate with technology and offer new products to market participants 
+allows BX to remain competitive in the options space which currently 
+has seventeen options markets and potential new entrants. If BX were 
+unable to offer and price new protocols, it would result in an undue 
+burden on competition as BX would not have the ability to innovate and 
+modernize its technology to compete effectively in the options space. 
+BX's ability to offer OTTO will enable it to compete with other options 
+markets that provide its market participants a choice as to the type of 
+order entry protocols that may be utilized. BX's ability to offer and 
+price new and innovative products and continue to modernize its 
+technology, similar to other options markets, supports intermarket 
+competition.
+OTTO Protocol
+    The Exchange's proposal to adopt an OTTO Protocol does not impose 
+an undue burden on intramarket competition. Today, all BX Participants 
+utilize FIX to send orders to BX. The Exchange would offer each BX 
+Participant the first OTTO Port at no cost with this proposal. With the 
+addition of OTTO Ports, a BX Participant may elect to enter their 
+orders through FIX, OTTO, or both protocols, although both protocols 
+are not necessary. The Exchange's proposal to adopt an OTTO Protocol 
+does not impose an undue burden on intermarket competition as other 
+options exchanges offer multiple protocols today such as ISE, GEMX and 
+MRX.
+Other Amendments
+    The Exchange's proposal to amend other rules within Options 3 to 
+make clear where the FIX and OTTO protocols may be utilized does not 
+impose an undue burden on intramarket competition as these rules will 
+apply in the same manner to all Participants. The Exchange's proposal 
+to amend other rules within Options 3 to make clear where the FIX and 
+OTTO protocols may be utilized does not impose an undue burden on 
+intermarket competition as other options exchanges may elect to utilize 
+their order entry protocols in different ways.
+Pricing
+    Nothing in the proposal burdens intermarket competition because 
+BX's proposal to offer the first OTTO Port for free permits BX to set 
+fees, similar to other options markets, while continuing to allow BX 
+Participants to meet their regulatory obligations. BX's proposal would 
+permit BX Participants the ability to submit orders to BX at no cost 
+through OTTO. Additional OTTO Ports are not required for BX 
+Participants to meet their regulatory obligations. The proposed port 
+fees are similar to port fees assessed by other options markets as 
+noted in this proposal. Further, the Exchange does not believe that the 
+proposed rule change would place certain market participants at the 
+Exchange at a relative disadvantage compared to other market 
+participants or affect the ability of such market participants to 
+compete. The Exchange notes that while the manner in which an order is 
+sent to the Exchange may have an impact on latency, the difference
+
+[[Page 15250]]
+
+from a latency standpoint would be in nanoseconds, and it would depend 
+on the manner in which the order is being sent to the Exchange. A 
+market participant sending 30 sequential orders through an OTTO Port 
+may experience a slight latency of certain nanoseconds (less than a few 
+nanoseconds) to permit serialized processing in the port and the match 
+engine per order in certain cases. This is compared to a BX participant 
+who submits 30 orders through multiple OTTO Ports at the same time. 
+This distinction exists today on other options exchanges that offer 
+market participants the ability to submit order flow in bulk,\31\ which 
+results in a larger number of orders being sent to the exchange's match 
+engine in a quicker timeframe as compared to market participants that 
+utilize a port that does not support bulk orders. Also, as noted 
+herein, OTTO Orders do not route and therefore have a lower latency as 
+compared to orders sent via a FIX Port. The Exchange notes that other 
+factors may also contribute to the time it takes for an order to be 
+executed. For example, on an exchange that offers complex orders, such 
+orders with a stock component, may take additional time to execute as 
+compared to a market order. In short, while latency may play a very 
+small factor in the quantity of ports that are being utilized to send 
+an order to the Exchange, all market participants may elect how their 
+order is sent to an exchange. The Exchange notes that there is no 
+correlation between the number of orders executed on the Exchange by a 
+Participant and the number of ports subscribed to by a Participant. 
+There are Participants that subscribe to a larger number of ports that 
+have lower executed volumes on BX than those with half of the number of 
+ports. Also, not all ports subscribed to by a Participant are active. 
+Further, all Participants are entitled to obtain additional OTTO Ports 
+or a mix of OTTO and FIX Ports. The Exchange is providing each 
+Participant the first OTTO Port at no cost. To the extent Participants 
+elect to utilize different technologies and connections to the 
+Exchange, including different numbers and combinations of ports, the 
+Exchange believes that the combinations may result in varying latencies 
+as is the case on all other options exchanges today.
+---------------------------------------------------------------------------
+
+    \31\ Cboe offers BOE Bulk Logical Ports. See Cboe's Fee 
+Schedule. See Securities Exchange Act Release No. 90333 (November 4, 
+2020), 85 FR 71666 (November 10, 2020) (SR-CBOE-2020-105). Cboe 
+amended access and connectivity fees, including port fees. 
+Specifically, Cboe adopted certain logical ports to allow for the 
+delivery and/or receipt of trading messages--i.e., orders, accepts, 
+cancels, transactions, etc. Cboe established tiered pricing for BOE/
+FIX Logical Ports, with the lowest tier starting at $750 per port, 
+per month for 1 to 5 ports, and for BOE Bulk Logical Ports with 
+separate tiered pricing starting at $1,5000 per port, per month for 
+1 to 5 ports. Cboe also established flat prices for DROP, Purge 
+Ports, GRP Ports and Multicast PITCH/Top Spin Server Ports.
+---------------------------------------------------------------------------
+
+    Nothing in the proposal burdens intra-market competition because 
+the Exchange would uniformly assess the OTTO Port fees to all BX 
+Participants, as applicable. Further, other exchanges have increased or 
+added port fees in recent years. As recently as 2020, Cboe amended its 
+port fees.\32\ Specifically, Cboe adopted certain logical ports to 
+allow for the delivery and/or receipt of trading messages--i.e., 
+orders, accepts, cancels, transactions, etc. Cboe established tiered 
+pricing for BOE and FIX logical ports, tiered pricing for BOE Bulk 
+ports, and flat prices for DROP, Purge Ports, GRP Ports and Multicast 
+PITCH/Top Spin Server Ports. Cboe argued in its fee proposal that the 
+proposed pricing more closely aligned its access fees to those of its 
+affiliated exchanges, and reasonably so, as the affiliated exchanges 
+offer substantially similar connectivity and functionality and are on 
+the same platform that Cboe migrated to as part of its migration. Cboe 
+also justified its pricing by stating that, ``. . . the Exchange 
+believes substitutable products and services are in fact available to 
+market participants, including, among other things, other options 
+exchanges a market participant may connect to in lieu of the Exchange, 
+indirect connectivity to the Exchange via a third-party reseller of 
+connectivity and/or trading of any options product, including 
+proprietary products, in the Over-the-Counter (OTC) markets.'' \33\ 
+Cboe stated in its proposal that,
+---------------------------------------------------------------------------
+
+    \32\ See Securities Exchange Act Release No. 90333 (November 4, 
+2020), 85 FR 71666 (November 10, 2020) (SR-CBOE-2020-105).
+    \33\ Id. at 71676.
+
+    The rule structure for options exchanges are also fundamentally 
+different from those of equities exchanges. In particular, options 
+market participants are not forced to connect to (and purchase 
+market data from) all options exchanges. For example, there are many 
+order types that are available in the equities markets that are not 
+utilized in the options markets, which relate to mid-point pricing 
+and pegged pricing which require connection to the SIPs and each of 
+the equities exchanges in order to properly execute those orders in 
+compliance with best execution obligations. Additionally, in the 
+options markets, the linkage routing and trade through protection 
+are handled by the exchanges, not by the individual members. Thus 
+not connecting to an options exchange or disconnecting from an 
+options exchange does not potentially subject a broker-dealer to 
+violate order protection requirements. Gone are the days when the 
+retail brokerage firms (such as Fidelity, Schwab, and eTrade) were 
+members of the options exchanges--they are not members of the 
+Exchange or its affiliates, they do not purchase connectivity to the 
+Exchange, and they do not purchase market data from the Exchange. 
+Accordingly, not only is there not an actual regulatory requirement 
+to connect to every options exchange, the Exchange believes there is 
+also no ``de facto'' or practical requirement as well, as further 
+evidenced by the recent significant reduction in the number of 
+broker-dealers that are members of all options exchanges.\34\
+---------------------------------------------------------------------------
+
+    \34\ Id. at 71677.
+
+    The proposal also referenced the National Market System Plan 
+Governing the Consolidated Audit Trail (``CAT NMS Plan''),\35\ wherein 
+the Commission discussed the existence of competition in the 
+marketplace generally, and particularly for exchanges with unique 
+business models. The Commission acknowledged that, even if an exchange 
+were to exit the marketplace due to its proposed fee-related change, it 
+would not significantly impact competition in the market for exchange 
+trading services because these markets are served by multiple 
+competitors.\36\ Further, the Commission explicitly stated that 
+``[c]onsequently, demand for these services in the event of the exit of 
+a competitor is likely to be swiftly met by existing competitors.'' 
+\37\ Finally, the Commission recognized that while some exchanges may 
+have a unique business model that is not currently offered by 
+competitors, a competitor could create similar business models if 
+demand were adequate, and if a competitor did not do so, the Commission 
+believes it would be likely that new entrants would do so if the 
+exchange with that unique business model was otherwise profitable.\38\ 
+Cboe concluded that the Exchange is subject to significant 
+substitution-based competitive forces in pricing its connectivity and 
+access fees.\39\ Cboe stressed that the proof of competitive 
+constraints does not depend on showing that members walked away, or 
+threatened to walk away, from a product due to a pricing change. 
+Rather, the very absence of such negative feedback (in and of itself, 
+and particularly when coupled with positive feedback) is indicative 
+that the proposed fees are, in fact, reasonable and consistent with the 
+Exchange being subject to competitive forces in setting fees.\40\
+---------------------------------------------------------------------------
+
+    \35\ See Securities Exchange Act Release No. 86901 (September 9, 
+2019), 84 FR 48458 (September 13, 2019) (File No. S7-13-19).
+    \36\ Id.
+    \37\ Id.
+    \38\ Id.
+    \39\ Id. at 71679.
+    \40\ Id. at 71680.
+
+---------------------------------------------------------------------------
+
+[[Page 15251]]
+
+    MRX recently filed to establish port fees.\41\ In SR-MRX-2023-05, 
+MRX proposed to assess no fee for the first FIX Port obtained by an MRX 
+Member and established fees for additional FIX Ports of $650 per port, 
+per month for each subsequent port beyond the first port. MRX noted in 
+SR-MRX-2023-05 that:
+---------------------------------------------------------------------------
+
+    \41\ See Securities Exchange Act No. 96824(February 7, 2023), 88 
+FR 8975 (February 10, 2023) (SR-MRX-2023-05) (Notice of Filing and 
+Immediate Effectiveness of Proposed Rule Change To Amend MRX Options 
+7, Section 6).
+
+    Only MRX Members may utilize ports on MRX. Any market 
+participant that sends orders to a Member would not need to utilize 
+a port. The Member can send all orders, proprietary and agency, 
+through one port to MRX. Members may elect to obtain multiple 
+account numbers to organize their business, however only one account 
+number and one port for orders and one port for quotes is necessary 
+for a Member to trade on MRX. All other ports offered by MRX are not 
+---------------------------------------------------------------------------
+required for an MRX Member to meet its regulatory obligations.
+
+    MRX also established fees for OTTO Ports, which ports are identical 
+to the ports being offered on BX, and priced them the same as the 
+proposed OTTO fees for BX. MRX assesses an OTTO Port Fee of $650 per 
+port, per month, per account number but does not offer the first OTTO 
+Port at no cost because it was offering one FIX Port at no cost for 
+order entry.
+    If the Commission were to apply a different standard of review to 
+this proposal than it applied to other exchange fee filings, such as 
+the Cboe or MRX fee filings,\42\ it would create a burden on 
+competition such that it would impair BX's ability to innovate new 
+products, modernize its technology, and compete with other options 
+markets.
+---------------------------------------------------------------------------
+
+    \42\ See notes 30 and 39 above.
+---------------------------------------------------------------------------
+
+C. Self-Regulatory Organization's Statement on Comments on the Proposed 
+Rule Change Received From Members, Participants, or Others
+
+    No written comments were either solicited or received.
+
+III. Date of Effectiveness of the Proposed Rule Change and Timing for 
+Commission Action
+
+    Because the foregoing proposed rule change does not: (i) 
+significantly affect the protection of investors or the public 
+interest; (ii) impose any significant burden on competition; and (iii) 
+become operative for 30 days from the date on which it was filed, or 
+such shorter time as the Commission may designate, it has become 
+effective pursuant to Section 19(b)(3)(A)(iii) of the Act \43\ and 
+subparagraph (f)(6) of Rule 19b-4 thereunder.\44\
+---------------------------------------------------------------------------
+
+    \43\ 15 U.S.C. 78s(b)(3)(A)(iii).
+    \44\ 17 CFR 240.19b-4(f)(6). In addition, Rule 19b-4(f)(6) 
+requires a self-regulatory organization to give the Commission 
+written notice of its intent to file the proposed rule change at 
+least five business days prior to the date of filing of the proposed 
+rule change, or such shorter time as designated by the Commission. 
+The Exchange has satisfied this requirement.
+---------------------------------------------------------------------------
+
+    At any time within 60 days of the filing of the proposed rule 
+change, the Commission summarily may temporarily suspend such rule 
+change if it appears to the Commission that such action is necessary or 
+appropriate in the public interest, for the protection of investors, or 
+otherwise in furtherance of the purposes of the Act. If the Commission 
+takes such action, the Commission shall institute proceedings to 
+determine whether the proposed rule should be approved or disapproved.
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views, and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's internet comment form (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>); or
+    <bullet> Send an email to <a href="/cdn-cgi/l/email-protection#f98b8c959cd49a9694949c978d8ab98a9c9ad79e968f"><span class="__cf_email__" data-cfemail="86f4f3eae3abe5e9ebebe3e8f2f5c6f5e3e5a8e1e9f0">[email&#160;protected]</span></a>. Please include 
+file number SR-BX-2024-006 on the subject line.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Secretary, Securities 
+and Exchange Commission, 100 F Street NE, Washington, DC 20549-1090.
+
+All submissions should refer to file number SR-BX-2024-006. This file 
+number should be included on the subject line if email is used. To help 
+the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's internet website (<a href="https://www.sec.gov/rules/sro.shtml">https://www.sec.gov/rules/sro.shtml</a>). Copies of the submission, all subsequent amendments, all 
+written statements with respect to the proposed rule change that are 
+filed with the Commission, and all written communications relating to 
+the proposed rule change between the Commission and any person, other 
+than those that may be withheld from the public in accordance with the 
+provisions of 5 U.S.C. 552, will be available for website viewing and 
+printing in the Commission's Public Reference Room, 100 F Street NE, 
+Washington, DC 20549, on official business days between the hours of 10 
+a.m. and 3 p.m. Copies of the filing also will be available for 
+inspection and copying at the principal office of the Exchange. Do not 
+include personal identifiable information in submissions; you should 
+submit only information that you wish to make available publicly. We 
+may redact in part or withhold entirely from publication submitted 
+material that is obscene or subject to copyright protection. All 
+submissions should refer to file number SR-BX-2024-006 and should be 
+submitted on or before March 22, 2024.
+---------------------------------------------------------------------------
+
+    \45\ 17 CFR 200.30-3(a)(12).
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\45\
+Sherry R. Haywood,
+Assistant Secretary.
+[FR Doc. 2024-04295 Filed 2-29-24; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

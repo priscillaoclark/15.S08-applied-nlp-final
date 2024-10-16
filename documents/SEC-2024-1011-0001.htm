@@ -1,0 +1,1623 @@
+<html>
+<head>
+<title>Federal Register, Volume 89 Issue 146 (Tuesday, July 30, 2024)</title>
+</head>
+<body><pre>
+[Federal Register Volume 89, Number 146 (Tuesday, July 30, 2024)]
+[Notices]
+[Pages 61211-61222]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2024-16661]
+
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-100584; File No. SR-OCC-2024-009]
+
+
+Self-Regulatory Organizations; The Options Clearing Corporation; 
+Notice of Filing of Proposed Rule Change by The Options Clearing 
+Corporation Regarding Its Backtesting Framework and To Establish a 
+Resource Backtesting Margin Charge
+
+July 24, 2024.
+    Pursuant to Section 19(b)(1) of the Securities Exchange Act of 1934 
+(``Exchange Act'' or ``Act''),\1\ and Rule 19b-4 thereunder,\2\ notice 
+is hereby given that on July 11, 2024, The Options Clearing Corporation 
+(``OCC'') filed with the Securities and Exchange Commission (``SEC'' or 
+``Commission'') the proposed rule change as described in Items I, II, 
+and III below, which Items have been prepared primarily by OCC. The 
+Commission is publishing this notice to solicit comments on the 
+proposed rule change from interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+I. Clearing Agency's Statement of the Terms of Substance of the 
+Proposed Rule Change
+
+    This proposed rule change would (i) amend OCC's Margin Policy to 
+more comprehensively describe OCC's approach to backtesting, including 
+how OCC establishes and reviews assumptions underlying OCC's 
+backtesting and criteria for escalating backtesting results; (ii) 
+provide for a new category of backtesting designed to evaluate whether 
+OCC maintains sufficient margin resources to cover its credit exposure 
+to the liquidation portfolio of each Clearing Member from the last 
+margin collection until the end of the liquidation horizon following 
+the default of that Clearing Member with a high degree of confidence 
+(as defined below, ``Resource Backtesting''); (iii) implement a 
+Resource Backtesting Margin Charge that OCC would collect from Clearing 
+Members who experience Resource Backtesting deficiencies that bring 
+their margin coverage rates below a 99% coverage target; and (iv) make 
+certain conforming changes to other OCC rules to reflect these proposed 
+changes.
+    Proposed changes to OCC's Rules are contained in Exhibit 5A to File 
+No. SR-OCC-2024-009. Proposed changes to OCC's Margin Policy, Model 
+Risk Management Policy and STANS Methodology Description are contained 
+in confidential Exhibits 5B, 5C, and 5D to File No. SR-OCC-2024-009, 
+respectively. Material proposed to be added is marked by underlining 
+and material proposed to be deleted is marked with strikethrough text. 
+All terms with initial capitalization that are not otherwise defined 
+herein have the same meaning as set forth in the OCC By-Laws and 
+Rules.\3\
+---------------------------------------------------------------------------
+
+    \3\ OCC's By-Laws and Rules can be found on OCC's public 
+website: <a href="https://www.theocc.com/Company-Information/Documents-and-Archives/By-Laws-and-Rules">https://www.theocc.com/Company-Information/Documents-and-Archives/By-Laws-and-Rules</a>.
+---------------------------------------------------------------------------
+
+II. Clearing Agency's Statement of the Purpose of, and Statutory Basis 
+for, the Proposed Rule Change
+
+    In its filing with the Commission, OCC included statements 
+concerning the purpose of and basis for the proposed rule change and 
+discussed any comments it received on the proposed rule change. The 
+text of these statements may be examined at the places specified in 
+Item IV below. OCC has prepared summaries, set forth in sections (A), 
+(B), and (C) below, of the most significant aspects of these 
+statements.
+
+(A) Clearing Agency's Statement of the Purpose of, and Statutory Basis 
+for, the Proposed Rule Change
+
+    OCC is the sole clearing agency for standardized equity options 
+listed on national securities exchanges registered with the Commission. 
+OCC also clears certain stock loan and futures transactions. In its 
+role as a clearing agency, OCC is the guarantor for all contracts 
+cleared through OCC; that is, OCC becomes the buyer to every seller or 
+the seller to every buyer (or the lender to every borrower and the 
+borrower to every lender, in the case of stock loans). As a central 
+counterparty, OCC is exposed to credit risk in the event of the failure 
+of one its members because OCC is obligated to perform on the contracts 
+it clears even when one of its members defaults.
+    OCC manages this credit risk through various safeguards to ensure 
+that it has sufficient financial resources in the event of a Clearing 
+Member failure. For example, OCC periodically collects margin 
+collateral from its Clearing Members, which is used to cover the credit 
+exposures they individually present to OCC. OCC has established a 
+proprietary system, the System for
+
+[[Page 61212]]
+
+Theoretical Analysis and Numerical Simulation (``STANS''), that runs 
+various models used to calculate margin requirements, as described in 
+the STANS Methodology Description.
+    To monitor whether margin requirements calculated by STANS are 
+adequate, OCC compares the margin derived from its use of the STANS 
+margin models against the amount it could have lost if a Clearing 
+Member had failed (``backtesting''). OCC relies on backtesting to 
+evaluate the accuracy of its margin models by comparing the calculated 
+margin coverage for each margin account against the actual profit and 
+loss on the margined portfolios. OCC performs backtesting at least once 
+each day using standard predetermined parameters and assumptions. While 
+backtesting does not directly establish Clearing Members' margin 
+requirements, OCC maintains broad authority under its rules to collect 
+additional margin if OCC identifies issues with its margin coverage.\4\ 
+In addition, backtesting may reveal opportunities to enhance OCC's 
+credit risk management and margin methodology or to adjust model 
+parameters.
+---------------------------------------------------------------------------
+
+    \4\ See OCC Rule 601(c) (``Notwithstanding any other provision 
+of this Rule 601, [OCC] may fix the margin requirement for an 
+account or any class of cleared contracts at such amount as it deems 
+necessary or appropriate under the circumstances to protect the 
+respective interests of Clearing Members, [OCC], and the public.''); 
+OCC Rule 609(a) (providing OCC's authority to issue intra-day margin 
+calls to protect OCC, other Clearing Members and the general public, 
+among other reasons); see also OCC Rule 307C (authorizing OCC to 
+impose protective measures, including to ``adjust the amount or 
+composition of margin'' when, under Rule 307, a Clearing Member 
+``presents increased credit or liquidity risk to OCC,'' among other 
+reasons).
+---------------------------------------------------------------------------
+
+    This proposed rule change would make three enhancements to OCC's 
+backtesting framework. First, OCC proposes to amend its rule-filed 
+Margin Policy to comprehensively describe material aspects of its 
+backtesting framework. As a self-regulatory organization, OCC is 
+subject to requirements to submit filings with its regulators in 
+connection with changes to its rules, which include material aspects of 
+the facilities of OCC. OCC has filed as rules certain frameworks and 
+policies that describe OCC's approach for credit risk management, 
+including OCC's Margin Policy. Specifically, the Margin Policy 
+establishes a process for ongoing monitoring, review, testing and 
+verification of OCC's risk-based margin system, including by requiring 
+OCC to conduct daily backtesting, conduct analysis of exceedances, and 
+report results at least monthly through OCC's governance process,\5\ as 
+required by SEC Rule 17Ad-22(e)(6)(vi).\6\ However, the Margin Policy 
+does not currently provide detail concerning (i) how OCC establishes 
+and modifies its assumptions for backtesting; or (ii) how OCC 
+establishes and reviews criteria and thresholds for escalating 
+backtesting results and reviews of backtesting assumptions to 
+appropriate decisionmakers. This proposal would amend the Margin Policy 
+to provide further detail about those aspects of OCC's backtesting 
+framework, as well as a more comprehensive description of the different 
+types of backtesting OCC performs and their respective purposes.
+---------------------------------------------------------------------------
+
+    \5\ See Exchange Act Release No. 82658 (Feb. 7, 2018), 83 FR 
+6646, 6649 (Feb. 14, 2018) (SR-OCC-2017-007) (Commission order 
+approving OCC's Margin Policy, inclusive of its provision for 
+backtesting of each margin account).
+    \6\ 17 CFR 240.17Ad-22(e)(6)(vi).
+---------------------------------------------------------------------------
+
+    Second, OCC is proposing to add another category of backtesting to 
+its backtesting framework. OCC's current backtesting assesses whether 
+OCC's margin model achieves a 99% coverage rate for each marginable 
+account, which is the level at which OCC's models calculate margin 
+requirements.\7\ However, under OCC's By-Laws and Rules,\8\ each 
+Clearing Member may have multiple marginable accounts on which OCC 
+maintains different liens designed to facilitate Clearing Members' 
+compliance with the SEC's customer protection regime.\9\ Accordingly, 
+in order to conduct backtesting at the level of each Clearing Member 
+Organization, OCC proposes to amend the Margin Policy to add Resource 
+Backtesting, as defined below, as a separate category of backtesting 
+within OCC's backtesting framework to assess the adequacy of OCC's 
+margin resources to cover its credit exposure at the Clearing Member 
+level. OCC has designed its Resource Backtesting to assess whether OCC 
+maintains sufficient margin resources, among other prefunded financial 
+resources,\10\ to cover its credit exposure to each participant fully 
+with a high degree of confidence, consistent with SEC Rule 17Ad-
+22(e)(4)(i).\11\ Specifically, Resource Backtesting would test whether 
+the liquidation portfolio of each Clearing Member from the last margin 
+collection until the end of the liquidation horizon following the 
+Clearing Member's default achieves a 99% coverage rate, in line with 
+the coverage standard for the current backtesting of OCC's margin 
+models.
+---------------------------------------------------------------------------
+
+    \7\ See Exchange Act Release No. 82658, supra note 5, 83 FR at 
+6647.
+    \8\ See OCC By-Laws, Art. VI, Sec. 3 (providing for the various 
+accounts and their respective lien structures).
+    \9\ See, e.g., 17 CFR 240.15c3-3(e) (providing for the reserve 
+formula used in calculating the amounts of funds a clearing member 
+is required to deposit in a special reserve bank account for the 
+exclusive benefit of customers, including a debit for ``[m]argin 
+required and on deposit with [OCC] for all option contracts written 
+or purchased in customer accounts'').
+    \10\ Such other prefunded financial resources include, in order 
+of contribution within OCC's default waterfall: (i) the Clearing 
+Fund deposit of the defaulting Clearing Member, which would be at 
+least $500,000; (ii) OCC's skin-in-the-game in the form of OCC's 
+Minimum Corporate Contribution and its liquid net assets funded by 
+equity in excess of 110% of its Target Capital Requirement (which, 
+as of December 31, 2023, was more than $130 million); and (iii) the 
+Clearing Fund deposits of non-defaulting Clearing Members (as of 
+December 31, 2023, the Clearing Fund was more than $16.7 billion) 
+and the EDCP Unvested Balance (i.e., the unvested funds held in 
+respect of OCC's Executive Deferred Compensation Plan Trust that OCC 
+would be charged on a proportionate basis with the Clearing Fund 
+deposits of non-defaulting Clearing Members).
+    \11\ 17 CFR 240.17Ad-22(e)(4)(i).
+---------------------------------------------------------------------------
+
+    Third, OCC proposes to amend its rules to establish a margin add-on 
+that OCC would charge a Clearing Member if Resource Backtesting 
+coverage for that Clearing Member falls below 99% (``Resource 
+Backtesting Margin Charge''). Accordingly, OCC's new backtesting 
+framework would impact the total margin collected from certain Clearing 
+Members depending on the performance of OCC's margin models and the 
+activity those members clear through OCC. As discussed further below, 
+OCC believes that the Resource Backtesting Margin Charge would help OCC 
+ensure it collects margin sufficient to cover its potential future 
+exposure to participants in the interval between the last margin 
+collection and the close out of positions following a participant 
+default, consistent with SEC Rule 17Ad-22(e)(6)(iii).\12\
+---------------------------------------------------------------------------
+
+    \12\ 17 CFR 240.17Ad-22(e)(6)(iii).
+---------------------------------------------------------------------------
+
+    In connection with these three backtesting enhancements, OCC would 
+also make certain conforming changes to the Model Risk Management 
+Policy and STANS Methodology Description to reflect changes in defined 
+terms associated with backtesting and changes to the underlying 
+procedures.
+(1) Purpose
+Background
+Backtesting Procedures
+    STANS is OCC's proprietary risk management system for calculating 
+Clearing Member margin requirements.\13\ The STANS
+
+[[Page 61213]]
+
+methodology utilizes large-scale Monte Carlo simulations to forecast 
+price and volatility movements in determining a Clearing Member's 
+margin requirement.\14\ OCC has conducted daily backtesting of margin 
+accounts subject to STANS margining since 2006.
+---------------------------------------------------------------------------
+
+    \13\ See Exchange Act Release No. 91079 (Feb. 8, 2021), 86 FR 
+9410 (Feb. 12, 2021) (File No. SR-OCC-2020-016). OCC makes its STANS 
+Methodology Description available to Clearing Members. An overview 
+of the STANS methodology is on OCC's public website: <a href="https://www.theocc.com/Risk-Management/Margin-Methodology">https://www.theocc.com/Risk-Management/Margin-Methodology</a>.
+    \14\ See OCC Rule 601.
+---------------------------------------------------------------------------
+
+    In 2014, OCC filed proposed changes to its backtesting 
+procedures.\15\ Among other things, the changes included: (1) the 
+addition of certain industry-standard statistical tests, including the 
+Kupiec Test \16\ and Christoffersen Independence Test; \17\ (2) 
+backtesting of hypothetical portfolios (which OCC currently refers to 
+as ``Model Backtesting''), in addition to actual portfolios (which OCC 
+currently refers to as ``Business Backtesting''), to provide more 
+comprehensive insight into the adequacy of the underlying model 
+assumptions under market conditions prevailing in the backtesting 
+observation periods, as well as stressed market conditions; (3) 
+adjustments to the forecasted horizon used for backtesting to better 
+reflect the two-day liquidation period (OCC's margin period of risk or 
+``MPOR'') used in margin calculations and to provide OCC with a more 
+accurate view of the sufficiency of its margin methodology; and (4) 
+system changes to give OCC's backtesting staff additional tools to help 
+identify the root cause of backtesting exceedances. The Commission 
+issued a notice of no objection with respect to those proposed 
+changes.\18\
+---------------------------------------------------------------------------
+
+    \15\ See Exchange Act Release No. 73749 (Dec. 5, 2014), 79 FR 
+73673 (Dec. 11, 2014) (SR-OCC-2014-810).
+    \16\ The Kupiec Test is a proportion of failures test that 
+compares the actual number of exceedances with the number that would 
+be expected in light of the confidence level associated with the 
+calculation of margin. See Kupiec, P. ``Techniques for Verifying the 
+Accuracy of Risk Management Models,'' Journal of Derivatives, v3, 
+P73-84. (1995).
+    \17\ The Christoffersen Independence Test measures the extent to 
+which exceedances are independent of each other. See Christoffersen, 
+P. ``Evaluating Interval Forecasts.'' International Economic Review, 
+39 (4), 841-862 (1998).
+    \18\ See Exchange Act Release No. 75290 (June 24, 2015), 80 FR 
+37323 (June 30, 2015) (SR-OCC-2014-810).
+---------------------------------------------------------------------------
+
+    OCC currently maintains its Model Backtesting and Business 
+Backtesting procedures in internal OCC procedures and technical 
+documents. Among other things, those procedures address data 
+acquisition, application of statistical tests, analyses initiated to 
+address root causes of exceedances, reporting of results, annual 
+methodology reviews, and issue escalation. The technical documents are 
+similar in nature to the margin model whitepapers that support OCC's 
+STANS methodology.\19\
+---------------------------------------------------------------------------
+
+    \19\ As described in the rule filing establishing the STANS 
+Methodology Description, the whitepapers describe how the various 
+quantitative components of STANS were developed and operate, 
+including the various parameters and assumptions contained within 
+those components and the mathematical theories underlying the 
+selection of those quantitative methods. See Exchange Act Release 
+No. 91079, supra note 13, 80 FR at 9410 n.5 and accompanying text. 
+The model whitepapers are not filed as rules of OCC.
+---------------------------------------------------------------------------
+
+Backtesting Framework
+    In addition to the procedural documents noted above, OCC considers 
+its backtesting framework to include its Margin Policy, among other 
+rule-filed documents established after OCC last filed changes to its 
+backtesting procedures.\20\ The Margin Policy provides that OCC's 
+Financial Risk Management Department (``FRM'') continually evaluates 
+the effectiveness of its margin models through daily backtesting of 
+each margin account as provided in the Business Backtesting Procedure, 
+analyzing in detail all accounts exhibiting losses in excess of 
+calculated margin requirements.\21\ The Margin Policy further directs 
+OCC's Quantitative Risk Management business unit (``QRM'') to design 
+backtests to focus on: (i) satisfying OCC's regulatory obligations; 
+(ii) identifying potential opportunities to improve the margin 
+methodology; and (iii) identifying trends in exceedances that may be 
+indicative of behavioral changes by market participants. In addition, 
+the Margin Policy directs QRM to design backtests to find potential 
+opportunities to improve OCC's risk-assessment processes, noting that 
+problems may arise from both technical and model-related issues. With 
+respect to the former, the Margin Policy notes that technical issues 
+may arise from corporate actions and special dividends, for example. 
+The Margin Policy provides that FRM performs Business Backtesting to 
+measure whether the losses observed for a constant set of positions 
+over OCC's MPOR were in excess of the total risk charges (i.e., 
+aggregate of expected shortfall, stress test charges and add-on 
+charges) required for the account. The Margin Policy directs FRM to 
+classify any observation in which losses are in excess as an 
+exceedance.
+---------------------------------------------------------------------------
+
+    \20\ For example, the rule-filed STANS Methodology Description 
+describes ongoing model performance monitoring and backtesting in 
+that document's executive summary, noting that further detail on 
+such model monitoring activity is found in the Margin Policy and the 
+Model Risk Management Policy. See Exchange Act Release No. 90763 
+(Dec. 21, 2020), 85 FR 85788, 85790 n. 18 and accompanying text 
+(Dec. 29, 2020) (SR-OCC-2020-016). In addition, the Model Risk 
+Management Policy provides that margin models will be monitored 
+``according to the Model Backtesting Procedure [and] Business 
+Backtesting Procedure,'' among other procedures. See Exchange Act 
+Release No. 82473 (Jan. 9, 2018), 83 FR 2271, 2273 (Jan. 16, 2018) 
+(SR-OCC-2017-011).
+    \21\ See Exchange Act Release No. 82658, supra note 5, 83 FR at 
+6648.
+---------------------------------------------------------------------------
+
+    While the Margin Policy contemplates that backtesting results and 
+analyses of backtesting assumptions may require escalation, it does not 
+provide for established escalation criteria or thresholds. The absence 
+of specific guidance, thresholds or criteria for escalation could lead 
+to inconsistencies in the escalation of similar backtesting 
+exceedances. For example, the Margin Policy currently directs QRM to 
+report identified problems and overall performance to FRM and the Model 
+Risk Working Group (``MRWG''),\22\ and that the MRWG determines 
+``whether the results require escalation'' to the Management Committee. 
+The Margin Policy further provides that QRM presents MRWG monthly 
+reporting, or more frequently when determined by MRWG, and quarterly 
+reporting that accumulate daily backtesting results and detailed 
+descriptions of the accounts that have incurred exceedances, trends and 
+causes of the exceedances. As with the escalation of identified 
+problems and overall performance, the Margin Policy directs QRM to 
+provide notable results from these reviews to the Chief Financial Risk 
+Officer (i.e., the head of FRM) and MRWG, and that MRWG determines 
+whether ``escalation is warranted'' to the Management Committee, which 
+may determine what remedial actions may be taken.\23\ In addition, the 
+Margin Policy provides for a monthly review of the parameters and 
+assumptions for Business Backtesting, the results of which are reported 
+to the MRWG to discuss and escalate issues ``as necessary.'' \24\
+---------------------------------------------------------------------------
+
+    \22\ The MRWG is a cross-functional group responsible for 
+assisting OCC's management in overseeing OCC's model-related risk 
+comprised of representatives from relevant OCC business units 
+including Quantitative Risk Management, Model Risk Management, and 
+Corporate Risk Management.
+    \23\ Remedial actions could take various forms including, but 
+not limited to, margin add-on charges to account for risk that may 
+not be captured appropriately by OCC's margin models, adjustments to 
+model parameters, or other changes to OCC's margin models or margin 
+methodology, subject to any necessary approvals by OCC's Risk 
+Committee, Board of Directors, and regulators.
+    \24\ See Exchange Act Release No. 82658, supra note 5, 83 FR at 
+6647 (discussing how the backtesting results are ``reported to [the 
+MRWG] and may be escalated to OCC's Management Committee'').
+
+---------------------------------------------------------------------------
+
+[[Page 61214]]
+
+Proposed Changes
+(i) Backtesting Framework
+    OCC is proposing amendments to its Margin Policy to describe more 
+comprehensively its approach to backtesting, including OCC's:
+    <bullet> backtesting framework, which includes (i) the purpose and 
+scope of the backtesting OCC performs and (ii) the assumptions 
+underlying OCC's backtesting and the process for reviewing and 
+modifying those assumptions; and
+    <bullet> backtesting reporting, including how OCC establishes and 
+reviews criteria for escalating exceedances.
+    Specifically, OCC would replace the first two paragraphs of the 
+section of the Margin Policy that concerns margin monitoring, which 
+currently address OCC's Business Backtesting, and a subsection that 
+concerns backtesting reporting, with two new subsections: one that more 
+comprehensively describes OCC's backtesting framework and another that 
+describes backtesting reporting, as described below. The current third 
+paragraph of that section, which concerns the monthly review of margin 
+model parameters and sensitivity analyses of the margin model, would be 
+relocated to its own subsection below the new subsection on backtesting 
+reporting with certain edits discussed below related to the review of 
+backtesting assumptions and the conditions for more frequent review.
+Purpose and Scope of Model Backtesting
+    With respect to OCC's current backtesting processes, the new 
+backtesting framework subsection in the Margin Policy would provide 
+that FRM will continue to conduct daily backtesting of actual and 
+hypothetical portfolios to evaluate the performance of its margin 
+methodology, as it does today. OCC would refer to such backtesting as 
+``Model Backtesting,'' which would distinguish such backtesting from 
+the proposed Resource Backtesting discussed below. As such, Model 
+Backtesting under the proposed amendments would encompass what OCC 
+currently refers to as ``Business Backtesting'' (i.e., backtesting of 
+its margin model performance using actual portfolios) and ``Model 
+Backtesting'' (i.e., backtesting of its margin model performance using 
+hypothetical portfolios). With respect to the latter, the Margin Policy 
+would explain that FRM conducts Model Backtesting of hypothetical 
+portfolios to target specific aspects of the models that may be masked 
+by the backtesting of actual portfolios because margin accounts may 
+have thousands of positions in many diverse products. With respect to 
+the former, the Margin Policy would explain that OCC conducts Model 
+Backtesting of actual portfolios to determine whether the losses 
+observed for a constant set of positions over OCC's liquidation horizon 
+were in excess of margin requirements forecasted by OCC's margin 
+methodology for each margin account. This description aligns with OCC's 
+current Business Backtesting practices. Accordingly, OCC would continue 
+to conduct Model Backtesting at the level of each marginable account, 
+which is the level at which OCC calculates margin requirements. As the 
+Margin Policy would explain, OCC conducts Model Backtesting at this 
+level because Model Backtesting exceedances potentially indicate issues 
+that could be actively impacting OCC's margin requirements for the 
+margin accounts. In addition, backtesting at this level is consistent 
+with OCC's obligations in its capacity as a derivatives clearing 
+organization (``DCO'') registered with the Commodity Futures Trading 
+Commission.\25\
+---------------------------------------------------------------------------
+
+    \25\ See 17 CFR 39.13(g)(7)(i)(C) (requiring a DCO to conduct 
+daily backtests for ``each account'' held by a clearing member at 
+the DCO).
+---------------------------------------------------------------------------
+
+    The Margin Policy would further provide that FRM conducts Model 
+Backtesting, as it does today, to evaluate whether margin requirements 
+forecasted by OCC's margin methodology are sufficient to cover the 
+realized loss of a portfolio at the maximum exposure estimated to occur 
+at the end of the liquidation period with an established single-tailed 
+confidence level of at least 99 percent with respect to the estimated 
+distribution of future exposure--the coverage standard identified in 
+SEC Rule 17Ad-22(e)(6)(iii).\26\ This is the regulatory standard that 
+OCC's current Business Backtesting was designed to evaluate. The Margin 
+Policy would also provide that FRM will classify as an ``exceedance'' a 
+daily outcome in which the loss in portfolio value over the applicable 
+time horizon is larger in magnitude than what the STANS model 
+predicted. In addition, the Margin Policy would explain that Model 
+Backtesting is limited to those components of margin requirements that 
+capture changes in market risk factors when assessing OCC's compliance 
+with SEC Rule 17Ad-22(e)(6)(iii).\27\
+---------------------------------------------------------------------------
+
+    \26\ 17 CFR 240.17Ad-22(e)(6)(iii).
+    \27\ Id.
+---------------------------------------------------------------------------
+
+    OCC would continue to exclude collateral from Model Backtesting 
+that is not modeled by STANS (commonly referred to as ``non-Collateral 
+in Margin'' or ``non-CiM'' collateral),\28\ or that does not capture 
+changes in market risk factors. OCC's current backtesting analyses are 
+not designed to assess the sufficiency of non-CiM collateral, which OCC 
+values instead using the more traditional method of fixed collateral 
+haircuts.\29\ This limitation reflects that backtesting's purpose is to 
+assess the performance of OCC's margin models in calculating margin 
+requirements,\30\ as opposed to the performance of other aspects of 
+OCC's credit risk management. As such, Model Backtesting would continue 
+to exclude collateral that is valued using collateral haircuts outside 
+of the STANS margin methodology. In addition, the particular Model 
+Backtesting analysis used to assess OCC's compliance with SEC Rule 
+17Ad-22(e)(6)(iii) \31\ would exclude certain add-on charges that are 
+not tied to changes in market risk factors.\32\ However, as discussed 
+below, Resource Backtesting would take into account non-CiM collateral 
+and the margin collected through add-on charges not related to market 
+risk when assessing the sufficiency of the financial resources OCC 
+collects from each Clearing Member. In addition, as discussed below, 
+OCC may maintain variations of Model Backtesting for diagnostic or 
+informational purposes that include such add-ons.
+---------------------------------------------------------------------------
+
+    \28\ Following the implementation of STANS in 2006, OCC filed 
+and the Commission approved a proposed rule change to include equity 
+securities deposited by Clearing Members to satisfy margin 
+requirements in STANS margin calculations, referred to as 
+``Collateral in Margin'' or ``CiM.'' See Exchange Act Release No. 
+58158 (July 15, 2008), 73 FR 42646, 42646-47 (SR-OCC-2007-020). OCC 
+implemented CiM, in part, to incentivize Clearing Members to deposit 
+risk reducing assets and to better risk manage collateral deposits 
+using the more sophisticated STANS treatment versus a fixed haircut 
+rate.
+    \29\ See, e.g., Exchange Act Release No. 98101 (Aug. 10, 2023), 
+88 FR 55775 (Aug. 16, 2023) (SR-OCC-2022-012) (approving OCC's 
+procedures-based approach for setting and adjusting fixed haircuts 
+for Government securities and GSE debt securities deposited by 
+Clearing Members).
+    \30\ See Standards for Covered Clearing Agencies, Exchange Act 
+Release No. 78961 (Sept. 28, 2016), 81 FR 70786, 70819 (Oct. 13, 
+2016) (S7-03-14) (``[B]acktests are conducted with respect to the 
+margin model and not the margin resources themselves.''); 17 CFR 
+240.17Ad-22(a) ``Backtesting'' (``Backtesting means an ex-post 
+comparison of actual outcomes with expected outcomes derived from 
+the use of margin models.'').
+    \31\ 17 CFR 240.17Ad-22(e)(6)(iii).
+    \32\ For example, OCC may collect additional margin from a 
+Clearing Member as a protective measure under Rule 307 when OCC 
+determines that the Clearing Member's operational or financial 
+condition presents elevated risk to OCC, other Clearing Members, and 
+the public.
+---------------------------------------------------------------------------
+
+Backtesting Assumptions
+    The proposed backtesting framework subsection to the Margin Policy 
+would
+
+[[Page 61215]]
+
+also provide that FRM maintains assumptions used in backtesting in its 
+internal procedures. The existence of backtesting assumptions may be 
+inferred from OCC's existing Margin Policy, which provides for their 
+review. However, the Margin Policy does not currently identify the 
+categories of relevant assumptions, provide for how they are 
+established or modified, or explain how assumptions may differ across 
+different types of backtesting depending on the purpose of those 
+backtesting variants. The amended Margin Policy would provide that the 
+assumptions include, but are not limited to, the timing of default, 
+liquidation horizon, available resources, lookback period, backtesting 
+portfolio, and the confidence level of the tests used to evaluate the 
+statistical significance of an exceedance rate.\33\
+---------------------------------------------------------------------------
+
+    \33\ As addressed in OCC's prior advance notice, OCC employs the 
+Kupiec Test and the Christoffersen Independence Test to evaluate 
+whether the exceedance rate is larger than the expected value. See 
+supra notes 16-17 and accompanying text.
+---------------------------------------------------------------------------
+
+    In addition, the Margin Policy would explain that OCC may provide 
+for backtesting variations for reporting, diagnostic and informational 
+purposes, each of which may have different assumptions based on the 
+purpose of the backtesting variant. For example, OCC plans to report 
+Model Backtesting results for actual portfolios in connection with 
+OCC's quantitative disclosures under the Principles for Financial 
+Market Infrastructures (``PFMI'')--which OCC discloses in compliance 
+with SEC Rule 17Ad-22(e)(23)--because such Model Backtesting at the 
+margin account level aligns with the guidance for such disclosures.\34\
+---------------------------------------------------------------------------
+
+    \34\ See Committee on Payments and Market Infrastructures & 
+Board of the International Organization of Securities Commissions 
+(``CPMI-IOSCO''), Public quantitative disclosure standards for 
+central counterparties, at 7 (Feb. 2015), available at <a href="https://www.bis.org/cpmi/publ/d125.pdf">https://www.bis.org/cpmi/publ/d125.pdf</a> (providing guidance on disclosure 6.5 
+with respect to initial margin backtesting results for margin 
+accounts).
+---------------------------------------------------------------------------
+
+    The Margin Policy would further provide that changes to these 
+backtesting assumptions would require escalation by MRWG and OCC's 
+Management Committee, with ultimate approval by the Risk Committee. 
+These assumptions relate to foundational aspects of OCC's margin 
+methodology that may be tied to specific regulatory requirements \35\ 
+or modification of which may require proposed rule changes.\36\ 
+Accordingly, Board-level approval by the Risk Committee would be 
+required to approve any necessary regulatory filing to modify OCC's 
+margin methodology. The Margin Policy would further require that FRM 
+would prepare and present to MRWG a review of the backtesting 
+assumptions more frequently than monthly in the event of triggers 
+related to high market volatility, low market liquidity, and 
+significant increases or decreases in position size or concentration 
+risk (as has been proposed to be defined in the Margin Policy, ``CCA 
+Monitoring Thresholds''),\37\ as contemplated by regulation.\38\
+---------------------------------------------------------------------------
+
+    \35\ For example, with respect to the confidence interval, SEC 
+Rules require that OCC's risk-based margin system must be designed 
+to calculate margin sufficient to cover the maximum exposure 
+estimated to occur in the internal between the last margin 
+collection and the close out of positions following a participant 
+default with an established single-tailed confidence level of at 
+least 99 percent with respect to the estimated distribution of 
+future exposure. See 17 CFR 240.17Ad-22(a) ``Potential future 
+exposure'', (e)(6)(iii).
+    \36\ For example, OCC's rule-filed Margin Policy codifies OCC's 
+two-day MPOR assumption. See Exchange Act Release No. 82658, supra 
+note 5, 83 FR at 6647-6648 (describing the Margin Policy discussion 
+of OCC's two-day risk horizon).
+    \37\ See Exchange Act Release No. 99393 (Jan. 19, 2024), 89 FR 
+5062, 5066 (Jan. 25, 2024) (SR-OCC-2024-001). These thresholds are 
+currently provided in procedures under OCC's Clearing Fund 
+Methodology Policy with respect to the stress testing analyses that 
+breaches of those thresholds would trigger. See Exchange Act Release 
+No. 83406 (June 11, 2018), 83 FR 28018, 28026 (June 15, 2018) (SR-
+OCC-2018-008) (``The [Clearing Fund Methodology] Policy would 
+require that OCC maintain procedures for determining whether, and in 
+what circumstances, such intra-month reviews shall be conducted, and 
+would indicate the persons responsible for making the 
+determination.''). Pursuant to those procedures, OCC's Stress Test 
+and Liquidity Risk Management (``STLRM'') business unit currently 
+monitors market activity against these thresholds, which are 
+approved by OCC's Stress Test Working Group (``STWG'') and the MRWG.
+    \38\ See 17 CFR 240.17Ad-22(e)(6)(vi)(C).
+---------------------------------------------------------------------------
+
+    The Margin Policy would further provide that FRM's written 
+procedures may include other triggers for evaluation of backtesting 
+assumptions. OCC expects that one of the triggers it would establish 
+under this rule would be the implementation of changes to OCC's margin 
+methodology that may affect backtesting assumptions. For example, if 
+MRWG were to approve a change to OCC's margin methodology in the form 
+of a new margin add-on charge that was implemented following approval 
+by the Risk Committee and any necessary regulatory filing, MRWG would 
+review the backtesting assumptions and associated triggers to determine 
+whether that add-on charge should be included in the portfolio 
+composition assumption across OCC's backtesting variants, depending on 
+their respective purposes.
+    The Margin Policy would further provide that changes to the 
+triggers for backtesting assumption reviews must be approved by MRWG. 
+This is already true with respect to the CCA Monitoring Thresholds that 
+trigger backtesting assumption reviews, changes to which must be 
+approved by the MRWG and the STWG.\39\ In addition, MRWG approval would 
+be required to change any other thresholds MRWG believes would be 
+appropriate for triggering a review of backtesting assumptions. In the 
+case of other triggers for backtesting assumptions, OCC believes that 
+MRWG is the appropriate governing body to establish triggers that go 
+beyond those prescribed by regulation because as between MRWG and STWG, 
+MRWG is the internal governing body tasked with of its oversight of 
+model risk related to margin models.
+---------------------------------------------------------------------------
+
+    \39\ See supra note 37.
+---------------------------------------------------------------------------
+
+Backtesting Reporting
+    As discussed above, the purpose of the proposed Model Backtesting 
+is to provide OCC decisionmakers with timely information about OCC's 
+margin coverage and potential opportunities to enhance OCC's credit 
+risk management or margin methodology, or to adjust model parameters. 
+Currently, the Margin Policy provides for monthly reviews to MRWG. In 
+addition, the Margin Policy directs QRM to identify and report problems 
+and overall performance to MRWG, which then in turn determines whether 
+to escalate the issue to the Management Committee. OCC proposes to 
+replace the current subsection that addresses reporting of backtesting 
+results with a new subsection that more clearly provides that OCC 
+maintains criteria for escalating backtesting results to relevant 
+decisionmakers.
+    Specifically, the new subsection would provide that FRM will 
+maintain escalation criteria for backtesting exceedances according to 
+which FRM will, if met, escalate exceedance information to the MRWG, 
+Management Committee, or Risk Committee, as applicable. Accordingly, 
+the procedures may provide for escalations to different governing 
+bodies depending on the nature of the exceedances or issues such 
+exceedances may evidence.\40\ The Margin Policy would provide that such 
+required escalation criteria would include, but are not limited to: (i) 
+thresholds related to the size and number of exceedances for Model 
+Backtesting of actual portfolios, (ii) thresholds related to 
+statistical tests
+
+[[Page 61216]]
+
+applicable to Model Backtesting of hypothetical portfolios; and (iii) 
+thresholds related to the size of an individual Clearing Member's 
+Resource Backtesting deficiency and the coverage rate across all 
+Clearing Members in the aggregate. For example, OCC anticipates that 
+such escalation criteria for Model Backtesting of actual portfolios 
+would include an exceedance that is equal to or larger than 50% of the 
+applicable Clearing Member's Clearing Fund contribution.\41\ With 
+respect to Model Backtesting of hypothetical portfolios, escalation 
+criteria would include criteria for escalation of results based on the 
+Kupiec Test and Christoffersen Tests (e.g., for the Kupiec Test, when 
+the coverage rate of instruments in a category of instruments falls 
+below 99% with statistical significance of 90% \42\).
+---------------------------------------------------------------------------
+
+    \40\ While the proposed change contemplates and allows for a 
+tiered escalation approach, OCC anticipates that the escalation 
+criteria it would initially implement would require escalation to 
+each of the MRWG, Management Committee and Risk Committee when the 
+criteria are met.
+    \41\ OCC does not intend this example to be a statement that 
+establishes or changes any standard, limit or guideline with respect 
+to the rights, obligations, or privileges of specified persons or 
+the meaning, administration, or enforcement of an existing rule.
+    \42\ OCC does not intend this example to be a statement that 
+establishes or changes any standard, limit or guideline with respect 
+to the rights, obligations, or privileges of specified persons or 
+the meaning, administration, or enforcement of an existing rule.
+---------------------------------------------------------------------------
+
+    Outside of the escalation of backtesting exceedances that meet the 
+escalation criteria, the Margin Policy would continue to provide for a 
+review of all backtesting exceedances or deficiencies on an at-least 
+monthly basis. Specifically, the subsection on backtesting reporting 
+would provide that at least monthly, FRM will provide the MRWG a 
+detailed analysis of any Model Backtesting exceedances or Resource 
+Backtesting deficiencies, and a review of the backtesting assumptions. 
+In addition, the Margin Policy would provide that FRM will prepare a 
+review of assumptions for backtesting more frequently than monthly when 
+the CCA Monitoring Thresholds, as discussed above, are breached. In 
+addition to the CCA Monitoring Thresholds, the Margin Policy would 
+provide that the Backtesting Procedure may identify other triggers 
+that, if met, would require FRM to prepare and present to MRWG a review 
+of assumptions for backtesting, including, but not limited to, 
+implementation of rule changes to OCC's margin methodology that may 
+affect backtesting assumptions. Changes to the triggers for review of 
+backtesting assumptions must be approved by MRWG.
+    The Margin Policy would also provide that QRM conducts an annual 
+review of OCC's backtesting framework, including QRM's recommendations 
+regarding whether OCC should change any of the backtesting assumptions 
+and exceedance escalation criteria. With respect to the escalation 
+criteria, the Margin Policy would provide that changes to the 
+escalation criteria must be approved by the governing body to which the 
+escalation must be made. For example, changes to the criteria for 
+escalating exceedances to the Risk Committee must be approved by the 
+Risk Committee.\43\ With respect to any proposed changes to the 
+backtesting assumptions, the Margin Policy would provide that the MRWG 
+would evaluate the results of the annual review and escalate any 
+recommended changes to the backtesting framework, including any 
+recommended changes to the backtesting assumptions, to the Management 
+Committee for consideration. The Management Committee, in turn, would 
+report the results of the annual review to the Risk Committee, 
+including any changes it believes should be made to OCC's backtesting 
+assumptions, which the Risk Committee would be authorized to approve 
+for implementation. As part of this annual review process, MRWG, the 
+Management Committee and the Risk Committee would also be authorized to 
+approve changes to the escalation criteria applicable to each governing 
+body, as discussed above. OCC believes these changes would provide 
+greater clarity concerning the escalation of backtesting exceedances to 
+appropriate OCC decisionmakers.
+---------------------------------------------------------------------------
+
+    \43\ Because OCC anticipates that the initial escalation 
+criteria it would adopt under this proposal would require escalation 
+to each of the MRWG, Management Committee and Risk Committee, all 
+such escalation criteria will require Risk Committee approval to 
+change. See supra note 40. Should the MRWG or Management Committee 
+adopt more sensitive escalation criteria for themselves, any change 
+to the criteria for escalating to the Risk Committee would continue 
+to require Risk Committee approval while the escalation criteria for 
+the MRWG and Management Committee would be subject to approval by 
+the MRWG or Management Committee, respectively.
+---------------------------------------------------------------------------
+
+(ii) Resource Backtesting
+    In addition to formalizing its Model Backtesting in the Margin 
+Policy, OCC proposes to enhance its backtesting framework by 
+establishing Resource Backtesting designed to evaluate whether OCC 
+maintains sufficient financial resources to cover its credit exposure 
+to the liquidation portfolio of each Clearing Member following the 
+default of that Clearing Member until the end of the liquidation 
+horizon with a high degree of confidence. OCC would conduct Resource 
+Backtesting using actual portfolios at the Clearing Member level. 
+Accordingly, while Model Backtesting is conducted at the account level 
+at which margin requirements are calculated under the STANS 
+methodology, Resource Backtesting would consider OCC's credit exposure 
+to a Clearing Member across that member's marginable accounts.
+    Backtesting at the Clearing Member level would not be as simple as 
+aggregating profit and loss (``P&L'') and margin resources across each 
+marginable account maintained by a Clearing Member because OCC's By-
+Laws and Rules provide OCC with different types of liens over different 
+types of accounts. For example, a surplus in a securities customer 
+account, for which OCC maintains a restricted lien, may not be used to 
+offset a loss in the member's firm account.\44\ In contrast, a surplus 
+in the member's firm account, for which OCC maintains a general lien, 
+could be used to offset losses in any of the member's other 
+accounts.\45\ OCC would consider the liens on a particular account when 
+netting deficits and surpluses across account types to ensure that 
+surpluses in an account over which OCC maintains a restricted lien do 
+not offset losses in another account for purposes of assessing the 
+sufficiency of OCC's financial resources to cover the default of a 
+Clearing Member.
+---------------------------------------------------------------------------
+
+    \44\ See By-Law Art. VI Sec.  3(e).
+    \45\ See, e.g., OCC Rule 1104(e) (clarifying, for the avoidance 
+of doubt, that margin assets in a firm lien account may be applied 
+to cover losses in a segregated futures account).
+---------------------------------------------------------------------------
+
+    Resource Backtesting would also take into account the value of 
+other margin resources collected from a Clearing Member available to 
+address default losses, including non-CiM margin collateral and certain 
+margin add-ons. Conversely, OCC would exclude the Clearing Fund deposit 
+of the applicable Clearing Member as a prefunded financial resource of 
+that Clearing Member under Resource Backtesting.\46\
+
+[[Page 61217]]
+
+In addition, such margin resources would be limited to required 
+resources, and would therefore exclude any margin collateral held by 
+OCC in excess of a Clearing Member's required margin.\47\ As discussed 
+above, these details about the composition of the Resource Backtesting 
+portfolios would be backtesting assumptions that the Margin Policy 
+would require FRM to document in its procedures.
+---------------------------------------------------------------------------
+
+    \46\ OCC considered including, but ultimately determined not to 
+include a Clearing Member's Clearing Fund deposit as a financial 
+resource for that Clearing Member in Resource Backtesting. The 
+Clearing Fund deposit of a defaulting Clearing Member is a prefunded 
+financial resource that OCC would use to cover any loss prior to 
+charging other resources in the default waterfall, including OCC's 
+skin-in-the-game or the mutualized Clearing Fund deposits of non-
+defaulting Clearing Members. See OCC Rule 1006(b). Each Clearing 
+Member's Clearing Fund deposit is comprised of a $500,000 minimum 
+deposit and a variable component that is currently allocated to each 
+Clearing Member based predominately on each Clearing Member's margin 
+requirement. See OCC Rule 1003. Based on 2023 historic data, each 
+Clearing Member would be above the 99% coverage target if the 
+Clearing Fund deposit of that Clearing Member was included as a 
+resource for Resource Backtesting. However, concerns were raised 
+about including such resources in Resource Backtesting because the 
+Clearing Fund, in the aggregate, is sized using stressed exposures. 
+Accordingly, OCC is proposing to limit Resource Backtesting to 
+margin resources.
+    \47\ Because a Clearing Member is entitled to withdraw excess 
+collateral, limiting Resource Backtesting to required resources 
+addresses concerns that a Clearing Member may withdraw any excess 
+collateral just prior to its default.
+---------------------------------------------------------------------------
+
+    In addition, while Model Backtesting assesses the performance of 
+OCC's margin models in calculating margin requirements by evaluating 
+P&L for a constant portfolio, Resource Backtesting would be designed to 
+determine whether the liquidating value of a Clearing Member's 
+portfolios was positive or negative at the end of OCC's liquidation 
+horizon. Accordingly, Resource Backtesting would take into account 
+observed intraday position changes from the time of the last good 
+margin collection until the assumed point of default.
+    OCC would assess Resource Backtesting with the expectation that 
+exceedances of financial resources would be no more than one percent in 
+the lookback period for each Clearing Member (i.e., 99% coverage). To 
+distinguish between Model Resource exceedances, OCC would use the term 
+``deficiency'' with respect to Resource Backtesting, which would result 
+when the prefunded financial resources collected from the Clearing 
+Member Organization (``CMO'') would have been insufficient to cover the 
+potential loss if the CMO had defaulted. That is, OCC would classify a 
+result as a Resource Backtesting deficiency when the liquidating value 
+of the CMO's portfolios is negative.
+    OCC would integrate Resource Backtesting into the Margin Policy's 
+discussion of the backtesting framework and backtesting reporting. The 
+purpose and scope of Resource Backtesting, as described above, would be 
+added to the backtesting framework subsection. In addition, the Margin 
+Policy would provide that FRM will maintain requirements with respect 
+to backtesting assumptions, monthly backtesting reviews, and escalation 
+criteria for Resource Backtesting deficiencies, and the same governance 
+relating to review and changes to assumptions and escalation criteria 
+for Model Backtesting would apply to Resource Backtesting. With respect 
+to escalation criteria for Resource Backtesting deficiencies, the 
+Margin Policy would provide that FRM will maintain written procedures 
+that establish criteria including, but not limited to, thresholds 
+related to the size of a Resource Backtesting deficiency and the 
+coverage rate across all Clearing Members in the aggregate. For 
+example, OCC anticipates establishing criteria under this rule to 
+escalate when the aggregate cover rate across all Clearing Members 
+(including any Resource Backtesting Margin Charges then in effect as a 
+resource) falls below 99%.\48\ As another example, OCC anticipates 
+establishing a threshold for any verified Resource Backtesting 
+deficiency that exceeds the lesser of (i) 50% of the Clearing Member's 
+individual Clearing Fund contribution, or, (ii) in the case of Clearing 
+Members whose Clearing Fund contributions are in excess of $200 
+million, $100 million.\49\
+---------------------------------------------------------------------------
+
+    \48\ OCC does not intend this example to be a statement that 
+establishes or changes any standard, limit or guideline with respect 
+to the rights, obligations, or privileges of specified persons or 
+the meaning, administration, or enforcement of an existing rule.
+    \49\ OCC does not intend this example to be a statement that 
+establishes or changes any standard, limit or guideline with respect 
+to the rights, obligations, or privileges of specified persons or 
+the meaning, administration, or enforcement of an existing rule.
+---------------------------------------------------------------------------
+
+(iii) Resource Backtesting Margin Charge
+    Based on OCC's analysis of Resource Backtesting results using the 
+proposed methodology described above, OCC has observed that the 
+Resource Backtesting for some Clearing Members falls below a 99% 
+coverage threshold \50\ (i.e., greater than two Resource Backtesting 
+deficiency days in a rolling 12-month period).\51\ Specifically, based 
+on 2023 historical data, approximately 25% of Clearing Members would 
+have fallen below the Resource Backtesting coverage target.\52\ The 
+size of the third-largest deficiencies ranged from a few hundred 
+dollars to an outlier of $35 million, with the majority below $100,000 
+and all but a few below $1 million. Collectively, the amounts represent 
+less than 0.1% on average of the aggregate margin OCC collects. In 
+order to ensure that OCC's margin resources, among other prefunded 
+financial resources,\53\ are sufficient to cover the 99% coverage 
+target, OCC proposes to establish a Resource Backtesting Margin Charge. 
+OCC notes that other covered clearing agencies under the SEC's 
+jurisdiction have, with SEC approval, established similar charges 
+designed to collect additional resources when a Clearing Member's 
+margin coverage falls below the agencies' coverage target.\54\
+---------------------------------------------------------------------------
+
+    \50\ OCC has included 2023 results of the proposed Resource 
+Backtesting in confidential Exhibit 3A to File No. SR-OCC-2024-009.
+    \51\ Based on 250 observation days per year, each observed 
+Resource Backtesting deficiency reduces the coverage by 0.4%.
+    \52\ See supra note 50.
+    \53\ See supra note 46.
+    \54\ See Exchange Act Release No. 79167 (Oct. 26, 2016), 81 FR 
+75883, 75884 (Nov. 1, 2016) (SR-FICC-2016-006; SR-NSCC-2016-004).
+---------------------------------------------------------------------------
+
+    The thresholds for applying a Resource Backtesting Margin Charge, 
+the method for calculating the charge, and the proposed rule changes 
+proposed to reflect this new charge are discussed below.
+    Thresholds for Applying the Resource Backtesting Margin Charge
+    The Resource Backtesting Margin Charge would only apply to those 
+Clearing Members whose 12-month trailing Resource Backtesting falls 
+below 99% coverage based on confirmed Resource Backtesting deficiencies 
+(i.e., three or more confirmed Resource Backtesting deficiencies over 
+the last 12 months). On an at-least monthly basis, OCC would review and 
+determine which Clearing Members may be subject to the Resource 
+Backtesting Margin Charge, or whose Resource Backtesting Margin Charge 
+amount is subject to change, based on each Clearing Member's trailing 
+12-month Resource Backtesting coverage. Resource Backtesting Margin 
+Charges would be applied on a daily basis for the applicable accounts 
+of the Clearing Member that contributed to the deficiencies. If in a 
+subsequent month an affected Clearing Member's trailing 12-month 
+backtesting coverage rises above 99%, the Resource Backtesting Margin 
+Charge would be removed.
+    In conducting this analysis for purposes of identifying Clearing 
+Members who should be subject to the Resource Backtesting Margin Charge 
+and for determining the amount of the third-largest Resource 
+Backtesting deficiency for purposes of calculating the charge, OCC 
+would not take into account Resource Backtesting Margin Charges already 
+in effect, but would take into account the number and size of 
+deficiencies subsequent to the Resource Backtesting Margin Charge 
+already applied. For example, if a Clearing Member subject to a 
+Resource Backtesting Margin Charge experienced subsequent Resource 
+Backtesting deficiencies that were smaller in size than a Resource 
+Backtesting Margin Charge currently in effect, such deficiencies would 
+continue to count towards the overall deficiency count, even if they 
+are covered by an existing Resource Backtesting Margin Charge. This 
+approach ensures that Clearing
+
+[[Page 61218]]
+
+Members will continue to be subject to a Resource Backtesting Margin 
+Charge while three or more deficiencies remain in the look-back period. 
+If, in that example, the third-largest deficiency driving the Resource 
+Backtesting Margin Charge fell out of the 12-month look-back period, 
+the Resource Backtesting Margin Charge would then be reduced to the 
+third largest of the remaining deficiencies, subject to OCC authority 
+to adjust the amount as discussed further below. In addition, if a 
+Clearing Member subject to the charge were to experience additional 
+Resource Backtesting deficiencies that were greater in magnitude than 
+the deficiency that had been driving the Resource Backtesting Margin 
+Charge, OCC would increase the Resource Backtesting Margin Charge as 
+necessary to achieve a 99% coverage target within the rolling 12-month 
+lookback based on the methodology for sizing the Resource Backtesting 
+Margin Charge discussed below.
+Calculating the Resource Backtesting Margin Charge
+    The Resource Backtesting Margin Charge would generally be equal to 
+the third-largest Resource Backtesting deficiency in the rolling 12-
+month lookback period rounded up to the nearest $1,000, subject to 
+adjustments as further described below. Setting the Resource 
+Backtesting Margin Charge to cover the third-largest deficiency would 
+bring the Clearing Member's margin coverage back in line with OCC's 99% 
+coverage target on a lookback basis. The Resource Backtesting Margin 
+Charge would generally be allocated proportionally to the Clearing 
+Member's accounts contributing to the third-largest Resource 
+Backtesting deficiency.
+    For Clearing Members with more than three deficiencies, however, 
+such additional financial resources as allocated based on the accounts 
+driving the third-largest deficiency may not necessarily cover Resource 
+Backtesting deficiencies that are lower in dollar amount, but with a 
+different allocation of accounts contributing to the remaining 
+deficiencies. For example, if a customer account contributed more to 
+the third-largest Resource Backtesting deficiency and the Clearing 
+Member's firm account (or another account) contributed more to any 
+lesser Resource Backtesting deficiency, then a charge allocated 
+proportionally to accounts based on the third-largest deficiency may 
+not cover the lesser Resource Backtesting deficiencies on a look-back 
+basis because funds allocated to a customer account cannot be used to 
+offset losses in any other account.\55\ In circumstances when applying 
+and allocating the Resource Backtesting Margin Charge based on the 
+third-largest deficiency would not bring the Clearing Member above 
+OCC's coverage target on a look-back basis, OCC would have authority to 
+increase the charge for a particular account in an amount necessary to 
+meet the coverage target pursuant to establish procedures, as discussed 
+below.
+---------------------------------------------------------------------------
+
+    \55\ In contrast, if the firm account, over which OCC maintains 
+a general lien, was the driver of the third-largest deficiency, the 
+charge allocated to the firm account can be used to cover a Resource 
+Backtesting deficiency with a proportionally greater shortfall 
+driven by any other account.
+---------------------------------------------------------------------------
+
+    Consistent with Commission-approved rules of other clearing 
+agencies,\56\ OCC would also retain discretion to adjust the Resource 
+Backtesting Margin Charge based on other circumstances (i.e., in 
+addition to account for differences in the accounts contributing to a 
+Clearing Member's Resource Backtesting deficiencies) that may impact 
+the likelihood or estimated size of potential future backtesting 
+deficiencies, consistent with achieving OCC's 99% Resource Backtesting 
+coverage target. Such other circumstances may include, but are not 
+limited to, differences in magnitude of the deficiencies observed over 
+the last 12-month period, variability in the Clearing Member's activity 
+since the observed deficiencies, cyclicality of observed deficiencies, 
+and/or market volatility. MRWG approval would be required to approve 
+such other adjustments.
+---------------------------------------------------------------------------
+
+    \56\ See Exchange Act Release No. 79167, supra note 54, 81 FR at 
+75884 (``Although the third largest historical backtesting 
+deficiency for a Member is used as the Backtesting Charge in most 
+cases, [NSCC and FICC] retain[ ] discretion to adjust the charge 
+amount based on other circumstances that may be relevant for 
+assessing whether an impacted Member is likely to experience future 
+backtesting deficiencies and the estimated size of such 
+deficiencies.'').
+---------------------------------------------------------------------------
+
+Establishing the Resource Backtesting Margin Charge in OCC's Rules
+    To implement the Resource Backtesting Margin Charge, OCC proposes 
+to add OCC Rule 601(h) and amend the Margin Policy. Proposed Rule 
+601(h)(1) would provide that OCC may require a Clearing Member to 
+deposit additional margin assets to mitigate exposures to OCC that may 
+not otherwise be covered by the margin requirements calculated in 
+accordance with Rule 601 and OCC's policies and procedures. Rule 
+601(h)(1) would further provide that OCC may assess the charge as part 
+of the Clearing Member's daily margin requirement, as needed, to enable 
+OCC to achieve its Resource Backtesting coverage target. Specifically, 
+Rules 601(h)(1) would provide that the Resource Backtesting Margin 
+Charge may apply when a Clearing Member has a 12-month trailing 
+Resource Backtesting coverage below the 99 percent backtesting coverage 
+target.
+    With respect to calculation of the charge, Rule 601(h)(2) would 
+provide that the Resource Backtesting Margin Charge generally will be 
+equal to the third-largest Resource Backtesting deficiency during the 
+previous 12 months, rounded up to the nearest $1,000. Like the 
+Commission-approved rules of other clearing agencies,\57\ Rule 
+601(h)(2) would also provide that OCC may, in its discretion, adjust 
+such charge if OCC determines that circumstances particular to a 
+Clearing Member's clearance and settlement activity and/or market 
+volatility warrant a different approach to determining or applying such 
+charge in a manner consistent with achieving OCC's backtesting coverage 
+target. As discussed below, the governance concerning exercise of such 
+discretion and the factors that may inform it would be addressed in the 
+Margin Policy.
+---------------------------------------------------------------------------
+
+    \57\ See supra note 54 and accompanying text.
+---------------------------------------------------------------------------
+
+    Rule 601(h)(3) would provide that in calculating a Clearing 
+Member's Resource Backtesting coverage for purposes of the Resource 
+Backtesting Margin Charge and in calculating the third-largest Resource 
+Backtesting deficiency, OCC would not include amounts already collected 
+as a Resource Backtesting Margin Charge from that Clearing Member. As 
+discussed above, OCC would continue to count future Resource 
+Backtesting deficiencies for the purpose of determining whether a 
+Clearing Member should remain subject to the charge by reviewing 
+whether the Clearing Member would have had Resource Backtesting 
+deficiencies had no Resource Backtesting Margin Charge been in effect. 
+In addition, OCC would, as part of the at-least monthly review, 
+determine the third-largest Resource Backtesting deficiency for 
+purposes of increasing or decreasing a charge already in effect without 
+including the existing Resource Backtesting Margin Charge as a 
+resource. This provision mirrors the rules of other clearing agencies 
+filed with the Commission.\58\ However, OCC would, in accordance with 
+established procedures, test the sufficiency of the Resource 
+Backtesting Margin Charge against a Resource Backtesting variant that 
+includes that charge as a financial resource for
+
+[[Page 61219]]
+
+purposes of: (i) confirming that the charge, as allocated 
+proportionally to the accounts contributing to the third-largest 
+Resource Backtesting deficiency, would be sufficient to achieve the 99% 
+coverage target, and (ii) increasing the Resource Backtesting Margin 
+Charge for a particular account that may be contributing a 
+proportionally greater amount to other Resource Backtesting 
+deficiencies if the coverage target is not met.
+---------------------------------------------------------------------------
+
+    \58\ See Exchange Act Release No. 93678 (Nov. 30, 2021), 86 FR 
+69109, 69110 (Dec. 6, 2021) (SR-NSCC-2021-014).
+---------------------------------------------------------------------------
+
+    Rule 601(h)(4) would further provide a definition of ``Resource 
+Backtesting,'' which is not a term otherwise found in the By-Laws and 
+Rules. Specifically, Rule 601(h)(4) would provide that for purposes of 
+that Rule, ``Resource Backtesting'' means backtesting pursuant to OCC's 
+policies and procedures designed to evaluate whether OCC maintains 
+sufficient financial resources to cover its credit exposure to the 
+liquidation portfolio of each Clearing Member from the last margin 
+collection until the end of the liquidation horizon following the 
+Clearing Member's default with a high degree of confidence.
+    OCC would also amend the section of the Margin Policy that 
+addresses margin add-ons to reflect and reference the Resource 
+Backtesting Margin Charge provisions of proposed OCC Rule 601(h). The 
+Margin Policy would identify the governance processes related to the 
+at-least monthly review of Resource Backtesting deficiencies for 
+purposes of imposing or adjusting a Resource Backtesting Margin Charge. 
+Specifically, the Margin Policy would provide that FRM would review 
+Resource Backtesting results for the purposes of determining whether a 
+Clearing Member should be assessed a Resource Backtesting Margin Charge 
+and, if so, the amount to be charged. While the review and 
+determination would be conducted at-least monthly, a Resource 
+Backtesting Margin Charge could be applied on an intramonth basis based 
+on the daily backtesting results reviewed by FRM.
+    The Margin Policy would further provide for the governance with 
+respect to applying a Resource Backtesting Margin Charge. Specifically, 
+based on the at-least monthly review of the Resource Backtesting 
+deficiencies, an FRM Officer \59\ would be authorized to approve \60\ a 
+Resource Backtesting Margin Charge equal to the third-largest Resource 
+Backtesting deficiency rounded up to the nearest $1,000, excluding any 
+Resource Backtesting Margin Charge currently in effect. The Margin 
+Policy would further provide that the Resource Backtesting Margin 
+Charge generally would be allocated proportionally to the Clearing 
+Member's accounts contribution to the third-largest Resource 
+Backtesting deficiency.
+---------------------------------------------------------------------------
+
+    \59\ Officers are identified in OCC's By-Laws. See OCC By-Law 
+Art. IV. In this context, an FRM Officer would include any member of 
+FRM appointed by the Chief Executive Officer or Chief Operating 
+Officer, including a Managing Director, Executive Director or 
+Executive Principal. Id. Sec.  9.
+    \60\ This type of FRM Officer approval is designed as a control 
+to avoid imposing a charge based on erroneous information.
+---------------------------------------------------------------------------
+
+    To account for the circumstances when a charge allocated based on 
+the third-largest Resource Backtesting deficiency may be insufficient 
+to increase a Clearing Member's Resource Backtesting to OCC's 99% 
+coverage target due to differences in the accounts contributing to 
+Resource Backtesting deficiencies, the Margin Policy would identify 
+such circumstances as one in which OCC may adjust the Resource 
+Backtesting Margin Charge, consistent with proposed Rule 601(h)(2). In 
+addition, the Margin Policy would provide that an FRM Officer would be 
+authorized, in accordance with established procedures, to approve an 
+additional amount for a particular account necessary to achieve OCC's 
+99% coverage target at the Clearing Member level. These established 
+procedures would utilize a Resource Backtesting variant that includes 
+the Resource Backtesting Margin Charge as a financial resource to test 
+whether, after applying the charge, the coverage for that Clearing 
+Member would be above OCC's 99% coverage target on a look-back basis. 
+If not, FRM would increase the charge for the accounts contributing to 
+the third largest of the remaining Resource Backtesting deficiencies 
+until the 99% coverage target has been achieved. The FRM Officer's 
+authority to approve an adjustment to the Resource Backtesting Margin 
+Charge would be limited to such increases. Any other adjustments, 
+including any reduction other than a reduction due to a change in the 
+third-largest Resource Backtesting deficiency in the rolling 12-month 
+lookback period, would require MRWG approval.
+    The Margin Policy would further provide that other adjustments to 
+the Resource Backtesting Margin Charge may be made with approval of the 
+MRWG. As provided in proposed Rule 601(h)(2), such adjustments must be 
+consistent with achieving OCC's Resource Backtesting coverage target. 
+The Margin Policy would provide that circumstances in which MRWG may 
+approve such other adjustments include, but are not limited to, 
+differences in magnitude of the deficiencies observed over the last 12-
+month period, variability in the Clearing Member's activity since the 
+observed deficiencies, cyclicality of observed deficiencies and/or 
+market volatility.\61\
+---------------------------------------------------------------------------
+
+    \61\ These circumstances are consistent with those identified by 
+the Commission in approving authority of other clearing agencies to 
+adjust similar backtesting margin charges. See Exchange Act Release 
+No. 79167, supra note 54, 81 FR at 75884 (``Examples of relevant 
+circumstances that would be considered in calculating the final, 
+applicable Backtesting charge amount include material differences in 
+the three largest backtesting deficiencies observed over the prior 
+12-month period, variability in the net settlement activity after 
+the collection of the Member's Required Deposit, seasonality in 
+observed backtesting deficiencies and observed market price 
+volatility in excess of the member's historical VaR charge.'').
+---------------------------------------------------------------------------
+
+    The Margin Policy would further provide that to the extent OCC 
+implements changes to its margin methodology that affect Clearing 
+Members' margin requirements, OCC would reevaluate Resource Backtesting 
+coverage within the 12-month lookback period based on the margin 
+resources it would have collected under the revised methodology to 
+determine whether a Resource Backtesting Margin Charge for a particular 
+Clearing Member is warranted and, if so, in what amount. For example, 
+if OCC were to begin requiring the collection of additional margin 
+resources through another add-on charge designed to capture some aspect 
+of market risk not adequately captured under OCC's current models 
+(other than the Resource Backtesting Margin Charge itself), the 
+additional resources that OCC would have collected through that add-on 
+may, if charged at the time, have covered observed Resource Backtesting 
+deficiencies within the look-back period, either in whole or in part. 
+In such circumstances, OCC would re-calculate the Resource Backtesting 
+Margin Charge based on the deficiencies that would have remained had 
+the additional resources been collected at the time of the 
+deficiencies. As such, OCC believes the Margin Policy would be designed 
+to avoid double-margining Clearing Members when OCC begins collecting 
+additional margin resources following changes to its margin methodology 
+implemented within the 12-month lookback period.
+(iv) Conforming Changes
+    In connection with the consolidation of OCC's current Business 
+Backtesting and Model Backtesting, as well as the addition of Resource 
+Backtesting, OCC proposes to consolidate its internal procedures for 
+all backtesting into a
+
+[[Page 61220]]
+
+Backtesting Procedure and associated technical document.\62\ 
+Accordingly, OCC would amend its Margin Policy and Model Risk 
+Management Policy to refer to the new Backtesting Procedure, rather 
+than the current Business Backtesting Procedure and Model Backtesting 
+Procedure. In addition, OCC would update the description of ongoing 
+model performance monitoring in the STANS Methodology Description to 
+reflect OCC's Model Backtesting as provided in the Margin Policy and 
+supporting procedure and technical document. OCC would also insert 
+headings into the section of the Margin Policy that addresses add-on 
+charges, including the proposed Resource Backtesting Margin Charge, to 
+separate the discussion of add-on charges for which the Margin Policy 
+already provides specific treatment, such as the add-on to address 
+specific wrong-way risk (``SWWR''), (i.e., the risk that the value of a 
+Clearing Member's positions is positively correlated with the 
+creditworthiness of the Clearing Member).\63\
+---------------------------------------------------------------------------
+
+    \62\ OCC has included anticipated drafts of these document in 
+confidential Exhibit 3B and 3C to File No. SR-OCC-2024-009, 
+respectively. OCC has also included in confidential Exhibit 3D to 
+File No. SR-OCC-2024-009 a numerical example of how Resource 
+Backtesting results are calculated using data for certain Clearing 
+Members from an actual activity date.
+    \63\ See Exchange Act Release No. 87718 (Dec. 11, 2019), 84 FR 
+68992 (Dec. 17, 2019) (SR-OCC-2019-010) (approving OCC's SWWR Add-
+On).
+---------------------------------------------------------------------------
+
+Implementation Timeframe
+    OCC will implement the proposed changes within sixty (60) days 
+after the date that OCC receives all necessary regulatory approvals for 
+the proposed changes. OCC will announce the implementation date of the 
+proposed change by an Information Memorandum posted to its public 
+website at least two (2 weeks prior to implementing the Resource 
+Backtesting Margin Charge.
+(2) Statutory Basis
+    OCC believes the proposed changes are consistent with Section 17A 
+of the Exchange Act \64\ and the rules and regulations thereunder 
+applicable to OCC. Section 17A(b)(3)(F) of the Act \65\ requires, in 
+part, that the rules of a clearing agency be designed to promote the 
+prompt and accurate clearance and settlement of securities 
+transactions, and in general, to protect investors and the public 
+interest. If a Clearing Member defaults on its obligations to OCC, OCC 
+would use the margin collateral deposited by that Clearing Member, 
+among other prefunded financial resources from that Clearing Member, to 
+mitigate OCC's credit exposure. If OCC's margin models calculated 
+margin requirements insufficient to address default losses, then OCC 
+may need to utilize the mutualized funds deposited in OCC's Clearing 
+Fund.\66\ The proposed changes are intended to enhance OCC's process 
+for monitoring its margin coverage and the performance of its margin 
+models, which would help OCC maintain sufficient financial resources to 
+mitigate its credit exposure. To the extent that OCC identifies 
+Resource Backtesting deficiencies that bring a Clearing Member's margin 
+coverage below the target coverage level, the proposed Resource 
+Backtesting Margin Charge would require the impacted Clearing Member to 
+deposit additional margin resources to absorb a potential loss that 
+OCC's margin system may not otherwise capture. Collecting sufficient 
+margin resources to cover potential losses would help to ensure that 
+OCC may manage the default of a Clearing Member without disruption to 
+its clearance and settlement services and avoid loss mutualization that 
+could impose unanticipated costs on other Clearing Members and their 
+customers. Accordingly, OCC believes the proposed changes are 
+reasonably designed to promote the prompt and accurate clearance and 
+settlement of securities transactions, and in general, to protect 
+investors and the public interest, in accordance with Section 
+17A(b)(3)(F) of the Act.\67\
+---------------------------------------------------------------------------
+
+    \64\ See 15 U.S.C. 78q-1.
+    \65\ 15 U.S.C. 78q-1(b)(3)(F).
+    \66\ Prior to charging the Clearing Fund deposits of non-
+defaulting Clearing Members, OCC would first contribute OCC's 
+Minimum Corporate Contribution and its liquid net assets funded by 
+equity in excess of 110% of OCC's Target Capital Requirement. See 
+Exchange Act Release No. 92038 (May 27, 2021), 86 FR 29861 (June 3, 
+2021), 29862 n.15 and accompanying text (SR-OCC-2021-003).
+    \67\ 15 U.S.C. 78q-1(b)(3)(F).
+---------------------------------------------------------------------------
+
+    OCC also believes the proposed changes described above are 
+consistent with SEC Rules under the Act for the following reasons.
+(i) Backtesting Framework
+    Paragraph (vi) of Rule 17Ad-22(e)(6) \68\ requires OCC to 
+establish, implement, maintain and enforce written policies and 
+procedures reasonably designed to cover its credit exposures to its 
+participants by establishing a risk-based margin system that, at a 
+minimum, is monitored by OCC's management on an ongoing basis and is 
+regularly reviewed, tested, and verified by, in relevant part: (A) 
+conducting backtests of its margin model at least once each day using 
+standard predetermined parameters and assumptions; (B) conducting a 
+review of its assumptions for backtesting on at least a monthly basis, 
+and considering modifications to ensure the backtesting practices are 
+appropriate for determining the adequacy of OCC's margin resources; (C) 
+conducting a review of its assumptions for backtesting more frequently 
+than monthly during periods of time when the products cleared or 
+markets served display high volatility or become less liquid, or when 
+the size or concentration of positions held by OCC's participants 
+increases or decreases significantly; and (D) reporting the results of 
+these analyses to appropriate OCC decisionmakers, including but not 
+limited to, its Risk Committee or Board of Directors, and using these 
+results to evaluate the adequacy of its margin methodology, model 
+parameters, and any other relevant aspect of its credit risk management 
+framework. As explained by the Commission, such backtesting ``is a 
+technique used to compare the potential losses forecasted by a model 
+with the actual losses that participants incurred'' that is ``intended 
+to reveal the accuracy of models.'' \69\ Accordingly, the Commission 
+promulgated Rule 17Ad-22(e)(6) \70\ to require covered clearing 
+agencies to establish and maintain ``policies and procedures that 
+provide for backtesting the margin models . . . to help uncover and 
+address possible errors in model design, misapplication of models, or 
+errors in the inputs to, and assumptions underlying, margin models.'' 
+\71\
+---------------------------------------------------------------------------
+
+    \68\ 17 CFR 240.17Ad-22(e)(6)(vi).
+    \69\ Exchange Act Release No. 71699 (Mar. 12, 2014), 79 FR 
+29508, 29530 (May 22, 2014) (File No. S7-03-14).
+    \70\ 17 CFR 240.17Ad-22(e)(6).
+    \71\ Exchange Act Release No. 71699, supra note 69, 79 FR at 
+29530.
+---------------------------------------------------------------------------
+
+    The proposed Margin Policy would describe how OCC conducts 
+backtesting of its margin models at least once each day, as required by 
+Rule 17Ad-22(e)(6)(vi)(A).\72\ OCC believes that the proposed Model 
+Backtesting is reasonably designed to assess the performance of OCC's 
+margin models in order to provide decisionmakers with information about 
+potential issues with or enhancements to those models. The proposed 
+enhancements would provide greater clarity and transparency about how 
+OCC establishes, reviews and adjusts the assumptions for backtesting, 
+including the role of the MRWG, Management Committee and Risk Committee 
+in approving changes thereto, as contemplated by paragraphs (B) and (C) 
+of Rule 17Ad-22(e)(6)(vi).\73\
+
+[[Page 61221]]
+
+Such reviews would occur on at least a monthly basis, but would occur 
+more frequently when the CCA Monitoring Thresholds are breached, 
+consistent with paragraph (C) of Rule 17Ad-22(e)(6)(vi).\74\ In 
+addition, the enhancements would also provide greater clarity about the 
+escalation of backtesting exceedances to appropriate OCC 
+decisionmakers, including that OCC maintains thresholds for such 
+escalations that are periodically reviewed and approved by the 
+governing body to which the escalation must be made, including to OCC's 
+Risk Committee, consistent with Rule 17Ad-22(e)(6)(vi)(D).\75\ 
+Accordingly, OCC believes its proposed backtesting framework is 
+reasonably designed in a manner consistent with Rule 17Ad-
+22(e)(6)(vi).\76\
+---------------------------------------------------------------------------
+
+    \72\ 17 CFR 240.17Ad-22(e)(6)(vi)(A).
+    \73\ 17 CFR 240.17Ad-22(e)(6)(vi)(B), (C).
+    \74\ 17 CFR 240.17Ad-22(e)(6)(vi)(C).
+    \75\ 17 CFR 240.17Ad-22(e)(6)(vi)(D).
+    \76\ 17 CFR 240.17Ad-22(e)(6)(vi).
+---------------------------------------------------------------------------
+
+(ii) Resource Backtesting
+    OCC believes that the proposed expansion of backtesting to include 
+Resource Backtesting is consistent with Rule 17Ad-22(e)(4)(i),\77\ 
+which requires OCC to maintain sufficient financial resources to cover 
+its credit exposure to each participant fully with a high degree of 
+confidence. OCC proposes to expand its backtesting analyses to include 
+Resource Backtesting in order to ensure that OCC maintains sufficient 
+margin resources collected from a Clearing Member, among other 
+prefunded financial resources, to cover its credit exposures to that 
+Clearing Member fully with a high degree of confidence. Such Resource 
+Backtesting would take into account other resources collected from a 
+Clearing Member, including non-CiM resources that are subject to fixed 
+collateral haircuts rather than valued through OCC's margin models. In 
+addition, Resource Backtesting would be done at the Clearing Member 
+level, taking into consideration netting rules based on the types of 
+liens OCC has on specific margin accounts. Accordingly, OCC believes 
+that such Resource Backtesting is designed to assess the sufficiency of 
+the margin resources collected from each Clearing Member, among other 
+prefunded resources, available to cover the default of that Clearing 
+Member at the Clearing Member level, consistent with Rule 17Ad-
+22(e)(4)(i).\78\
+---------------------------------------------------------------------------
+
+    \77\ 17 CFR 240.17Ad-22(e)(4)(i).
+    \78\ Id.
+---------------------------------------------------------------------------
+
+(iii) Resource Backtesting Margin Charge
+    OCC believes the proposed Resource Backtesting Margin Charge and 
+the changes to OCC's Rules and Margin Policy to effect it would be 
+consistent with Rule 17Ad-22(e)(6)(iii), which requires OCC to 
+establish, implement, maintain and enforce written policies and 
+procedures reasonably designed to cover its credit exposures to its 
+participants by, at a minimum, establishing a risk-based margin system 
+that calculates margin sufficient to cover its potential future 
+exposure to participants in the interval between the last margin 
+collection and the close out of positions following a participant 
+default.\79\ Rule 17Ad-22(a)(13), in turn, defines ``potential future 
+exposure'' to mean the maximum exposure estimated to occur at a future 
+point in time with an established single-tailed confidence level of at 
+least 99% with respect to the estimated distribution of future 
+exposures.\80\ The Resource Backtesting Margin Charge is designed to 
+require additional margin resources when OCC identifies Resource 
+Backtesting deficiencies that bring a Clearing Member's margin coverage 
+below 99%. The Resource Backtesting Margin Charge applied generally 
+would be equal to the third-largest Resource Backtesting deficiency 
+during the lookback period in order to achieve OCC's Resource 
+Backtesting coverage target, rounded up to the nearest $1,000. OCC 
+would also retain discretion to adjust the Resource Backtesting Margin 
+Charge based on facts and circumstances that would lead it to conclude 
+that a different amount was appropriate and consistent with achieving 
+its 99% coverage target. Accordingly, OCC believes that the Resource 
+Backtesting Margin Charge is consistent with Rule 17Ad-
+22(e)(6)(iii).\81\
+---------------------------------------------------------------------------
+
+    \79\ 17 CFR 240.17Ad-22(e)(6)(iii).
+    \80\ 17 CFR 240.17ad-22(a) ``Potential future exposure''.
+    \81\ 17 CFR 240.17Ad-22(e)(6)(iii).
+---------------------------------------------------------------------------
+
+(iv) Conforming Changes
+    OCC also believes that the proposed changes are consistent with SEC 
+Rule 17Ad-22(e)(2),\82\ which provides in relevant part that OCC must 
+establish, implement, maintain and enforce written policies and 
+procedures reasonably designed to provide for governance arrangements 
+that are clear and transparent and specify clear and direct lines of 
+responsibility.\83\ OCC would make conforming changes to the Margin 
+Policy and Model Risk Management Policy that would reflect the 
+consolidated backtesting procedures governed by those policies, thereby 
+ensuring that cross-references in those rule-filed policies remain 
+accurate. In addition, OCC believes the proposed rule change would 
+provide greater clarity about OCC's backtesting framework, including 
+OCC's governance arrangements for reviewing backtesting assumptions and 
+escalating backtesting exceedances to appropriate decisionmakers within 
+OCC. While OCC's current rule-filed policies provide for escalation of 
+exceedances ``as necessary,'' for example, the proposed changes would 
+provide greater clarity about governance processes currently maintained 
+in OCC's internal procedures by providing that OCC will maintain 
+thresholds for escalation that FRM will adhere to if the criteria are 
+met. As discussed above, the Margin Policy would provide that such 
+escalation criteria would include, but not be limited to: (i) 
+thresholds related to the size and number of exceedances for Model 
+Backtesting of actual portfolios, (ii) thresholds related to 
+statistical tests applicable to Model Backtesting of hypothetical 
+portfolios, and (iii) thresholds related to the size of Resource 
+Backtesting deficiency and the coverage rate across all Clearing 
+Members in the aggregate. The changes would also provide greater 
+clarity about the lines of responsibility with respect to the MRWG's, 
+Management Committee's and Risk Committee's roles in approving changes 
+to the backtesting assumptions and escalation criteria. Accordingly, 
+OCC believes the proposed changes are consistent with SEC Rule 17Ad-
+22(e)(2).\84\
+---------------------------------------------------------------------------
+
+    \82\ 17 CFR 240.17Ad-22(e)(2).
+    \83\ 17 CFR 240.17Ad-22(e)(2)(i), (v).
+    \84\ 17 CFR 240.17Ad-22(e)(2).
+---------------------------------------------------------------------------
+
+    For the above reasons, OCC believes that this proposed rule change 
+is consistent with Section 17A of the Exchange Act \85\ and the rules 
+and regulations thereunder applicable to OCC.
+---------------------------------------------------------------------------
+
+    \85\ 15 U.S.C. 78q-1.
+---------------------------------------------------------------------------
+
+(B) Clearing Agency's Statement on Burden on Competition
+
+    Section 17A(b)(3)(I) of the Exchange Act \86\ requires that the 
+rules of a clearing agency not impose any burden on competition not 
+necessary or appropriate in furtherance of the purposes of the Act. 
+With respect to the proposed changes to OCC's backtesting framework and 
+the addition of Resource Backtesting, OCC does not believe that the 
+proposed rule change would impact or impose any burden on competition. 
+The proposed changes would provide greater clarity concerning OCC's 
+backtesting framework, including how OCC monitors the performance of
+
+[[Page 61222]]
+
+margin models used to calculate margin requirements for each Clearing 
+Member account and how OCC monitors the sufficiency of the margin 
+collateral it collects to cover losses that may arise from the default 
+of a Clearing Member. OCC does not believe that these changes would 
+unfairly inhibit access to OCC's services or disadvantage or favor any 
+particular user in relationship to another user.
+---------------------------------------------------------------------------
+
+    \86\ 15 U.S.C. 78q-1(b)(3)(I).
+---------------------------------------------------------------------------
+
+    With respect to the proposed Resource Backtesting Margin Charge, 
+whether a particular Clearing Member would be charged and the amount it 
+would be charged would depend on the Clearing Member's activity and the 
+performance of OCC's margin models. OCC has designed the Resource 
+Backtesting Margin Charge to ensure its compliance with regulations 
+that require OCC to calculate margin resources sufficient to cover each 
+Clearing Member's maximum exposure estimated to occur at a future point 
+in time with an established single-tailed confidence level of at least 
+99 percent with respect to the estimated distribution of future 
+exposure in the interval between the last margin collection and the 
+close out of positions following a participant default.\87\ To the 
+extent a Clearing Member's margin coverage falls below OCC's coverage 
+target, a Resource Backtesting Margin Charge would be applied. 
+Accordingly, OCC believes that the proposed rule change would not 
+impose any burden on competition not necessary or appropriate in 
+furtherance of the Act.
+---------------------------------------------------------------------------
+
+    \87\ See supra notes 79-81 and accompanying text.
+---------------------------------------------------------------------------
+
+(C) Clearing Agency's Statement on Comments on the Proposed Rule Change 
+Received From Members, Participants or Others
+
+    Written comments were not and are not intended to be solicited with 
+respect to the proposed change and none have been received.
+
+III. Date of Effectiveness of the Proposed Rule Change and Timing for 
+Commission Action
+
+    Within 45 days of the date of publication of this notice in the 
+Federal Register or within such longer period up to 90 days (i) as the 
+Commission may designate if it finds such longer period to be 
+appropriate and publishes its reasons for so finding or (ii) as to 
+which the self-regulatory organization consents, the Commission will:
+    (A) by order approve or disapprove such proposed rule change, or
+    (B) institute proceedings to determine whether the proposed rule 
+change should be disapproved.
+    The proposal shall not take effect until all regulatory actions 
+required with respect to the proposal are completed.
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's internet comment form (<a href="https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking">https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking</a>); 
+or
+    <bullet> Send an email to <a href="/cdn-cgi/l/email-protection#f684839a93db95999b9b93988285b6859395d8919980"><span class="__cf_email__" data-cfemail="7e0c0b121b531d1113131b100a0d3e0d1b1d50191108">[email&#160;protected]</span></a>. Please include 
+file number SR-OCC-2024-009 on the subject line.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Vanessa Countryman, 
+Secretary, Securities and Exchange Commission, 100 F Street NE, 
+Washington, DC 20549-1090.
+
+All submissions should refer to file number SR-OCC-2024-009. This file 
+number should be included on the subject line if email is used. To help 
+the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's internet website (<a href="https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking">https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking</a>). Copies of the 
+submission, all subsequent amendments, all written statements with 
+respect to the proposed rule change that are filed with the Commission, 
+and all written communications relating to the proposed rule change 
+between the Commission and any person, other than those that may be 
+withheld from the public in accordance with the provisions of 5 U.S.C. 
+552, will be available for website viewing and printing in the 
+Commission's Public Reference Room, 100 F Street NE, Washington, DC 
+20549, on official business days between the hours of 10 a.m. and 3 
+p.m. Copies of such filing also will be available for inspection and 
+copying at the principal office of OCC and on OCC's website at <a href="https://www.theocc.com/Company-Information/Documents-and-Archives/By-Laws-and-Rules">https://www.theocc.com/Company-Information/Documents-and-Archives/By-Laws-and-Rules</a>.
+    Do not include personal identifiable information in submissions; 
+you should submit only information that you wish to make available 
+publicly. We may redact in part or withhold entirely from publication 
+submitted material that is obscene or subject to copyright protection.
+    All submissions should refer to file number SR-OCC-2024-009 and 
+should be submitted on or before August 20, 2024.
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\88\
+---------------------------------------------------------------------------
+
+    \88\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+Sherry R. Haywood,
+Assistant Secretary.
+[FR Doc. 2024-16661 Filed 7-29-24; 8:45 am]
+BILLING CODE 8011-01-P
+
+
+</pre><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
