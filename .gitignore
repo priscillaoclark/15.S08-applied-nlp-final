@@ -1,10 +1,13 @@
 # Environments
 .env
 .venv
+.venv_nlp_final
 env/
 venv/
+venv_nlp_final/
 ENV/
 env.bak/
 venv.bak/
+venv_nlp_final.bak/
 
 .DS_Store
