@@ -1,0 +1,288 @@
+
+<HTML>
+<TITLE>FR Doc 2010-24077
+</TITLE>
+<HEAD></HEAD>
+
+<BODY>
+
+<DOC>
+<PRE>
+[Federal Register: September 27, 2010 (Volume 75, Number 186)]
+[Notices]               
+[Page 59304-59305]
+From the Federal Register Online via GPO Access [wais.access.gpo.gov]
+[DOCID:fr27se10-141]                         
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-62959; File No. SR-BX-2010-065]
+
+ 
+Self-Regulatory Organizations; NASDAQ OMX BX, Inc.; Notice of 
+Filing and Immediate Effectiveness of Proposed Rule Change To Provide 
+an Additional Order Type Which Will Give Options Participants Greater 
+Control Over the Circumstances in Which Their Orders Are Executed
+
+September 21, 2010.
+    Pursuant to Section 19(b)(1) of the Securities Exchange Act of 1934 
+(``Act''),\1\ and Rule 19b-4 thereunder,\2\ notice is hereby given that 
+on September 13, 2010, NASDAQ OMX BX, Inc. (the ``Exchange'') filed 
+with the Securities and Exchange Commission (``Commission'') the 
+proposed rule change as described in Items I and II below, which Items 
+have been prepared by the self-regulatory organization. The Commission 
+is publishing this notice to solicit comments on the proposed rule from 
+interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C. 78s(b)(1).
+    \2\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+I. Self-Regulatory Organization's Statement of the Terms of Substance 
+of the Proposed Rule Change
+
+    The Exchange proposes to amend Chapter V, Section 14 (Order Entry) 
+of the Rules of the Boston Options Exchange Group, LLC (``BOX'') to 
+provide an additional order type which will give Options Participants 
+greater control over the circumstances in which their orders are 
+executed. The text of the proposed rule change is available from the 
+principal office of the Exchange, at the Commission's Public Reference 
+Room and also on the Exchange's Internet Web site at <A HREF="http://frwebgate.access.gpo.gov/cgi-bin/leaving.cgi?from=leavingFR.html&log=linklog&to=http://nasdaqomxbx.cchwallstreet.com/NASDAQOMXBX/Filings/">http://
+nasdaqomxbx.cchwallstreet.com/NASDAQOMXBX/Filings/</A>.
+
+II. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+    In its filing with the Commission, the self-regulatory organization 
+included statements concerning the purpose of, and basis for, the 
+proposed rule change and discussed any comments it received on the 
+proposed rule change. The text of these statements may be examined at 
+the places specified in Item IV below. The self-regulatory organization 
+has prepared summaries, set forth in Sections A, B, and C below, of the 
+most significant aspects of such statements.
+
+A. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+1. Purpose
+    The purpose of this proposed rule change is to provide an 
+additional order type, the ``Session Order'', which will give Options 
+Participants greater control over the circumstances in which their 
+orders are cancelled or executed. By designating the Session Order 
+duration type for an order, an Options Participant will be able to 
+specify on an order by order basis that the designated Session Order it 
+has sent to BOX should be cancelled as soon as the Options Participant 
+loses its connection to the BOX system and its ability to either 
+directly modify or cancel the order.\3\ The proposal will offer 
+protection to Options Participants' orders in the event that they lose 
+communication with the BOX Trading Host \4\ due to a loss of 
+connectivity between their system and BOX or when there is a 
+disconnection between internal BOX components.
+---------------------------------------------------------------------------
+
+    \3\ Session Order duration type is not available for PIP Orders, 
+Primary Improvement Orders or Improvement Orders. See proposed 
+Section 16(d)(3) of Chapter V of the BOX Rules.
+    \4\ References herein to the term Trading Host will have the 
+meaning as set forth in Section 1(a)(67) of Chapter I of the BOX 
+Rules.
+---------------------------------------------------------------------------
+
+    An order sent to BOX with this Session Order duration type will 
+remain active in the BOX trading system until one of the following 
+events (``Triggering Event'') occurs:
+    <bullet> The connection between the Options Participant and BOX 
+that was used to enter the order is interrupted;
+    <bullet> There is a disconnection between internal BOX components 
+used to process orders, causing a component to lose its connection to 
+the Options Participant or the Trading Host while in possession of the 
+Session Order;
+    <bullet> A component of the Trading Host experiences a system error 
+in which it is unable to process open orders while in possession of the 
+Session Order.
+    Upon the occurrence of one of these Triggering Events, meaning the 
+Options Participant has lost its ability to either directly modify or 
+cancel the order, only those Session Orders residing in the affected 
+BOX internal system(s) will be automatically cancelled by BOX. Any 
+Triggering Events are connection or component specific. Therefore, when 
+a particular external connection between BOX and the Options 
+Participant is interrupted, only those Session Orders that came through 
+the interrupted connection will be automatically cancelled by BOX. 
+Similarly, when the Triggering Event is a disconnection between 
+internal BOX components, the BOX system will only automatically cancel 
+Session Orders related to the component that is not ``responding''. The 
+cancellation of the Session Orders from an affected connection will 
+neither impact nor determine the treatment of the orders of the same or 
+other Options Participants entered into the Trading Host via a separate 
+and distinct connection. All Session Orders will be cancelled at the 
+end of the normal trading day.
+    A Session Order will not be cancelled and shall remain active in 
+the BOX market if the order is not allowed to be cancelled pursuant to 
+another BOX Rule or it is in one of the following BOX system processes 
+when a Triggering Event occurs:
+    <bullet> The order is being exposed to the BOX market pursuant to 
+the NBBO trade through filter process; \5\
+---------------------------------------------------------------------------
+
+    \5\ See Section 16(b) of Chapter V of the BOX Rules.
+---------------------------------------------------------------------------
+
+    <bullet> The order is a Directed Order to which the Executing 
+Participant has not yet responded; \6\
+---------------------------------------------------------------------------
+
+    \6\ See Section 5(c)(ii) of Chapter VI of the BOX Rules.
+---------------------------------------------------------------------------
+
+    <bullet> The order has been routed to an away exchange pursuant to 
+the Routing Rules.\7\
+---------------------------------------------------------------------------
+
+    \7\ See Section 5 of Chapter XII of the BOX Rules.
+---------------------------------------------------------------------------
+
+    When a Session Order is automatically cancelled, BOX will 
+immediately generate a cancellation message to notify the Options 
+Participant that its order is no longer active. After the Session 
+Order(s) are
+
+[[Page 59305]]
+
+automatically cancelled for an Options Participant that lost its 
+connection to BOX, and upon a reconnection between the Options 
+Participant and the Trading Host on the same trading day, the Options 
+Participant will be able to retrieve any Session Order cancellation 
+notices when it reconnects.
+    BOX will inform Options Participants via Information Circular about 
+the functionality and use of the Session Order duration type and the 
+implementation date prior to its implementation in the BOX trading 
+system.
+2. Statutory Basis
+    The Exchange believes that the proposal is consistent with the 
+requirements of Section 6(b) of the Act,\8\ in general, and Section 
+6(b)(5) of the Act,\9\ in particular, in that it is designed to foster 
+cooperation and coordination with persons engaged in regulating, 
+clearing, settling, processing information with respect to, and 
+facilitating transactions in securities, to remove impediments to and 
+perfect the mechanism for a free and open market and a national market 
+system and, in general, to protect investors and the public interest. 
+In particular, the Exchange believes that this proposed rule change 
+will benefit the marketplace and protect investors because it will 
+reduce the risk of erroneous or stale orders on the BOX Book in the 
+event that an Options Participant loses connectivity with the Trading 
+Host. Furthermore, the proposed Session Order will provide for the 
+protection of Options Participants and their customers, who must bear 
+the burden of market risk for stale orders caused by circumstances 
+outside of their control, as well as for the protection of investors 
+and the efficiency and fairness of the market as a whole.
+---------------------------------------------------------------------------
+
+    \8\ 15 U.S.C. 78f(b).
+    \9\ 15 U.S.C. 78f(b)(5).
+---------------------------------------------------------------------------
+
+B. Self-Regulatory Organization's Statement on Burden on Competition
+
+    The Exchange does not believe that the proposed rule change will 
+impose any burden on competition not necessary or appropriate in 
+furtherance of the purposes of the Act.
+
+C. Self-Regulatory Organization's Statement on Comments on the Proposed 
+Rule Change Received From Members, Participants, or Others
+
+    The Exchange has neither solicited nor received comments on the 
+proposed rule change.
+
+III. Basis for Summary Effectiveness Pursuant to Section 19(b)(3) or 
+for Accelerated Effectiveness Pursuant to Section 19(b)(2)
+
+    Because the foregoing rule does not (i) Significantly affect the 
+protection of investors or the public interest; (ii) impose any 
+significant burden on competition; and (iii) become operative for 30 
+days from the date on which it was filed, or such shorter time as the 
+Commission may designate if consistent with the protection of investors 
+and the public interest, provided that the self-regulatory organization 
+has given the Commission written notice of its intent to file the 
+proposed rule change at least five business days prior to the date of 
+filing of the proposed rule change or such shorter time as designated 
+by the Commission, the proposed rule change has become effective 
+pursuant to Section 19(b)(3)(A) of the Act \10\ and Rule 19b-4(f)(6) 
+thereunder.\11\
+---------------------------------------------------------------------------
+
+    \10\ 15 U.S.C. 78s(b)(3)(A).
+    \11\ 17 CFR 240.19b-4(f)(6). In addition, Rule 19b-4(f)(6)(iii) 
+requires that a self-regulatory organization submit to the 
+Commission written notice of its intention to file the proposed rule 
+change, along with a brief description and text of the proposed rule 
+change, at least five business days prior to the filing of the 
+proposed change, or such shorter time as designated by the 
+Commission. The Commission notes that the Exchange has satisfied 
+this requirement.
+---------------------------------------------------------------------------
+
+    At any time within 60 days of the filing of the proposed rule 
+change, the Commission summarily may temporarily suspend such rule 
+change if it appears to the Commission that such action is necessary or 
+appropriate in the public interest, for the protection of investors, or 
+otherwise in furtherance of the purposes of the Act.
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's Internet comment form (<A HREF="http://frwebgate.access.gpo.gov/cgi-bin/leaving.cgi?from=leavingFR.html&log=linklog&to=http://www.sec.gov/rules/sro.shtml">http://
+www.sec.gov/rules/sro.shtml</A>); or
+    <bullet> Send an e-mail to <A HREF="mailto:rule-comments@sec.gov">rule-comments@sec.gov</A>. Please include 
+File Number SR-BX-2010-065 on the subject line.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Elizabeth M. Murphy, 
+Secretary, Securities and Exchange Commission, 100 F Street, NE., 
+Washington, DC 20549-1090.
+
+All submissions should refer to File Number SR-BX-2010-065. This file 
+number should be included on the subject line if e-mail is used. To 
+help the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's Internet Web site (<A HREF="http://frwebgate.access.gpo.gov/cgi-bin/leaving.cgi?from=leavingFR.html&log=linklog&to=http://www.sec.gov/rules/sro.shtml">http://www.sec.gov/rules/
+sro.shtml</A>). Copies of the submission, all subsequent amendments, all 
+written statements with respect to the proposed rule change that are 
+filed with the Commission, and all written communications relating to 
+the proposed rule change between the Commission and any person, other 
+than those that may be withheld from the public in accordance with the 
+provisions of 5 U.S.C. 552, will be available for website viewing and 
+printing in the Commission's Public Reference Room, located at 100 F 
+Street, NE., Washington, DC 20549, on business days between the hours 
+of 10 a.m. and 3 p.m. Copies of such filing also will be available for 
+inspection and copying at the principal office of the Exchange. All 
+comments received will be posted without change; the Commission does 
+not edit personal identifying information from submissions. You should 
+submit only information that you wish to make available publicly. All 
+submissions should refer to File Number SR-BX-2010-065 and should be 
+submitted on or before October 18, 2010.
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\12\
+---------------------------------------------------------------------------
+
+    \12\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+Florence E. Harmon,
+Deputy Secretary.
+[FR Doc. 2010-24077 Filed 9-24-10; 8:45 am]
+BILLING CODE 8010-01-P
+
+</PRE>
+</BODY>
+</HTML>

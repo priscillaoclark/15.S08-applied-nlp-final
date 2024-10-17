@@ -1,0 +1,337 @@
+
+<HTML>
+<TITLE>FR Doc 2010-25395
+</TITLE>
+<HEAD></HEAD>
+
+<BODY>
+
+<DOC>
+<PRE>
+[Federal Register: October 8, 2010 (Volume 75, Number 195)]
+[Notices]               
+[Page 62441-62443]
+From the Federal Register Online via GPO Access [wais.access.gpo.gov]
+[DOCID:fr08oc10-95]                         
+
+-----------------------------------------------------------------------
+
+SECURITIES AND EXCHANGE COMMISSION
+
+[Release No. 34-63034; File No. SR-Phlx-2010-124]
+
+ 
+Self-Regulatory Organizations; Notice of Filing and Immediate 
+Effectiveness of Proposed Rule Change by NASDAQ OMX PHLX LLC To Send 
+Certain Information Over the Specialized Quote Feed
+
+October 4, 2010.
+    Pursuant to Section 19(b)(1) \1\ of the Securities Exchange Act of 
+1934 (the ``Act'') \2\ and Rule 19b-4 thereunder,\3\ notice is hereby 
+given that on September 22, 2010, NASDAQ OMX PHLX LLC (``Phlx'' or 
+``Exchange'') filed with the Securities and Exchange Commission 
+(``SEC'' or ``Commission'') the proposed rule change as described in 
+Items I and II, below, which Items have been prepared by the Exchange. 
+The Commission is publishing this notice to solicit comments on the 
+proposed rule change from interested persons.
+---------------------------------------------------------------------------
+
+    \1\ 15 U.S.C.78s(b)(1).
+    \2\ 15 U.S.C. 78a.
+    \3\ 17 CFR 240.19b-4.
+---------------------------------------------------------------------------
+
+I. Self-Regulatory Organization's Statement of the Terms of Substance 
+of the Proposed Rule Change
+
+    The Exchange is filing with the Commission a proposal to establish 
+a new non-fee liable administrative data feed. The text of the proposed 
+rule change is available at the Exchange, the Commission's Web site at 
+<A HREF="http://frwebgate.access.gpo.gov/cgi-bin/leaving.cgi?from=leavingFR.html&log=linklog&to=http://www.sec.gov">http://
+
+[[Page 62442]]
+
+www.sec.gov</A>, the Commission's Public Reference Room, and <A HREF="http://frwebgate.access.gpo.gov/cgi-bin/leaving.cgi?from=leavingFR.html&log=linklog&to=http://www.nasdaq.com">http://
+www.nasdaq.com</A>.
+
+II. Self-Regulatory Organization's Statement of the Purpose of, and 
+Statutory Basis for, the Proposed Rule Change
+
+    In its filing with the Commission, the Exchange included statements 
+concerning the purpose of and basis for the proposed rule change and 
+discussed any comments it received on the proposed rule change. The 
+text of these statements may be examined at the places specified in 
+Item IV below. The Exchange has prepared summaries, set forth in 
+sections A, B, and C below, of the most significant aspects of such 
+statements.
+
+A. Self-Regulatory Organization's Statement of the Purpose of, and the 
+Statutory Basis for, the Proposed Rule Change
+
+1. Purpose
+    SQF is an interface that allows specialists, streaming quote 
+traders and remote streaming quote traders to connect and send quotes 
+into Phlx XL.\4\ SQF 5.0, the current version, today is the sole 
+interface used by market makers for sending quotes to the Exchange.\5\ 
+Presently, quoting participants (users of SQF 5.0) do not receive 
+execution reports that happen against their quote or other information 
+that is relevant to their quoting application over SQF 5.0. The 
+Exchange is proposing to provide additional information than what is 
+currently provided by SQF 5.0 to quoting participants over SQF and that 
+the Exchange believes is relevant to their quoting application; the new 
+version will be called SQF 6.0.\6\
+---------------------------------------------------------------------------
+
+    \4\ See Securities Exchange Act Release No. 61878 (April 8, 
+2010), 75 FR 20023 (April 16, 2010) (SR-Phlx-2010-48). SQF operates 
+as an interface today, receiving quotations from quoting 
+participants and sending out messages related to a particular 
+participant's quotes.
+    \5\ Participants receive access through payment of a port fee.
+    \6\ Although SQF is not new, Phlx has not made a SQF-related 
+filing before because the Exchange believes that such a filing was 
+not required previously, as SQF operated as an interface rather than 
+a data feed. However, in conjunction with the new Commission 
+guidance for data feed changes and in light of the changes in SQF 
+6.0 that involve sending non-participant-specific messages, the 
+Exchange believes that it is now required to submit such a filing. 
+Also, the Exchange has submitted previous filings that reference 
+SQF. See e.g., Securities Exchange Act Release Nos. 61878 (April 8, 
+2010), 75 FR 20023 (April 16, 2010) (SR-Phlx-2010-48); and 61665 
+(March 5, 2010), 75 FR 11967 (March 12, 2010) (SR-Phlx-2010-25).
+---------------------------------------------------------------------------
+
+    SQF 6.0 will increase efficiency for interested participants by 
+allowing them to access in a single feed available to all participants, 
+rather than through accessing multiple feeds, information such as 
+execution reports and other relevant data. In order for participants to 
+access all of this information currently or for any that do not use SQF 
+6.0 in the future, they must rely on a risk management feed and the 
+TOPO/TOPO Plus Orders Exchange interfaces. Non quoting firms that would 
+like to receive the relevant information available over SQF will be 
+allowed to connect to the SQF interface, but not send quotes.
+    The set of data to be offered over this data feed is administrative 
+in nature or is used to attract liquidity to the Exchange in response 
+to an auction. The Exchange believes the data included in this feed is 
+necessary for participants who have written systems to interface with 
+the Exchange in the case of administrative messages or information 
+regarding auctions and used to attract liquidity.
+    Participants who have written interfaces to the Phlx system would 
+use the administrative data to determine the current state of the 
+trading system. For example, this data would show which symbols are 
+trading on the Phlx, the current state of an options symbol (i.e., open 
+for trading, trading, halted or closed from trading), as well as 
+similar information regarding complex order strategies. This 
+administrative data will also include the definition of complex order 
+strategies. All of this information is vital to a participant's quoting 
+application and by including this information on the interface used for 
+quoting, participants can streamline their respective system 
+architectures.
+    Phlx holds auctions throughout the day to open trading in an option 
+and following a trading halt in the option,\7\ following a market 
+exhaust event \8\ or quote exhaust event,\9\ and for complex orders 
+\10\ and will in the future hold PIXL Price Improvement Auctions.\11\ 
+During these auction events, the Exchange advertises liquidity it has 
+available for immediate execution, but will only have available until 
+the conclusion of the auction. These auction notifications are 
+available on other data feeds and are made available to all exchange 
+participants. They are being added to SQF 6.0 for convenience purposes 
+so that market participants utilizing SQF 6.0 have an additional means 
+to access the notifications directly impacting their quoting behavior 
+and are not required to take other feeds simply to have access to 
+notifications.
+---------------------------------------------------------------------------
+
+    \7\ See Phlx Rule 1017.
+    \8\ See Phlx Rule 1082(a)(ii)(B)(4).
+    \9\ See Phlx Rule 1082(a)(ii)(B)(3).
+    \10\ See Phlx Rule 1080.08(e).
+    \11\ See Securities Exchange Act Release No. 62678 (August 10, 
+2010), 75 FR 50021 (August 16, 2010) (SR-Phlx-2010-108).
+---------------------------------------------------------------------------
+
+    A participant's quoting application can receive these notifications 
+over the same interface it sends quotes to the Exchange, SQF, and can 
+now use the data to respond to auctions quickly and efficiently. This 
+data is not sent as a quote to the market because it represents 
+interest that is not immediately executable or, in the case of complex 
+orders, represents a complex strategy which is not disseminated by the 
+Options Price Reporting Authority.
+    Data proposed for SQF 6.0 will initially include the following:
+    (1) Options Auction Notifications (e.g., opening imbalance, market 
+exhaust, PIXL \12\ or other information currently provided on SQF 5.0);
+---------------------------------------------------------------------------
+
+    \12\ If PIXL is not operative at the time this filing becomes 
+operative, it will be included once PIXL does becomes operative.
+---------------------------------------------------------------------------
+
+    (2) Options Symbol Directory Messages (currently provided on SQF 
+5.0);
+    (3) System Event Messages (e.g., start of messages, start of system 
+hours, start of quoting, start of opening);
+    (4) Complex Order Strategy Auction Notifications (COLA);
+    (5) Complex Order Strategy messages;
+    (6) Option Trading Action Messages (e.g., halts, resumes); and
+    (7) Complex Strategy Trading Action Message (e.g., halts, resumes).
+    The Exchange currently provides Exchange members with execution 
+reports through two interfaces. Execution reports are made available to 
+all exchange participants on a Risk Management Feed known as ``RMP,'' 
+as well as an interface replacing RMP known as the Clearing Trade 
+Interface or ``CTI.'' \13\ An additional difference between SQF 5.0 and 
+SQF 6.0 will be the inclusion of execution report messages on SQF 6.0 
+where none are currently sent over SQF 5.0 today. Execution reports are 
+being added to SQF 6.0 for convenience purposes so that market 
+participants utilizing SQF 6.0 have an additional means to receive 
+execution reports that are relevant to their quoting application and 
+are not required to take and integrate either of these feeds simply to 
+get execution reports. These messages are sent to the participants when 
+the quote they entered over the SQF interface executes.
+---------------------------------------------------------------------------
+
+    \13\ See Securities Exchange Act Release No. 62155 (May 24, 
+2010), 75 FR 30081 (May 28, 2010) (SR-Phlx-2010-67). The Exchange 
+assesses its members a Real-time Risk Management Fee of $.003 per 
+contract for receiving this information. The Exchange is not 
+proposing to amend this fee.
+---------------------------------------------------------------------------
+
+2. Statutory Basis
+    The Exchange believes that its proposal is consistent with Section 
+6(b)
+
+[[Page 62443]]
+
+of the Act \14\ in general, and furthers the objectives of Section 
+6(b)(5) of the Act \15\ in particular, in that it is designed to 
+prevent fraudulent and manipulative acts and practices, to promote just 
+and equitable principles of trade, to foster cooperation and 
+coordination with persons engaged in facilitating transactions in 
+securities, and to remove impediments to and perfect the mechanisms of 
+a free and open market and a national market system, and, in general, 
+to protect investors and the public interest. The Exchange believes 
+that this proposal is in keeping with those principles by providing 
+data that is administrative in nature or that is used to attract 
+liquidity to the Exchange in response to an auction.
+---------------------------------------------------------------------------
+
+    \14\ 15 U.S.C. 78f(b).
+    \15\ 15 U.S.C. 78f(b)(5).
+---------------------------------------------------------------------------
+
+B. Self-Regulatory Organization's Statement on Burden on Competition
+
+    The Exchange does not believe that the proposed rule change will 
+impose any burden on competition not necessary or appropriate in 
+furtherance of the purposes of the Act.
+
+C. Self-Regulatory Organization's Statement on Comments on the Proposed 
+Rule Change Received From Members, Participants, or Others
+
+    No written comments were either solicited or received.
+
+III. Date of Effectiveness of the Proposed Rule Change and Timing for 
+Commission Action
+
+    Because the proposed rule change does not: (i) Significantly affect 
+the protection of investors or the public interest; (ii) impose any 
+significant burden on competition; and (iii) become operative for 30 
+days from the date on which it was filed, or such shorter time as the 
+Commission may designate, if consistent with the protection of 
+investors and the public interest, the proposed rule change has become 
+effective pursuant to Section 19(b)(3)(A) of the Act \16\ and Rule 19b-
+4(f)(6) \17\ thereunder.
+---------------------------------------------------------------------------
+
+    \16\ 15 U.S.C. 78s(b)(3)(A).
+    \17\ 17 CFR 240.19b-4(f)(6). In addition, Rule 19b-4(f)(6) 
+requires a self-regulatory organization to give the Commission 
+written notice of its intent to file the proposed rule change at 
+least five business days prior to the date of filing of the proposed 
+rule change, or such shorter time as designated by the Commission. 
+The Exchange has satisfied this requirement.
+---------------------------------------------------------------------------
+
+    The Exchange has asked the Commission to waive the 30-day operative 
+delay and designate the proposed rule change to become operative during 
+the week of October 11, 2010. The Exchange has represented that it is 
+important to the Exchange's internal technology roll-out to be able to 
+have SQF 6.0 in place by this time in order for other technological 
+plans to be implemented. The Exchange has also represented that the 
+proposed rule change is a non-controversial system change to data and 
+would not affect the execution of trades. The Exchange has argued that 
+the prompt implementation of the proposal would extend the benefits and 
+new features of SQF 6.0 to its users promptly. On the basis of the 
+Exchange's representations, the Commission believes that waiving the 
+30-day operative delay is consistent with the protection of investors 
+and the public interest. Therefore, the Commission designates the 
+proposed rule change as operative on October 11, 2010.\18\
+---------------------------------------------------------------------------
+
+    \18\ For purposes only of waiving the 30-day operative delay, 
+the Commission has considered the proposed rule's impact on 
+efficiency, competition, and capital formation. See 15 U.S.C. 
+78c(f).
+---------------------------------------------------------------------------
+
+    At any time within 60 days of the filing of the proposed rule 
+change, the Commission summarily may temporarily suspend such rule 
+change if it appears to the Commission that such action is necessary or 
+appropriate in the public interest, for the protection of investors, or 
+otherwise in furtherance of the purposes of the Act.
+
+IV. Solicitation of Comments
+
+    Interested persons are invited to submit written data, views, and 
+arguments concerning the foregoing, including whether the proposed rule 
+change is consistent with the Act. Comments may be submitted by any of 
+the following methods:
+
+Electronic Comments
+
+    <bullet> Use the Commission's Internet comment form (<A HREF="http://frwebgate.access.gpo.gov/cgi-bin/leaving.cgi?from=leavingFR.html&log=linklog&to=http://www.sec.gov/rules/sro.shtml">http://
+www.sec.gov/rules/sro.shtml</A>); or
+    <bullet> Send an e-mail to <A HREF="mailto:rule-comments@sec.gov">rule-comments@sec.gov</A>. Please include 
+File Number SR-Phlx-2010-124 on the subject line.
+
+Paper Comments
+
+    <bullet> Send paper comments in triplicate to Elizabeth M. Murphy, 
+Secretary, Securities and Exchange Commission, 100 F Street, NE., 
+Washington, DC 20549-1090.
+
+All submissions should refer to File Number SR-Phlx-2010-124. This file 
+number should be included on the subject line if e-mail is used. To 
+help the Commission process and review your comments more efficiently, 
+please use only one method. The Commission will post all comments on 
+the Commission's Internet website (<A HREF="http://frwebgate.access.gpo.gov/cgi-bin/leaving.cgi?from=leavingFR.html&log=linklog&to=http://www.sec.gov/rules/sro.shtml">http://www.sec.gov/rules/sro.shtml</A>). 
+Copies of the submission, all subsequent amendments, all written 
+statements with respect to the proposed rule change that are filed with 
+the Commission, and all written communications relating to the proposed 
+rule change between the Commission and any person, other than those 
+that may be withheld from the public in accordance with the provisions 
+of 5 U.S.C. 552, will be available for website viewing and printing in 
+the Commission's Public Reference Room, on official business days 
+between the hours of 10 a.m. and 3 p.m. Copies of the filing also will 
+be available for inspection and copying at the principal office of the 
+Exchange. All comments received will be posted without change; the 
+Commission does not edit personal identifying information from 
+submissions. You should submit only information that you wish to make 
+available publicly. All submissions should refer to File Number SR-
+Phlx-2010-124 and should be submitted on or before October 29, 2010.
+
+    For the Commission, by the Division of Trading and Markets, 
+pursuant to delegated authority.\19\
+---------------------------------------------------------------------------
+
+    \19\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+
+Florence E. Harmon,
+Deputy Secretary.
+[FR Doc. 2010-25395 Filed 10-7-10; 8:45 am]
+BILLING CODE 8011-01-P
+
+</PRE>
+</BODY>
+</HTML>
