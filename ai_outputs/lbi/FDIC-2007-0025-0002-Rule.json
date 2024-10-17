@@ -1,0 +1,41 @@
+{
+    "document_date": "2007-09-25",
+    "title": "Expanded Examination Cycle for Certain Small Insured Depository Institutions and U.S. Branches and Agencies of Foreign Banks",
+    "summary": "The final rules issued by multiple agencies including OCC, Board, FDIC, and OTS on September 25, 2007, pertain to the implementation of section 605 of the Financial Services Regulatory Relief Act of 2006 (FSRRA). These rules allow insured depository institutions with up to $500 million in total assets to qualify for an 18-month on-site examination cycle, instead of the previous 12-month cycle. The changes aim to reduce regulatory burden on small, well-managed institutions.",
+    "key_terms": [
+        "Financial Services Regulatory Relief Act of 2006",
+        "Examination Amendments",
+        "total assets",
+        "on-site examination cycle",
+        "composite CAMELS rating",
+        "regulatory burden"
+    ],
+    "associated_parties": [
+        {
+            "name": "Office of the Comptroller of the Currency",
+            "role": "Issuing and implementing the rules"
+        },
+        {
+            "name": "Board of Governors of the Federal Reserve System",
+            "role": "Participating in the joint adoption of rules"
+        },
+        {
+            "name": "Federal Deposit Insurance Corporation",
+            "role": "Participating in the joint adoption of rules"
+        },
+        {
+            "name": "Office of Thrift Supervision",
+            "role": "Participating in the joint adoption of rules"
+        }
+    ],
+    "regulation_details": {
+        "regulation_name": "Expanded Examination Cycle Rules",
+        "regulation_code": "12 CFR Part 4, 12 CFR Parts 208 and 211, 12 CFR Parts 337 and 347, 12 CFR Part 563",
+        "action": "Final rules"
+    },
+    "abstract": "The document discusses final rules adopted by multiple federal agencies in September 2007 related to extending the examination cycle for small insured depository institutions and U.S. branches of foreign banks. It implements changes introduced by the Financial Services Regulatory Relief Act of 2006, allowing qualifying institutions with assets up to $500 million to undergo an 18-month on-site examination cycle instead of the previous 12-month cycle. The rules aim to reduce regulatory burden on small, well-managed institutions while maintaining focus on supervisory concerns.",
+    "bank_failure": false,
+    "capital": false,
+    "liquidity": false,
+    "small_bank": true
+}

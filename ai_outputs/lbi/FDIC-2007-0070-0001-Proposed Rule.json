@@ -1,0 +1,33 @@
+{
+    "document_date": "2007-11-02",
+    "title": "Annual Independent Audits and Reporting Requirements; Proposed Rule",
+    "summary": "The Federal Deposit Insurance Corporation (FDIC) is proposing amendments to its regulations (part 363) regarding annual independent audit and reporting requirements for insured depository institutions with $500 million or more in total assets. The proposed amendments aim to incorporate sound auditing, reporting, and audit committee practices from the Sarbanes-Oxley Act of 2002 and provide clearer guidance to enhance compliance. The changes include requirements related to internal control assessments, filing deadlines, relief for merged institutions, reporting on acquired businesses, compliance thresholds at holding company levels, and illustrative management reports.",
+    "key_terms": [
+        "Federal Deposit Insurance Corporation",
+        "FDIC",
+        "part 363",
+        "independent audit",
+        "Sarbanes-Oxley Act",
+        "internal control",
+        "audit committee",
+        "holding company",
+        "compliance thresholds",
+        "management reports"
+    ],
+    "associated_parties": [
+        {
+            "name": "Federal Deposit Insurance Corporation",
+            "role": "Regulatory Agency",
+            "regulation_details": {
+                "regulation_name": "Annual Independent Audits and Reporting Requirements",
+                "regulation_code": "12 CFR Parts 308 and 363",
+                "action": "Notice of proposed rulemaking"
+            }
+        }
+    ],
+    "abstract": "The Federal Deposit Insurance Corporation (FDIC) is proposing amendments to its regulations (part 363) regarding annual independent audit and reporting requirements for insured depository institutions with $500 million or more in total assets. The proposed amendments aim to incorporate sound auditing, reporting, and audit committee practices from the Sarbanes-Oxley Act of 2002 (SOX) and provide clearer and more complete guidance to institutions and independent public accountants concerning compliance with the requirements of section 36 and part 363. The changes include requirements related to internal control assessments, filing deadlines, relief for merged institutions, reporting on acquired businesses, compliance thresholds at holding company levels, and illustrative management reports.",
+    "bank_failure": false,
+    "capital": false,
+    "liquidity": false,
+    "small_bank": true
+}

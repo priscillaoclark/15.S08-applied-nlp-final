@@ -2,6 +2,10 @@ import pandas as pd
 
 # Import metadata.csv
 df = pd.read_csv('metadata.csv')
+# See distinct values in 'type' column
+#print(df['type'].value_counts())
+# Limit to rule or proposed rule
+df = df[(df['type'] == 'Rule') | (df['type'] == 'Proposed Rule')]
 print(df.head())
 
 print("---------------LBI-----------------")

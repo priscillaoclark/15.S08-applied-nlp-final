@@ -1,0 +1,38 @@
+{
+    "document_date": "2007-09-18",
+    "title": "FR Doc 07-4596 - Assessment Dividends",
+    "summary": "The FDIC seeks comments on methods for allocating dividends to implement the Federal Deposit Insurance Reform Act of 2005. The existing FDIC regulations on assessment dividends will expire on December 31, 2008. The document outlines alternative methods for distributing future dividends, considering factors like the reserve ratio and assessment bases of insured depository institutions.",
+    "key_terms": ["FDIC", "Assessment Dividends", "Federal Deposit Insurance Reform Act of 2005", "Deposit Insurance Fund", "Base assessment rate", "Risk Category", "Dividend Allocation Methods"],
+    "associated_parties": [
+        {
+            "name": "Federal Deposit Insurance Corporation (FDIC)",
+            "role": "Agency seeking comments on dividend allocation methods."
+        },
+        {
+            "name": "Robert E. Feldman",
+            "role": "Executive Secretary of the FDIC."
+        },
+        {
+            "name": "Munsell W. St. Clair",
+            "role": "Senior Policy Analyst, Division of Insurance and Research."
+        },
+        {
+            "name": "Missy Craig",
+            "role": "Senior Program Analyst, Division of Insurance and Research."
+        },
+        {
+            "name": "Joseph A. DiNuzzo",
+            "role": "Counsel, Legal Division."
+        }
+    ],
+    "regulation_details": {
+        "regulation_name": "Federal Deposit Insurance Reform Act of 2005",
+        "regulation_code": "12 CFR Part 327 RIN 3064-AD19",
+        "action": "Advance notice of proposed rulemaking (ANPR)."
+    },
+    "abstract": "The document discusses methods for allocating dividends as part of the implementation of the Federal Deposit Insurance Reform Act of 2005. It provides a detailed analysis of two allocation methods: the fund balance method and the payments method. These methods determine dividend shares based on factors like the 1996 assessment base and eligible premiums paid after 1996. The analysis includes considerations of risk reduction incentives, treatment of older versus newer institutions, simplicity of methods, decision-making requirements, and potential impacts on institutions chartered in the future. It also invites public comments on the proposed dividend allocation approaches.",
+    "bank_failure": false,
+    "capital": false,
+    "liquidity": false,
+    "small_bank": true
+}

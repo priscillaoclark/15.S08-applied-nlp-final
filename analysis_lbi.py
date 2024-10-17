@@ -3,9 +3,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.corpus import stopwords
 import nltk
+import re
+import openai
+import time
 
 # Import metadata.csv
 df = pd.read_csv('metadata.csv')
+df = df[(df['type'] == 'Rule') | (df['type'] == 'Proposed Rule')]
 print(df.head())
 
 print("---------------LBI-----------------")
@@ -33,6 +37,7 @@ period_1 = period_1[(period_1['posted_date'] >= prior_LBI) & (period_1['posted_d
 # Count docs in period_1
 print("Total LBI docs for period: ",period_1['id'].count())
 
+"""
 # Loop through docs in period_1 and count words for each and add to a list with the filename
 word_count = []
 for index, row in period_1.iterrows():
@@ -50,5 +55,76 @@ for index, row in period_1.iterrows():
 df_word_count = pd.DataFrame(word_count)
 # Sort by longest document
 df_word_count = df_word_count.sort_values(by='word_count', ascending=False)
-print(df_word_count.head())
+#print(df_word_count.head())
+"""
 
+# Limit period_1 to first few docs
+period_1 = period_1.head(50)
+
+# Loop through the docs in period_1 and summarize the text
+for index, row in period_1.iterrows():
+    
+    # Check if file exists
+    try:
+        # Open the file
+        with open('documents/' + row['filename'], 'r') as file:
+            # Read the file
+            text = file.read()
+            # Remove html tags
+            text = re.sub('<.*?>', '', text)
+            # Clean up extra white space
+            text = ' '.join(text.split())
+            # Limit to first 100000 characters
+            text = text[:100000]
+            # Print the first 1000 characters
+            #print(text[:1000])
+
+        prompt = f"""
+        --- Text for review:
+        ```
+        {text}
+        ```
+        """
+
+        assistant_id = 'asst_js2ojaiY97QvXd9sPzjmpKjH'
+        OPENAI_API_KEY="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"
+
+        client = openai.Client(api_key=OPENAI_API_KEY)
+        thread = client.beta.threads.create()
+        message = client.beta.threads.messages.create(
+            thread_id=thread.id,
+            role="user",
+            content=prompt
+        )
+        run = client.beta.threads.runs.create(
+            thread_id=thread.id,
+            assistant_id=assistant_id
+        )
+
+        start_time = time.time()
+        timeout = 300  # 5 minutes timeout
+        while run.status not in ["completed", "failed"]:
+            if time.time() - start_time > timeout:
+                print(f"Run timed out after {timeout} seconds")
+            print("Waiting 10 seconds to prevent rate limiting...")  # tokens per min (TPM): Limit 30000
+            time.sleep(10)  # Increase sleep time to reduce API calls
+            print(f"Analyzing document {row['filename']}...")
+            run = client.beta.threads.runs.retrieve(thread_id=thread.id, run_id=run.id)
+            #print(f"Current run status: {run.status}")  # Debug print
+
+        if run.status == "failed":
+            print(f"Run failed. Error: {run.last_error.message}")
+
+        messages = client.beta.threads.messages.list(thread_id=thread.id)
+        output = messages.data[0].content[0].text.value
+        #print(output)
+
+        # Strip out filename from extension
+        file = row['filename'].split('.')[0]
+        doc_type = row['type']
+        # Save as JSON file in ai_outputs directory
+        with open(f"ai_outputs/lbi/{file}-{doc_type}.json", 'w') as f:
+            f.write(output)
+            
+    except FileNotFoundError:
+        print(f"File {row['filename']} not found")

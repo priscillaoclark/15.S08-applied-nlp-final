@@ -1,0 +1,39 @@
+{
+    "document_date": "2007-10-25",
+    "title": "Extension of Time Period for Quarterly Reporting of Bank Officers' and Certain Employees' Personal Securities Transactions",
+    "summary": "The FDIC has amended its regulation to extend the time period for reporting personal securities transactions from 10 business days to 30 calendar days after the end of the calendar quarter for officers and employees of state nonmember banks involved in customer account investment decisions.",
+    "key_terms": [
+        "Federal Deposit Insurance Corporation",
+        "12 CFR Part 344",
+        "personal securities transactions",
+        "state nonmember banks",
+        "investment decisions",
+        "SEC",
+        "Rule 17j-1",
+        "quarterly reporting"
+    ],
+    "associated_parties": [
+        {
+            "name": "Federal Deposit Insurance Corporation",
+            "role": "Agency implementing the regulation"
+        },
+        {
+            "name": "Anthony J. DiMilo",
+            "role": "Trust Examination Specialist in the Division of Supervision and Consumer Protection"
+        },
+        {
+            "name": "Julia E. Paris",
+            "role": "Senior Attorney in the Legal Division"
+        }
+    ],
+    "regulation_details": {
+        "regulation_name": "Extension of Time Period for Quarterly Reporting of Bank Officers' and Certain Employees' Personal Securities Transactions",
+        "regulation_code": "12 CFR Part 344",
+        "action": "Final rule"
+    },
+    "abstract": "The Federal Deposit Insurance Corporation (FDIC) has finalized a rule amending the regulation regarding reporting of personal securities transactions by officers and certain employees of state nonmember banks involved in making investment decisions for customer accounts. The amendment extends the reporting deadline from 10 business days to 30 calendar days after the end of the calendar quarter, aligning it with SEC regulations. The FDIC received one comment supporting the amendment, emphasizing the goal of harmonizing reporting requirements and promoting uniformity.",
+    "bank_failure": false,
+    "capital": false,
+    "liquidity": false,
+    "small_bank": true
+}

@@ -1,0 +1,22 @@
+{
+    "document_date": "2007-10-16",
+    "title": "Assessment Dividends Correction - 12 CFR Part 327",
+    "summary": "The document provides corrections to a proposed rule regarding assessment dividends under 12 CFR Part 327 issued by the Federal Deposit Insurance Corporation.",
+    "key_terms": ["Federal Register", "Assessment Dividends", "12 CFR Part 327", "RIN 3064-AD19", "Corrections"],
+    "associated_parties": [
+        {
+            "name": "Federal Deposit Insurance Corporation",
+            "role": "Issuer of the proposed rule regarding assessment dividends."
+        }
+    ],
+    "regulation_details": {
+        "regulation_name": "Assessment Dividends Rule",
+        "regulation_code": "12 CFR Part 327",
+        "action": "Corrections"
+    },
+    "abstract": "The document contains corrections to a proposed rule (07-4596) related to assessment dividends under 12 CFR Part 327 by the Federal Deposit Insurance Corporation. The corrections involve reprints of charts 1, 3, and 5 from the original document.",
+    "bank_failure": false,
+    "capital": false,
+    "liquidity": false,
+    "small_bank": false
+}
