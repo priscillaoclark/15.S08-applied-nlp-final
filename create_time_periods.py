@@ -28,6 +28,8 @@ print("18 months after: ",after_LBI)
 period_1 = period_1[(period_1['posted_date'] >= prior_LBI) & (period_1['posted_date'] <= after_LBI)]
 # Count docs in period_1
 print("Total LBI docs for period: ",period_1['id'].count())
+# Count the docs per agency
+print(period_1['agency'].value_counts())
 
 print("---------------SVB-----------------")
 # Create df for SVB period: Mar 10, 2023
@@ -52,3 +54,5 @@ print("18 months after: ",after_SVB)
 period_2 = period_2[(period_2['posted_date'] >= prior_SVB) & (period_2['posted_date'] <= after_SVB)]
 # Count docs in period_2
 print("Total SVB docs for period: ",period_2['id'].count())
+# Count the docs per agency
+print(period_2['agency'].value_counts())
