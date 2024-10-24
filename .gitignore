@@ -1,6 +1,7 @@
 # Environments
 .env
 .venv
+.venv_nlp_final/
 .venv_nlp_final
 env/
 venv/
