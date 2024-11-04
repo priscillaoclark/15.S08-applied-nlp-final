@@ -87,8 +87,7 @@ for index, row in period_1.iterrows():
         """
 
         assistant_id = 'asst_js2ojaiY97QvXd9sPzjmpKjH'
-        OPENAI_API_KEY="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"
-
+ 
         client = openai.Client(api_key=OPENAI_API_KEY)
         thread = client.beta.threads.create()
         message = client.beta.threads.messages.create(
