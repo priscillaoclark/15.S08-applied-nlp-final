@@ -8,7 +8,7 @@ import os
 
 def get_lbi(number_of_docs=100000):
     # Import metadata.csv
-    df = pd.read_csv('metadata.csv')
+    df = pd.read_csv('data_preparation/metadata.csv')
     df = df[(df['type'] == 'Rule') | (df['type'] == 'Proposed Rule')]
     #print(df.head())
 

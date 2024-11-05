@@ -22,7 +22,7 @@ def keybert_extractor(text):
     return results
 
 # Import metadata.csv
-df = pd.read_csv('metadata.csv')
+df = pd.read_csv('data_preparation/metadata.csv')
 df = df[(df['type'] == 'Rule') | (df['type'] == 'Proposed Rule')]
 #print(df.head())
 
