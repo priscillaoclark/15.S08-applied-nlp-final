@@ -1,5 +1,6 @@
 # NLP-Driven Analysis of Banking Policies 
 
+[![MIT License][license-shield]][license-url]
 
 ## About
 
@@ -73,3 +74,8 @@ MIT License. Project Link: [https://github.com/priscillaoclark/15.S08-applied-nl
 
 ## Acknowledgements
 We would like to thank Mike Chen, Andrew Zachary, and Chengfeng Mao for their help and guidance throughout this project.
+
+
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://opensource.org/licenses/MIT
+
