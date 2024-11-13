@@ -40,6 +40,19 @@ The main packages used in our project:
 ### Technologies 
 * Python
 
+## Getting Started
+
+The corpus of documents used in our project can be accessed in our documents folder. Implementation and data preprocessing is done in each respective python script file within the keywords folder. 
+
+### Prerequisites
+
+- [pandas](https://pandas.pydata.org/) (A data manipulation and analysis library providing data structures like DataFrames for Python.)
+
+
+## Usage
+
+Each of the python script files serve separate purposes and can be used to keyword extraction or to topic model our corpus of regulatory documents. Sample visualization can be found in the figures folder. 
+
 
 ## Team Members
 |Name     |  Handle   | 
