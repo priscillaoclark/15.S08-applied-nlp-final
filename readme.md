@@ -49,11 +49,11 @@ The corpus of documents used in our project can be accessed in our documents fol
 - [pandas](https://pandas.pydata.org/) (A data manipulation and analysis library providing data structures like DataFrames for Python.)
 - [numpy](https://numpy.org/) (A library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices.)
 - [scikit-learn](https://scikit-learn.org/) (A machine learning library for Python, offering tools for classification, regression, clustering, and dimensionality reduction.)
-- [nltk] (https://www.nltk.org/) (The Natural Language Toolkit, a platform for building Python programs to work with human language data.)
-- [gensim] (https://radimrehurek.com/gensim/) (A library for topic modeling and document similarity analysis in Python.)
-- [bertopic] (https://github.com/MaartenGr/BERTopic) (A topic modeling library that leverages BERT embeddings for creating interpretable topics.)
-- [PyTorch] (https://pytorch.org/) (An open-source machine learning framework for deep learning.) 
-- [scipy] (https://scipy.org/) (A library for scientific computing in Python.)
+- [nltk](https://www.nltk.org/) (The Natural Language Toolkit, a platform for building Python programs to work with human language data.)
+- [gensim](https://radimrehurek.com/gensim/) (A library for topic modeling and document similarity analysis in Python.)
+- [bertopic](https://github.com/MaartenGr/BERTopic) (A topic modeling library that leverages BERT embeddings for creating interpretable topics.)
+- [PyTorch](https://pytorch.org/) (An open-source machine learning framework for deep learning.) 
+- [scipy](https://scipy.org/) (A library for scientific computing in Python.)
 
 ## Usage
 
