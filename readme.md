@@ -14,7 +14,17 @@ The main packages used in our project:
 * re
 * json
 * sklearn
-
+* nltk
+* gensim
+* wordcloud
+* matplotlib.pyplot
+* openai
+* keybert
+* rake_nltk
+* yake
+* spacy
+* bertopic
+* umap
 
 ### Methods 
 * Keyword Extraction (RAKE, KeyBERT)
@@ -26,6 +36,7 @@ The main packages used in our project:
 ### Technologies 
 * Python
 
+
 ## Team Members
 |Name     |  Handle   | 
 |---------|-----------------|
@@ -33,3 +44,9 @@ The main packages used in our project:
 |[Nicholas Wong](https://github.com/nicwjh)| @nicwjh        |
 |[Harsh Kumar](https://github.com/-) |     @-    |
 |[Elaine Zhang](https://github.com/-) |     @-    |
+
+## License
+MIT License. Project Link: [https://github.com/priscillaoclark/15.S08-applied-nlp-final)
+
+## Acknowledgements
+We would like to thank Mike Chen, Andrew Zachary, and Chengfeng Mao for their help and guidance throughout this project.
