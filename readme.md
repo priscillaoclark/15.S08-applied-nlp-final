@@ -88,7 +88,9 @@ Each of the python script files serve separate purposes and can be used for keyw
 |[Elaine Zhang](https://github.com/-) |     @-    |
 
 ## License
-MIT License. Project Link: [https://github.com/priscillaoclark/15.S08-applied-nlp-final)
+Distributed under the MIT License - `LICENSE`. 
+
+Repository  Link: [https://github.com/priscillaoclark/15.S08-applied-nlp-final)
 
 ## Acknowledgements
 We would like to thank Mike Chen, Andrew Zachary, and Chengfeng Mao for their help and guidance throughout this project. The exceptional learning environment and resources provided by the Massachusetts Institute of Technology [(MIT)](https://github.com/mit) have also been instrumental in shaping this work. 
