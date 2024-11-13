@@ -76,7 +76,7 @@ The corpus of documents used in our project can be accessed in our documents fol
 
 ## Usage
 
-Each of the python script files serve separate purposes and can be used to keyword extraction or to topic model our corpus of regulatory documents. Sample visualization can be found in the figures folder. 
+Each of the python script files serve separate purposes and can be used for keyword extraction or to topic model our corpus of regulatory documents. Sample visualizations can be found in the figures folder. 
 
 
 ## Team Members
