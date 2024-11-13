@@ -3,7 +3,7 @@
 
 ## About
 
-The 2023 Silicon Valley Bank (SVB) collapse had a strong influence on financial regulations. Our project aims to utilize natural language processing topic modeling techniques to identify primary themes in our corpus of financial regulatory documents scraped from [regulations](https://regulations.gov/).
+The 2023 Silicon Valley Bank (SVB) collapse had a strong influence on financial regulations. Our project aims to utilize natural language processing topic modeling techniques to identify primary themes in our corpus of financial regulatory documents scraped from [regulations.gov](https://regulations.gov/).
 
 ## Built With
 
