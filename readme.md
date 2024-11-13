@@ -9,7 +9,7 @@
     <img src="https://github.com/priscillaoclark/15.S08-applied-nlp-final/blob/main/figures/project_logo.jpg" alt="Logo" width="300" height="300">
   </a>
 
-  <h3 align="center">NLP-Driven Analysis of Banking Policies</h3>
+  <h3 align="center">RegInsight: NLP-Driven Analysis of Banking Policies</h3>
 
   <p align="center">
     Topic Modeling of Regulatory Documents using Natural Language Processing
