@@ -91,8 +91,7 @@ Each of the python script files serve separate purposes and can be used for keyw
 MIT License. Project Link: [https://github.com/priscillaoclark/15.S08-applied-nlp-final)
 
 ## Acknowledgements
-We would like to thank Mike Chen, Andrew Zachary, and Chengfeng Mao for their help and guidance throughout this project.
-
+We would like to thank Mike Chen, Andrew Zachary, and Chengfeng Mao for their help and guidance throughout this project. The exceptional learning environment and resources provided by the Massachusetts Institute of Technology (MIT) have also been instrumental in shaping this work. 
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://opensource.org/licenses/MIT
