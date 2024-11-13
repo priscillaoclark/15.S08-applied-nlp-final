@@ -2,6 +2,24 @@
 
 [![MIT License][license-shield]][license-url]
 
+
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://github.com/priscillaoclark/15.S08-applied-nlp-final/tree/main/figures/project_logo.jpg" alt="Logo" width="150" height="100">
+  </a>
+
+  <h3 align="center">NLP-Driven Analysis of Banking Policies</h3>
+
+  <p align="center">
+    Topic Modeling of Regulatory Documents using Natural Language Processing
+    <br />
+    <br />
+  </p>
+</p>
+
+
+
 ## About
 
 The 2023 Silicon Valley Bank (SVB) collapse had a strong influence on financial regulations. Our project aims to utilize natural language processing topic modeling techniques to identify primary themes in our corpus of financial regulatory documents scraped from [regulations.gov](https://regulations.gov/). The project objective is to identify and visualize topics, reveal shifts in regulatory focus, and how topics shift with market trends. 
