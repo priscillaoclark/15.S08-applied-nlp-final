@@ -1,4 +1,4 @@
-# Topic Modeling of Regulatory Documents using Natural Language Processing 
+# NLP-Driven Analysis of Banking Policies 
 
 
 ## About
