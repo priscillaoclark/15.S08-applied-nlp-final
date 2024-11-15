@@ -10,7 +10,7 @@ from gensim.models.coherencemodel import CoherenceModel
 import os
 nltk.download('stopwords')
 
-# Additional filler words to remove
+# custom fillers to remove
 CUSTOM_STOPWORDS = set([
     "would", "could", "should", "also", "many", "may", "much", "one", "two", "three", "four", "five", "good",
     "like", "however", "therefore", "thus", "make", "made", "need", "use", "new", "time", "include", "provided"
@@ -110,11 +110,10 @@ def run_topic_modeling(metadata_path: str, event_date: str, period_label: str):
     for topic, words in keywords.items():
         print(f"Topic {topic}: {', '.join(words)}")
 
-    # Validate topic coherence
+    # Topic coherence for validation
     coherence_score = compute_topic_coherence(topic_words_cleaned, documents)
     print(f"Coherence Score for {period_label}: {coherence_score:.4f}")
 
-    # Save bar chart visualization
     try:
         fig = model.visualize_barchart(top_n_topics=5)
         save_html(f"barchart_{period_label}.html", fig)

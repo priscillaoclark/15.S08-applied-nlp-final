@@ -10,7 +10,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 nltk.download('stopwords')
 
-# Additional filler words to remove
+# custom fillers to remove
 CUSTOM_STOPWORDS = set([
     "would", "could", "should", "also", "many", "may", "much", "one", "two", "three", "four", "five", "good",
     "like", "however", "therefore", "thus", "make", "made", "need", "use", "new", "time", "include", "provided"
@@ -45,7 +45,7 @@ def load_and_preprocess_data(metadata_path: str, event_date: str, num_docs: int 
                 text = file.read()
                 doc_dict[row["filename"]] = preprocess_text(text)
         except UnicodeDecodeError:
-            # Retry with a different encoding
+            # Retry with a different encoding. This was to debug a specific issue
             try:
                 with open(f"documents/{row['filename']}", "r", encoding="latin-1") as file:
                     text = file.read()
@@ -59,11 +59,11 @@ def load_and_preprocess_data(metadata_path: str, event_date: str, num_docs: int 
 
 def compute_coherence_and_perplexity(lda_model, corpus, dictionary, tokenized_docs):
     """Computes topic coherence and perplexity for an LDA model."""
-    # Compute coherence
+    # Compute coherence score
     coherence_model = CoherenceModel(model=lda_model, texts=tokenized_docs, dictionary=dictionary, coherence='c_npmi')
     coherence_score = coherence_model.get_coherence()
 
-    # Compute perplexity
+    # Compute perplexity score
     log_perplexity = lda_model.log_perplexity(corpus)
     perplexity_score = np.exp(-log_perplexity)
 
@@ -88,7 +88,6 @@ def plot_topics(lda_model, num_words=10, output_file="topics.png"):
 
 def run_lda_topic_modeling(metadata_path: str, event_date: str, period_label: str):
     """Runs LDA for a specific time period, validates coherence and perplexity, and generates visualizations."""
-    # Load and preprocess data
     documents, _ = load_and_preprocess_data(metadata_path, event_date, num_docs=200)
     tokenized_docs = [doc.split() for doc in documents]
 
