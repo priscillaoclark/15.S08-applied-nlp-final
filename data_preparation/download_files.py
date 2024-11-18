@@ -3,7 +3,7 @@ import requests
 import os
 
 # Import metadata.csv
-df = pd.read_csv('metadata.csv')
+df = pd.read_csv('data_preparation/metadata.csv')
 # Limit to rule or proposed rule
 df = df[(df['type'] == 'Rule') | (df['type'] == 'Proposed Rule')]   
 print(df.head())
@@ -11,9 +11,10 @@ print(df.head())
 # Create the documents directory if it doesn't exist
 os.makedirs('documents', exist_ok=True)
 
-"""
+
 # Download each file and save it with the document id
 for index, row in df.iterrows():
+    print("Downloading", row['url'])
     url = row['url']
     document_id = row['id']
     extension = url.split('.')[-1]
@@ -24,6 +25,7 @@ for index, row in df.iterrows():
                 file.write(response.content)
         else:
             print(f"Failed to download {url}")
+
 """
 
 # Get list of downloaded files
@@ -46,3 +48,4 @@ for index, row in df.iterrows():
             print(f"Failed to download {url}")
 
 
+"""
