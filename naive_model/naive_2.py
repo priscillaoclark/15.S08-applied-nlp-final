@@ -15,7 +15,7 @@ import json
 # Configuration
 PRE_FOLDER = "/Users/bluebird/develop/15.S08-applied-nlp-final/documents/pre_svb"
 POST_FOLDER = "/Users/bluebird/develop/15.S08-applied-nlp-final/documents/post_svb"
-KEYWORDS = ["liquidity", "capital", "small bank"]
+KEYWORDS = ["liquidity", "capital", "small bank", "interest rate risk", "concentration risk"]
 OUTPUT_DIR = "./naive_model/results"
 
 class NumpyEncoder(json.JSONEncoder):

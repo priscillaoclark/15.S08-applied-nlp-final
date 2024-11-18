@@ -3,16 +3,16 @@
     "total_pre_documents": 170,
     "total_post_documents": 198,
     "total_pre_keywords": 1339,
-    "total_post_keywords": 11201
+    "total_post_keywords": 11476
   },
   "statistics": {
     "liquidity": {
       "frequency": {
         "pre": 0.06348020911127707,
-        "post": 0.1806981519507187,
-        "change": 0.11721794283944163,
-        "chi2": 116.63187577035193,
-        "p_value": 3.4561644458630704e-27,
+        "post": 0.17636807249912861,
+        "change": 0.11288786338785155,
+        "chi2": 110.32301040124061,
+        "p_value": 8.325658073978986e-26,
         "significant": true
       },
       "document": {
@@ -28,10 +28,10 @@
     "capital": {
       "frequency": {
         "pre": 0.5250186706497386,
-        "post": 0.7736809213463084,
-        "change": 0.24866225069656978,
-        "chi2": 390.12487852917826,
-        "p_value": 7.774832923355488e-87,
+        "post": 0.7551411641686999,
+        "change": 0.2301224935189613,
+        "chi2": 321.8281626257619,
+        "p_value": 5.790170184142632e-72,
         "significant": true
       },
       "document": {
@@ -47,9 +47,9 @@
     "small bank": {
       "frequency": {
         "pre": 0.41150112023898433,
-        "post": 0.04562092670297295,
-        "change": -0.36588019353601137,
-        "chi2": 2060.7673429042766,
+        "post": 0.044527710003485536,
+        "change": -0.3669734102354988,
+        "chi2": 2119.815941795932,
         "p_value": 0.0,
         "significant": true
       },
@@ -61,6 +61,44 @@
         "fisher_odds_ratio": 0.8454106280193237,
         "binomial_p": 0.40869714196624984,
         "significant": false
+      }
+    },
+    "interest rate risk": {
+      "frequency": {
+        "pre": 0.0,
+        "post": 0.022046009062391077,
+        "change": 0.022046009062391077,
+        "chi2": 28.01965430452897,
+        "p_value": 1.2008954327003031e-07,
+        "significant": true
+      },
+      "document": {
+        "pre_proportion": 0.0,
+        "post_proportion": 0.045454545454545456,
+        "proportion_change": 0.045454545454545456,
+        "fisher_p": 0.0043202924778739426,
+        "fisher_odds_ratio": 0.0,
+        "binomial_p": 5.59950224773775e-45,
+        "significant": true
+      }
+    },
+    "concentration risk": {
+      "frequency": {
+        "pre": 0.0,
+        "post": 0.0019170442662948763,
+        "change": 0.0019170442662948763,
+        "chi2": 0.9179283536688291,
+        "p_value": 0.3380195074992913,
+        "significant": false
+      },
+      "document": {
+        "pre_proportion": 0.0,
+        "post_proportion": 0.025252525252525252,
+        "proportion_change": 0.025252525252525252,
+        "fisher_p": 0.06441289764626384,
+        "fisher_odds_ratio": 0.0,
+        "binomial_p": 1.2314364929436383e-50,
+        "significant": true
       }
     }
   }
