@@ -86,6 +86,7 @@ Each of the python script files serve separate purposes and can be used for keyw
 |[Nicholas Wong](https://github.com/nicwjh)| @nicwjh        |
 |[Harsh Kumar](https://github.com/-) |     @-    |
 |[Elaine Zhang](https://github.com/-) |     @-    |
+|[Didi Clark](https://priscillaoclark.github.io/) | @priscillaoclark	|
 
 ## License
 Distributed under the MIT License - `LICENSE`. 
