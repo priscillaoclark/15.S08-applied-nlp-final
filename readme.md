@@ -83,7 +83,7 @@ Each of the python script files serve separate purposes and can be used for keyw
 |Name     |  Handle   | 
 |---------|-----------------|
 |[Priscilla Clark](https://priscillaoclark.github.io/)| @priscillaoclark      |
-|[Nicholas Wong](https://github.com/nicwjh)| @nicwjh        |
+|[Nicholas Wong](https://www.linkedin.com/in/nicwjh/)| @nicwjh        |
 |[Harsh Kumar](https://github.com/-) |     @-    |
 |[Elaine Zhang](https://github.com/-) |     @-    |
 |[Didi Clark](https://priscillaoclark.github.io/img/IMG_3798.jpeg) | @priscillaoclark	|
