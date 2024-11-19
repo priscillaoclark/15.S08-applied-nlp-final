@@ -1,16 +1,18 @@
 from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
 from umap import UMAP
+import os
 import pandas as pd
 import re
 from nltk.corpus import stopwords
 import nltk
 from gensim.corpora.dictionary import Dictionary
 from gensim.models.coherencemodel import CoherenceModel
-import os
+from IPython.core.display import display, HTML
+from collections import Counter
 nltk.download('stopwords')
 
-# custom fillers to remove
+# Additional filler words to remove
 CUSTOM_STOPWORDS = set([
     "would", "could", "should", "also", "many", "may", "much", "one", "two", "three", "four", "five", "good",
     "like", "however", "therefore", "thus", "make", "made", "need", "use", "new", "time", "include", "provided"
@@ -25,29 +27,18 @@ def preprocess_text(text: str) -> str:
     text = text.strip().lower()
     return " ".join(word for word in text.split() if word not in STOPWORDS and len(word) > 2)  # Keep words > 2 chars
 
-def load_and_preprocess_data(metadata_path: str, event_date: str, num_docs: int = 100):
-    """Loads metadata and preprocesses document texts for a specific time period."""
-    df = pd.read_csv(metadata_path)
-    df = df[(df['type'] == 'Rule') | (df['type'] == 'Proposed Rule')]
-    print(f"Total documents available: {len(df)}")
-
-    # Filter by event date and date offset
-    event_date = pd.to_datetime(event_date)
-    start_date = event_date - pd.DateOffset(months=18)
-    end_date = event_date + pd.DateOffset(months=18)
-    df = df[(df["posted_date"] >= str(start_date)) & (df["posted_date"] <= str(end_date))]
-
-    df = df.head(num_docs)
-    doc_dict = {}
-    for _, row in df.iterrows():
+def load_and_preprocess_data(folder_path: str) -> list:
+    """Loads and preprocesses documents."""
+    documents = []
+    for file_name in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file_name)
         try:
-            with open(f"documents/{row['filename']}", "r", encoding="utf-8") as file:
+            with open(file_path, "r", encoding="utf-8") as file:
                 text = file.read()
-                doc_dict[row["filename"]] = preprocess_text(text)
+                documents.append(preprocess_text(text))
         except (UnicodeDecodeError, FileNotFoundError) as e:
-            print(f"Error reading file {row['filename']}: {e}")
-
-    return list(doc_dict.values()), doc_dict
+            print(f"Error reading file {file_name}: {e}")
+    return documents
 
 def compute_topic_coherence(topics, documents):
     """Computes topic coherence using NPMI."""
@@ -71,7 +62,7 @@ def extract_keywords_bertopic(documents, n_topics: int = 10, n_words: int = 10):
         umap_model=umap_model
     )
 
-    # Fit the model
+    # Fit Bertopic
     topics, probs = topic_model.fit_transform(documents)
 
     # Extract topics and their keywords
@@ -92,14 +83,9 @@ def extract_keywords_bertopic(documents, n_topics: int = 10, n_words: int = 10):
 
     return keywords, topic_model, topic_words_cleaned
 
-def save_html(file_name: str, fig):
-    """Save visualization as an HTML file."""
-    fig.write_html(file_name)
-    print(f"Visualization saved as {file_name}")
-
-def run_topic_modeling(metadata_path: str, event_date: str, period_label: str):
-    """Runs BERTopic for a specific time period, validates coherence and perplexity, and saves the visualization."""
-    documents, doc_dict = load_and_preprocess_data(metadata_path, event_date, num_docs=200)
+def run_topic_modeling(folder_path: str, period_label: str):
+    """Runs BERTopic for a specific time period, validates coherence, and saves the visualization."""
+    documents = load_and_preprocess_data(folder_path)
 
     if len(documents) < 10:
         raise ValueError(f"Not enough documents for topic modeling in period {period_label}. Increase the dataset size.")
@@ -110,28 +96,29 @@ def run_topic_modeling(metadata_path: str, event_date: str, period_label: str):
     for topic, words in keywords.items():
         print(f"Topic {topic}: {', '.join(words)}")
 
-    # Topic coherence for validation
+    # Validate topic coherence
     coherence_score = compute_topic_coherence(topic_words_cleaned, documents)
     print(f"Coherence Score for {period_label}: {coherence_score:.4f}")
 
+    # Visualizations
     try:
         fig = model.visualize_barchart(top_n_topics=5)
-        save_html(f"barchart_{period_label}.html", fig)
+        fig_file = f"barchart_{period_label}.html"
+        fig.write_html(fig_file)
+        print(f"Bar chart for {period_label} saved as {fig_file}")
     except Exception as e:
         print(f"Bar chart visualization failed for {period_label}: {e}")
 
-    # Generate and save UMAP visualization
     try:
         umap_fig = model.visualize_documents(documents)
-        save_html(f"umap_{period_label}.html", umap_fig)
+        umap_file = f"umap_{period_label}.html"
+        umap_fig.write_html(umap_file)
+        print(f"UMAP plot for {period_label} saved as {umap_file}")
     except Exception as e:
         print(f"UMAP plot generation failed for {period_label}: {e}")
 
 if __name__ == "__main__":
-    metadata_path = "data_preparation/metadata.csv"
 
-    # Run topic modeling for 2008
-    run_topic_modeling(metadata_path, "2008-09-15", "2008")
+    run_topic_modeling("documents/pre_SVB", "pre_SVB")
 
-    # Run topic modeling for 2023
-    run_topic_modeling(metadata_path, "2023-03-15", "2023")
+    run_topic_modeling("documents/post_SVB", "post_SVB")
