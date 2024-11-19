@@ -82,11 +82,11 @@ Each of the python script files serve separate purposes and can be used for keyw
 ## Team Members
 |Name     |  Handle   | 
 |---------|-----------------|
-|[Priscilla Clark](https://github.com/priscillaoclark)| @priscillaoclark      |
+|[Priscilla Clark](https://priscillaoclark.github.io/)| @priscillaoclark      |
 |[Nicholas Wong](https://github.com/nicwjh)| @nicwjh        |
 |[Harsh Kumar](https://github.com/-) |     @-    |
 |[Elaine Zhang](https://github.com/-) |     @-    |
-|[Didi Clark](https://priscillaoclark.github.io/) | @priscillaoclark	|
+|[Didi Clark](https://priscillaoclark.github.io/img/IMG_3798.jpeg) | @priscillaoclark	|
 
 ## License
 Distributed under the MIT License - `LICENSE`. 
