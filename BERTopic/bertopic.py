@@ -2,25 +2,25 @@ from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
 from umap import UMAP
 import os
-import pandas as pd
 import re
 from nltk.corpus import stopwords
 import nltk
 from gensim.corpora.dictionary import Dictionary
 from gensim.models.coherencemodel import CoherenceModel
-from IPython.core.display import display, HTML
-from collections import Counter
+from hdbscan import HDBSCAN
+
 nltk.download('stopwords')
+
 
 # Additional filler words to remove
 CUSTOM_STOPWORDS = set([
     "would", "could", "should", "also", "many", "may", "much", "one", "two", "three", "four", "five", "good",
-    "like", "however", "therefore", "thus", "make", "made", "need", "use", "new", "time", "include", "provided"
+    "like", "however", "therefore", "thus", "make", "made", "need", "use", "new", "time", "include", "provided",
+    "information", "section", "data", "proposed", "rule", "final", "notification", "order"
 ])
 STOPWORDS = set(stopwords.words('english')) | CUSTOM_STOPWORDS
 
 def preprocess_text(text: str) -> str:
-    """Cleans text by removing special characters, numbers, and extra spaces, and custom stopwords."""
     text = re.sub(r"http\S+", "", text)  # Remove links
     text = re.sub("[^A-Za-z]+", " ", text)  # Remove special characters
     text = re.sub(r"\s+", " ", text)  # Remove extra spaces
@@ -28,7 +28,6 @@ def preprocess_text(text: str) -> str:
     return " ".join(word for word in text.split() if word not in STOPWORDS and len(word) > 2)  # Keep words > 2 chars
 
 def load_and_preprocess_data(folder_path: str) -> list:
-    """Loads and preprocesses documents."""
     documents = []
     for file_name in os.listdir(folder_path):
         file_path = os.path.join(folder_path, file_name)
@@ -41,7 +40,6 @@ def load_and_preprocess_data(folder_path: str) -> list:
     return documents
 
 def compute_topic_coherence(topics, documents):
-    """Computes topic coherence using NPMI."""
     tokenized_docs = [doc.split() for doc in documents]
     dictionary = Dictionary(tokenized_docs)
     coherence_model = CoherenceModel(
@@ -52,20 +50,33 @@ def compute_topic_coherence(topics, documents):
     )
     return coherence_model.get_coherence()
 
-def extract_keywords_bertopic(documents, n_topics: int = 10, n_words: int = 10):
-    """Performs topic modeling and extracts top keywords for each topic."""
+def extract_keywords_bertopic(documents, n_topics: int = 10, n_words: int = 10, regularized: bool = False):
     embedder = SentenceTransformer("all-MiniLM-L6-v2")
-    umap_model = UMAP(n_neighbors=10, n_components=5, min_dist=0.1, metric="cosine")
+    umap_model = UMAP(
+        n_neighbors=10,
+        n_components=5,
+        min_dist=0.1,
+        metric="cosine",
+        random_state=42
+    )
+
+    # Explicit HDBSCAN model for control
+    hdbscan_model = HDBSCAN(
+        min_cluster_size=20 if regularized else 5,
+        min_samples=5,
+        cluster_selection_epsilon=0.01
+    )
 
     topic_model = BERTopic(
         embedding_model=embedder,
-        umap_model=umap_model
+        umap_model=umap_model,
+        hdbscan_model=hdbscan_model,
+        min_topic_size=20 if regularized else None,
+        nr_topics="auto" if regularized else None
     )
 
-    # Fit Bertopic
     topics, probs = topic_model.fit_transform(documents)
 
-    # Extract topics and their keywords
     topic_info = topic_model.get_topic_info()
     keywords = {}
     topic_words_cleaned = []
@@ -84,41 +95,51 @@ def extract_keywords_bertopic(documents, n_topics: int = 10, n_words: int = 10):
     return keywords, topic_model, topic_words_cleaned
 
 def run_topic_modeling(folder_path: str, period_label: str):
-    """Runs BERTopic for a specific time period, validates coherence, and saves the visualization."""
     documents = load_and_preprocess_data(folder_path)
 
     if len(documents) < 10:
         raise ValueError(f"Not enough documents for topic modeling in period {period_label}. Increase the dataset size.")
 
-    keywords, model, topic_words_cleaned = extract_keywords_bertopic(documents, n_topics=10, n_words=10)
+    # Standard BERTopic Model
+    keywords, model, topic_words_cleaned = extract_keywords_bertopic(documents, n_topics=10, n_words=10, regularized=False)
 
-    print(f"Results for {period_label}:")
+    # Regularized BERTopic Model (using heuristic)
+    reg_keywords, reg_model, reg_topic_words_cleaned = extract_keywords_bertopic(documents, n_topics=10, n_words=10, regularized=True)
+
+    print(f"Results for {period_label} - Standard:")
     for topic, words in keywords.items():
         print(f"Topic {topic}: {', '.join(words)}")
 
-    # Validate topic coherence
+    print(f"Results for {period_label} - Regularized:")
+    for topic, words in reg_keywords.items():
+        print(f"Topic {topic}: {', '.join(words)}")
+
+    # Coherence Scores
     coherence_score = compute_topic_coherence(topic_words_cleaned, documents)
-    print(f"Coherence Score for {period_label}: {coherence_score:.4f}")
+    reg_coherence_score = compute_topic_coherence(reg_topic_words_cleaned, documents)
+    print(f"Coherence Score for {period_label} - Standard: {coherence_score:.4f}")
+    print(f"Coherence Score for {period_label} - Regularized: {reg_coherence_score:.4f}")
 
-    # Visualizations
+    # Visualizations with BERTopic built-in methods
     try:
-        fig = model.visualize_barchart(top_n_topics=5)
-        fig_file = f"barchart_{period_label}.html"
-        fig.write_html(fig_file)
-        print(f"Bar chart for {period_label} saved as {fig_file}")
-    except Exception as e:
-        print(f"Bar chart visualization failed for {period_label}: {e}")
+        # Standard Model Visualizations
+        fig = model.visualize_barchart(top_n_topics=10)
+        fig.write_html(f"barchart_{period_label}_standard.html")
+        print(f"Bar chart for {period_label} (Standard) saved as barchart_{period_label}_standard.html")
 
-    try:
-        umap_fig = model.visualize_documents(documents)
-        umap_file = f"umap_{period_label}.html"
-        umap_fig.write_html(umap_file)
-        print(f"UMAP plot for {period_label} saved as {umap_file}")
+        topic_fig = model.visualize_topics()
+        topic_fig.write_html(f"topics_{period_label}_standard.html")
+        print(f"Topic map for {period_label} (Standard) saved as topics_{period_label}_standard.html")
+
+        # Regularized Model Visualizations
+        reg_fig = reg_model.visualize_barchart(top_n_topics=10)
+        reg_fig.write_html(f"barchart_{period_label}_regularized.html")
+        print(f"Bar chart for {period_label} (Regularized) saved as barchart_{period_label}_regularized.html")
+
+        # Skip topic map visualization for the regularized model
     except Exception as e:
-        print(f"UMAP plot generation failed for {period_label}: {e}")
+        print(f"Visualization failed for {period_label}: {e}")
 
 if __name__ == "__main__":
-
     run_topic_modeling("documents/pre_SVB", "pre_SVB")
-
     run_topic_modeling("documents/post_SVB", "post_SVB")
