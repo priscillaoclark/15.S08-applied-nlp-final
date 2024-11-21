@@ -1,4 +1,4 @@
-# NLP-Driven Analysis of Banking Policies 
+# Thematic Analysis of Banking Regulatory Changes Following the Collapse of Silicon Valley Bank 
 
 [![MIT License][license-shield]][license-url]
 
