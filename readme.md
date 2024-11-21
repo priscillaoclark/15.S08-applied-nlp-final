@@ -51,7 +51,7 @@ The main packages used in our project:
 
 ### Methods 
 * Keyword Extraction 
-* Topic Modeling (BERTopic, LDA)
+* Topic Modeling (TF-IDF, BERTopic)
 * Clustering 
 * Visualization Techniques 
 
