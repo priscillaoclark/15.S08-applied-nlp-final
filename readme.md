@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/priscillaoclark/15.S08-applied-nlp-final/blob/main/figures/project_logo.jpeg" alt="Logo" width="300" height="300">
+    <img src="https://github.com/priscillaoclark/15.S08-applied-nlp-final/blob/main/figures/project_logo.jpeg" alt="Logo" width="358" height="204">
   </a>
 
   <h3 align="center">RegInsight: NLP-Driven Analysis of Banking Policies</h3>
