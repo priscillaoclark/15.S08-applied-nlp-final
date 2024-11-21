@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/priscillaoclark/15.S08-applied-nlp-final/blob/main/figures/project_logo.jpg" alt="Logo" width="300" height="300">
+    <img src="https://github.com/priscillaoclark/15.S08-applied-nlp-final/blob/main/figures/project_logo.jpeg" alt="Logo" width="300" height="300">
   </a>
 
   <h3 align="center">RegInsight: NLP-Driven Analysis of Banking Policies</h3>
@@ -86,7 +86,6 @@ Each of the python script files serve separate purposes and can be used for keyw
 |[Nicholas Wong](https://www.linkedin.com/in/nicwjh/)| @nicwjh        |
 |[Harsh Kumar](https://www.linkedin.com/in/harsh-kumar-mit/) |     @harshk02   |
 |[Elaine Zhang](https://www.linkedin.com/in/elainehanxuezhang/) |     @ElainehxZhang    |
-|[Didi Clark](https://priscillaoclark.github.io/img/IMG_3798.jpeg) | -	|
 
 ## License
 Distributed under the MIT License - `LICENSE`. 
