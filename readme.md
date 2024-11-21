@@ -84,9 +84,9 @@ Each of the python script files serve separate purposes and can be used for keyw
 |---------|-----------------|
 |[Priscilla Clark](https://priscillaoclark.github.io/)| [@priscillaoclark](https://github.com/priscillaoclark)      |
 |[Nicholas Wong](https://www.linkedin.com/in/nicwjh/)| [@nicwjh](https://github.com/nicwjh)        |
-|[Harsh Kumar](https://github.com/-) |     [@harshk02](https://github.com/harshk02)   |
-|[Elaine Zhang](https://github.com/-) |     [@ElainehxZhang](https://github.com/ElainehxZhang)    |
-|[Didi Clark](https://priscillaoclark.github.io/img/IMG_3798.jpeg) | @priscillaoclark	|
+|Harsh Kumar |     [@harshk02](https://github.com/harshk02)   |
+|Elaine Zhang |     [@ElainehxZhang](https://github.com/ElainehxZhang)    |
+|[Didi Clark](https://priscillaoclark.github.io/img/IMG_3798.jpeg) | -	|
 
 ## License
 Distributed under the MIT License - `LICENSE`. 
