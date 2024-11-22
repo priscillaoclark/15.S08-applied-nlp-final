@@ -2,104 +2,97 @@
   "metadata": {
     "total_pre_documents": 170,
     "total_post_documents": 198,
-    "total_pre_keywords": 1339,
-    "total_post_keywords": 11476
+    "threshold_pre_documents": {
+      "liquidity": 13,
+      "capital": 31,
+      "small bank": 17,
+      "concentration": 6,
+      "community bank": 7,
+      "capital requirement": 1
+    },
+    "threshold_post_documents": {
+      "liquidity": 40,
+      "capital": 60,
+      "capital requirement": 10,
+      "small bank": 16,
+      "community bank": 22,
+      "concentration": 20,
+      "mid-sized bank": 1,
+      "interest rate risk": 3
+    }
   },
-  "statistics": {
+  "poisson_results": {
     "liquidity": {
-      "frequency": {
-        "pre": 0.06348020911127707,
-        "post": 0.17636807249912861,
-        "change": 0.11288786338785155,
-        "chi2": 110.32301040124061,
-        "p_value": 8.325658073978986e-26,
-        "significant": true
-      },
-      "document": {
-        "pre_proportion": 0.11764705882352941,
-        "post_proportion": 0.23232323232323232,
-        "proportion_change": 0.11467617349970291,
-        "fisher_p": 0.004281855340744007,
-        "fisher_odds_ratio": 0.4405797101449275,
-        "binomial_p": 6.742643788131516e-06,
-        "significant": true
-      }
+      "pre_rate": 0.07647058823529412,
+      "post_rate": 0.20202020202020202,
+      "rate_change": 0.1255496137849079,
+      "rate_ratio": 2.6418026418026415,
+      "lr_statistic": 10.612766413627,
+      "p_value": 0.001123095350572867,
+      "significant": true
     },
     "capital": {
-      "frequency": {
-        "pre": 0.5250186706497386,
-        "post": 0.7551411641686999,
-        "change": 0.2301224935189613,
-        "chi2": 321.8281626257619,
-        "p_value": 5.790170184142632e-72,
-        "significant": true
-      },
-      "document": {
-        "pre_proportion": 0.22941176470588234,
-        "post_proportion": 0.4696969696969697,
-        "proportion_change": 0.24028520499108738,
-        "fisher_p": 1.529574527516581e-06,
-        "fisher_odds_ratio": 0.3361241073627185,
-        "binomial_p": 1.2591309446134555e-13,
-        "significant": true
-      }
+      "pre_rate": 0.18235294117647058,
+      "post_rate": 0.30303030303030304,
+      "rate_change": 0.12067736185383246,
+      "rate_ratio": 1.66177908113392,
+      "lr_statistic": 5.511671924949422,
+      "p_value": 0.018889981185450044,
+      "significant": true
+    },
+    "capital requirement": {
+      "pre_rate": 0.0058823529411764705,
+      "post_rate": 0.050505050505050504,
+      "rate_change": 0.044622697563874034,
+      "rate_ratio": 8.585858585858587,
+      "lr_statistic": 7.238893010042013,
+      "p_value": 0.007134095179540778,
+      "significant": true
     },
     "small bank": {
-      "frequency": {
-        "pre": 0.41150112023898433,
-        "post": 0.044527710003485536,
-        "change": -0.3669734102354988,
-        "chi2": 2119.815941795932,
-        "p_value": 0.0,
-        "significant": true
-      },
-      "document": {
-        "pre_proportion": 0.1,
-        "post_proportion": 0.11616161616161616,
-        "proportion_change": 0.016161616161616155,
-        "fisher_p": 0.7373438109551056,
-        "fisher_odds_ratio": 0.8454106280193237,
-        "binomial_p": 0.40869714196624984,
-        "significant": false
-      }
+      "pre_rate": 0.1,
+      "post_rate": 0.08080808080808081,
+      "rate_change": -0.01919191919191919,
+      "rate_ratio": 0.8080808080808081,
+      "lr_statistic": 0.3743758300120663,
+      "p_value": 0.5406286741151556,
+      "significant": false
+    },
+    "mid-sized bank": {
+      "pre_rate": 0.0,
+      "post_rate": 0.005050505050505051,
+      "rate_change": 0.005050505050505051,
+      "rate_ratio": Infinity,
+      "lr_statistic": 0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "community bank": {
+      "pre_rate": 0.041176470588235294,
+      "post_rate": 0.1111111111111111,
+      "rate_change": 0.06993464052287582,
+      "rate_ratio": 2.698412698412698,
+      "lr_statistic": 6.029334839859565,
+      "p_value": 0.01407003431527265,
+      "significant": true
     },
     "interest rate risk": {
-      "frequency": {
-        "pre": 0.0,
-        "post": 0.022046009062391077,
-        "change": 0.022046009062391077,
-        "chi2": 28.01965430452897,
-        "p_value": 1.2008954327003031e-07,
-        "significant": true
-      },
-      "document": {
-        "pre_proportion": 0.0,
-        "post_proportion": 0.045454545454545456,
-        "proportion_change": 0.045454545454545456,
-        "fisher_p": 0.0043202924778739426,
-        "fisher_odds_ratio": 0.0,
-        "binomial_p": 5.59950224773775e-45,
-        "significant": true
-      }
+      "pre_rate": 0.0,
+      "post_rate": 0.015151515151515152,
+      "rate_change": 0.015151515151515152,
+      "rate_ratio": Infinity,
+      "lr_statistic": 0,
+      "p_value": 1.0,
+      "significant": false
     },
-    "concentration risk": {
-      "frequency": {
-        "pre": 0.0,
-        "post": 0.0019170442662948763,
-        "change": 0.0019170442662948763,
-        "chi2": 0.9179283536688291,
-        "p_value": 0.3380195074992913,
-        "significant": false
-      },
-      "document": {
-        "pre_proportion": 0.0,
-        "post_proportion": 0.025252525252525252,
-        "proportion_change": 0.025252525252525252,
-        "fisher_p": 0.06441289764626384,
-        "fisher_odds_ratio": 0.0,
-        "binomial_p": 1.2314364929436383e-50,
-        "significant": true
-      }
+    "concentration": {
+      "pre_rate": 0.03529411764705882,
+      "post_rate": 0.10101010101010101,
+      "rate_change": 0.06571598336304219,
+      "rate_ratio": 2.861952861952862,
+      "lr_statistic": 5.969434908179094,
+      "p_value": 0.014555944669885412,
+      "significant": true
     }
   }
 }
