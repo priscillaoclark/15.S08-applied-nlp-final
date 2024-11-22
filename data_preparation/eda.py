@@ -50,6 +50,7 @@ print(len(post_SVB))
 combined = pd.concat([pre_SVB, post_SVB])
 #print(combined.head())
 print(len(combined))
+print(combined.head())
 
 import matplotlib.pyplot as plt
 
@@ -57,10 +58,29 @@ import matplotlib.pyplot as plt
 agency_counts = combined['agency'].value_counts()
 
 # Plot a pie chart
-plt.figure(figsize=(10, 8))
-agency_counts.plot.pie(autopct=lambda p: f'{p:.1f}% ({int(p * agency_counts.sum() / 100)})', startangle=90, cmap='viridis')
+colors = ['#0158BF', '#76C6FC', '#00143F', '#a7a7a7', '#535353', '#15b8ae', '#85d0ccff']
+fig, ax = plt.subplots(figsize=(10, 8))
+
+# Create pie chart
+wedges, texts, autotexts = ax.pie(agency_counts, 
+                                 labels=agency_counts.index,
+                                 autopct=lambda p: f'{p:.1f}% ({int(p * agency_counts.sum() / 100)})',
+                                 startangle=90,
+                                 colors=colors,
+                                 wedgeprops={'linewidth': 1, 'edgecolor': 'white'},
+                                 pctdistance=0.85)
+
+# Set colors for texts
+plt.setp(autotexts, color='white')  # percentage labels in white
+plt.setp(texts, color='black')      # agency labels in black
+
 plt.title('Number of Documents per Agency')
-plt.ylabel('')  # Hide the y-label
+plt.ylabel('')
+
+# Draw a white circle at the center to make it look like a donut chart
+centre_circle = plt.Circle((0,0), 0.70, fc='white')
+fig.gca().add_artist(centre_circle)
+
 plt.savefig('data_preparation/agency_pie_chart.png')
 
 # Extract year and month from 'posted_date'
@@ -71,8 +91,8 @@ monthly_counts = combined.groupby(['year_month', 'type']).size().unstack(fill_va
 
 # Plot a line graph
 plt.figure(figsize=(12, 6))
-monthly_counts.plot(kind='line', marker='o')
-plt.axvline(pd.Timestamp('2023-03-10').to_period('M'), color='red', linestyle='--', label='SVB Collapse')
+monthly_counts.plot(kind='line', marker='o', color=colors)
+plt.axvline(pd.Timestamp('2023-03-10').to_period('M'), color='#15b8ae', linestyle='--', label='SVB Collapse')
 plt.title('Number of Documents per Month by Type')
 plt.xlabel('Month')
 plt.ylabel('Number of Documents')
@@ -84,4 +104,48 @@ plt.savefig('data_preparation/documents_per_month_by_type.png')
 print(combined['posted_date'].min())
 print(combined['posted_date'].max())
 
+# Count the number of words in each document
+def count_words(file_path):
+    with open(file_path, 'r') as file:
+        return len(file.read().split())
 
+combined['word_count'] = combined['filename_y'].apply(lambda x: count_words(f'documents/pre_SVB/{x}') if x in pre_SVB_files else count_words(f'documents/post_SVB/{x}'))
+
+# Plot a histogram of the distribution of the lengths
+plt.figure(figsize=(12, 6))
+n, bins, patches = plt.hist(combined['word_count'], bins=30, color='#0158BF', edgecolor='black')
+plt.title('Distribution of Document Lengths')
+plt.xlabel('Document Length')
+plt.ylabel('Frequency')
+
+# Add values at the top of the bars
+for i in range(len(patches)):
+    plt.text(patches[i].get_x() + patches[i].get_width() / 2, patches[i].get_height(), 
+             str(int(patches[i].get_height())), ha='center', va='bottom', fontsize=10, color='black')
+
+# Remove the outline
+for patch in patches:
+    patch.set_edgecolor('none')
+
+plt.savefig('data_preparation/document_length_distribution.png')
+
+# Filter documents with less than 100,000 words
+filtered_combined = combined[combined['word_count'] < 25000]
+
+# Plot a histogram of the distribution of the lengths for filtered documents
+plt.figure(figsize=(12, 6))
+n, bins, patches = plt.hist(filtered_combined['word_count'], bins=30, color='#0158BF', edgecolor='black')
+plt.title('Distribution of Document Lengths (Less than 25,000 words)')
+plt.xlabel('Document Length')
+plt.ylabel('Frequency')
+
+# Add values at the top of the bars
+for i in range(len(patches)):
+    plt.text(patches[i].get_x() + patches[i].get_width() / 2, patches[i].get_height(), 
+             str(int(patches[i].get_height())), ha='center', va='bottom', fontsize=10, color='black')
+
+# Remove the outline
+for patch in patches:
+    patch.set_edgecolor('none')
+
+plt.savefig('data_preparation/document_length_distribution_filtered.png')
