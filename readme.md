@@ -50,10 +50,8 @@ The main packages used in our project:
 * umap
 
 ### Methods 
-* Keyword Extraction 
+* Keyword Identification & Extraction 
 * Topic Modeling (TF-IDF, BERTopic)
-* Clustering 
-* Visualization Techniques 
 
 
 ### Technologies 
@@ -61,7 +59,7 @@ The main packages used in our project:
 
 ## Getting Started
 
-The corpora of documents used in our project can be accessed in our documents folder. Implementation and data preprocessing is done in each respective python script file within the respective folders (Naive, TF-IDF, BERTopic). 
+The corpora of documents used in our project can be accessed in our documents folder. Implementation and data preprocessing is done in each respective python script file within the respective folders (Naive, TF-IDF- within keywords folder, BERTopic). 
 
 ### Prerequisites
 
