@@ -59,7 +59,7 @@ The main packages used in our project:
 
 ## Getting Started
 
-The corpora of documents used in our project can be accessed in our documents folder. Implementation and data preprocessing is done in each respective python script file within the respective folders (Naive, TF-IDF- within keywords folder, BERTopic). 
+The corpora of documents used in our project can be accessed in our documents folder. Implementation and method-specific preprocessing for our three primary methods are done within their respective folders (*naive_model*, TF-IDF - within *keywords* folder, *BERTopic*). 
 
 ### Prerequisites
 
