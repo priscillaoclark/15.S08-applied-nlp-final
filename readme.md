@@ -27,7 +27,7 @@ The 2023 Silicon Valley Bank (SVB) collapse had a strong influence on financial 
 In this project, we compare the texts of proposed and implemented regulations in a 36-month window surrounding the SVB collapse - 18 months pre, and 18 months post. Methods include naive keyword counts as well as basic and advanced topic modeling techniques (TF-IDF, BERTopic).  
 
 
-We expect to see increased scrutiny on mid-sized banks vs. the historical focus on Global Systematically Important Banks (G-SIBs). We also expect key themes to include increased capital requirements, liquidity risk, and discussions around the appropriate levels of FDIC deposit insurance. Uncovering the root causes of the SVB collapse and its impact on regulatory trends will allow for better impact mitigation should similar crises arise. Detailed findings from this work are available in the [final report](https://github.com/priscillaoclark/15.S08-applied-nlp-final/blob/main/S08_Report_Final.pdf). 
+We expect to see increased scrutiny on mid-sized banks vs. the historical focus on Global Systematically Important Banks (G-SIBs). We also expect key themes to include increased capital requirements, liquidity risk, and discussions around the appropriate levels of FDIC deposit insurance. Uncovering the root causes of the SVB collapse and its impact on regulatory trends will allow for better impact mitigation should similar crises arise. Experimental results show strong statistical evidence confirming the hypothesis. Detailed findings from this work are available in the [final report](https://github.com/priscillaoclark/15.S08-applied-nlp-final/blob/main/S08_Report_Final.pdf). 
 
 ## Built With
 
